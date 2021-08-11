@@ -2,7 +2,7 @@
 description: The home of Acala wiki.
 ---
 
-# Index
+# İndeks
 
 Acala protokolünü öğrenmek, oluşturmak veya kullanmakla ilgilenenlerin merkezi olan Acala wiki'ye hoş geldiniz. Wiki, Acala ekosistemindeki bu farklı aktörlerin her birine hitap etmek için üç ana bölüme ayrılmıştır. Acala Network'e bağlanmak için projenizi oluşturmaya başlamak istiyorsanız [build](https://wiki.acala.network/build/) kısmını kullanabilirsiniz. Bir node işletmekle ilgileniyorsanız [maintain](https://wiki.acala.network/maintain/) kısmını kullanın. Ve, eğer Acala'yı daha detaylı öğrenmek istiyorsanız [learn](https://wiki.acala.network/learn/) bölümünden faydalanın. Topluluklar ve teknik incelemeler gibi bazı genel bilgileri hızlıca bulmak istiyorsanız, [general](https://wiki.acala.network/general/) bölümü size yardımcı olacaktır.
 
