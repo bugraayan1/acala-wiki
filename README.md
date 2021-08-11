@@ -4,31 +4,31 @@ description: The home of Acala wiki.
 
 # Index
 
-Welcome to the Acala wiki, the hub for those interested in learning, building, or using the Acala protocol. The wiki is sectioned into three major sections to cater to each of these different actors in the Acala ecosystem. If you're eager to start building your project to connect to Acala Network, see the [build](https://wiki.acala.network/build/) section. If you're interested in operating a node, head on over to the [maintain](https://wiki.acala.network/maintain/) section. And, if you want to learn more then peruse the [learn](https://wiki.acala.network/learn/) section below. If you want to quickly find some general information, such as communities and white papers, please find [general](https://wiki.acala.network/general/).
+Acala protokolünü öğrenmek, oluşturmak veya kullanmakla ilgilenenlerin merkezi olan Acala wiki'ye hoş geldiniz. Wiki, Acala ekosistemindeki bu farklı aktörlerin her birine hitap etmek için üç ana bölüme ayrılmıştır. Acala Network'e bağlanmak için projenizi oluşturmaya başlamak istiyorsanız [build](https://wiki.acala.network/build/) kısmını kullanabilirsiniz. Bir node işletmekle ilgileniyorsanız [maintain](https://wiki.acala.network/maintain/) kısmını kullanın. Ve, eğer Acala'yı daha detaylı öğrenmek istiyorsanız [learn](https://wiki.acala.network/learn/) bölümünden faydalanın. Topluluklar ve teknik incelemeler gibi bazı genel bilgileri hızlıca bulmak istiyorsanız, [general](https://wiki.acala.network/general/) bölümü size yardımcı olacaktır.
 
-There are additional two sections one for Karura and one for Acala to outline the specificities of each network.
+Ayrıca her bir ağın özelliklerini özetlemek için biri Karura ve diğeri Acala için olmak üzere iki ek bölüm vardır.
 
-If you're looking for an introduction to Acala please [see here](https://wiki.acala.network/learn/acala-introduction).
+Eğer Acala ile ilgili bir ön bilgi almak istiyorsanız lütfen [burayı](https://wiki.acala.network/learn/acala-introduction) kullanın.
 
-### Want to get started?
+### Başlamak ister misiniz?
 
-* [Get Started with the live Karura network](karura/get-started/)
-* [Get Started](https://wiki.acala.network/learn/get-started) with the testnet - Try the test network.
-* [Acala Portal](https://wiki.acala.network/general/acala-portal) - **Quick navigation in order to learn Acala Network.**
+* [Aktif Karura ağını öğrenerek başla](karura/get-started/)
+* Testnet ile [Başla](https://wiki.acala.network/learn/get-started) - Test neti dene.
+* [Acala Portal](https://wiki.acala.network/general/acala-portal) - **Acala Ağını öğrenmek için hızlı bir tura çık.**
 
-### Want to build on Acala?
+### Acala üzerine inşa etmek ister misiniz?
 
-* [Builders Portal](https://wiki.acala.network/build/builders-portal) - Tools, libraries, and resources to help you build.
-* [Starters Guide](https://wiki.acala.network/build/development-guide/builders-starters-guide) - **Overview on how to get started building your project on Acala.**
+* [Geliştirici Portalı](https://wiki.acala.network/build/builders-portal) - İnşaa etmenize yardımcı olacak araçlar, kitaplıklar ve kaynaklar.
+* [Yeni Başlayanlar için Rehber](https://wiki.acala.network/build/development-guide/builders-starters-guide) - **Acala'da projenizi oluşturmaya nasıl başlayacağınıza genel bakış.**
 
-### Want to maintain the network?
+### Ağın devamlılığına katkı sunmak mı istiyorsunuz?
 
-* [Network Maintainers](https://wiki.acala.network/maintain/network-maintainers) - Information covering running a node on the Acala Network.
-* [Oracle Overview](https://wiki.acala.network/maintain/oracle/oracle-overview) - Provide pricing information for assets on the Acala Network.
+* [Network Maintainers](https://wiki.acala.network/maintain/network-maintainers) - Acala Ağı üzerinde bir düğüm çalıştırmayı kapsayan bilgiler.
+* [Oracle'a Bakış](https://wiki.acala.network/maintain/oracle/oracle-overview) - Acala Ağı'ndaki varlıklar için fiyat bilgilerini elde edin.
 
-### Resources
+### Kaynaklar
 
-* [Community / Ecosystem](https://wiki.acala.network/general/acala-portal/community) - List of community rooms and channels to talk to others about Acala.
-* [News](https://wiki.acala.network/general/acala-portal/news) - Links to the hottest news about Acala, aggregated the latest updates.
-* [Contributing Guide](https://wiki.acala.network/general/contributing) - Rules for contributing to the wiki.
+* [Topluluk / Ekosistem](https://wiki.acala.network/general/acala-portal/community) - Acala hakkında diğeri insanlarla konuşmak için topluluk odaları ve kanalların listesi.
+* [Haberler](https://wiki.acala.network/general/acala-portal/news) - Acala ile ilgili en sıcak haberler, bağlantılar ve en son güncellemelere erişin.
+* [Katkıda Bulun](https://wiki.acala.network/general/contributing) - Wiki'ye katkıda bulunma kuralları.
 
