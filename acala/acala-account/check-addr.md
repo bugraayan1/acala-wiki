@@ -1,6 +1,6 @@
 # Check Address for Different Chains
 
-If you already set up a Polkadot account, Acala account, or any Substrate-based chain account, there are two options to check the corresponding DOT address:
+If you already set up a Polkadot account, Acala account, or any Substrate-based chain account, there are three options to check the corresponding DOT address:
 
 * you can use [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform);
 * setting your wallets in polkadot.js extension 
