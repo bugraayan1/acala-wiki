@@ -41,8 +41,9 @@ Polkadot/Kusama'daki tüm zincirler, değer alışverişinden durum değiştirme
 
 Acala şu anda aşağıdaki \(potansiyel\) parachainler ile birleştirilebilir, lütfen kendinizi eklemek için bu Repo'ya PR:
 
-* Plazma
-* Ara paylaşım
-* Fala
+* Plasm
+* Interlay
+* Phala
+
 
 Denemek ve bizimle birlikte zincirler arası testler yapmak isterseniz lütfen bizimle iletişime geçin!
