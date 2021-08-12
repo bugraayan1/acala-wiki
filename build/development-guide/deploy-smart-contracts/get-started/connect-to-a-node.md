@@ -28,4 +28,4 @@ Düğümünüzün çıktısı şöyle görünmelidir:
 
 ### **2. Dağıtılmış bir test ağına bağlanın**
 
-Mevcut tüm test ağı düğümlerini [burada](https://wiki.acala.network/learn/get-started/public-nodes#mandala-test-network-nodes) bulun
+Mevcut tüm test ağı düğümlerine [buradan](https://wiki.acala.network/learn/get-started/public-nodes#mandala-test-network-nodes) ulaşabilirsiniz.
