@@ -1,44 +1,44 @@
-# Open HRMP Channel
+# HRMP Kanalı Açma
 
-\(Original hackmd file [here](https://hackmd.io/naPxPYPYSXOlK0L7WohVdQ?view)\)
+\(Orijinal hackmd dosyası [buradadır.](https://hackmd.io/naPxPYPYSXOlK0L7WohVdQ?view)\)
 
-Steps to open HRMP channels:
+HRMP kanallarını açma adımları:
 
-1. Sender parachain send a init open channel request.
-2. Recipient parachain accept request.
+1. Gönderici parachain, bir init açık kanal isteği gönderir.
+2. Alıcı parachain isteği kabul eder.
 
-The steps above are done via `Xcm::Transact` from the sender's or recipient's part.
+Yukarıdaki adımlar, gönderenin veya alıcının bölümünden `Xcm::Transact` aracılığıyla yapılır..
 
-## Send init open channel request
+## init açık kanal isteği gönder
 
-### Generate encoded transact
+### Kodlanmış işlem oluşturun
 
-In PolkadotJS app, switch to the live Rococo network. Go to **Developer -&gt; Javascript** section.
+PolkadotJS uygulamasında canlı Rokoko ağına geçin. **Geliştirici -&gt; Javascript** bölümünü açın.
 
-Run the encoding code, note to replace the demo recipient para id `777` with your recipient:
+Kodlama kodunu çalıştırın, demo alıcı kimliği '777'yi alıcınızla değiştirmeyi unutmayın:
 
 ```javascript
 const tx = api.tx.hrmp.hrmpInitOpenChannel(777, 8, 1024);
 console.log(tx.toHex())
 ```
 
-The result will be like `0x3c041600090300000800000000040000`, remove the leading hex `3c04`, and the encoded result is `0x1600090300000800000000040000`.
+Sonuç "0x3c041600090300000800000000040000" ifadesine benzeyecektir, baştaki onaltılı "3c04" kaldırılacak ve kodlanmış sonuç "0x1600090300000800000000040000" olacaktır.
 
-### Send request
+### İstek gönder
 
-Go to PolkadotJS app, switch to sender parachain. Go to **Developer -&gt; Sudo** section.
+PolkadotJS uygulamasına gidin, gönderen parachain'e geçin. **Geliştirici -&gt; Sudo** bölümünü açın.
 
-Use `xcmHandler -> sudoSendXcm` to send the transaction.
+İşlemi göndermek için `xcmHandler -> sudoSendXcm` kullanın.
 
-To confirm the request was sent, switch to live Rococo, go to **Developer -&gt; Chain State**, check **hrmp -&gt; hrmpOpenChannelRequests**.
+İsteğin gönderildiğini onaylamak için canlı Rokoko'ya geçin, **Geliştirici -&gt; Zincir Durumu**, **hrmp -&gt; hrmpOpenChannelRequests**.
 
-## Accept channel request
+## Kanal isteğini kabul et
 
-### Generate encoded transact
+### Kodlanmış işlem oluşturun
 
-In PolkadotJS app, switch to the live Rococo network. Go to **Developer -&gt; Javascript** section.
+PolkadotJS uygulamasında canlı Rokoko ağına geçin. **Geliştirici -&gt; Javascript** bölümünü açın.
 
-Run the encoding code, note to replace the demo recipient para id `666` with your recipient:
+Kodlama kodunu çalıştırın, demo alıcı para kimliği "666"yı alıcınızla değiştirmeyi unutmayın:
 
 ```javascript
 const tx = api.tx.hrmp.hrmpAcceptOpenChannel(666);
@@ -47,9 +47,11 @@ console.log(tx.toHex())
 
 The result will be like `0x1c0416019a020000`, remove the leading hex `1c04`, and the encoded result is `0x16019a020000`.
 
-### Send request
+Sonuç "0x1c0416019a020000" gibi olacaktır, baştaki onaltılı "1c04" kaldırılır ve kodlanmış sonuç "0x16019a020000" olur.
 
-Go to PolkadotJS app, switch to recipient parachain. Go to **Developer -&gt; Sudo** section.
+### İstek gönder
 
-Use `xcmHandler -> sudoSendXcm` to send the transaction.
+PolkadotJS uygulamasına gidin, alıcı parachain'e geçin. **Geliştirici -&gt; Sudo** bölümünü açın.
+
+İşlemi göndermek için `xcmHandler -> sudoSendXcm` kullanın.
 
