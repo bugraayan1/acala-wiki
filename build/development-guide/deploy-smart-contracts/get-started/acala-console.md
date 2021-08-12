@@ -1,42 +1,40 @@
-# Acala Console
+# Acala Konsolu
 
-Acala Console is used to communicate with an Acala Node, where you can query the state of the blockchain e.g. balances of accounts, block information etc., and execute transactions to interact with various runtime modules of the chain e.g. transfer a token, do a token swap on the DeX etc. 
+Acala Konsolu, blok zincirinin durumunu sorgulayabileceğiniz bir Acala Düğümü ile iletişim kurmak için kullanılır. Buradan hesap bakiyeleri, blok bilgileri vb. ve zincirin çeşitli çalışma zamanı modülleriyle ilgili bilgi alabilir ve etkileşim kurabilirsiniz. Örn. bir jeton aktarabilir veya DeX'te jeton takası yapabilirsiniz.
+Acala Konsoluna buradan ulaşabilirsiniz: [https://console.acala.network/](https://console.acala.network/).
 
-Open the Acala Console here: [https://console.acala.network/](https://console.acala.network/).
-
-The Console is a generated front-end provided by Polkadot that can connect to various Substrate nodes. To connect the Console to your particular node, open the dropdown menu on the top left corner
+Konsol, Polkadot tarafından sağlanan ve çeşitli Substrate düğümlerine bağlanabilen oluşturulmuş bir ön uçtur. Konsolu kendi düğümünüze bağlamak için sol üst köşedeki açılır menüyü açın
 
 ![](https://i.imgur.com/8G8Rnbe.png)
 
-Open the `Development` section, select `Local Node` to connect to your local Acala node.
+'Geliştirme' bölümünü açın, yerel Acala düğümünüze bağlanmak için 'Yerel Düğüm'ü seçin.
 
 ![](https://i.imgur.com/TygeyXu.png)
 
-Select `Custom` to connect to a deployed node, and paste the Websocket URL to the `custom endpoint` input box. You can find deployed nodes here \[TODO\]. 
+Dağıtılan bir düğüme bağlanmak için "Özel"i seçin ve Websocket URL'sini "özel uç nokta" giriş kutusuna yapıştırın. Dağıtılmış düğümleri burada \[TODO\] bulabilirsiniz.
 
 ```text
 wss://node-6757141250775003136.rz.onfinality.io/ws?apikey=086df60c-6a2d-414e-add2-cc0b74b6d00b
 ```
 
-Then click `Switch` on the top, and wait for the page to refresh and connect to the network. If your current endpoint already matches your selection, the `Switch` button will be disabled.
+Ardından üst kısımdaki 'Anahtar'ı tıklayın ve sayfanın yenilenmesini ve ağa bağlanmasını bekleyin. Mevcut uç noktanız seçiminizle zaten eşleşiyorsa, 'Geçiş' düğmesi devre dışı bırakılır.
 
-### Check Balance
+### Bakiye Kontrolü
 
-Click the `Developer` tab on the top navigation bar, and select `Chain State` in the dropdown list.
+Üst gezinme çubuğundaki "Geliştirici" sekmesine tıklayın ve açılır listeden "Zincir Durumu"nu seçin.
 
 ![](https://i.imgur.com/BvFEcsZ.png)
 
-Then click on the `selected state query` , and select `token` . 
+Ardından "seçili durum sorgusu"na tıklayın ve "belirteç"i seçin.
 
-Select `Alice` from the `AccountId` dropdown.
+"Hesap Kimliği" açılır menüsünden "Alice"yi seçin.
 
-Select `Token` from `CurrencyId` and `DOT` as `Token: TokenSymbol`
+'CurrencyId'den 'Token'ı ve 'Token: TokenSymbol' olarak 'DOT'u seçin
 
-Press `+` button to initiate the call.
+Çağrıyı başlatmak için `+` düğmesine basın.
 
 ![](https://i.imgur.com/5hdanQC.png)
 
-Alice's DOT balance will be shown below.
+Alice'in DOT bakiyesi aşağıda gösterilecektir.
 
 ![](https://i.imgur.com/nOB7L3k.png)
-
