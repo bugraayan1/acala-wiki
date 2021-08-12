@@ -1,49 +1,48 @@
-# Composable Chains
+# Birleştirilebilir Zincirler
 
-Currently, cross-chain message passing and parachains are only available on Polkadot's testnet [Rococo](https://wiki.polkadot.network/docs/en/build-parachains-rococo). Acala's testnet Mandala is now launched on Rococo, and is testing cross-chain token transfers, and other functionalities. 
+Şu anda, zincirler arası mesaj geçişi ve parachainler yalnızca Polkadot'un test ağında [Rokoko](https://wiki.polkadot.network/docs/en/build-parachains-rococo) mevcuttur. Acala'nın test ağı Mandala henüz Rococo'da piyasaya sürüldü ve zincirler arası token transferlerini ve diğer işlevleri test etmeye devam ediyor.
 
-Please contact us to be \#ComposableWith Acala! 
+Acala ile \#Birleştirilebilir bir çalışma yapmak için lütfen bizimle iletişime geçin!
 
-## Composable With Acala
+## Acala ile Birleştirilebilir Olma
 
-* Acala Mandala PC2 is live on Rococ [here](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains)
+* Acala Mandala PC2, Rococo [burada](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains) yayındadır.
 
-#### Step 1 Support Acala Tokens
+#### Adım 1 Acala Jetonlarını Destekleyin
 
-To receive tokens issued on Acala chain such as aUSD, ACA, renBTC, LDOT etc, you need to configure Acala as the reserve chain, and add token symbols. Follow the steps as follows:
+Acala zincirinde verilen USD, ACA, renBTC, LDOT vb. tokenleri almak için Acala'yı yedek zincir olarak yapılandırmanız ve jeton sembolleri eklemeniz gerekir. Aşağıdaki adımları izleyin:
 
-1. Add token to CurrencyId. [Example here](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/primitives/src/lib.rs#L83) of Laminar adding aUSD.
-2. Add text symbol for the CurrenyId. [Example here](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/primitives/src/lib.rs#L101) adding "AUSD".
-3. Integrate `Tokens` module into your runtime. 
+1. CurrencyId'e jeton ekleyin. USD ekleyen Laminar'ın [buradaki örneği](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/primitives/src/lib.rs#L83).
+2. CurrenyId için metin sembolü ekleyin. [Buradaki örnek](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/primitives/src/lib.rs#L101) "AUSD" ekleyin.
+3. "Tokens" modülünü çalışma zamanınıza entegre edin.
 
-#### Step 2 Install xToken & Configure Reserve Chain
+#### 2. Adım xToken'ı Kurun ve Rezerv Zincirini Yapılandırın
 
-`orml-xtokens` is an implementation of [Polkadot Cross-Consensus Message Format \(XCM\)](https://github.com/paritytech/xcm-format) for token transfers. The source code for xtoken is [here](https://github.com/open-web3-stack/open-runtime-module-library/tree/sw/rococo-v1/xtokens) and xcm-support is [here](https://github.com/open-web3-stack/open-runtime-module-library/blob/sw/rococo-v1/xtokens/src/lib.rs)
+"Orml-xtokens", belirteç transferleri için [Polkadot Cross-Consensus Message Format \(XCM\)](https://github.com/paritytech/xcm-format) konseptinin bir uygulamasıdır. xtoken için kaynak koda [buradan](https://github.com/open-web3-stack/open-runtime-module-library/tree/sw/rococo-v1/xtokens) ve xcm-support'a [buradan] (https://github.com/open-web3-stack/open-runtime-module-library/blob/sw/rococo-v1/xtokens/src/lib.rs) ulaşabilirsiniz.
 
-1. Install xToken to your chain. [Example here](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L861-L960) of Laminar adding xToken.
-2. Configure Acala as Reserve Chain for specified tokens
-   1. Add token and its reserve chain. [Example here](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L916) of adding Acala as reserve chain for aUSD.
-   2. Configure reserve assets. [Example here](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L916).
+1. xToken'ı zincirinize kurun. xToken ekleyen Laminar'ın [buradaki örneğinden](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L861-L960) yardım alabilirsiniz.
+2. Belirtilen jetonlar için Acala'yı Yedek Zincir olarak yapılandırın.
+   1. Jeton ve yedek zincirini ekleyin. [Burada örnek](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L916) Acala'yı aUSD için yedek zincir olarak ekleme.
+   2. Yedek varlıkları yapılandırın. [Buradaki örnek](https://github.com/laminar-protocol/laminar-chain/blob/a07ea4aa75bce5d30a24ce2e7a506dda5e22013f/runtime/dev/src/lib.rs#L916).
 
-#### Step 3 Make your tokens available on Acala
+#### 3. Adım Jetonlarınızı Acala'da kullanılabilir hale getirin
 
-Add your token symbols and make a PR to Acala. [Example of](https://github.com/AcalaNetwork/Acala/pull/730) Plasm's PR for adding PLM.
+Jeton sembollerinizi ekleyin ve Acala'ya bir PR yapın. [Örnek](https://github.com/AcalaNetwork/Acala/pull/730) Plasm'ın PLM eklemek için PR'ı.
 
-#### Step 4 Open HRMP Channel
+#### 4. Adım HRMP Kanalını Açın
 
-Your chain shall already be connected to Rococo as parachain. While XCMP \(Cross-chain Message Passing\) is sitll being implemented - that is sending cross-chain messages directly to each other without passing through the Relay chain, a stop-gap protocol HRMP \(Horizontal Relay-routed Message Passing\) is in place. 
+Zinciriniz zaten parachain olarak Rokoko'ya bağlı olacaktır. XCMP \(Cross-chain Message Passing\) sitll uygulanırken - bu, Röle zincirinden geçmeden çapraz zincir mesajları gönderirken, bir stop-gap protokolü HRMP \(Horizontal Relay-routed Message Passing\) yerindedir.
 
-Two parachains will need to open HRMP channel on either side to send and receive cross-chain messages. [Instructions here to open HRMP Channel](open-hrmp-channel.md).
+Çapraz zincir mesajları göndermek ve almak için iki para zincirinin her iki tarafta HRMP kanalını açması gerekecektir. [HRMP Kanalını açmak için buradaki talimatlar](open-hrmp-channel.md).
 
-## \#ComposableWith
+## \#Birleştirilebilir
 
-All chains on Polkadot/Kusama shall be _**composable with**_ each other, from exchanging value to exchanging and altering states. For example, chains can not only transfer values trustlessly, they can also call pallet/smart contract functions of each other e.g. 1 click minting PolkaBTC on Interlay chain, transferring PolkaBTC to Acala, and collateralizing it for aUSD all in one transaction. 
+Polkadot/Kusama'daki tüm zincirler, değer alışverişinden durum değiştirmeye kadar birbirleriyle _**birleştirilebilir**_ olacaktır. Örneğin, zincirler sadece güvenilir bir şekilde değerleri aktaramazlar, aynı zamanda palet/akıllı sözleşme fonksiyonlarını da çağırabilirler. 1 tıkla PolkaBTC'yi Interlay zincirinde basmak, PolkaBTC'yi Acala'ya aktarmak ve hepsini tek bir işlemde USD karşılığında teminatlandırmak mümkündür.
 
-Acala is currently composable with the following \(potential\) parachains, please PR to this Repo to add yourself:
+Acala şu anda aşağıdaki \(potansiyel\) parachainler ile birleştirilebilir, lütfen kendinizi eklemek için bu Repo'ya PR:
 
-* Plasm
-* Interlay
-* Phala
+* Plazma
+* Ara paylaşım
+* Fala
 
-Please contact us if you'd like to try it out and run some cross-chain testing together with us!
-
+Denemek ve bizimle birlikte zincirler arası testler yapmak isterseniz lütfen bizimle iletişime geçin!
