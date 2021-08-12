@@ -6,7 +6,7 @@ Please contact us to be \#ComposableWith Acala!
 
 ## Composable With Acala
 
-* Acala Mandala PC2 is live on Rococ [here](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains)
+* Acala Mandala PC2 is live on Rococo [here](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains)
 
 #### Step 1 Support Acala Tokens
 
