@@ -1,12 +1,12 @@
-# Tutorial
+# Eğitim
 
-In this tutorial, we're going to be utilizing Acala's on-chain scheduler to create an automatic subscription service that awards users for the time they are subscribed. A user can subscribe to this service and every time a certain period passed, the contract will reward them with some tokens.
+Bu eğitimde, kullanıcıları abone oldukları süre boyunca ödüllendiren otomatik bir abonelik hizmeti oluşturmak için Acala'nın zincir üstü zamanlayıcısını kullanacağız. Bir kullanıcı bu hizmete abone olabilir ve belirli bir süre geçtiğinde, sözleşme onları bazı jetonlarla ödüllendirecektir.
 
-## Setup & Install Dependencies
+## Bağımlılıkları Kur ve Yükle
 
-We will create a project from scratch, build and test it using Waffle. If you'd rather build your smart contracts using Remix, please check out [this](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix) page.
+Sıfırdan bir proje oluşturacağız, Waffle kullanarak inşa edeceğiz ve test edeceğiz. Akıllı sözleşmelerinizi Remix kullanarak oluşturmayı tercih ediyorsanız lütfen [bu](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix) sayfaya göz atın. .
 
-To start, let's install `nodejs` and yarn if you haven't already:
+Başlamak için, henüz yapmadıysanız, `nodejs` ve yarn'ı yükleyelim.:
 
 ```text
 sudo apt install -y nodejs
@@ -14,7 +14,7 @@ sudo apt install -y nodejs
 npm install --global yarn
 ```
 
-Next, run the following commands in the folder where you want your project to live:
+Ardından, projenizin yaşamasını istediğiniz klasörde aşağıdaki komutları çalıştırın:
 
 ```text
 mkdir subscription-contract
@@ -24,15 +24,15 @@ yarn init -y
 yarn add --dev ethereum-waffle@3.2.1
 ```
 
-And add the following script to your `package.json`:
+Ve aşağıdaki betiği "package.json" dosyanıza ekleyin:
 
 ```text
 "build": "waffle"
 ```
 
-This will create a folder for our project, initialize a new yarn project, and add waffle as a dev dependency. We'll be using waffle to compile our smart contracts.
+Bu, projemiz için bir klasör oluşturacak, yeni bir yarn projesi başlatacak ve bir geliştirme bağımlılığı olarak waffle ekleyecektir. Akıllı sözleşmelerimizi derlemek için waffle kullanacağız.
 
-Within your project folder, create a file called `waffle.json` and paste the following inside the file:
+Proje klasörünüzde `waffle.json` adında bir dosya oluşturun ve aşağıdakini dosyanın içine yapıştırın:
 
 ```text
 {
@@ -43,9 +43,9 @@ Within your project folder, create a file called `waffle.json` and paste the fol
 }
 ```
 
-This file is the configurations for `waffle` to use when building our smart contracts.
+Bu dosya, akıllı sözleşmelerimizi oluştururken kullanılacak 'waffle' yapılandırmalarıdır.
 
-Let's create our `contracts` folder.
+Sözleşmeler klasörümüzü oluşturalım..
 
 ```text
 mkdir contracts
@@ -53,7 +53,7 @@ mkdir contracts
 
 ## Use Scheduler.sol
 
-Inside the `contracts` folder create `Scheduler.sol` paste the following code:
+"Contracts" klasörünün içine "Scheduler.sol" dosyasını oluşturun ve aşağıdaki kodu yapıştırın:
 
 ```text
 pragma solidity ^0.6.0;
@@ -74,13 +74,13 @@ abstract contract Scheduler {
 }
 ```
 
-This file describes the scheduler smart contract and what arguments you must supply to it to use it. But how does the scheduler work?
+Bu dosya, zamanlayıcı akıllı sözleşmesini ve bunu kullanmak için ona hangi argümanları sağlamanız gerektiğini açıklar. Ancak zamanlayıcı nasıl çalışır?
 
-The Acala EVM provides Solidity, Substrate, and Web3 developers a complete full-stack \(Acala+EVM+Substrate+WASM\) experience seamlessly with a single wallet. Many Substrate and WASM customization are made available inside EVM via pre-compiled contracts, such as on-chain scheduler, bring your own gas, Quality of Service oracle feeds, and more. It allows us to add new features that would be impossible on Ethereum while still letting developers use existing code and tooling to create DApps that leverage these features. These pre-compiled smart contracts have static, known addresses on the Acala EVM making it incredibly easy to use.
+Acala EVM, Solidity, Substrate ve Web3 geliştiricilerine tek bir cüzdan ile eksiksiz bir full-stack \(Acala+EVM+Substrate+WASM\) deneyimi sağlar. Birçok Substrat ve WASM özelleştirmesi, zincir üstü zamanlayıcı, kendi gas'ınızı getirin, Hizmet Kalitesi oracle beslemeleri ve daha fazlası gibi önceden derlenmiş sözleşmeler aracılığıyla EVM içinde kullanıma sunulur. Ethereum'da imkansız olacak yeni özellikler eklememize izin verirken, geliştiricilerin bu özelliklerden yararlanan DApp'ler oluşturmak için mevcut kodu ve araçları kullanmasına izin verir. Bu önceden derlenmiş akıllı sözleşmeler, Acala EVM'de statik, bilinen adreslere sahiptir ve bu da kullanımı inanılmaz derecede kolaylaştırır.
 
-## Create the Subscription Contract
+## Abonelik Sözleşmesini Oluşturun
 
-Let's create our smart contract file by creating a `Subscription.sol` file within the `contracts` folder. In it add the following code:
+`Contracts` klasörü içerisinde bir `Subscription.sol` dosyası oluşturarak akıllı sözleşme dosyamızı oluşturalım. İçinde aşağıdaki kodu ekleyin:
 
 ```text
 pragma solidity ^0.6.0;
@@ -95,11 +95,11 @@ contract SubscriptionToken {
 }
 ```
 
-Here you can see we're importing the abstract class that describes the `Scheduler` smart contract and pointing our `scheduler` to its address in the constructor. Again, Scheduler is a pre-compiled smart contract with a static address. It will always live on-chain at this address, no need to deploy your own version of it. ![](https://i.imgur.com/8d8Mxly.png)
+Burada, 'Scheduler' akıllı sözleşmesini tanımlayan ve 'scheduler'ımızı yapıcıdaki adresine yönlendiren soyut sınıfı içe aktardığımızı görebilirsiniz. Yine, Zamanlayıcı, statik bir adrese sahip önceden derlenmiş bir akıllı sözleşmedir. Her zaman bu adreste zincirde yaşayacak, kendi sürümünüzü dağıtmanıza gerek yok. ![](https://i.imgur.com/8d8Mxly.png)
 
-### Constructor
+### Yapıcı
 
-Next, let's set some state variables and modify a constructor. Within the contract add the following:
+Ardından, bazı durum değişkenlerini ayarlayalım ve bir yapıcıyı değiştirelim. Sözleşmeye aşağıdakileri ekleyin:
 
 ```text
 contract SubscriptionToken {
@@ -116,16 +116,16 @@ contract SubscriptionToken {
 }
 ```
 
-Here we added 6 state variables. Let's go through them one by one:
+Burada 6 durum değişkeni ekledik. Bunları tek tek inceleyelim:
 
-1. `balanceOf`: defines/shows the number of native tokens in a user's balance.
-2. `period`: a period of how many blocks the Scheduler should be called
+1. "balanceOf": bir kullanıcının bakiyesindeki yerel jeton sayısını tanımlar/gösterir.
+2. "dönem": Zamanlayıcı'nın kaç blok olarak adlandırılması gerektiğini gösteren bir dönem
 
-The constructor is self-explanatory, all it does is set the first state variables for the contract.
+Yapıcı kendini açıklayıcıdır, tek yaptığı sözleşme için ilk durum değişkenlerini ayarlamaktır.
 
-### Subscribe and Transfer functions
+### Abone olma ve Aktarma işlevleri
 
-Next let's add the `subscribe` function:
+Ardından 'abone ol' işlevini ekleyelim:
 
 ```text
 contract SubscriptionToken {
@@ -143,28 +143,28 @@ contract SubscriptionToken {
 }
 ```
 
-Here the `subscribe` function simply adds a user to a list to which tokens will be distributed.
+Burada 'abone ol' işlevi, bir kullanıcıyı belirteçlerin dağıtılacağı bir listeye ekler.
 
-Finally, let's have a look at the arguments of `scheduleCall`:
+Son olarak, 'scheduleCall' argümanlarına bir göz atalım:
 
 ```text
 scheduler.scheduleCall(address(this), 0, 50000, 100, period, abi.encodeWithSignature("paySubscribers()"));
 ```
 
-Let's break this line down:
+Bu satırı parçalayalım:
 
-* `address(this)` is the address of the smart contract to call, in this case, we are calling the same smart contract that is calling the schedule contract
-* `value` - How much native token to send alone with the call.
-* `gas_limit` - The gas limit for the call. The corresponding fee will be reserved upfront and refunded after the call.
-* `storage_limit` - The storage limit for the call. The corresponding fee will be reserved upfront and refunded after the call.
-* `min_delay` is the number of blocks from now it should try and execute this call \(though it could be more!\)
-* `abi.encodeWithSignature("paySubscribers()")` is the function to call within the smart contract \(we'll define it next\).
+* `adres(bu)` aranacak akıllı sözleşmenin adresidir, bu durumda, zamanlama sözleşmesini çağıran aynı akıllı sözleşmeyi çağırıyoruz.
+* "değer" - Çağrıyla birlikte ne kadar yerel jeton gönderileceğidir.
+* `gas_limit` - Çağrı için gaz limiti. İlgili ücret önceden rezerve edilecek ve aramadan sonra iade edilecektir.
+* `storage_limit` - Arama için depolama limiti. İlgili ücret önceden rezerve edilecek ve aramadan sonra iade edilecektir.
+* "min_delay", bundan sonra bu çağrıyı denemesi ve yürütmesi gereken blok sayısıdır \(daha fazla olabilir!\)
+* `abi.encodeWithSignature("paySubscribers()")`, akıllı sözleşmede \(bunu daha sonra tanımlayacağız\) içinde çağrılacak işlevdir.
 
-For more information on the rest of the arguments being passed to the `scheduler` contract scroll up to where we created `Scheduler.sol`.
+"Zamanlayıcı" sözleşmesine geçirilen argümanların geri kalanı hakkında daha fazla bilgi için "Scheduler.sol" dosyasını oluşturduğumuz yere gidin.
 
-### Pay subscribers
+### Ücretli aboneler
 
-Now let's create the `paySubscribers` function that the scheduler is calling:
+Şimdi planlayıcının çağırdığı `paySubscribers` fonksiyonunu oluşturalım:
 
 ```text
 contract SubscriptionToken {
@@ -184,33 +184,31 @@ contract SubscriptionToken {
 }
 ```
 
-Notice the first line of the function:
+İşlevin ilk satırına dikkat edin:
 
 ```text
 require(msg.sender == address(this), "No Permission");
 ```
 
-What this is saying is that only the contract itself can call this function. When we schedule a call using the `Scheduler` contract, it is not actually the scheduler calling the function but the function itself. The scheduler is just dispatching the call at a later time.
+Bu, yalnızca sözleşmenin kendisinin bu işlevi çağırabileceğini söylüyor. "Zamanlayıcı" sözleşmesini kullanarak bir çağrı planladığımızda, aslında işlevi çağıran zamanlayıcı değil, işlevin kendisidir. Zamanlayıcı, aramayı daha sonra gönderiyor.
 
-And that's it! We now have a functioning smart contract with automated subscriptions!
+Ve bu kadar! Artık otomatik aboneliklerle işleyen bir akıllı sözleşmemiz var!
 
-## Build
+## İnşaa Etme
 
-To build the smart contract run the following in the project's root directory:
-
+Akıllı sözleşmeyi oluşturmak için projenin kök dizininde aşağıdakileri çalıştırın:
 ```text
 yarn build
 ```
 
-## Deploy
+## Yerleştirme
 
-To deploy the smart contract follow the directions [here](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/deploy-contracts).
+Akıllı sözleşmeyi dağıtmak için [buradaki](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/deploy-contracts) yönergeleri izleyin.
 
-You can set a `period` to 1 \(which is ≈6 secs\), and find the scheduler address in the list of predeployed contracts.
+1 \(≈6 saniyedir\) olarak bir "dönem" ayarlayabilir ve önceden konuşlandırılmış sözleşmeler listesinde planlayıcı adresini bulabilirsiniz.
 
-![](https://i.imgur.com/NX3iQUW.png) When everything is done press deploy.
+![](https://i.imgur.com/NX3iQUW.png) Her şey bittiğinde konuşlandır'a basın.
 
-## Executing the contract
+## Sözleşmenin yürütülmesi
 
-the only way is to get this new token is to subscribe to the smart contract. Execute `subscribe` function and check how balance changes over time for the subscriber \(`balanceOf` function\).
-
+Bu yeni jetonu almanın tek yolu akıllı sözleşmeye abone olmaktır. 'Abone ol' işlevini yürütün ve abonenin \('balanceOf' işlevi\) için bakiyenin zaman içinde nasıl değiştiğini kontrol edin.
