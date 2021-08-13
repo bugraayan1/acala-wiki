@@ -2,7 +2,7 @@
 
 KSM jetonlarınızı [crowdloan modülüne](https://wiki.acala.network/karura/crowdloan) bağlamadan önce ayırmanız gerekir. Yakın zamanda kullanılmayan KSM jetonları için Kusama'nın bekleme süresi görevi gören gecikmeli bir çıkış süresi \(7 gün\) vardır. Bu süre zarfında jetonlarınızı transfer edemezsiniz.
 
-{% embed url="https://youtu.be/KzyO0TGTruY" %}
+{%embed url="https://youtu.be/KzyO0TGTruY"%}
 
 ### Adım 1: Aday göstermeyi bırakın \(stake\) <a id="Adım-1-Stop-nomination-stake"></a>
 
