@@ -1,70 +1,65 @@
-# Acala EVM Hacker Guide
+# Acala EVM Hacker Kılavuzu
 
-## Start Here
+## Buradan başlayın
 
-* **Join** [**Acala Official Discord**](https://discord.gg/vdbFVCH) ****to explore DeFi on Polkadot, for product and technical questions
-* [**Watch**](https://www.crowdcast.io/e/acala-ethdenver-2021) the webinar: **Deploying your Ethereum Project on Polkadot & Acala**
+* **Katıl** [**Acala Official Discord**](https://discord.gg/vdbFVCH) ****Ürün ve teknik sorular için Polkadot'ta DeFi'yi keşfetmek için
+* [**İzle**](https://www.crowdcast.io/e/acala-ethdenver-2021) web semineri: **Ethereum Projenizi Polkadot ve Acala'da Dağıtma**
 
-## Resources
+## Kaynaklar
 
-### What is Polkadot
+### Polkadot Nedir?
 
-Polkadot is a sharded, multichain network founded by Dr. Gavin Wood, the co-founder and CTO of Ethereum, creator of EVM and Solidity programming language. Polkadot is a metaprotocol that is highly scalable and cross-chain interoperable; chains connected to Polkadot like Acala would share Polkadot's PoS network security from day one of launch.
+Polkadot, Ethereum'un kurucu ortağı ve CTO'su, EVM ve Solidity programlama dilinin yaratıcısı Dr. Gavin Wood tarafından kurulan, parçalanmış, çok zincirli bir ağdır. Polkadot, yüksek düzeyde ölçeklenebilir ve zincirler arası birlikte çalışabilir bir metaprotokoldür; Acala gibi Polkadot'a bağlı zincirler, lansmanın ilk gününden itibaren Polkadot'un PoS ağ güvenliğini paylaşmaktadır.
 
-### What is Acala
+### Acala nedir
 
-Acala is a cross-chain DeFi Hub and de facto stablecoin platform for Polkadot. It’s also a landing pad for Ethereum DeFi Dapps to get access to the Polkadot ecosystem and aggregated cross-chain liquidity like BTC. In terms of core offerings, Acala provides a set of DeFi products and primitives: multi-collateralized stablecoin using Bitcoin, DOT & other assets, a staking derivative Liquid DOT \(LDOT\) allowing users to stake while participating in other yield earning DeFi activities at the same time, and also a DeX that provides cross-chain unified liquidity.
+Acala, Polkadot için zincirler arası bir DeFi Hub ve fiili sabit para platformudur. Ayrıca, Ethereum DeFi Dapps'in Polkadot ekosistemine ve BTC gibi toplu zincirler arası likiditeye erişmesi için bir iniş pistidir. Temel teklifler açısından, Acala bir dizi DeFi ürünü ve ilkel sunar: Bitcoin, DOT ve diğer varlıkları kullanan çoklu teminatlı stabilcoin, kullanıcıların diğer getiri getiren DeFi etkinliklerine katılırken stake etmesine izin veren bir stake türevi Liquid DOT \(LDOT\) aynı zamanda zincirler arası birleşik likidite sağlayan bir DeX.
 
 ### Acala EVM
 
-Acala is also the gateway for Ethereum Apps to get access to the Polkadot ecosystem, making cross-chain liquidity and protocols composable. Acala EVM is one module on the Acala Network. Acala EVM enables Solidity contracts to be deployed on Acala/Polkadot with minimum changes. It also offers many distinct features such "**bring your own gas**" \(paying fees in any tokens like a stablecoin\), and there’s an **on-chain automatic scheduler** that enables use cases like subscription and recurring payments etc.
+Acala aynı zamanda Ethereum Apps'ın Polkadot ekosistemine erişmesi için ağ geçididir ve zincirler arası likiditeyi ve protokolleri birleştirilebilir hale getirir. Acala EVM, Acala Network üzerindeki bir modüldür. Acala EVM, Solidity sözleşmelerinin Acala/Polkadot üzerinde minimum değişiklikle devreye alınmasını sağlar. Ayrıca "**kendi gazınızı getirin**" \(stabilcoin gibi herhangi bir jetonla ücret ödeme\) gibi birçok farklı özellik sunar ve abonelik ve yinelenen kullanım durumları sağlayan bir **zincir içi otomatik zamanlayıcı** vardır. ödemeler vb.
 
-### Product Resources
+### Ürün Kaynakları
 
-* Acala Overview: Cross-chain DeFi Hub for Polkadot and beyond \([Watch](https://www.youtube.com/watch?v=avtzY5lkM6s)\)
-* [Why Acala EVM](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack) 
+* Acala'ya Genel Bakış: Polkadot ve ötesi için Zincirler Arası DeFi Hub \([İzle](https://www.youtube.com/watch?v=avtzY5lkM6s)\)
+* [Neden Acala EVM](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack)
 
-### Dev Resources
+### Geliştirme Kaynakları
 
-#### **Develop & Deploy Contracts**
+#### **Sözleşmeleri Geliştirin ve Dağıtın**
 
-* **Deploy Contracts on Acala EVM**
-  * [Watch Live Coding](https://www.crowdcast.io/e/acala-ethdenver-2021): Deploy Uniswap Contracts, Recurring Payment Contracts.
-    * Also available on Youtube [here](https://www.youtube.com/watch?v=7GdZucQ1SlE)
-  * Get started [here](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm)
-  * Download presentation slides [here](https://drive.google.com/file/d/1fVzCXC2BJf7k_d25bMy4rqXBqU_ByI_I/view?usp=sharing)
-* **Build a DApp on Polkadot using Acala EVM with On-chain Automatic Scheduler**
-  * Watch Live Coding [here](https://www.youtube.com/watch?v=0ZKK8IQXI3s&list=PLAy4HNUNlzRkiRQFnr-gu6CyddoVTxeTy&index=37)
-  * Tutorial [here](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler/scheduler-tutorial)
-* [Set up EVM Accounts](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/evm-account)
-* [Use the On-chain Scheduler Contract](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler)
-* [Use Acala Oracle Feeds](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-oracle-feeds)
-* [Use Native & Cross-chain Tokens such as BTC and DOTs](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-native-tokens)
-* **Example code:** [https://github.com/AcalaNetwork/evm-examples](https://github.com/AcalaNetwork/evm-examples)
+* **Acala EVM'de Dağıtım Sözleşmeleri**
+  * [Canlı Kodlamayı İzle](https://www.crowdcast.io/e/acala-ethdenver-2021): Uniswap Sözleşmelerini, Yinelenen Ödeme Sözleşmelerini Dağıtın.
+    * Ayrıca Youtube'da [burada](https://www.youtube.com/watch?v=7GdZucQ1SlE) mevcuttur
+  * Başlayın [buradan](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm)
+  * Sunum slaytlarını [buradan] indirin(https://drive.google.com/file/d/1fVzCXC2BJf7k_d25bMy4rqXBqU_ByI_I/view?usp=sharing)
+* **Zincir Üzerinde Otomatik Zamanlayıcı ile Acala EVM kullanarak Polkadot üzerinde bir DApp oluşturun**
+  * Canlı Kodlama İzle [buradan](https://www.youtube.com/watch?v=0ZKK8IQXI3s&list=PLAy4HNUNlzRkiRQFnr-gu6CyddoVTxeTy&index=37)
+  * Eğitici [burada](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler/scheduler-tutorial)
+* [EVM Hesaplarını Ayarlayın](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/evm-account)
+* [Zincir Üzerindeki Zamanlayıcı Sözleşmesini kullanın](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler)
+* [Acala Oracle Feed'lerini Kullanın](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-oracle-feeds)
+* [BTC ve DOT gibi Yerel ve Zincirler Arası Jetonları kullanın](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-native-tokens)
+* **Örnek kod:** [https://github.com/AcalaNetwork/evm-examples](https://github.com/AcalaNetwork/evm-examples)
 
-#### **Build & Deployment Tools**
+#### **Derleme ve Dağıtım Araçları**
 
 * **Waffle:** [https://getwaffle.io](https://getwaffle.io)
-* **Remix:** [http://remix.ethereum.org](http://remix.ethereum.org)
+* **Remiks:** [http://remix.ethereum.org](http://remix.ethereum.org)
 * **EVM Playground:** [https://evm.acala.network](https://evm.acala.network)
 * **Acala EVM \(bodhi.js\)**: [https://github.com/AcalaNetwork/bodhi.js](https://github.com/AcalaNetwork/bodhi.js)
 
-#### Optional
+#### İsteğe bağlı
 
-* [Try out Acala DApp](try-acala-dapp.md)
+* [Acala DApp'i deneyin](try-acala-dapp.md)
 
-## Communication Channels
+## İletişim kanalları
 
-### Social Channels
+### Sosyal Kanallar
 
-* [Acala Homepage](https://acala.network/)
+* [Acala Ana Sayfası](https://acala.network/)
 * [Twitter](https://twitter.com/AcalaNetwork)
-* [Discord](https://discord.gg/vdbFVCH)
-* [Acala Newsletter](https://acala.network/newsletter-sign-up.html)
+* [Anlaşmazlık](https://discord.gg/vdbFVCH)
+* [Acala Bülteni](https://acala.network/newsletter-sign-up.html)
 
-### 
-
-
-
-
-
+###
