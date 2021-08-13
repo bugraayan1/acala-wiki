@@ -1,21 +1,14 @@
-# Try Acala DApp
+# Acala DApp'i deneyin
 
 ![](../../.gitbook/assets/screen-shot-2021-02-03-at-4.41.26-pm.png)
 
-Try Acala's DeFi Suite on the ETHDenver live testnet
+ETHenver canlı test ağında Acala'nın DeFi Suite'ini deneyin
 
-* Set up Polkadot{js} extension \(Metamask for Polkadot\), and create an account [here](https://wiki.polkadot.network/docs/en/learn-account-generation#polkadotjs-browser-plugin)
-* Use this [Get Started guide](https://wiki.acala.network/learn/get-started) to use the applications. Bear in mind ETHDenver DApp and Nodes are different as specified below.
-* [Dapp](https://acala-dapp-git-update-acalanetwork.vercel.app/): this deployment connects to the same network \(TC6\) used for ETHDenver hackathon 
-* [ETHDenver Nodes](https://wiki.acala.network/learn/get-started/public-nodes#latest-ethdenver-nodes)
+* Polkadot{js} uzantısını \(Polkadot için Metamask\) kurun ve [buradan] bir hesap oluşturun(https://wiki.polkadot.network/docs/en/learn-account-generation#polkadotjs-browser-plugin)
+* Uygulamaları kullanmak için bu [Başlarken kılavuzunu](https://wiki.acala.network/learn/get-started) kullanın. ETHDenver DApp ve Node'ların aşağıda belirtildiği gibi farklı olduğunu unutmayın.
+* [Dapp](https://acala-dapp-git-update-acalanetwork.vercel.app/): bu dağıtım, ETHenver hackathon için kullanılan aynı ağa \(TC6\) bağlanır
+* [ETHDenver Düğümleri](https://wiki.acala.network/learn/get-started/public-nodes#latest-ethdenver-nodes)
 
-When first landing on the DApp website, you'd be asked to Upload metadata, click `Upload` and sign the transaction in the Polkadot{js} extension prompt. The extension doesn't have the latest changes of EVM deployment yet - you're in this really early! 
+DApp web sitesine ilk indiğinizde, meta verileri yüklemeniz, "Yükle"yi tıklamanız ve Polkadot{js} uzantı isteminde işlemi imzalamanız istenir. Uzantı, henüz EVM dağıtımındaki en son değişikliklere sahip değil - henüz gerçekten yolun başındayız!
 
-![](../../.gitbook/assets/screen-shot-2021-02-03-at-4.39.46-pm%20%281%29%20%281%29%20%281%29%20%281%29.png)
-
-
-
-
-
-
-
+![](../../.gitbook/assets/screen-shot-2021-02-03-at-4.39.46-pm%20%281%29%20%281%29%20%281%29 %20%281%29.png)
