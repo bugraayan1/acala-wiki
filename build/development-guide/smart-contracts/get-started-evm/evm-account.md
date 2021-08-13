@@ -1,89 +1,88 @@
-# Setup EVM Account
+# EVM Hesabı Kur
 
-## **Single Wallet, Single Account Experience**
+## **Tek Cüzdan, Tek Hesap Deneyimi**
 
-Users can use **one extension/wallet**, and **a single Substrate account** to interact with the Substrate runtime, contracts in EVM, and wasm contracts or a hybrid of these. If a user wants to use a particular Ethereum address, then simply link it with his/her Substrate address \(basically proving the user owns both addresses\), thereafter the user can just use the Substrate account with [Polkadot{js} extension](https://wiki.polkadot.network/docs/en/learn-account-generation) or alike to sign any Ethereum transactions seamlessly.
+Kullanıcılar, Substrate çalışma zamanı, EVM'deki sözleşmeler ve wasm sözleşmeleri veya bunların bir karışımı ile etkileşim kurmak için **tek bir uzantı/cüzdan** ve **tek bir Substrat hesabı** kullanabilir. Bir kullanıcı belirli bir Ethereum adresini kullanmak isterse, bunu Substrate adresiyle \(temelde kullanıcının her iki adresin de sahibi olduğunu kanıtlayarak\) bağlamanız yeterlidir, bundan sonra kullanıcı Substrate hesabını [Polkadot{js} uzantılı] kullanabilir (https://wiki.polkadot.network/docs/en/learn-account-generation) veya benzeri herhangi bir Ethereum işlemini sorunsuz bir şekilde imzalamak için.
 
-This allows users to use all functionalities within Acala and cross-chain capabilities without managing multiple accounts or wallets.
+Bu, kullanıcıların birden fazla hesabı veya cüzdanı yönetmeden Acala ve çapraz zincir yetenekleri içindeki tüm işlevleri kullanmalarına olanak tanır.
 
-## Setup EVM Account
+## EVM Hesabının Kurulumu
 
-A user on Acala will always have a Substrate-based account that enables users to easily navigate multiple blockchains and sign any \(EVM and Susbtrate\) transactions with a single account. Read more on Acala Substrate Account [here](https://wiki.acala.network/learn/basics/acala-account). Follow the guide [here](https://wiki.acala.network/learn/get-started#create-a-polkadot-account) or [here](https://wiki.polkadot.network/docs/en/learn-account-generation) to generate a Substrate account.
+Acala'daki bir kullanıcının her zaman, kullanıcıların birden fazla blok zincirinde kolayca gezinmesini ve herhangi bir \(EVM ve Susbtrate\) işlemini tek bir hesapla imzalamasını sağlayan Substrate tabanlı bir hesabı olacaktır. Acala Substrate Hesabı hakkında daha fazla bilgiye [buradan] (https://wiki.acala.network/learn/basics/acala-account) ulaşabilirsiniz. Bir Substrate hesabı oluşturmak için [buradaki](https://wiki.acala.network/learn/get-started#create-a-polkadot-account) kılavuzu veya [buradaki](https://wiki.polkadot.network/docs/en/) dokümanlara göz atabilirsiniz.  
 
-To enable Single Account and use Acala EVM, you either
+Tek Hesabı ve Acala EVM'yi kullanmak için
 
-1. Bind an auto-generated Ethereum address OR
-2. Bind an existing Ethereum account to the Substrate account
+1. Otomatik olarak bir Ethereum adresi VEYA
+2. Mevcut bir Ethereum için Substrate eski statüsündedir.
 
-### **1. Bind an auto-generate EVM Account**
+### **1. Otomatik oluşturulan bir EVM Hesabını**
 
-A user can generate an EVM address for each Substrate account. The user then can bind the EVM address to the Substrate account, so balances of native tokens e.g. DOT, renBTC, aUSD etc. on the Substrate account, are then available on the EVM address to use.
+Bir kullanıcı, onun Substrate hesabı için bir EVM adresi süsleme. Kullanıcı daha sonra EVM adresi Alt tabakayı bağlayabilir, yöresel belirteçlerin bakiyeleri ör. Substrat hesabındaki DOT, renBTC, aUSD vb. EVM'de kullanım hazır hale gelir.
 
-In the Acala EVM, if funds are sent to a Substrate account without an associated EVM address, an EVM address will be automatically generated and bound with the Substrate account.
+Acala, EVM adresiyle ilişkili bir EVM adresi'nde bir EVM adresi olmayana, otomatik olarak bir EVM adresiul ve Substrate oluşturVM ile bağlanacaktır.
 
-Balances are automatically synchronized between the Substrate account and the associated EVM address. For example, a user teleports 10 renBTC to Acala, his/her balance will be shown in the Substrate account, the balance will also be shown and transferrable in the EVM address.
+Bakiyeler, Substrate hesabı ve ilişkili EVM adresi arasında otomatik olarak senkronize edilir. Örneğin bir kullanıcı 10 renBTC'nin ışınımları Acala'ya ışıklar, bakiyesi hesabında gösterilir, bakiyesi de EVM üzerinden gösterilebilir ve aktarılabilir.
 
-#### EVM Address Generation
+#### EVM Adres oluşturma
 
-The EVM Address is generated using the `blake2_256` hash function with a prefix `evm` and the associated Substrate account as input. Check out the source code [here](https://github.com/AcalaNetwork/Acala/blob/master/modules/evm-accounts/src/lib.rs#L185-L186).
+EVM Adresi, "evvm" öneki ve giriş olarak ilişkili alt hesaplayla "blade ödemeden2_256" karma ödemeden. Kaynak koduna [buradan] bakabilirsiniz. (https://github.com/AcalaNetwork/Acala/blob/master/modules/evm-accounts/src/lib.rs#L185-L186).
 
 ```text
 blake2_256(“evm:” ++ account_id)[0..20]
 ```
 
-#### Generate an EVM Address via EVM Playground
+#### EVM Playground aracılığıyla bir EVM Adresi Oluşturun
 
-Navigate to the [EVM Playground](https://evm.acala.network/#/evmAccount) \(a web app to test various Acala EVM functionalities\).
+[EVM Playground](https://evm.acala.network/#/evmAccount) \(çeşitli Acala EVM işlevlerini test etmek için bir web uygulaması\) öğesine gidin.
 
-Navigate to the `Setup EVM Account` tab if you are not already on it.
+Henüz üzerinde değilseniz, `Setup EVM Account` sekmesine gidin.
 
 ![](../../../../.gitbook/assets/screen-shot-2021-02-03-at-10.52.25-am.png)
 
-**Step 1: Select a Substrate Account**
+**Adım 1: Bir Substrat Hesabı Seçin**
 
-If you have yet installed the Polkadot{js} extension and created an account, please do so by following the steps [here](https://wiki.polkadot.network/docs/en/learn-account-generation#polkadotjs-browser-plugin).
+Polkadot{js} uzantısını henüz yüklediyseniz ve bir hesap oluşturduysanız, lütfen [buradaki](https://wiki.polkadot.network/docs/en/learn-account-generation#polkadotjs-browser) adımları uygulayarak bunu yapın. -Eklenti).
 
-If the account is created and the extension is installed correctly, the account should be available in the dropdown.
+Hesap oluşturulduysa ve uzantı doğru şekilde yüklendiyse, hesap açılır menüde mevcut olmalıdır.
 
-Click on the `Faucet` Button to fund the account, as it will need to send a transaction to the Acala blockchain later to bind the accounts.
+Hesapları bağlamak için daha sonra Acala blok zincirine bir işlem göndermesi gerekeceğinden, hesaba para yatırmak için `Musluk` Düğmesine tıklayın.
 
 ![](../../../../.gitbook/assets/screen-shot-2021-02-03-at-10.53.47-am.png)
 
-**Step 2: Choose Option 1 to Bind an auto-generated EVM address**
+**Adım 2: Otomatik olarak oluşturulmuş bir EVM adresini Bağlamak için Seçenek 1'i seçin**
 
-**Step 3: Bind**
+**Adım 3: Bağlayın**
 
-You can see the generated EVM address under Step 3, and click the `Bind` button.
+Oluşturulan EVM adresini 3. Adımda görebilir ve `Bağla` butonuna tıklayabilirsiniz.
 
-Polkadot{js} extension will prompt you to enter a password or use the saved password, and click the `Sign the transaction` Button.
+Polkadot{js} uzantısı sizden bir şifre girmenizi veya kayıtlı şifreyi kullanmanızı isteyecek ve `İşlemi imzala` Düğmesine tıklayın.
 
 ![](../../../../.gitbook/assets/screen-shot-2021-02-03-at-10.54.49-am.png)
 
-If the `Bind` transaction was successful, you will get a message `An evm account already exists to bind this account` basically means the binding was recorded on-chain, and you can use the Polkadot extension for any EVM transactions.
+`Bind` işlemi başarılı olduysa, `Bu hesabı bağlamak için bir evm hesabı zaten var` mesajını alırsınız, temelde bağlama zincir üzerinde kaydedilmiştir ve herhangi bir EVM işlemi için Polkadot uzantısını kullanabilirsiniz.
 
 ![](../../../../.gitbook/assets/screen-shot-2021-02-03-at-5.01.33-pm.png)
 
-### **2. Bind an Existing Ethereum Account**
+### **2. Mevcut Bir Ethereum Hesabını Bağlayın**
 
-In any case, if users want to use an existing Ethereum account in Acala EVM, this address will need to be claimed and bound to their Subatrate account.
+Her durumda, kullanıcılar Acala EVM'de mevcut bir Ethereum hesabını kullanmak isterse, bu adresin talep edilmesi ve Subatrate hesabına bağlanması gerekecektir.
 
-_**One Substrate account can only be associated with one Ethereum address.**_ A Substrate address already linked to a generated EVM address can no longer link to an existing Ethereum address and vice versa.
+_**Bir Substrate hesabı yalnızca bir Ethereum adresiyle ilişkilendirilebilir.**_ Önceden oluşturulmuş bir EVM adresine bağlı bir Substrate adresi artık mevcut bir Ethereum adresine bağlanamaz ve bunun tersi de geçerlidir.
 
-Binding an existing Ethereum account requires users to prove they own the Ethereum account private key, by signing a message, include it in a `claim` transaction and send it to the Acala network.
+Mevcut bir Ethereum hesabını bağlamak, kullanıcıların bir mesajı imzalayarak Ethereum hesabı özel anahtarına sahip olduklarını kanıtlamalarını, bunu bir "talep" işlemine dahil etmelerini ve Acala ağına göndermelerini gerektirir.
 
-This feature is coming soon in our next release.
+Bu özellik, bir sonraki sürümde yakında geliyor.
 
-#### Use Cases
+#### Kullanım Örnekleri
 
-Below are two potential use cases of binding an existing Ethereum address.
+Aşağıda, mevcut bir Ethereum adresini bağlamanın iki olası kullanım durumu bulunmaktadır.
 
-**Use Case 1**
+** Durum 1'i kullanın**
 
-For example, a DeFi protocol on Ethereum is now expanding its operation to Polkadot, by deploying their contracts on the Acala network. They will this new branch by airdropping tokens to their existing users if they also use the protocols on Acala.
+Örneğin, Ethereum üzerindeki bir DeFi protokolü, sözleşmelerini Acala ağına dağıtarak operasyonunu Polkadot'a genişletiyor. Acala'daki protokolleri de kullanıyorlarsa, bu yeni şubeyi mevcut kullanıcılarına jetonlar bırakarak yapacaklar.
 
-The easiest way is to airdrop tokens to existing Ethereum addresses on Acala. Hence users would just bind their current Ethereum address to a Substrate address, use it for any EVM transactions, and receive airdrops.
+En kolay yol, jetonları Acala'daki mevcut Ethereum adreslerine hava yoluyla bırakmaktır. Bu nedenle kullanıcılar, mevcut Ethereum adreslerini bir Substrate adresine bağlayacak, herhangi bir EVM işlemi için kullanacak ve airdrop alacaklardır.
 
-**Use Case 2**
+** Durum 2'yi kullanın**
 
-For DApps like [Linkdrop](https://linkdrop.io/), users are required to sign messages using Ethereum private key. Using Linkdrop on Acala, would require users to claim their existing Ethereum address, and bind it to their Substrate account. Thereafter they can send transactions on behalf of the Ethereum account.
-
+[Linkdrop](https://linkdrop.io/) gibi DApp'ler için, kullanıcıların Ethereum özel anahtarını kullanarak mesajları imzalamaları gerekir. Acala'da Linkdrop kullanmak, kullanıcıların mevcut Ethereum adreslerini talep etmelerini ve bunu Substrate hesaplarına bağlamalarını gerektirir. Daha sonra Ethereum hesabı adına işlem gönderebilirler.
