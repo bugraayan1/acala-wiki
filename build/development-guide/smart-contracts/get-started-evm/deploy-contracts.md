@@ -1,118 +1,127 @@
-# Deploy Contracts
+# Kontratları Çalıştırma
 
-The `Acala EVM Playground` is useful to test various functionalities of Acala EVM. It’s a fork from parity `canvas-ui`.
+Acala EVM Playground, Acala EVM'nin çeşitli fonksiyonlarını test etmek için kullanışlıdır. Bu, "canvas-ui" paritesinden bir çatallanmadır.
 
-## **1. Setup**
+### **1. Kurulum**
 
-To deploy your smart contract you can use our testnet or you can run your local dev node.
+Akıllı sözleşmenizi dağıtmak için test ağımızı kullanabilir veya yerel geliştirme düğümünüzü çalıştırabilirsiniz.
 
-### Run your own dev node\*\*
+#### Kendi geliştirme düğümünüzü çalıştırın**
 
-To run your dev node, you can: 1. Build Acala project locally. You can follow the guide on how to do it here: [https://github.com/AcalaNetwork/Acala\#3-building](https://github.com/AcalaNetwork/Acala#3-building). Once you have built Acala you can start an EVM ready local dev node by running the following command:
+Geliştirme düğümünüzü çalıştırmak için şunları yapabilirsiniz:
+1. Acala projesini yerel olarak oluşturun.
+    Nasıl yapılacağına ilişkin kılavuzu buradan takip edebilirsiniz:
+    [https://github.com/AcalaNetwork/Acala#3-building](https://github.com/AcalaNetwork/Acala#3-building). Acala'yı kurduktan sonra, aşağıdaki komutu çalıştırarak bir EVM hazır yerel geliştirme düğümü başlatabilirsiniz:
 
-```text
+```bash=
 make run-eth;
 ```
+2. Önceden oluşturulmuş Acala Docker görüntüsünü kullanın.
+    Makinenizde Docker'ın kurulu olması gerekir. Kurulum talimatlarını buradan takip edebilirsiniz: [Docker'ı Kur](https://docs.docker.com/get-docker/). Docker çalıştığında, son acala görüntüsünü çekmeniz ve çalıştırmanız gerekir:
+    
+```shell=
+docker pull acala/acala-node:latest
+docker run -p 9944:9944 acala/acala-node:latest --name "calling_home_from_a_docker_container" --rpc-external --ws-external --rpc-cors=all --dev
+```
 
-1. Use the prebuilt Acala Docker image.
-
-   You need to have Docker installed in your machine. You can follow the installation instructions here: [Install Docker](https://docs.docker.com/get-docker/). Once docker is running you need pull the last acala image and to run it:
-
-   ```text
-   docker pull acala/acala-node:latest
-   docker run -p 9944:9944 acala/acala-node:latest --name "calling_home_from_a_docker_container" --rpc-external --ws-external --rpc-cors=all --dev
-   ```
-
-Once your node is running you should see something similar to this in your terminal window:
+Düğümünüz çalıştığında, terminal pencerenizde buna benzer bir şey görmelisiniz:
 
 ![](https://i.imgur.com/MQEURQr.png)
 
-After your dev node is up and running you can set the Acala EVM playground to point to your node by clicking the dropdown in the bottom left corner and selecting `Local Node`.
+Geliştirme düğümünüz çalışmaya başladıktan sonra, sol alt köşedeki açılır menüyü tıklayıp 'Yerel Düğüm'ü seçerek Acala EVM çalışma alanını düğümünüzü gösterecek şekilde ayarlayabilirsiniz.
 
 ![](https://i.imgur.com/pOfQb8z.png)
 
-Running the local dev node will prepopulate the `Accounts` dropdowns with pre-funded developer accounts.
+Yerel geliştirme düğümünü çalıştırınca, önceden finanse edilen geliştirici hesaplarıyla "Hesaplar" açılır listelerini önceden dolduracaktır.
 
-**Deploy to our test network**
+**Test ağımızı çalıştırma**
 
-To deploy to our test network you need to have the [polkadot{.js}](https://polkadot.js.org/extension/) wallet extension installed in your browser.
+Test ağımıza çalıştırmak için tarayıcınızda [polkadot{.js}](https://polkadot.js.org/extension/) cüzdan uzantısının yüklü olması gerekir.
 
-Once you have the extension installed, you can bind your accounts with an EVM address and get test network funds on the `Setup EVM Account` page on the Acala EVM playground. For more in-depth instructions, read the documentation [here](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/evm-account).
+Uzantıyı kurduktan sonra, Acala EVM çalışma alanında bulunan 'EVM Hesabı Kur' sayfasından hesaplarınızı bir EVM adresi ile bağlayabilir ve test ağı fonları alabilirsiniz. Daha ayrıntılı talimatlar için [buradaki](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/evm-account) belgeleri okuyun.
 
-**Note:** For the remainder of this page we will assume you are using a local dev node. If you are deploying to the test network using the `polkadot{.js}` extension simply replace the accounts `Alice`, and `Bob` with the accounts you have set up in your extension.
+**Not:** Bu sayfanın geri kalanında yerel bir geliştirme düğümü kullandığınızı varsayacağız. Test ağına 'polkadot{.js}' uzantısını kullanarak dağıtım yapıyorsanız, 'Alice' ve 'Bob' hesaplarını uzantınızda oluşturduğunuz hesaplarla değiştirmeniz yeterlidir.
 
-## **2. Upload Contract ABI & bytecode**
+### **2. Sözleşme ABI ve bayt kodunu yükleyin**
 
-Upload `BasicToken` ABI & bytecode file by navigating to [https://evm.acala.network/](https://evm.acala.network/).
+[https://evm.acala.network/](https://evm.acala.network/) adresine giderek "BasicToken" ABI ve bayt kodu dosyasını yükleyin.
 
-Go to the `Upload` tab.
+"Yükle" sekmesine gidin.
 
 ![](https://i.imgur.com/Ge3IwiM.png)
 
-Fill in the contract name, then upload the contract file `BasicToken.json`.
+
+Sözleşme adını girin, ardından `BasicToken.json` sözleşme dosyasını yükleyin.
 
 ![](https://i.imgur.com/kRM8Mfb.png)
 
-It will then display a list of available methods in the contract. Then click `Upload`.
+Daha sonra sözleşmede mevcut yöntemlerin bir listesini görüntülenecektir. Ardından 'Yükle'yi tıklayın.
 
-## **3. Deploy the Contract**
+### **3. Kontratı Çalıştırma**
 
-After uploading the ABI & bytecode file, the Playground will automatically navigate to the `Deploy` step. If not, just select `Deploy` in the left sidebar. `BasicToken` shall appear in the `ABI bundles`.
+ABI ve bayt kodu dosyasını yükledikten sonra, Oyun Alanı otomatik olarak "Dağıt" adımına gidecektir. Değilse, sol kenar çubuğundan "Dağıt"ı seçin. "BasicToken", "ABI paketlerinde" görünecektir.
 
-Click the `Deploy` button, and choose `Alice` \(or your account if using the browser extension\) as the `deployment account`.
+'Dağıt' düğmesini tıklayın ve 'dağıtım hesabı' olarak 'Alice'i (veya tarayıcı uzantısını kullanıyorsanız hesabınızı) seçin.
 
 ![](https://i.imgur.com/FfoYEFU.png)
 
-Set the initial supply \(e.g. `1000`\) and press `Deploy`.
+İlk kaynağı \(ör. "1000"\) ayarlayın ve "Dağıt"a basın.
 
 ![](https://i.imgur.com/wY0YG54.png)
 
-After confirming the transaction you should be automatically navigated to the `Execute` section. Or you can navigate there manually by clicking "Execute" on the left sidebar.
+İşlemi onayladıktan sonra otomatik olarak 'Yürüt' bölümüne gitmelisiniz. Veya sol kenar çubuğundaki "Yürüt" düğmesini tıklayarak oraya manuel olarak gidebilirsiniz.
 
 ![](https://i.imgur.com/wyrpMIv.png)
 
-## **4. Interact with the Contract**
 
-Navigate to the `Execute` tab. Find the deployed `BasicToken` contract and Click the `Execute` button on the bottom of the "BasicToken" box.
+### **4. Sözleşmeyle Etkileşime Geçin**
 
-## **5. Query Balances**
+"Yürüt" sekmesine gidin. Dağıtılan "BasicToken" sözleşmesini bulun ve "BasicToken" kutusunun altındaki "Execute" düğmesini tıklayın.
 
-To perform a query on an account's balance, do the following steps:
 
-1. Select `Alice` from the `Call from Account` dropdown. This is the account used to send the transaction.
-2. Pick `balanceOf` from the `Message to Send` dropdown.
-3. Find Alice’s EVM Address under `Call from Account`, copy and paste it in the `account: address` input.
+### **5. Bakiyeleri Sorgula**
 
+Bir hesabın bakiyesini sorgulamak için aşağıdaki adımları uygulayın:
+
+1. 'Hesaptan Ara' açılır menüsünden 'Alice'i seçin. Bu, işlemi göndermek için kullanılan hesaptır.
+
+2. 'Gönderilecek Mesaj' açılır menüsünden 'balanceOf'u seçin.
+
+3. 'Hesaptan Ara' altında Alice'in EVM Adresini bulun, kopyalayıp 'hesap: adres' girişine yapıştırın.
 ![](https://i.imgur.com/xH1j0ph.png)
 
-**Note:** Solidity contracts have two types of methods: `views` and `executable` methods.
+**Note:** Solidity kontratları iki tip metoda sahiptir: `views` ve `executable` metodları.
 
-* `Views` are used to query information from the blockchain without writing data to it. `Views` transactions are free. The Playground uses the `Call` button to indicate this.
-* `Executable` methods can write data onto the blockchain, and these transactions aren’t free. Click the `Execute` button to execute it.
+- "Views", blok zincirine veri yazmadan bilgi sorgulamak için kullanılır. 'Views' işlemleri ücretsizdir. Çalışma Alanı bunu belirtmek için "Ara" düğmesini kullanır.
+- 'Executable' yöntemler blok zincirine veri yazabilir ve bu işlemler ücretsiz değildir. Yürütmek için 'Executable' düğmesini tıklayın.
 
-Finally, click `Call` at the bottom, and `Call results` should show the BasicToken balance of Alice \(1000\).
+Son olarak, alttaki 'Ara'yı tıklayın ve 'Çağrı sonuçları' Alice'in (1000) BasicToken bakiyesini göstermelidir.
 
 ![](https://i.imgur.com/GS7Znys.png)
 
-## **6. Transfer**
+### **6. Transfer Yapma**
 
-Now let's try transferring BasicTokens to Bob’s Account.
+Şimdi BasicTokens'i Bob'un Hesabına aktarmayı deneyelim.
 
-1. Select `Alice` from the account dropdown.
-2. Select `transfer` from the `Message to Send` dropdown.
-3. Select Bob’s account \(don't forget to bind EVM address to BOB's account how we did for Alice\) from the `Call from Account` dropdown, then copy its `EVM address` and paste it in the `recipient address` input box. \(Remember to switch `Call from Account` back to `Alice`\)
-4. Enter transfer amount in the `amount: unit256` argument box, note the token has a standard 18 decimals.
-5. Click `Execute`.
+1. Hesap açılır menüsünden 'Alice'i seçin.
+
+2. 'Gönderilecek Mesaj' açılır menüsünden 'aktarım'ı seçin.
+
+3. 'Hesaptan Ara' açılır menüsünden Bob'un hesabını seçin (Alice için yaptığımız gibi BOB'nin hesabına EVM adresini bağlamayı unutmayın), ardından 'EVM adresini' kopyalayın ve 'alıcı adresi' giriş kutusuna yapıştırın . ("Hesaptan Ara"yı tekrar "Alice" olarak değiştirmeyi unutmayın)
+
+4. "amount: unit256" bağımsız değişken kutusuna transfer tutarını girin, belirtecin standart 18 ondalık basamağa sahip olduğunu unutmayın.
+
+5. 'Yürüt'e tıklayın.
 
 ![](https://i.imgur.com/l2utsuN.png)
 
-A notification would pop-up to confirm the transaction is successful.
+İşlemin başarılı olduğunu onaylamak için bir bildirim açılır.
 
-Now check the balances of Alice and Bob, and confirm that they have changed. Alice's account:
+Şimdi Alice ve Bob'un bakiyelerini kontrol edin ve değiştiklerini onaylayın.
+Alice'in hesabı:
 
 ![](https://i.imgur.com/SCLwxRk.png)
 
-Bob's account:
+Bob'un hesabı:
 
 ![](https://i.imgur.com/pi3AKiN.png)
-
