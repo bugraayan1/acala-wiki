@@ -1,56 +1,56 @@
-# EVM Playground
+# EVM Çalışma Ortamı
 
-We have created a web application - **Acala EVM Playground** to test various functionalities of Acala EVM. It’s a fork from parity `canvas-ui`.
+Acala EVM'nin çeşitli fonksiyonlarını test etmek için bir web uygulaması - **Acala EVM Çalışma Ortamı** oluşturduk. Bu, "canvas-ui" paritesinden bir çatallanmadır.
 
-To launch the Playground, please navigate to [https://evm.acala.network/](https://evm.acala.network/).
+Ortamı çalıştırmak için [https://evm.acala.network/](https://evm.acala.network/) adresini kullanabilirsiniz.
 
-By default, the Playground is connected to the Acala test network. It can also be connected it to a local node. If you've used the Playground before, the connection information may be cached.
+Oyun Alanı varsayılan olarak Acala test ağına bağlıdır. Ayrıca yerel bir düğüme de bağlanabilir. Playground'u daha önce kullandıysanız, bağlantı bilgileri önbelleğe alınabilir.
 
-### Set Up Node Connection
+### Düğüm Bağlantısının Kurulumu
 
-Click on the connection tab at the bottom left corner of the Playground.
+Oyun Alanının sol alt köşesindeki bağlantı sekmesine tıklayın.
 
 ![](https://i.imgur.com/9qnD9Gq.png)
 
-Click on the `Node to connect to` dropdown to choose a node you want to connect to
+Bağlanmak istediğiniz düğümü seçmek için `Bağlanılacak düğüm` açılır menüsüne tıklayın
 
-- Select `Local Node` to connect to your local Acala node.
-- Select `Acala` to connect to deployed Acala test network.
-- Click `Use custom endpoint` to enter a custom Websocket URL
+- Yerel Acala düğümünüze bağlanmak için 'Yerel Düğüm'ü seçin.
+- Dağıtılan Acala test ağına bağlanmak için `Acala`yı seçin.
+- Özel bir Websocket URL'si girmek için "Özel uç noktayı kullan"ı tıklayın
 
 ![](https://i.imgur.com/eHAdxLb.png)
 
 ### Bind EVM address
 
-To use smart contracts, you will need to have an EVM address. By default, we don't attach the address to the user's account, and users need to claim it. Claiming an EVM account is a transaction, and you need to have tokens to pay for it.
-If you're running your Acala node and using standard Development accounts (Alice, Bob), you have enough funds. Though using provided by Acala test network, you need to get funds using a faucet. 
-Navigate to EVM account settings, clicking on "Setup EVM Account" in the top left corner.
+Akıllı sözleşmeleri kullanmak için bir EVM adresinizin olması gerekir. Varsayılan olarak, adresi kullanıcının hesabına eklemeyiz ve kullanıcıların adresi talep etmesi gerekir. Bir EVM hesabı talep etmek bir işlemdir ve bunun için ödeme yapmak için jetonlarınızın olması gerekir.
+
+Acala düğümünüzü çalıştırıyorsanız ve standart Geliştirme hesapları (Alice, Bob) kullanıyorsanız, yeterli paranız vardır. Acala test ağı tarafından kullanılmasına rağmen, bir "faucet" kullanarak para kazanmanız gerekir.
+Sol üst köşedeki "EVM Hesabını Kur" seçeneğine tıklayarak EVM hesap ayarlarına gidin.
 ![](https://i.imgur.com/F6UTXtm.png)
-Next, select a substrate account in "Step 1". If you aren't using the local node you will see a "Faucet" button under the selected account. 
-Click it to receive test tokens.
-And finally, click "Bind" button on the bottom to attach generated EVM to the current account. Confirm transaction from your Polkadot.js extension.
-You should receive a confirmation.
+Ardından, "Adım 1"de bir alt tabaka hesabı seçin. Yerel düğümü kullanmıyorsanız, seçilen hesabın altında bir "Faucet" düğmesi göreceksiniz.
+Test jetonlarını almak için tıklayın.
+Ve son olarak, oluşturulan EVM'yi cari hesaba eklemek için alttaki "Bağla" düğmesine tıklayın. Polkadot.js uzantınızdan işlemi onaylayın.
+Bir onay almalısınız.
 
-### Check Balance
+### Bakiye Kontrolü
 
-Let’s check Alice's DOT balance. On the left sidebar click `Execute`.
+Alice'in DOT bakiyesini kontrol edelim. Sol kenar çubuğunda 'Yürüt'ü tıklayın.
 
-A list of native token contracts would appear e.g. DOT, aUSD, ACA, renBTC, etc. These native tokens \(including cross-chain assets like renBTC\) are exposed as pre-compiled contracts that would otherwise not be available in an EVM. Their supply, balances on accounts and functions are all available in EVM.
+Yerel belirteç sözleşmelerinin bir listesi görünecektir; DOT, aUSD, ACA, renBTC, vb. Bu yerel jetonlar \(renBTC gibi zincirler arası varlıklar dahil\), aksi takdirde bir EVM'de mevcut olmayacak olan önceden derlenmiş sözleşmeler olarak sunulur. Tedarikleri, hesaplardaki bakiyeler ve işlevlerin tümü EVM'de mevcuttur.
 
-Select `DOT` and press `Execute` under it.
-
+'DOT'u seçin ve altındaki 'Yürüt'e basın.
 ![](https://i.imgur.com/gGqwRZM.png)
 
-Pick Alice from the `Call from Account`.
+'Hesaptan Çağrı'dan Alice'i seçin.
 
-Pick `balanceOf` from `Message to Send`.
+'Gönderilecek Mesaj'dan 'balanceOf'u seçin.
 
-Notice `EVM Address` under Alice's account, copy and paste it to the `owner: address` argument field.
+Alice'in hesabının altındaki "EVM Adresi"ne dikkat edin, kopyalayıp "sahip: adres" bağımsız değişken alanına yapıştırın.
 
-Click the `Call` button to execute.
+Yürütmek için "Ara" düğmesini tıklayın.
 
 ![](https://i.imgur.com/8XQSarA.png)
 
-The `Call results` at the bottom should show Alice’s DOT account balance.
+En alttaki "Arama sonuçları", Alice'in DOT hesap bakiyesini göstermelidir.
 
 ![](https://i.imgur.com/2TNjbUM.png)
