@@ -91,10 +91,10 @@ Aşağıdakini `waffle.json` dosyasına yapıştırın.
   }
 ```
 
-This sets up the solidity compiler with version `0.6.2`, compiles contracts from the `./contracts` folder, and saves the bytecode output and ABI files to `./build` folder.
+Bu, `0.6.2` sürümü ile sağlamlık derleyicisini kurar, `./contracts` klasöründen sözleşmeleri derler ve bayt kodu çıktısını ve ABI dosyalarını `./build` klasörüne kaydeder.
 
 
-Now create the `./contracts` folder, and add the `BasicToken.sol` contract.
+Şimdi `./contracts` klasörünü oluşturun ve `BasicToken.sol` kontrasını ekleyinct.
 
 ```text
 
@@ -102,7 +102,7 @@ mkdir contracts
 touch contracts/BasicToken.sol
 ```
 
-Paste the following content into the `BasicToken.sol` file and save.
+Aşağıdaki içeriği `BasicToken.sol` dosyasına yapıştırın ve kaydedin.
 
 ```text
 pragma solidity ^0.6.0;
@@ -118,18 +118,17 @@ contract BasicToken is ERC20 {
 
 ```
 
-### **4. Compile the Smart Contract**
-Now compile the contract into ABI and bytecode. Run the following in the terminal
+### **4. Akıllı Sözleşmeyi Derleyin**
+Şimdi sözleşmeyi ABI ve bytecode olarak derleyin. Terminalde aşağıdakileri çalıştırın
 
 ```text
 yarn waffle
 ```
 
-### **5. Get the ABI file**
+### **5. ABI dosyasını alın**
 
-Waffle will then generate the output file `./build/BasicToken.json` into the `./build` folder. 
+Waffle daha sonra `./build/BasicToken.json` çıktı dosyasını `./build` klasörüne oluşturacaktır.
 
-Note: this file should be the same as the one created with Remix.
+Not: Bu dosya, Remix ile oluşturulanla aynı olmalıdır.
 
-Waffle also provides a full suite of testing utilities, check out their documentation and code samples [here](https://github.com/EthWorks/Waffle).
-
+Waffle ayrıca eksiksiz bir test araçları paketi sunar, belgelerine ve kod örneklerine [buradan](https://github.com/EthWorks/Waffle) göz atabilirsiniz.
