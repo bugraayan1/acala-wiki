@@ -1,2 +1,2 @@
-# Integration Guide
+# Entegrasyon Klavuzu
 
