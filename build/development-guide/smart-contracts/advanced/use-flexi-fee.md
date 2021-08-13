@@ -1,24 +1,23 @@
-# Upcoming Features
+# Yaklaşan Özellikler
 
-### Use Flexi Fee
+### Flexi Ücretini Kullanın
 
-DOT, aUSD, ACA, RenBTC, AMPL are all first-class fee tokens in Acala EVM, meaning that users can pay transaction fees in any of these tokens. 
+DOT, aUSD, ACA, RenBTC, AMPL, Acala EVM'de birinci sınıf ücret belirteçleridir, yani kullanıcılar bu belirteçlerden herhangi birinde işlem ücreti ödeyebilir.
 
-Details coming soon. 
+Detaylar çok yakında.
 
-### Acala DeFi Contracts
+### Acala DeFi Sözleşmeleri
 
-Acala's DeFi primitives \(stablecoin, staking derivative, and DeX\) are being made available as pre-compiled contracts, and will be composable inside Acala EVM.
+Acala'nın DeFi primitifleri \(stablecoin, staking türevi ve DeX\) önceden derlenmiş sözleşmeler olarak sunuluyor ve Acala EVM içinde oluşturulabilecek.
 
-Details coming soon.
+Detaylar çok yakında.
 
-### State Rent
+### Devlet Kirası
 
-A contract consumes storage on the blockchain, and thus should be charged for simply existing. This ensures that people don't take advantage of "free, unlimited storage". 
+Bir sözleşme, blok zincirindeki depolamayı tüketir ve bu nedenle, yalnızca mevcut olduğu için ücretlendirilmelidir. Bu, insanların "ücretsiz, sınırsız depolama" avantajından yararlanmamasını sağlar.
 
-This is not a new concept, there're EIP, pre-EIP and discussions to implement state rent in Ethereum. Parity already implements it in the native smart contract platform [Ink!](https://substrate.dev/docs/en/knowledgebase/smart-contracts/overview#smart-contracts).
+Bu yeni bir kavram değil, Ethereum'da devlet kirasını uygulamak için EIP, EIP öncesi ve tartışmalar var. Parity, bunu yerel akıllı sözleşme platformunda [Ink!](https://substrate.dev/docs/en/knowledgebase/smart-contracts/overview#smart-contracts) zaten uyguluyor.
 
-We now introduce this mechanism in Acala EVM. 
+Şimdi bu mekanizmayı Acala EVM'de tanıtıyoruz.
 
-Details coming soon.
-
+Detaylar çok yakında.
