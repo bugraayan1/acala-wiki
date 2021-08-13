@@ -1,10 +1,10 @@
 ---
-description: Need to be used when integrating applications.
+açıklama: Uygulamaları entegre ederken kullanılması gerekir.
 ---
 
-# Type Documentation
+# Tip Dokümantasyonu
 
-## Mandala TestNet Types
+## Mandala TestNet Türleri
 
 [https://github.com/AcalaNetwork/acala.js/blob/master/packages/type-definitions/src/json/types.json](https://github.com/AcalaNetwork/acala.js/blob/master/packages/type-definitions/src/json/types.json)
 
