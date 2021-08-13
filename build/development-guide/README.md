@@ -1,11 +1,8 @@
-# Developer Guide
+# Geliştirici Kılavuzu
 
-There are 4 ways to build with Acala: 
+Acala ile inşa etmenin 4 yolu vardır:
 
-1. Deploy permissioned protocol aka _**runtime modules/pallets on the Acala network**_. This is available now with more flexibility for customization & integration. Ren Protocol's Bitcoin bridge gateway is implemented this way. [Read more.](https://wiki.acala.network/build/development-guide/deploy-ecosystem-modules)
-2. Deploy permisionless smart contracts using _**Solidity on Acala EVM**_. This is fully composable with aggregated cross-chain liquidity like BTC and DOT, and Acala's existing DeFi stack, and is a landing pad for DApps to access the Polkadot ecosystem. Ampleforth is deployed this way. [Read more.](https://wiki.acala.network/build/development-guide/smart-contracts)
-3. Deploy smart contracts using _Ink!_ rust-based native smart contract platform. This is yet to be production-ready and will be made available on Acala later, but if you are interested, feel free to contact us and learn more. 
-4. Build a chain and _**connect with Acala using cross-chain message-passing protocol by Polkadot**_. We are currently deployed on Rococo as a parachain and are testing cross-chain communication, token transfers and other functionalities. If you are also a parachain \(or parathread when it's available\), and are ready to test cross-chain functionalities, please contact us for options. [Read more.](https://wiki.acala.network/build/development-guide/connect-via-xcmp)
-
-
-
+1. İzin verilen protokolü aka _**çalışma zamanı modüllerini/paletlerini Acala ağında dağıtın**_. Bu, artık özelleştirme ve entegrasyon için daha fazla esneklikle kullanılabilir. Ren Protokolü'nün Bitcoin köprü ağ geçidi bu şekilde uygulanmaktadır. [Devamını okuyun.](https://wiki.acala.network/build/development-guide/deploy-ecosystem-modules)
+2. _**Solidity on Acala EVM**_ kullanarak izinsiz akıllı sözleşmeleri devreye alın. Bu, BTC ve DOT gibi toplu zincirler arası likidite ve Acala'nın mevcut DeFi yığını ile tamamen birleştirilebilir ve DApp'lerin Polkadot ekosistemine erişmesi için bir iniş alanıdır. Ampleforth bu şekilde dağıtılır. [Devamını okuyun.](https://wiki.acala.network/build/development-guide/smart-contracts)
+3. _Ink!_ pas tabanlı yerel akıllı sözleşme platformunu kullanarak akıllı sözleşmeleri devreye alın. Bu henüz üretime hazır değil ve daha sonra Acala'da kullanıma sunulacak, ancak ilgileniyorsanız, bizimle iletişime geçmekten ve daha fazla bilgi almaktan çekinmeyin.
+4. Polkadot'un zincirler arası mesaj iletme protokolünü kullanarak bir zincir oluşturun ve  _**Acala ile bağlantı kurun**_. Şu anda bir parachain olarak Rokoko'da konuşlandırılmış durumdayız ve zincirler arası iletişimi, jeton transferlerini ve diğer işlevleri test ediyoruz. Ayrıca bir parachain \(veya mevcut olduğunda parathread\) iseniz ve zincirler arası işlevleri test etmeye hazırsanız, seçenekler için lütfen bizimle iletişime geçin. [Devamını okuyun.](https://wiki.acala.network/build/development-guide/connect-via-xcmp)
