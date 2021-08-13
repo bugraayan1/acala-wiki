@@ -1,8 +1,8 @@
-# Use Native & Cross-chain Tokens
+# Yerel ve Zincirler Arası Jetonları Kullanın
 
-Smart Contract Dapps deployed in Acala EVM can directly use native and cross-chain assets such as DOT, ACA, aUSD, renBTC, etc. ERC-20 tokens deployed in EVM can also be made available at runtime level, to be listed in the DeX, or \(by governance approval\) to be used as fee tokens. Read more [here](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/composable-defi-stack).
+Acala EVM'de dağıtılan Akıllı Sözleşme Dapp'leri, DOT, ACA, aUSD, renBTC vb. gibi yerel ve zincirler arası varlıkları doğrudan kullanabilir. EVM'de dağıtılan ERC-20 jetonları, DeX'te listelenmek üzere çalışma zamanı düzeyinde de kullanılabilir hale getirilebilir. veya \(yönetim onayı ile\) ücret belirteçleri olarak kullanılacak. Daha fazlasını [buradan](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/composable-defi-stack) okuyun.
 
-## ERC20 Contract Addresses
+## ERC20 Sözleşme Adresleri
 
 | Token Ticker | ER20 Address |  |
 | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ Smart Contract Dapps deployed in Acala EVM can directly use native and cross-cha
 | Oracle | `0x0000000000000000000000000000000000000801` |  |
 | Schedule | `0x0000000000000000000000000000000000000802` |  |
 
-## Contract Methods
+## Kontrat Metodları
 
 ```javascript
 // Returns the currencyId of the token.
@@ -73,5 +73,5 @@ function increaseAllowance(address spender, uint256 addedValue) public returns (
 function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool);
 ```
 
-More details and source code [here](https://github.com/AcalaNetwork/predeploy-contracts#erc20-contracts).
+Daha fazla ayrıntı ve kaynak koduna [buradan](https://github.com/AcalaNetwork/predeploy-contracts#erc20-contracts) erişebilirsiniz.
 
