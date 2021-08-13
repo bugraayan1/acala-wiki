@@ -1,32 +1,31 @@
-# Connect to a Node
+# Bir Düğüme Bağlan
 
-To use Acala EVM, you need to connect to an Acala Node. You can either
+Acala EVM'yi kullanmak için bir Acala Node'a bağlanmanız gerekir. sen de yapabilirsin
 
-1. connect to a deployed test network \(maintained by Acala\) OR
-2. run a local Acala test node
+1. yerel bir Acala test düğümü çalıştırın
+2. konuşlandırılmış bir test ağına bağlanın \(Acala tarafından sağlanır\)
 
-## **1. Connect to a deployed test network**
+### **1. Yerel bir Acala test düğümü çalıştırın Yorum**
 
-Find all available testnet nodes [here](https://wiki.acala.network/learn/get-started/public-nodes#mandala-test-network-nodes). You can use [Acala Console](acala-console.md) to communicate with the node, and [EVM Playground](evm-playground.md) to deploy and execute contracts.
+Kendi düğümünüzü çalıştırmak için makinenize [Docker](https://www.docker.com/) yüklemiş olmanız gerekir. Yüklü değilse lütfen [buradaki](https://docs.docker.com/get-docker/) talimatları uygulayın.
 
-## **2. Run a local Acala test node**
+Docker'ın başarıyla yüklenip yüklenmediğini kontrol etmek için aşağıdaki komutu çalıştırın:
 
-Alternatively, you can run a local test node. To run your own node, you need to have installed [Docker](https://www.docker.com/) on your machine. If you don’t have it installed, please follow the instructions [here](https://docs.docker.com/get-docker/).
-
-To check whether Docker is successfully installed run the command below:
-
-```bash
+```text
 docker version
 ```
 
-If you receive the version number, you can start your local Acala node with the command below:
+Versiyon numarasını alırsanız, aşağıdaki komutla yerel Acala düğümünüzü başlatabilirsiniz:
 
-```bash
+```text
 docker pull acala/acala-node:latest
 docker run -it -p 9944:9944 -p 9933:9933 acala/acala-node:latest --dev --ws-external --rpc-external --rpc-cors=all
 ```
 
-The output of your node should look like this:
+Düğümünüzün çıktısı şöyle görünmelidir:
 
 ![](https://i.imgur.com/EyryyFs.png)
 
+### **2. Dağıtılmış bir test ağına bağlanın**
+
+Mevcut tüm test ağı düğümlerine [buradan](https://wiki.acala.network/learn/get-started/public-nodes#mandala-test-network-nodes) ulaşabilirsiniz.
