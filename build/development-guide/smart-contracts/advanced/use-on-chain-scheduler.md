@@ -1,16 +1,16 @@
-# Use On-chain Scheduler
+# Zincir Üzerinde Zamanlayıcıyı Kullan
 
-You can use the on-chain scheduler contract to schedule a recurring call to execute a given smart contract. Read more on use cases for the on-chain auto-scheduler [here](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/on-chain-scheduler).
+Belirli bir akıllı sözleşmeyi yürütmek üzere yinelenen bir çağrı planlamak için zincir üstü zamanlayıcı sözleşmesini kullanabilirsiniz. Zincir üstü otomatik zamanlayıcı için kullanım örnekleri hakkında daha fazla bilgi edinin [buradan](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/on-chain-scheduler ).
 
-Contract source code [here](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/on-chain-scheduler).
+Sözleşme kaynak kodu [burada](https://wiki.acala.network/learn/basics/acala-evm/acala-evm-composable-defi-stack/on-chain-scheduler).
 
-Note: the `min_delay` is minimum number of blocks after current blocks before the scheduled call will be called. i.e. Pass 0 means it will be scheduled to be called on next block. Calling `scheduleCall` with `min_delay = 5` on block 10 will scheduled the call on block `10 + 1 + 5 = 16`. If the block are full or there are too many other scheduled tasks, the scheduled call could be deferred to later blocks until there is enough remaining spaces in the block.
+Not: "min_delay", planlanmış arama çağrılmadan önceki mevcut bloklardan sonraki minimum blok sayısıdır. yani Pass 0, sonraki blokta çağrılması planlanacağı anlamına gelir. Blok 10'da "min_delay = 5" ile "scheduleCall" çağrılması, çağrıyı "10 + 1 + 5 = 16" bloğunda programlayacaktır. Blok doluysa veya çok fazla başka zamanlanmış görev varsa, zamanlanmış çağrı blokta yeterli boşluk kalana kadar sonraki bloklara ertelenebilir.
 
-## Contract Address
+## Kontrat Addresi
 
-ScheduleCall contract address: `0x0000000000000000000000000000000000000808`
+ScheduleCall sözleşme adresi: `0x000000000000000000000000000000000000808`
 
-## Contract Methods
+## Kontrat Metodları
 
 ```javascript
 // Schedule call the contract.
@@ -27,7 +27,7 @@ public
 returns (uint256, uint256); // Returns a task id that can be used to cancel or reschedule call.
 ```
 
-## Example
+## Örnek
 
-[Here's](https://github.com/AcalaNetwork/evm-examples/tree/master/scheduler) a recurring payment contract example using the scheduler.
+[İşte](https://github.com/AcalaNetwork/evm-examples/tree/master/scheduler) zamanlayıcıyı kullanan bir yinelenen ödeme sözleşmesi örneği.
 
