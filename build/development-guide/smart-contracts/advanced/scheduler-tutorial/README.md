@@ -1,4 +1,4 @@
-# Scheduler Tutorial
+# Zamanlayıcı Uygulaması
 
 {% page-ref page="setup.md" %}
 
