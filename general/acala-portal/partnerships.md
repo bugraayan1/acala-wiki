@@ -1,15 +1,15 @@
-# Alliance
+# Birliktelikler
 
 {% hint style="info" %}
 In alphabetical order.
 {% endhint %}
 
-## Founding Members
+## Kurucu Üyeler
 
 * [Laminar](https://laminar.one/)
 * [Polkawallet](https://polkawallet.io/)
 
-## **Partners**
+## **Partnerler**
 
 * [Arrington XRP Capital](http://arringtonxrpcapital.com/)
 * [Altonomy](https://www.altonomy.com/)
@@ -37,7 +37,7 @@ In alphabetical order.
 * [Zee Prime Capital](https://zeeprime.capital/)
 * [1confirmation](https://www.1confirmation.com/)
 
-## **Ecosystem Projects**
+## **Ekosistem Projeleri**
 
 * [Centrifuge](https://centrifuge.io/)
 * [Chainlink](https://chain.link/)
@@ -54,7 +54,7 @@ In alphabetical order.
 * [Subsocial](http://subsocial.network/)
 * [XANPOOL](https://xanpool.com/)
 
-## Proof-of-Liveness Partners
+## Yaşam Kanıtı Ortakları
 
 * [Ankr](https://www.ankr.com/)
 * [Chorus](https://chorus.one/)
