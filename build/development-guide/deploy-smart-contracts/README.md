@@ -1,4 +1,4 @@
-# Smart Contracts
+# Akıllı Kontratlar
 
-Coming Soon!
+Yakında!
 
