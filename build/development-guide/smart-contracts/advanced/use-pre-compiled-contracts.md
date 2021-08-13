@@ -1,4 +1,4 @@
-# Use Pre-compiled Contracts
+# Ön-derlemeli Kontratları Kullanın
 
-Coming soon.
+Yakında.
 
