@@ -2,7 +2,7 @@
 
 Bu eğitimde, kullanıcıları abone oldukları süre boyunca ödüllendiren otomatik bir abonelik hizmeti oluşturmak için Acala'nın zincir üstü zamanlayıcısını kullanacağız. Bir kullanıcı bu hizmete abone olabilir ve belirli bir süre geçtiğinde, sözleşme onları bazı jetonlarla ödüllendirecektir.
 
-## Bağımlılıkları Kur ve Yükle
+## Bağımlılıkların Kurulumu ve Uygulamanın Yüklenmesi
 
 Sıfırdan bir proje oluşturacağız, Waffle kullanarak inşa edeceğiz ve test edeceğiz. Akıllı sözleşmelerinizi Remix kullanarak oluşturmayı tercih ediyorsanız lütfen [bu](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix) sayfaya göz atın. .
 
