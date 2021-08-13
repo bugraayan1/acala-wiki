@@ -1,14 +1,13 @@
-# Connect via Polkadot/Kusama
+# Polkadot/Kusama ile bağlanın
 
-Currently, cross-chain message passing and parachains are only available on Polkadot's testnet [Rococo](https://wiki.polkadot.network/docs/en/build-parachains-rococo). Acala's testnet Mandala is now launched on Rococo, and is testing cross-chain token transfers, and other functionalities. 
+Şu anda, zincirler arası mesaj geçişi ve parachainler yalnızca Polkadot'un test ağında [Rokoko](https://wiki.polkadot.network/docs/en/build-parachains-rococo) mevcuttur. Acala'nın test ağı Mandala şimdi Rococo'da piyasaya sürüldü ve zincirler arası token transferlerini ve diğer işlevleri test ediyor.
 
-### Token Transfer
+### Jeton Transferi
 
-We have built `orml-xtokens` to implement the [Polkadot Cross-Consensus Message Format \(XCM\)](https://github.com/paritytech/xcm-format) for token transfers. 
+Belirteç transferleri için [Polkadot Cross-Consensus Message Format \(XCM\)](https://github.com/paritytech/xcm-format) uygulamak için "orml-xtokens" oluşturduk.
 
-* The source code for xtoken is [here](https://github.com/open-web3-stack/open-runtime-module-library/tree/sw/rococo-v1/xtokens).
-* Acala's Mandala testnet integration of this is [here](https://github.com/AcalaNetwork/Acala/blob/sw/rococo-v1/runtime/mandala/src/lib.rs)
-* Acala Mandala PC2 is live on Rococ [here](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains)
+* xtoken için kaynak kodu [burada](https://github.com/open-web3-stack/open-runtime-module-library/tree/sw/rococo-v1/xtokens).
+* Bunun Acala'nın Mandala testnet entegrasyonu [burada](https://github.com/AcalaNetwork/Acala/blob/sw/rococo-v1/runtime/mandala/src/lib.rs)
+* Acala Mandala PC2, Rococ'ta [burada](https://polkadot.js.org/apps/?rpc=wss://rococo-rpc.polkadot.io#/parachains) yayındadır.
 
-Please contact us if you'd like to try it out and run some cross-chain testing together with us!
-
+Denemek ve bizimle birlikte zincirler arası testler yapmak isterseniz lütfen bizimle iletişime geçin!
