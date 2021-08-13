@@ -1,8 +1,8 @@
-# Writing the Smart Contract
+# Akıllı Kontrat Yazma
 
-The smart contract we're writing is a basic automatic subscription. The user can deposit funds that will automatically be used up after a set number of blocks. Everytime the user "re-subscribes", they are given some tokens. The more times a user re-subscribes, the more tokens they are given every time they re-subscribe.
+Yazdığımız akıllı sözleşme, temel bir otomatik aboneliktir. Kullanıcı, belirli sayıda bloktan sonra otomatik olarak kullanılacak fonları yatırabilir. Kullanıcı her "yeniden abone olduğunda", onlara bazı jetonlar verilir. Bir kullanıcı ne kadar çok kez yeniden abone olursa, her yeniden abone olduğunda o kadar çok jeton verilir.
 
-Inside the `contracts` folder create `Scheduler.sol` paste the following code:
+"Contracts" klasörünün içine "Scheduler.sol" dosyasını oluşturun ve aşağıdaki kodu yapıştırın:
 
 ```text
 pragma solidity ^0.6.0;
@@ -23,13 +23,13 @@ abstract contract Scheduler {
 }
 ```
 
-This file describes the scheduler smart contract and what arguments you must supply to it in order to use it. But how does the scheduler work?
+Bu dosya, zamanlayıcı akıllı sözleşmesini ve onu kullanmak için ona hangi argümanları sağlamanız gerektiğini açıklar. Ancak zamanlayıcı nasıl çalışır?
 
-The Acala EVM integrates it's unique on-chain features to the EVM by using pre-compiled smart contracts that interact with Acala on the chain level. This allows us add new features that would be impossible on Ethereum while still letting developers use existing code and tooling to create dapps that leverage these features. These pre-compiled smart contracts have static, known addresses on the Acala EVM making it incredibly easy to use them in your code.
+Acala EVM, zincir düzeyinde Acala ile etkileşime giren önceden derlenmiş akıllı sözleşmeler kullanarak benzersiz zincir üstü özelliklerini EVM'ye entegre eder. Bu, Ethereum'da imkansız olacak yeni özellikler eklememize izin verirken, geliştiricilerin bu özelliklerden yararlanan dapp'ler oluşturmak için mevcut kodu ve araçları kullanmasına izin verir. Bu da, önceden derlenmiş akıllı sözleşmeler, Acala EVM'de statik, bilinen adreslere sahiptir ve bunları kodunuzda kullanmayı inanılmaz derecede kolaylaştırır.
 
-## Creating a New Contract
+## Yeni Sözleşme Oluşturma
 
-Let's create our smart contract file by creating a `Subscription.sol` file within our `contracts` folder. In it add the following code:
+`Contracts` klasörümüz içerisinde `Subscription.sol` dosyası oluşturarak akıllı sözleşme dosyamızı oluşturalım. İçinde aşağıdaki kodu ekleyin:
 
 ```text
 pragma solidity ^0.6.0;
@@ -41,9 +41,9 @@ contract SubscriptionToken {
 }
 ```
 
-Here you can see we're importing the abstract class that describes the `Scheduler` smart contract and pointing our `scheduler` to it's address. Again, this is a pre-compiled smart contract with a static address. It will always live on chain at this address, no need to deploy your own version of it.
+Burada, 'Scheduler' akıllı sözleşmesini tanımlayan ve 'scheduler'ımızı onun adresine yönlendiren soyut sınıfı içe aktardığımızı görebilirsiniz. Yine, bu, statik bir adrese sahip önceden derlenmiş bir akıllı sözleşmedir. Bu adreste her zaman zincirde yaşayacak, kendi sürümünüzü dağıtmanıza gerek yok.
 
-Next lets set some state variables and create a constructor. Within the contract add the following:
+Ardından, bazı durum değişkenlerini ayarlayalım ve bir kurucu oluşturalım. Sözleşmeye aşağıdakileri ekleyin:
 
 ```text
 contract SubscriptionToken {
@@ -66,18 +66,18 @@ contract SubscriptionToken {
 }
 ```
 
-Here we added 6 state variables. Let's go through them one by one:
+Burada 6 durum değişkeni ekledik. Bunları tek tek inceleyelim:
 
-1. `owner`: The owner of the contract that will receive the subscriptions
-2. `subscriptionPrice`: The price to subscribe/re-subscribe
-3. `subscriptionPeriod`: The number of blocks before a user is automatically re-subscribed
-4. `balanceOf`: The number of native tokens in a user's balance to be used for the re-subscription cost
-5. `subTokensOf`: The number of subscription tokens a user has received
-6. `periodSubscribed`: The number of `subscriptionPeriod` a user has subscribed for. This will affect how many subscription tokens a user receives upon re-subscribing.
+1. `sahip`: Abonelikleri alacak sözleşmenin sahibi
+2. `subscriptionPrice`: Abone olma/yeniden abone olma fiyatı
+3. `subscriptionPeriod`: Bir kullanıcının otomatik olarak yeniden abone olmasından önceki blok sayısı
+4. "balanceOf": Bir kullanıcının bakiyesindeki yeniden abonelik maliyeti için kullanılacak yerel jeton sayısı
+5. `subTokensOf`: Bir kullanıcının aldığı abonelik jetonlarının sayısı
+6. 'periodSubscribed': Bir kullanıcının abone olduğu 'subscriptionPeriod' sayısı. Bu, bir kullanıcının yeniden abone olduktan sonra kaç tane abonelik jetonu alacağını etkiler.
 
-The constructor is self explanatory, all it does is set the first three state variables for the contract.
+Yapıcı kendini açıklayıcıdır, tek yaptığı sözleşme için ilk üç durum değişkenini ayarlamaktır.
 
-Next let's add the `subscribe`, and `unsubscribe` functions:
+Ardından "abone ol" ve "abonelikten çık" işlevlerini ekleyelim:
 
 ```text
 contract Subscription {
@@ -104,26 +104,26 @@ contract Subscription {
 }
 ```
 
-Here, the `subscribe` function ensures the user is depositing sufficient funds into the smart contract to subscribe at least one time, and that the user is not already subscribed. After that it sets the appropriate values in the contract's state variables.
+Burada, "abone ol" işlevi, kullanıcının en az bir kez abone olmak için akıllı sözleşmeye yeterli para yatırmasını ve kullanıcının henüz abone olmamasını sağlar. Bundan sonra, sözleşmenin durum değişkenlerinde uygun değerleri ayarlar.
 
-Finally, we call the scheduler contract:
+Son olarak, zamanlayıcı sözleşmesini çağırıyoruz:
 
 ```text
 scheduler.scheduleCall(address(this), 0, 50000, 100, subscriptionPeriod, abi.encodeWithSignature("pay(address)", msg.sender));
 ```
 
-Let's break this line down a bit:
+Bu satırı biraz açalım:
 
-- `adress(this)` is the address of the smart contract to call, in this case we are calling the same smart contract that is calling the schedule contract
-- `subscriptionPeriod` is the number of blocks from now it should try and execute this call (though it could be more!)
-- `abi.encodeWithSignature("pay(address)"` is the function to call within the smart contract (we'll define it next).
-- `msg.sender` is the value being passed to that function.
+- `adres(bu)` aranacak akıllı sözleşmenin adresidir, bu durumda zamanlama sözleşmesini çağıran akıllı sözleşmeyi çağırıyoruz
+- 'subscriptionPeriod', bundan sonra bu çağrıyı denemesi ve yürütmesi gereken blok sayısıdır (ancak daha fazla olabilir!)
+- `abi.encodeWithSignature("pay(address)"` akıllı sözleşme içinde çağrılacak fonksiyondur (bunu daha sonra tanımlayacağız).
+- "msg.sender", bu işleve iletilen değerdir.
 
-For more information on the rest of the arguments being passed to the `scheduler` contract scroll up to where we created `Scheduler.sol`.
+"Zamanlayıcı" sözleşmesine geçirilen argümanların geri kalanı hakkında daha fazla bilgi için "Scheduler.sol" dosyasını oluşturduğumuz yere gidin.
 
-The `unsubscribe` function simply resets the `periodSubscribed` state variable back to 0.
+"Unsubscribe" işlevi, "periodSubscribed" durum değişkenini 0'a geri döndürür.
 
-Now let's create the `pay` function that the scheduler is calling:
+Şimdi zamanlayıcının çağırdığı 'ödeme' fonksiyonunu oluşturalım:
 
 ```text
 contract Subscription {
@@ -149,17 +149,17 @@ contract Subscription {
 }
 ```
 
-Here we ensure the subscriber has enough funds to re-subscribe, and update the various state variables as necessary, giving the subscriber the same number of Subscription Tokens as the number of periods that they have subscribed in a row.
+Burada abonenin yeniden abone olmak ve gerektiğinde çeşitli durum değişkenlerini güncellemek için yeterli kaynağa sahip olmasını sağlarız ve aboneye arka arkaya abone oldukları dönem sayısı kadar Abonelik Simgesi veririz.
 
-Notice the first line of the function:
+İşlevin ilk satırına dikkat edin:
 
 ```text
 require(msg.sender == address(this), "No Permission");
 ```
 
-What this is saying is that only the contract itself can call this function. When we schedule a call using the `Scheduler` contract, it is not actually the scheduler calling the function but the function itself. The scheduler is just dispatching the call at a later time.
+Bu, yalnızca sözleşmenin kendisinin bu işlevi çağırabileceğini söylüyor. "Zamanlayıcı" sözleşmesini kullanarak bir çağrı planladığımızda, aslında işlevi çağıran zamanlayıcı değil, işlevin kendisidir. Zamanlayıcı, aramayı daha sonra gönderiyor.
 
-Finally let's add a `addFunds`, and `withdrawFunds` function so that the user can add more funds for subscriptions as well as withdraw the unused funds they have sent to the contract.
+Son olarak bir 'addFunds' ve 'withdrawFunds' işlevi ekleyelim, böylece kullanıcı abonelikler için daha fazla fon ekleyebilir ve sözleşmeye gönderdikleri kullanılmayan fonları çekebilir..
 
 ```text
 contract Subscription {
@@ -176,16 +176,16 @@ contract Subscription {
 }
 ```
 
-And that's it! We now have a fully functioning smart contract with automated subscriptions!
+İşte bu kadar! Artık otomatik aboneliklerle tamamen işleyen bir akıllı sözleşmemiz var!
 
-## Building
+## Bina
 
-To build the smart contract run the following in the project's root directory:
+Akıllı sözleşmeyi oluşturmak için projenin kök dizininde aşağıdakileri çalıştırın:
 
 ```text
 yarn build
 ```
 
-## Deploying
+## Dağıtım
 
-To deploy the smart contract follow the directions [here](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/deploy-contracts).
+Akıllı sözleşmeyi dağıtmak için [buradaki](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/deploy-contracts) yönergeleri izleyin.
