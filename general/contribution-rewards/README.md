@@ -1,119 +1,118 @@
 ---
-description: Records of some activity rules and rewards.
+tanım: Bazı etkinlik kuralları ve ödüllerin kayıtları.
 ---
 
-# Contribution & Rewards
+# Katkı ve Ödüller
 
-## AirDrops
+## Hava Damlaları
 
-You can now check your airdrop KAR & ACA balances on [https://apps.acala.network/wallet](https://apps.acala.network/wallet). The balances are recorded on-chain in the `airdrop` module, which will be used to allocate real tokens upon Karura Canary network and Acala mainnet genesis.
+Artık airdrop KAR ve ACA bakiyelerinizi [https://apps.acala.network/wallet](https://apps.acala.network/wallet) adresinden kontrol edebilirsiniz. Bakiyeler, gerçek jetonları Karura Canary ağı ve Acala ana ağı oluşumuna tahsis etmek için kullanılacak olan 'airdrop' modülünde zincir üzerinde kaydedilir.
 
 ![](../../.gitbook/assets/image.png)
 
-Learn more about ACA & KAR tokens [here](https://wiki.acala.network/learn/economics/aca-and-kar).
+ACA ve KAR belirteçleri hakkında [buradan](https://wiki.acala.network/learn/ekonomis/aca-and-kar) daha fazla bilgi edinin.
 
-Festival-goers and contributors, have fun, learn & break things, behold & catch the candies 🎁
+Festival müdavimleri ve katkıda bulunanlar, eğlenin, bir şeyler öğrenin ve kırın, bakın ve şekerleri yakalayın 🎁
 
-## Mandala Festival Season 4 🎉🍬🔥
+## Mandala Festivali 4. Sezon 🎉🍬🔥
 
-Building Acala is a community effort, and Mandala Fest then becomes a celebration of this growing community and the wealth of possibility that awaits us all in building web3. All past festival-goers would have a chance to claim Acala & Karura Halloween themed badges.  
-These collectibles don’t have a monetary value nor a market, they are our mere way of honoring our shared experience and saying thank you. Newcomers to the community who complete required tasks would also have a chance to claim these collectibles.  
-Here’s what the festival looks like and the rewards:
+Acala'yı inşa etmek bir topluluk çabasıdır ve Mandala Fest daha sonra bu büyüyen topluluğun ve web3'ü oluştururken hepimizi bekleyen olasılık zenginliğinin bir kutlaması haline gelir. Geçmişteki tüm festival müdavimleri, Acala & Karura Halloween temalı rozetleri talep etme şansına sahip olacaktı.
+Bu koleksiyonların parasal bir değeri veya pazarı yoktur, onlar bizim ortak deneyimimizi onurlandırmanın ve teşekkür etmenin tek yolumuzdur. Gerekli görevleri tamamlayan topluluğa yeni gelenler de bu koleksiyonları talep etme şansına sahip olacaklar.
+Festivalin nasıl göründüğü ve ödülleri şöyle:
 
-* Part I \(31-October-2020 to 06-November-2020 \| Award Pool: 2,000 ACA + 2,000 KAR\): Welcome Newcomers — complete required transactions to qualify.
-* Part II \(31-October-2020 to 13-November-2020 \| Award Pool ≈ 30,000 ACA + 30,000 KAR\): Thank You — reward claim by qualified past festival participants
-* Part III \(31-October-2020 to 13-November-2020 \| Award Pool: 3,000 ACA + 3,000 KAR\): Bounties — bugs, better memes, stickers or else
+* Bölüm I \(31-Ekim-2020 - 06-Kasım-2020 \| Ödül Havuzu: 2.000 ACA + 2.000 KAR\): Hoş Geldiniz Yeni Gelenler — hak kazanmak için gerekli işlemleri tamamlayın.
+* Bölüm II \(31-Ekim-2020 - 13-Kasım-2020 \| Ödül Havuzu ≈ 30.000 ACA + 30.000 KAR\): Teşekkürler — geçmişteki nitelikli festival katılımcıları tarafından ödül talebi
+* Bölüm III \(31-Ekim-2020 - 13-Kasım-2020 \| Ödül Havuzu: 3.000 ACA + 3.000 KAR\): Ödüller — buglar, daha iyi memler, çıkartmalar veya başka şeyler
 
-### Season 4 Halloween Give-Back Get Started
+### 4. Sezon Cadılar Bayramı Geri Dönüşü Başlayın
 
-* Get started with Acala including creating a wallet and obtain test tokens [here](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started)
-* Check out these guides to use [Honzon stablecoin](https://github.com/AcalaNetwork/Acala/wiki/2.-Honzon-Stablecoin), [Acala Dex](https://github.com/AcalaNetwork/Acala/wiki/3.-DeX), and [Homa staking derivative](https://github.com/AcalaNetwork/Acala/wiki/7.-Homa-Liquid-DOT).
-* Check out guides on cross-chain trading with Laminar and Ren [here](https://github.com/AcalaNetwork/Acala/wiki/T.-Cross-chain-DeFi)
-* Check out these guides on Laminar [synthetic asset](https://github.com/laminar-protocol/laminar-chain/wiki/2.-Synthetic-Asset) & [margin trading](https://github.com/laminar-protocol/laminar-chain/wiki/3.-Margin-Trading)
-* Results are published [here](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards)
+* Bir cüzdan oluşturmak ve test jetonlarını almak dahil olmak üzere Acala'yı kullanmaya başlayın [buradan](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started)
+* [Honzon stablecoin](https://github.com/AcalaNetwork/Acala/wiki/2.-Honzon-Stablecoin), [Acala Dex](https://github.com/AcalaNetwork/Acala) kullanmak için bu kılavuzlara göz atın /wiki/3.-DeX) ve [Homa staking türevi](https://github.com/AcalaNetwork/Acala/wiki/7.-Homa-Liquid-DOT).
+* Laminar ve Ren ile zincirler arası ticarete ilişkin kılavuzlara göz atın [buradan](https://github.com/AcalaNetwork/Acala/wiki/T.-Cross-chain-DeFi)
+* Laminar [sentetik varlık](https://github.com/laminar-protocol/laminar-chain/wiki/2.-Synthetic-Asset) ve [marj ticareti](https://github.com) hakkındaki bu kılavuzlara göz atın /laminar-protocol/laminar-chain/wiki/3.-Marjin-Ticaret)
+* Sonuçlar [burada](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards) yayınlandı
 
-### Season 4 Full Schedule and Rules
+### 4. Sezon Tam Program ve Kurallar
 
-#### Season 4 Part 1: Welcome Newcomers
+#### 4. Sezon 1. Bölüm: Yeni Gelenlere Hoş Geldiniz
 
-Duration: 31-October-2020 to 06-November-2020 \(one week\)  
-Award Pool: 2,000 ACA + 2,000 KAR
+Süre: 31-Ekim-2020 - 06-Kasım-2020 \(bir hafta\)
+Ödül Havuzu: 2.000 ACA + 2.000 KAR
 
-* All qualified users will share the reward pool
-* All rewards will be recorded and published
-* Note these rewards are lucky draws, not guaranteed
+* Tüm nitelikli kullanıcılar ödül havuzunu paylaşacak
+* Tüm ödüller kaydedilecek ve yayınlanacak
+* Bu ödüllerin şanslı çekilişler olduğunu, garanti edilmediğini unutmayın.
 
-![](https://camo.githubusercontent.com/a293930f14d75fa055a1b38c994957f00fec844ee501c57df717ea229ca73c63/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a3863745f4f53676955505063494d486c475a676641512e706e67)
+![](https://camo.githubusercontent.com/a293930f14d75fa055a1b38c994957f00fec844ee501c57df717ea229ca73c63/6874747033a2f2f6d69726f2e6d656469756d2e63686f6d29463512e45674672f1343e636f6d29463df717ea229ca73c63/6874747033a4674672f1343d2e636f6d29463
 
-Participation Rules:
+Katılım Kuralları:
 
-* Get test aUSD from the faucet, fees are payable in aUSD
-* Users completing three meaningful transactions will be rewarded
+* Musluktan aUSD testi alın, ücretler aUSD olarak ödenir
+* Üç anlamlı işlemi tamamlayan kullanıcılar ödüllendirilecek
 
-Meaningful transactions include:
+Anlamlı işlemler şunları içerir:
 
-* Use DeX to swap tokens
-* Use DeX to provide liquidity and transfer LP Tokens to another account
-* Use the Self Service Loan service to collateralize for Acala Dollar \(aUSD\)
-* Use Homa protocol to get staking derivative LDOT
-* Transfer aUSD to Laminar Chain, and use it either for synthetic assets or margin trading
-* Mint renBTC and use it in the above activities
+* Jetonları değiştirmek için DeX'i kullanın
+* Likidite sağlamak ve LP Jetonlarını başka bir hesaba aktarmak için DeX'i kullanın
+* Acala Doları \(aUSD\) için teminat vermek için Self Servis Kredisi hizmetini kullanın
+* Staking türevi LDOT almak için Homa protokolünü kullanın
+* Bir USD'yi Laminar Zincire aktarın ve bunu ya sentetik varlıklar ya da marj ticareti için kullanın
+* Mint renBTC ve yukarıdaki faaliyetlerde kullanın
 
-#### Season 4 Part 2: Thank You
+#### 4. Sezon 2. Bölüm: Teşekkürler
 
-Duration: 31-October-2020 to 13-November-2020 \(two weeks\)  
-Award Pool ≈ 30,000 ACA + 30,000 KAR
+Süre: 31-Ekim-2020 - 13-Kasım-2020 \(iki hafta\)
+Ödül Havuzu ≈ 30.000 ACA + 30.000 KAR
 
-Participation Rules:
+Katılım Kuralları:
 
-* Each account which participated Mandala TC2/TC3/TC4 can get 1 ACA + 1 KAR（If all testnet you participated, you will get 3 ACA + 3 KAR ）
-* The nonce of each Mandala TC2/TC3/TC4 account must greater than or equal to two
-* All rewards need be claimed in Acala Dapp
-* You can see the rewards in your wallet Airdrop account
+* Mandala TC2/TC3/TC4'e katılan her hesap 1 ACA + 1 KAR alabilir（Katıldığınız tüm testnet'lerde 3 ACA + 3 KAR alacaksınız ）
+* Her Mandala TC2/TC3/TC4 hesabının nonce'si ikiden büyük veya ona eşit olmalıdır
+* Tüm ödüllerin Acala Dapp'te talep edilmesi gerekiyor
+* Ödülleri cüzdanınızdaki Airdrop hesabınızda görebilirsiniz.
 
-#### Season 4 Part 3: Bounties for Bugs, Sticker & Emojis sets \(Throughout the Festival\)
+#### 4. Sezon Bölüm 3: Böcekler, Çıkartmalar ve Emojiler için Ödüller \(Festival Boyunca\)
 
-Duration: 31-October-2020 to 13-November-2020 \(two weeks\)  
-Award Pool: 3,000 ACA + 3,000 KAR  
-Please allow one week from your submission for our review.  
-Participation Rules:
+Süre: 31-Ekim-2020 - 13-Kasım-2020 \(iki hafta\)
+Ödül Havuzu: 3.000 ACA + 3.000 KAR
+Lütfen incelememiz için gönderiminizden itibaren bir hafta bekleyin.
+Katılım Kuralları:
 
-**Bug Bounties**
+**Hata Bulma Ödülleri**
 
-Find bugs for the following repos:  
-[https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)  
-[https://github.com/AcalaNetwork/acala-dapp](https://github.com/AcalaNetwork/acala-dapp)  
-[https://github.com/polkawallet-io/polkawallet-flutter](https://github.com/polkawallet-io/polkawallet-flutter) \(Acala part\)
+Aşağıdaki depolar için hataları bulun:
+[https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)
+[https://github.com/AcalaNetwork/acala-dapp](https://github.com/AcalaNetwork/acala-dapp)
+[https://github.com/polkawallet-io/polkawallet-flutter](https://github.com/polkawallet-io/polkawallet-flutter) \(Acala parçası\)
 
-* Bugs are judged on significance and severity by the Acala Engineering team and are awarded roughly based on the levels [here](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards#runtime-bug-bounty)
-* Please include your Acala Mandala Address in the Github issue for easy prize distribution
+* Hatalar, Acala Mühendislik ekibi tarafından önem ve önem derecesine göre değerlendirilir ve kabaca seviyelere göre verilir [buradaki](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards)
 
-**Stickers & Emojis sets**
+**Çıkartmalar ve Emoji setleri**
 
-* Rewards are not guaranteed for this category
-* Feel free to submit Acala/Karura themed Sticker & Emoji sets
-* Sticker & Emoji sets selected for our Discord channels will receive rewards
-* Please include your Acala Mandala Address in the submission
+* Bu kategori için ödüller garanti edilmez
+* Acala/Karura temalı Çıkartma ve Emoji setleri göndermekten çekinmeyin
+* Discord kanallarımız için seçilen Çıkartma ve Emoji setleri ödül alacak
+* Lütfen gönderime Acala Mandala Adresinizi ekleyin
 
-### Season 4 Prize Giving
+### 4. Sezon Ödül Verme
 
-#### Season 4 Part 1 Prize Giving: Welcome Newcomers
+#### 4. Sezon 1. Kısım Ödül Verme: Yeni Gelenlere Hoş Geldiniz
 
-No. of Qualified Users: 4,712 \(&lt; 5,000\),  
-Lucky Draw: 60%,  
-Number of lucky accounts: 2,827,  
-The reward for each lucky account: 0.7 ACA, 0.7 KAR.  
-List of winning accounts: [Google List](https://docs.google.com/spreadsheets/d/1iSlG5trQnyOR5uzsT7puOsIODiWm7HfZtAi3ys4ietg/edit?usp=sharing)
+Kalifiye Kullanıcı Sayısı: 4.712 \(&lt; 5.000\),
+Şanslı Beraberlik: %60,
+Şanslı hesap sayısı: 2.827,
+Her şanslı hesap için ödül: 0.7 ACA, 0.7 KAR.
+Kazanan hesapların listesi: [Google Listesi](https://docs.google.com/spreadsheets/d/1iSlG5trQnyOR5uzsT7puOsIODiWm7HfZtAi3ys4ietg/edit?usp=sharing)
 
-#### Season 4 Part 2 Prize Giving: Thank You
+#### 4. Sezon 2. Kısım Ödül Verme: Teşekkür Ederiz
 
-Claim candy information within the valid time frame \(Not included in the activity time not claimed\):
+Şekerleme bilgilerini geçerli zaman çerçevesinde talep edin \(Talep edilmeyen aktivite süresine dahil değildir\):
 
-The number of accounts that have claimed candy: 11,635  
-Claimed candy reward: 13,739 ACA + 13,739 KAR  
-List of claimed candy: [Google List](https://docs.google.com/spreadsheets/d/18comqh2wg6d-NNFb-HFetaToiPSkrS59wt1OmeGyxcQ/edit?usp=sharing)
+Şeker talebinde bulunan hesap sayısı: 11.635
+Talep edilen şeker ödülü: 13.739 ACA + 13.739 KAR
+Talep edilen şekerlerin listesi: [Google Listesi](https://docs.google.com/spreadsheets/d/18comqh2wg6d-NNFb-HFetaToiPSkrS59wt1OmeGyxcQ/edit?usp=sharing)
 
-#### Season 4 Part 3 Prize Giving: Bounties for Bugs
+#### 4. Sezon 3. Bölüm Ödül Verme: Böcekler için Ödüller
 
 | Repos | BUG level | Issue link | Address |
 | :--- | :--- | :--- | :--- |
@@ -128,9 +127,9 @@ List of claimed candy: [Google List](https://docs.google.com/spreadsheets/d/18co
 | acala-dapp | bug-c | [\#283](https://github.com/AcalaNetwork/acala-dapp/issues/283) | 5FUaMCA9TSiJUdUAyAuLgUF5ZMhrvKQsHXZKhFiJMgWpZSyq |
 | polkawallet-flutter\(Acala part\) | bug-c | [\#191](https://github.com/polkawallet-io/polkawallet-flutter/issues/191) | 5HnB6WGwGFZU87ViXYhVxxPEKS1K8r2QTQnvSPg9tWqVApxY |
 
-#### Season 4 Part 3 Prize Giving: Sticker & Emojis sets\(Throughout the Festival\)
+#### 4. Sezon 3. Bölüm Ödül Verme: Çıkartma ve Emoji setleri\(Festival Boyunca\)
 
-Sticker submission link: [https://discord.gg/WYjDeZDTPN](https://discord.gg/WYjDeZDTPN)
+Çıkartma gönderme bağlantısı: [https://discord.gg/WYjDeZDTPN](https://discord.gg/WYjDeZDTPN)
 
 | Address | Reward |
 | :--- | :--- |
@@ -140,21 +139,21 @@ Sticker submission link: [https://discord.gg/WYjDeZDTPN](https://discord.gg/WYjD
 | 5DUUgntu8Atyu2xkk1GjhBBxLryC6CRovHzVcWzFALjHsjQF | 5 ACA + 5 KAR |
 | 5EHiBbDEhb71TAJFBpGD7URArSA137CHKh4srJR1zkkRbBLz | 5 ACA + 5 KAR |
 
-## Mandala Festival Season 3 🎉🍬🔥
+## Mandala Festivali Sezon 3 🎉🍬🔥
 
-### Season 3 Prize Giving
+### 3. Sezon Ödül Verme
 
-#### -Week 1: User Participation
+#### - 1. Hafta: Kullanıcı Katılımı
 
-No. of Qualified Users: 10,525 \(&gt;5,000\),  
-Lucky Draw: 20%,  
-Number of lucky accounts: 2105,  
-Reward for each lucky account: 9.5 ACA, 9.5 KAR.  
-List of winning accounts: [Google List](https://docs.google.com/spreadsheets/d/1RRJfDDpigMsiFKocTrkurJrG43f4d163WjErWErfdNQ/edit?usp=sharing)
+Nitelikli Kullanıcı Sayısı: 10.525 \(&gt;5.000\),
+Şanslı Beraberlik: %20,
+Şanslı hesap sayısı: 2105,
+Her şanslı hesap için ödül: 9.5 ACA, 9.5 KAR.
+Kazanan hesapların listesi: [Google Listesi](https://docs.google.com/spreadsheets/d/1RRJfDDpigMsiFKocTrkurJrG43f4d163WjErWErfdNQ/edit?usp=sharing)
 
-#### -Week 2: Trading Competition
+#### - 2. Hafta: Ticaret Rekabeti
 
-As of 10th Aug, the top 10 traders are as follows, they will share the reward pool. Congrats for all winners! Also well done on everyone who has participated, there will be more yield farming opportunities once Acala is live, and your effort will be rewarded 🎉
+10 Ağustos itibariyle ilk 10 yatırımcı aşağıdaki gibidir, ödül havuzunu paylaşacaklar. Tüm kazananlar için tebrikler! Ayrıca katılan herkesin ellerine sağlık, Acala yayına girdiğinde daha fazla verim çiftçiliği fırsatları olacak ve emeğiniz ödüllendirilecek 🎉
 
 | \# | Top Trader Address | Profit Margin 100% |
 | :--- | :--- | :--- |
@@ -169,10 +168,10 @@ As of 10th Aug, the top 10 traders are as follows, they will share the reward po
 | 9 | 5EKsrAsRAfQM9wyR9sRFVqNcwQCLQyVBjLMuSr2GqYE9JPUh | 193.4 |
 | 10 | 5FhA3c1pw2zwnJRxNQSQfv8nYMpNNSopgSuLc5bZ2MVX6vTC | 170.9 |
 
-#### -Week 3: Black Thursday Simulation
+#### - 3. Hafta: Kara Perşembe Simülasyonu
 
-Number of winners: 200  
-The reward for each lucky account: 20 ACA + 20 KAR
+Kazanan sayısı: 200
+Her şanslı hesap için ödül: 20 ACA + 20 KAR
 
 | Winner Address |
 | :--- |
@@ -377,7 +376,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | 5CCdo3gfsnjg8WCTChrB4jQKXNncfbSN3H9NhNVqfD7EjNmz |
 | 5DqFgUVwGMGurJrJJTbtFA3U6HS6ezomTHnpbREKbnKjD9md |
 
-#### -Blog Bounty \(Throughout Festival\)
+#### -Blog Ödülü \(Festival Boyunca\)
 
 | Link | Mandala address |
 | :--- | :--- |
@@ -392,7 +391,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://www.youtube.com/watch?v=faylI5\_xs00&feature=youtu.be](https://www.youtube.com/watch?v=faylI5_xs00&feature=youtu.be) | 5Fj8pQ1e7iDfrAvae9k6WhrZRqM4Lqd6Umvk8J9cg1BXcJL9 |
 | [https://bihu.com/article/1614934379](https://bihu.com/article/1614934379) | 5GWrTC5D7FPEg3iaikv8Yp35K1A6qWyyCVMF1GZd5PCbq2Fk |
 
-#### -Bug Bounty \(Throughout Festival\)
+#### -Bug Ödülü \(Festival Boyunca\)
 
 | Github issue | Mandala address | Judging results |
 | :--- | :--- | :--- |
@@ -442,122 +441,122 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://github.com/polkawallet-io/polkawallet-flutter/issues/128](https://github.com/polkawallet-io/polkawallet-flutter/issues/128) | 5HnJRCcbFaTjaYhmhTiNavSStkxRAmeX2EiEJq2vSnN5Q4TJ | bug-C |
 | [https://github.com/polkawallet-io/polkawallet-flutter/issues/137](https://github.com/polkawallet-io/polkawallet-flutter/issues/137) | 5FEp7o7MW6m5Tx6G5pGeto9ZQpfHKePVREVkmDxV58ZoPg6H | bug-C |
 
-#### -Coding
+#### -Kodlama
 
 | Github issue | Mandala address | Judging results |
 | :--- | :--- | :--- |
 | [https://github.com/Ryabina-io/substratebot/tree/master/packages/acala](https://github.com/Ryabina-io/substratebot/tree/master/packages/acala) | 5FEoLBq9BP8X3iU6iPmW2KWJahcCazeSaLPd2CamVfdwsCc1 | 1000 ACA & KAR |
 
-### Season 3 Rules & Rewards
+### 3. Sezon Kuralları ve Ödülleri
 
-#### Week 1: User Participation
+#### 1. Hafta: Kullanıcı Katılımı
 
-**Duration:** 27-July-2020 to 03-August-2020 \(one week\)  
-**Award Pool:** 20,000 ACA + 20,000 KAR
+**Süre:** 27-Temmuz-2020 - 03-Ağustos-2020 \(bir hafta\)
+**Ödül Havuzu:** 20.000 ACA + 20.000 KAR
 
-* All qualified users will share the reward pool  
-* All rewards will be recorded and published
+* Tüm nitelikli kullanıcılar ödül havuzunu paylaşacak
+* Tüm ödüller kaydedilecek ve yayınlanacak
 
 ![](https://miro.medium.com/max/700/1*yVdIVTMQIPWp8FgCtrT9MQ.png)
 
-**Participation Rules:**
+**Katılım Kuralları:**
 
-* Get test aUSD from the faucet, fees are payable in aUSD  
-* Users completing three meaningful transactions will be rewarded  
+* Musluktan aUSD testi alın, ücretler aUSD olarak ödenir
+* Üç anlamlı işlemi tamamlayan kullanıcılar ödüllendirilecek
 
-**Meaningful transactions include:**
+**Anlamlı işlemler şunları içerir:**
 
-* Use DeX to swap tokens  
-* Use DeX to provide liquidity  
-* Use Honzon stablecoin to collateralize for aUSD  
-* Use Homa protocol to get staking derivative LDOT  
-* Transfer aUSD to Laminar Chain, and use it either for synthetic asset, or margin trading  
-* Mint renBTC and use it in above activities  
-* Participate in auctions of system   
+* Jetonları değiştirmek için DeX'i kullanın
+* Likidite sağlamak için DeX kullanın
+* Bir USD için teminat vermek için Honzon stablecoin'i kullanın
+* Staking türevi LDOT almak için Homa protokolünü kullanın
+* Bir USD'yi Laminar Zincire aktarın ve bunu sentetik varlık veya marj ticareti için kullanın
+* Mint renBTC ve yukarıdaki faaliyetlerde kullanın
+* Sistem açık artırmalarına katılın
 
-#### Week 2: Trading Competition
+#### 2. Hafta: Ticaret Rekabeti
 
-**Duration:** 03-August-2020 to 10-August-2020 \(one week\)  
-**Award Pool:** 5,000 ACA + 5,000 KAR
+**Süre:** 03-Ağustos-2020 - 10Ağustos-2020 \(bir hafta\)
+**Ödül Havuzu:** 5.000 ACA + 5.000 KAR
 
-* Top 10 qualified traders will share the reward pool  
-* All rewards will be recorded and published  
+* En iyi 10 nitelikli tüccar ödül havuzunu paylaşacak
+* Tüm ödüller kaydedilecek ve yayınlanacak
 
-**Participation Rules:**
+**Katılım Kuralları:**
 
-* Use the balance of USD as the unit of account  
-* Profit calculated as ending balance — beginning balance  
+* Hesap birimi olarak USD bakiyesini kullanın
+* Kapanış bakiyesi - başlangıç ​​bakiyesi olarak hesaplanan kâr
 
-**The rules for ranking of trading competition:**
+**Ticaret rekabeti sıralaması için kurallar:**
 
-* Snapshots will be taken for both Acala and Laminar networks at the beginning of the trading competition; the total net value of various assets \(including debts\) will be calculated based on the price feed at the time as the initial balance.  
-* Another snapshot will be taken at the end of the competition, using the feed price at that time as the final balance. Cross-chain transfers \(e.g. transfers between Acala and Laminar\) are not counted, while transfers between addresses are counted as capital.  
-* Profit margin = total value of final balance / \(total value of initial balance + capital sum correction\) — 100%, all accounts are ranked according to this function.  
+* Ticaret yarışmasının başlangıcında hem Acala hem de Laminar ağları için anlık görüntüler alınacaktır; çeşitli varlıkların toplam net değeri \(borçlar dahil\) başlangıç ​​bakiyesi olarak o andaki fiyat akışına göre hesaplanacaktır.
+* Yarışmanın sonunda, o andaki yem fiyatı nihai bakiye olarak kullanılarak başka bir anlık görüntü alınacaktır. Zincirler arası transferler \(örneğin Acala ve Laminar arasındaki transferler\) sayılmaz, adresler arası transferler sermaye olarak sayılır.
+* Kar marjı = nihai bakiyenin toplam değeri / \(başlangıç ​​bakiyesinin toplam değeri + sermaye toplamı düzeltmesi\) — %100, tüm hesaplar bu fonksiyona göre sıralanır.
 
-**The following are included in the balance calculation:**  
-**Balances of all assets:**  
-— Acala : aUSD, ACA, renBTC, XBTC, DOT, LDOT  
-— Laminar : aUSD, LAMI, synthetic assets
+**Bakiye hesaplamasına aşağıdakiler dahildir:**
+**Tüm varlıkların bakiyeleri:**
+— Acala: aUSD, ACA, renBTC, XBTC, DOT, LDOT
+— Laminar: aUSD, LAMI, sentetik varlıklar
 
-**Balances of all DeFi positions:**  
-— Acala : CDP \(net value of collateral value minus debt value\), share value in Deposit & Earn  
-— Laminar : margin position value
+**Tüm DeFi pozisyonlarının bakiyeleri:**
+— Acala : CDP \(teminat değerinin net değeri eksi borç değeri\), Mevduat & Kazançtaki hisse değeri
+— Laminer : marj pozisyonu değeri
 
-#### Week 3: Black Thursday Simulation
+#### 3. Hafta: Kara Perşembe Simülasyonu
 
-**Duration:** 10-August-2020 to 17-August-2020 \(one week\)  
-**Award Pool:** 4,000 ACA + 4,000 KAR
+**Süre:** 10-Ağustos-2020 - 17-Ağustos-2020 \(bir hafta\)
+**Ödül Havuzu:** 4.000 ACA + 4.000 KAR
 
-* A draw of 200 qualified users will share the reward pool  
-* All rewards will be recorded and published  
+* 200 nitelikli kullanıcının çekilişi ödül havuzunu paylaşacak
+* Tüm ödüller kaydedilecek ve yayınlanacak
 
-**Participation Rules:**
+**Katılım Kuralları:**
 
-* Day 1 — Day 3 liquidation events: users participate by closing CDP or increasing collateral  
-* Day 4: emergency shutdown will be triggered, participants will use aUSD to buy back collaterals  
-* Users who took part in the above activity will benefit from rewards  
+* 1. Gün — 3. Gün tasfiye olayları: kullanıcılar CDP'yi kapatarak veya teminatı artırarak katılır
+* 4. Gün: acil kapatma tetiklenecek, katılımcılar teminatları geri almak için USD kullanacak
+* Yukarıdaki aktiviteye katılan kullanıcılar ödüllerden faydalanacaktır.
 
-#### Blog Bounty \(Throughout Festival\)
+#### Blog Ödülü \(Festival Boyunca\)
 
-**Duration:** 27-July-2020 to 17-August-2020 \(three weeks\)  
-**Award Pool:** 2,000 ACA + 2,000 KAR
+**Süre:** 27-Temmuz-2020 - 17-Ağustos-2020 \(üç hafta\)
+**Ödül Havuzu:** 2.000 ACA + 2.000 KAR
 
-* 10 awards will be awarded in total  
-* Awards will be published one week after the event ends  
+* Toplam 10 ödül verilecektir
+* Ödüller etkinlik sona erdikten bir hafta sonra yayınlanacaktır.
 
-**Participation Rules:**
+**Katılım Kuralları:**
 
-* Submit a blog to either [Medium](https://medium.com/), [Bihu](https://bihu.com/), or [YouTube](https://www.youtube.com/) regarding the Acala Network.
-* The article must include your Acala Mandala Address to receive prizes.
-* Submit the link to your piece of content to Acala [Telegram](https://t.me/acalaofficial), [Discord](https://discord.com/invite/vdbFVCH) or [Riot channel](https://riot.im/app/#/room/#acala:matrix.org) using the hashtag \#MandalaFest3
-* The content must be original
-* We will judge both the **quality** \(how appealing is the story, idea, perspective, insights, analysis, etc\) and social reactions \(number of comments, likes, twitter or other social sharing, etc\).
+* [Medium](https://medium.com/), [Bihu](https://bihu.com/) veya [YouTube](https://www.youtube.com/) için bir blog gönderin Acala Ağı ile ilgili.
+*Ödülleri alabilmeniz için makale içerisinde Acala Mandala Adresinizin yer alması gerekmektedir.
+* İçeriğinizin bağlantısını Acala [Telegram](https://t.me/acalaofficial), [Discord](https://discord.com/invite/vdbFVCH) veya [Riot channel](https: //riot.im/app/#/room/#acala:matrix.org) \#MandalaFest3 hashtag'ini kullanarak
+* İçerik özgün olmalıdır
+* Hem **kaliteyi** \(hikaye, fikir, bakış açısı, içgörüler, analizler vb. ne kadar çekici\) hem de sosyal tepkileri \(yorumların, beğenilerin, twitter veya diğer sosyal paylaşımların vb. sayısı\) değerlendireceğiz. .
 
-#### Bug Bounty \(Throughout Festival\)
+#### Hata Ödülü \(Festival Boyunca\)
 
-**Duration:** 27-July-2020 to 17-August-2020 \(three weeks\)  
-**Award Pool:** 10,000 ACA + 10,000 KAR
+**Süre:** 27-Temmuz-2020 - 17-Ağustos-2020 \(üç hafta\)
+**Ödül Havuzu:** 10.000 ACA + 10.000 KAR
 
-* Please allow one week from your submission for our review.
+* İncelememiz için lütfen gönderiminizden itibaren bir hafta bekleyin.
 
-**Participation Rules:**
+**Katılım Kuralları:**
 
-* Find bugs for the following two repos:  
+* Aşağıdaki iki depo için hataları bulun:
 
-  [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)  
+  [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)
 
-  [https://github.com/AcalaNetwork/acala-dapp](https://github.com/AcalaNetwork/acala-dapp)  
+  [https://github.com/AcalaNetwork/acala-dapp](https://github.com/AcalaNetwork/acala-dapp)
 
-  [https://github.com/polkawallet-io/polkawallet-flutter](https://github.com/polkawallet-io/polkawallet-flutter) \(Acala part\)  
+  [https://github.com/polkawallet-io/polkawallet-flutter](https://github.com/polkawallet-io/polkawallet-flutter) \(Acala parçası\)
 
-* Bugs are judged on significance and severity by the Acala Engineering team, and are awarded roughly based on the levels [here](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards#runtime-bug-bounty)
-* Please **include your Acala Mandala Address in the Github issue** for easy prize disbursal
+* Hatalar, Acala Mühendislik ekibi tarafından önem ve önem derecesine göre değerlendirilir ve kabaca seviyelere göre verilir [buradaki](https://github.com/AcalaNetwork/Acala/wiki/W.-Contribution-&-Rewards#runtime) -bug-ödülü)
+* Kolay ödül ödemesi için lütfen **Github sayısına Acala Mandala Adresinizi ekleyin**
 
-## Mandala Festival Season 2 🎉🍬🔥
+## Mandala Festivali Sezon 2 🎉🍬🔥
 
-### Season 2 Prize Giving
+### 2. Sezon Ödül Verme
 
-#### -Running a Node
+#### -Bir Düğüm Çalıştırma
 
 | Date | Lottery block height | Lottery block hash | Prize winner |
 | :--- | :--- | :--- | :--- |
@@ -583,7 +582,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | 05.30 | \#628,500 | 0x396e21978de081e0ad9e7a2c43df77d4420d5bddb7c28b5a54493ceb37c2a285 | 5DfVaYbSpA8gFheWLvte2wrV3HhUBdvPn6kTe3QX3D6zUeme, 5Fpv2bqceAVA4GyX5BVfeJDwLdvjQEkaBbowJ9zAEGUQSsQJ, 5FcYmJPhLHVt2oo6tFxhS2cht5gjyTV1gEFohWPRGPCtD2Am |
 | 05.31 | \#646,984 | 0x7578006bb50d72723678c0243fe5d2cf65808d8f78291d2e25bf26345ca47ed5 | 5DskzyXfQsxD2vJZDzCfXFnRhicHfAtrZ8qcM7BHsQFg7Wrg, 5CGDgQLzYTxKcHYb7C8uNakKVsYz4LRdHuDVwrXJKnZdra3L, 5G99mYA6WVjRTcpBFTsT9U5s2U7wknEpkqSkMW5vTnjdMCao |
 
-#### -Using Acala
+#### -Acala Kullanma
 
 | Date | Winners |
 | :--- | :--- |
@@ -591,7 +590,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | Second week \(2020.5.24\) | 5FhYsc63qoeFmZ6wPEibDbtyVLi8vntgmGnwXmZSNPYksVhV, 5HiomKv9wz5qWdVGqgSN6VQEuKPtqUZz8SXc3sRWvVKKsJAX, 5EyfkCN8yNaZmS4ArBtT5XKSV6euE1prSTeDuoaH2FqToCeg, 5ED81iwyeEwz5XR8QT9yVGsg9UHx9enJ5KodcCgBfbCsBsV8, 5GxFeB96U8Suyvh8ed3dUMxDBnuUv9AytzwWVvZeq8BGBwBg, 5FehdfqjtCYsn5T9jnRYiGEfjdQJJCeSHbrMr4HAgSibVbk1, 5ELJeJGzihKYBjDRDJVPvVKDsht9F3nuoE3ok3dzErmyf5e2, 5CwXXvCnknjixLYEAMQayN7nKqWtTkvT5jaURQV51cNgA9Rf, 5H3rq3eR3gwtAZhhctacokHZWEdPMi7jcPoJGPGjKHgCYJNW, 5HjnLDUxd5KjxyjHNQYwpAoQb3QpHXZfawD5ctCRZLQTN5vo, 5FJ5jbfH1h8DuYJWEVUAnC4yyL7dZLz1GGsBXmjjv3T2WoLC, 5FxzuAH9aQMJz1YxdcRKy75GgrbWP6FXPR1skBGN8wj9QWLA, 5H1ea9WWJeTDLnMjcZ5eQFD6Twybnt8Ug3aVVjWGac4jwf78, 5HTSJD3UxqmSJvKzggiCtjR82GELd2icdyDmRkjGkVJpDFsY, 5CAst3Pzo3P2xZSuGYpcfwhzafqMyZbtbuJD9USbAhHAfR52, 5GQwMYScvZaXzbq39T9a6bd6wcQbh9T1X6L2AtAQvbWnPFwZ, 5D4suJNFb7DaF4tCwCaDAHTdivRq5Wqoj7s1MBQFK3aFNtgW, 5DZius8FMk8LLrLN7UG96SXGRdr3eSkKqzYifjnKZ6Xn1nX9, 5H1D2x61wsjrFgniEhbTMu5NtkPkdAnDjzpSqmT1av2HFG2U, 5Guj86zqCChEX7jhxQaHzjYLbjnkqCZnV6UsUJNhbFhupxUF, 5EqeYfFtj8udMEpyT2WPmS2g7UBkT8QBMzV2rKNemTz48b4A, 5HTZ4yPDSN4AZNH9BnFscqcnCeMryRAQRiccmKCDiHz9nKPk, 5Cow2NwWygaDnbPzMiZoa2dHoZbr16rH6Rm6VtiFiDUD92zr, 5GHdTHZwA4tZgcLRZ9f5LqCmz61oyPxW2q2rdz3vR5nDx6oU, 5GKwogqykym1Tj2X8qeWjW1NsrpaYUCWtUAXMiWNow9X5qYP, 5HHU85GFqJogMCFXUQEThdRJxs9fgCn4S8z3b1TsCYXT8D2V, 5DernvyaSP9UUXNgzNebTCjRFpDiakL5MvNfnQM1pnMhgXoo, 5DFZAuyRSBY2kqsT2w31Uyt6Tjjd5FbWJBxowECNH9v2eypD, 5HYopd7z6p9tcwpFXVWUfUakLHSaYTW86mDRQQEuJLys1wrQ, 5DZJdAZT89dyp1umqtkVKmmkbZAf6iqS8Y8DCHgEMosCmE2Y, 5HDjWJHPFXowWcTCjpThV64ikGTJYFmN2A6x3tPq1hiCWRS5, 5CvcAz6z3g7vLgZH48764DhsefZitC6XMF8Diz3tGhHA4xDK, 5DCGz9hd15eB28MSGcosBygzYVGi3Cz9KZBwWxu7FY4sRRiw, 5Dhahn4Wnziic2gExmc3qqiuy8Qvv3xTY7BaZZ78hU9a1gk1, 5Enr3rzwnRhhWbN3tERd8mcJggpFPFceNHMYpiJoUyUKdjUg, 5HmhdvsHbHPJkAiWDj1WqK3X1CGwGDwUeut1ikwfuQTRVQL4, 5FenZupEDDUwKrV5U3Drn2NKmqbfpJZ1JapU3YTdoKqKR2m9, 5G1SCFBsKLmvNX4u7u6U4vRW8cAk8xcztoDy2Wetd5UmwUXi, 5Feo42CrZdrj78dr12FXZ7kTC3avura2UoZ8Ba2z6Yd9Vn7Q, 5CB6PbeoiecFstKoepMY6CBUy4nyGt1fsPZZKR6uAQ1xdgPx, 5FxhixBYikArCWVVdrZeh3R91MACmHnoJVdd1gYkoAWiCg8Z, 5FKaDvg7SDwCFRsqowyN3TSFNRUFh9sfjqPaEGZfxFGhoxx2, 5CM486QrHrqBKa1qTafUaouhUzjhJfkPWy1cDwYrE35yrVSw, 5DnogbAM8JJtNPqWcCDQEpVFPQ98KXSaQaDNxG6QMrnv3eWD, 5DHgCdWeKRgtKm8As8u63Ju5j1xBsixG5DZd1tW8BFyqizSy, 5Fe4ktn5s58kptS4o9a948PkYcz2bcMRnc5oykQSFXimqZ1W, 5FUb8kW9oADFC8g6E9p2hnKv6bZ49LxBiYoLTzjxS5kyHnd3, 5ERpya8izCiHtusF5cYhPbcNnUCaakXW3bsjLaBCG6Hew57H, 5HGhQVraJnQiFvT31VpLMT9r4EjoKnyD4uNgCuNz6t8FnA6j, 5HfxXr4rVam6iZdLYh53rxXr9HR7caTXWku6fFrGpovzYbxL, 5DhzGLGng5eSwBwqqFuJoEDwzSbvUzH5FYASuyU5wM2nPGUa, 5CPxLw9wxFNRG7BEC481cjxQPaMi3K6u7feiN5JA5356Hqco, 5EpjFHQSm76NVWgzBRQjiDjgqBhrUVVj8NHKnWChZPc5fGCD, 5EykxaQicsqV5uDb9mkQqDBPXVeXz3Q6qwz12TaRDwrQTmnZ, 5EX8im3fGZuNBzLsRkjnKLZ2mCo2U5jBAxdyNJoMRzUutrim, 5Ef37EvhzgPipLy1xBmam8uZhxj9muwqZf2wxACfaqTNR2jm, 5DtXfXu7CLG9GMx7vzsmWShCZ8Hjy8RsXaVTk9Ca7hH5MU2k, 5HYSDShKetacf2yQ7NSM5GCfbGZygDoev24BcR3HAYGmLkYj, 5Fj9ZrmsmEDHCKkBwPLd6c94tPqrQM4mNrh9McvShRQr6E8u, 5CoMtmPFgJRdf7mShziKeRq1gJoRyJVex9b83GHq3yH3C8Tk, 5CtSTnyEBNUXQM7rgCVG9VrAHLUSHgiFx9R7NoJBbZWepFyf, 5GsWU4dVFUESyXr9AjWxZ4hWEPo4EvFMaAJr9dH6tT9NWQpF, 5HMmsEtcULw2Ki5vHLqCRhf7anrrpQXoEdsSc1JVyEesyu4Z, 5EkS8WnDioUMWrkFKFq3E51tJSTq3Jbxq4CBtxa2nXxsYbCN, 5GNqaqhFJvAJBuk9Vz6fziBMavZF9QfPZNX7X57u2zZeRNHy, 5EEc9S8WxDJuSDWx3DhS1JShkmvf1Azvptw72WFV27aVgYEe, 5DDHimfpk2Age8sAVepgjHYHxbEbvNpMmuuEqf3zRi2Mwds6, 5HE7jgSAS9dt9Q4QkqeSkKQsqCdmGpEP5KVyn8tnYDHv5Q1B, 5EeaCCkUMZE9E6tJmeZV9t5NGGX3i9NLQgrULCUgKk8eZrwu, 5FvJnChDiATr7smrwUeqNCvQvp5xTxsZorsoNJbmYXGwJcjK, 5FWvSBjMD4cqwMX9K9VkccEvKcrepaYF7MkhNAQv7b4buxuo, 5Eya4fKbVPFLSXjt3CLAnSnMRvyda7jk5T3cag7QbkfGBVGY, 5H98YrwQKBoxUaoXDiAgPLG5V8FuiQXH7CiAbQoaT2j3D2k6, 5CSWAuULtWgfJTVGjShiZzuE3Bi9EigiMmcXUbZ4a5LaWLnE, 5GbdanEy9SpVCq2Z1PykwGzNPhQL8zJ1bTnMoWtCk598w4bn, 5GYvrhWDfcmcZz7p8pG3EGVDKjYuKY4vHrrLU49JRhA6jdZr, 5EUudY9pLJ17acK69CoeP3x5DxF7b1euinNZZFfCDeB3vRKy, 5ELMrqw2pdr4wy3bH1U4ptvuQmZoWCeNBjJJi6iUZCpDxJuk, 5EeBjzorDWJfM3YUmECbsreDfPKi2jFMRg9QUaXvL4qdUKKM, 5CDcTTLQ4o2hnJgHebdgqpga2gn8mpnVXseCNAyqCaodM91m, 5EEiiSW5oeR1xgiQA8qo6FUTr5595Zkm6KyMBKUJ8TmbYFHA, 5FWLUKfzn8Dd46FW5q4qF3QTJp1hGvkU1SLi7BiudbW7iUSE, 5EL71n847E1mtdrhrhEWc81J6eLXpG6tGbjAq2yg2FvFqHDS, 5DU9oGiGDKn6ZCQgC7VTUH98FhKpSH8U5WXCqo7k3Dg11EJV, 5Gpnb6mfWhMcxLRjG7a7seH2BxVvGv9Lv1XUNUp84MaqzQUs 5GsgGaybXxXhyNdHyyGeVLAAwq9cxLaLZEiP3vBV24cwYuBB, 5EL36duLhJ7LixVUm7x6wG1a1cFMn5kKgPNhXNPH1miRCYxw, 5Eh7gFtkfCnsE25fGvhQThUAs8CEWKJhhUwgVYV2RwEZ3JVb, 5GsxWvcx9EvV1S12etrjN1cJhJ8PJrejUoTZvSi43ArD6U3z, 5Ebq5qime1tyt8XCSCLdSsfiWXtQ9fYb6KmVPrUL7RA7Xb2j, 5DRSmFfAqKVg3P6nEhje56gas9BHUC8RGC6SceyTzL62CZ6x, 5Fbzyxg18f2Ec2ZGB1GaZmndYwmE5Excvfr4hTT1RckXeDuZ, 5DM3ToUQpsLHJHj8csTUUzVrMx49D7h5F3zm14yYwTrmAXgk, 5Grjq2KK9Z36zZStnhz1H4EhFQnCaW6ar8t8crPBRM5TTZNK, 5GxAb7EeTGv3KfBfwhBGhBbASdJodKJwYoh2GkvminpofGvL, 5HEn1YtswEWpqpC9E2E21nCtUqgdJLQ1UfErVombGfHnKaGq, 5GC9wpaEzS5qUgyoTXAFTr4LcdDexM19bKp1gCvaBqkdX3JT, 5Cm6HNGkDAEVs1C7tegwK8jymrdgtbFQ64QwenLTXuTcUNhb, 5CYC5hX9kqgGMTr4bXFt491f9EaqNYetL7S35rGHnyd5bEEf, 5Dhx3TYcqnAMBUZFiDbcitNXLgaBeBWPk2QqrLHpTEFd91fi |
 | Third week \(2020.5.31\) | 5GxE6K1W69b6p85ZBPsi8oHr7oXdTmWBTmChJNw9yhJ1p6Vi, 5He3DStdt3FM7GtReCZbuFBnwyiEGDqM4Tj9KbcJRZVkepNf, 5Hdvy7RP3Jkqp6NnCkH2Q5xjuxcGFufECdxdoT6Rcbizkp9X, 5CUiPq629ehrY5342HHg7RbhjVS5weGXAii4NBUXkbkQf5mr, 5DWog7SVoeisLBs1HerVsk4bM1PWKYrjaRYVFLnqsMoC7gF3, 5Fxhj8y9w3NTdhzwGKJAq53Vip7KW1Rnd9QdJwbcDP79Tr8y, 5HgU1yCa7JbxzKMbRFpQSyEAqaB7fkyfBSUSsqBGRmDEE4cJ, 5G1xzNiR9iasZrdRzkaYx2iLobQL7SoDajLkQF4AagfUngXv, 5EPXEFo5NKWC7smkNEiQ6H1DK2QiuJTv5km6ir1fUv7fk5PK, 5DnN8rrEqzraaVtpqFmk6Jm8C5KwFbFACwFbfGYWV6xg21f3, 5FWBPayAMieVEZZBwn2C4HuPed9eQKHeBzXYCx3TTQQSm5r3, 5ELJeJGzihKYBjDRDJVPvVKDsht9F3nuoE3ok3dzErmyf5e2, 5DZGm4jKftS6FT5u347WubmwXHyGcs663hEZy2a5QJBCdsED, 5E7a8BMH7qM5YEj5F9srTP2EsjPqpehFpreecNSC8go5MMwG, 5HTSJD3UxqmSJvKzggiCtjR82GELd2icdyDmRkjGkVJpDFsY, 5DANSWVGm6XGzUwfySQ1r1aUZRkvMA1FHV3mcnSPE2QyyrBM, 5H3fhCQmHvBfQSyutB6J21bUpEyVEAi7AvcohoceC7MMts2U, 5DhSjRdzy95zARdH9d5rBNb3UiQkYtqAwADg1knpAB8hg2qv, 5GxC4HPaMYHL6PvSxZovFEg26BrAdnkknssXKo4Xxe4jxC2E, 5CUSn28KuxZtChH2BQrzYJ3JM9htsAKMU5M8aCBSYua1gqG3, 5Cg5qLTKNuQWtb4gURGtUx4GAFU2xQoch3yncEfodDZYVAh8, 5G9jabAUNMMuMbCW6J6BEEVyXZnSweMLdTKH95VJfKyqtuPk, 5E2CrUQrmpArcwLqacpNSv9wBfoAm9r1e7P1Qq7cT4DQZ2v5, 5Fh3sj3TbX4VE3pEMSfTVgSJoP8fQrv2Sjd5vGPuLbiWnM6v, 5Ek9V7rXeAsujPHSoRLLTMLqLVUDNYZnYMXQkMsU17fQci4o, 5HBNQgq97bS17r46AXHMGEo8gAPB4bSdezNt3D653gnZyrPZ, 5G9geGFejThKPopYq9nb3nJSF3EqctFSfXgQJ5bZFq75HmQ5, 5HKCwHpVzyirADadG4S2qXiqUCtkisDjzzpKzYbwXaETjuWk, 5H8siwPx4Gd3kcaeyV6AxEUMggb5SXvd8Lr2Vnehq1BQynrb, 5Gzcw4k6Wmjt3x5YgFDFigbzBfNjubtVNzStdNmJxmkwgmG5, 5DCXAwW3YAqTYqrj39BVLCXRjFxrYHLzdQ6Nao87kCWpA6yF, 5GC9wpaEzS5qUgyoTXAFTr4LcdDexM19bKp1gCvaBqkdX3JT, 5E7woficChfKViP4Fzww45BXDEy9yayLPgRjgU7Fu6482GEF, 5DseXttb6tK5Ri1xYPPjgEo8tnMtspcgS1P6MZnzqpRNbk8Q, 5DDCNYWkKLjNhmX82jXcvyVV3n3yhzNBHEavKtcDnnioL9Ro, 5EyGyWLnv72K1uDFmLrK3JYxCNim2s79HcaHhQz6BWHt2Mkb, 5EKuJY9suzW6PxJkLcPxySoMJfnwLWLD8TuG39cF4PEydhFD, 5DbuPcnoAhW4o595E2698H8dMiedBVVYgKn8d8Nj2FAib9mW, 5ECbm64uSCzCZKUwc9hiFV3qJbHmX1bMbQAy9gh4y8dCDo2P, 5EJQueYsAh6mD1xsVtdLKC9mCCyJjtQr75RR3SFb3Em5eApp, 5EhgP9KUakh3YT7xaZ1xscdSunSfSi4EgM5faezg7QZtuujg, 5EAG5cxhBHZHd1kztDNkiRcqYWy46h4CBotkhgGque1tNa4X, 5FxHcEqyfByZqJGJfhvnKs1sws9yZg12q8UvyKqb4kcr8b18, 5Ci65F6ZHtwQJFCAmLvsWiEZj7eXgcx38MqKJRaAiBBGJAbe, 5HbAETp2UqoFsXYA741dfGXcv8hWBPLzP8nwhr81aUVNqmka, 5H9fEB1Q9KJiuVEgsjKPTqjNzBsQREoy6scSxY3cvkd6iPzu, 5CUqbTeyVr3DdESFLSDecjUgXFBR1Mo8HfnosLrmzzhpJCUv, 5Ec2mAe7Bt8ohdASVF5XmchtH2YZi7EdaDqXPGLFqeeAjUax, 5Et841uS1hRW3iLh1DftfuHKq1k1US68A7BxLQTrsG8b9w54, 5D82rfXBC16cmodMk6rEFMnLYj8BJtqCqHqmmkpBbaoPxdEY, 5GRDDCNccudv1iwZzG27ANeJG6HWXB9Dt3FXagSut5bZyKCa, 5EgqHcbFke4PLfWatnx731WfnEKXfmyP4B6pJiCkZfZ5VMH3, 5FbnS1YXkJ58jCxmeNpBdEY17yrWQWAhNeBNEMLWavd5uZVJ, 5FjCwqZuGujH92Cvd4W9SPYBjdxjifJ8bDVbFKePfMN7rvNR, 5Fbx4aJsH9zDyxrjyBmymXaeDhNaZkAPdrCptvZW3mAJUiKd, 5DFr6krBTTpn3RPMGiD8qmH4KSbYBTjepcRWym8ebGsbjyJF, 5EEhVc696iodmBpsqMergyfJQgBLfhEdnp7JSphQYhfnJ6Pa, 5FKszvkuqwezp4NZ1SnMerPN1CgwuAf2x3KmN1Ea9Lx1FCVU, 5DqDvAp4C66k6P6F4Rw6hvrkD7uyzk9fcR69yHCeNFjLhGcB, 5Gzp3LxvNmsddTvtX2ABSmCoS4M5YnYu5o9QMioxUTUA1zTd, 5GLHpafFpffrG3jeocpMK57redFkzFTqfv2Bv1PGWE4jpVF1, 5F4iFLZbc7uaUwkxyWjR5sAsVbpJbv1QanrUGYNTyMwHeteG, 5DWsda8JVkpphNtSSe1HBVveXcvKMHTzEezA8RrZqG6jxN9o, 5ENXEvhjjmGiw8G9PEL9N2K4pFMtJVGyAgic8buN7DCiZRC1, 5ES9XixD9Q6Mb2k1ZtMLVJPMGUgoPq824DsXZ6CEcbT9JUC5, 5Ev3boRssitrDn5hxyHE9UjVbr7mxGsWJtvNRvqi5ifTxMc2, 5HBscSAdW4gPMZu9bQr9ZaHbFdpaNM71WZs7Gmkg1Q6va8Bx, 5Hpzm1rxDgjhg5o58wdrcagKvchxiSUr6MKvQ98WBfmVRQHx, 5ENiEYBe1FUSeyoTgwFuasuCU4LKtyqWy58A8PUmHTxgGt9m, 5GEsjAZUrMKSdRxeu77xuszbcgggoR5BDEhVpidvgPAEVhFq, 5DbsbNXcr21fC8MszS1AV8JLaBKpXxsfvWvfK5mux4zKkdnt, 5CADxhweP2DLG1zvdVbUmf9ECPDW8nEETHz32E9E4wBLpxoJ, 5Caa8mbp3KpsihuGamqNTyW6Zm55z2LnRMrKMobEPbPCPT5d, 5CGP4qhqtwrP4awnxjHQmkujgW4johQ2Ac6MDWbpyHnP43Gf, 5HNCfb4Znv4D8aZa5DbaZcwCPhxWsL7Nje4JaGa8KjHut1Cv, 5ChaWs9RdjNWoSRQhQLX6tdJEjnGo2SEN61SoS8UE1FGcGZ7, 5Guj86zqCChEX7jhxQaHzjYLbjnkqCZnV6UsUJNhbFhupxUF, 5HH9xyNAWHe52ZVtwVwYUnijn7T3mU4PVfftJDcxnPgFNeV6, 5FLbNye9ohTeuGsBFEY4jLcVTGeeb99tpBFzgfzYo4R4FGCv, 5HfuLAbye7dJeaPrRrgzxV9xk7WRX1nyMAGz5nMdDdtxhK89, 5HQUPLoTytGZA9Um4VSsc81Myxq5eCKyKt1LvveyKezoNAGV, 5HWfUgArfWSgWxZSgnqRR9EhLtctnhW5bx69VVaiydALHHBK, 5E9cppxGVHFuJUVVkfLtpvB2iyNASW8o7QZwMh1E4dESKz8N, 5H63CR314W7BGy8XjYgR6FtV1quUYoAKtKM7warjYBpxmBLb, 5CmKyQBoKSaDnW8C5n1oEW7eG3Sq8Zd9BWDQRYsfpg3fmfrB, 5GBhVZpdwkrmEneZW85TWYTXkvZau8q9eeB5EdpUHwJntTgm, 5HpLku5nX1Qqr2jUHDXH7rMBB5UVD7gJubNzVijvg6JhJJ9Q, 5EZeTkSTVyiptdRSf9ttHXptmnr9bpshXMptibVVpU8y1pe3, 5GjC3mFgtC2EneyXWwrepB5Z2GWnc2fnWhQf887EaLe4b6v4, 5Fmsu1BFGpvGFFSMCt1isXgezjSJa2kDdJBHY45aygy3s6Sa, 5HdX7F12o2ANEc28vFzvSTBDVHz8ZomNcX819x4Fs5WJGVhy, 5G4GreyuVCLQfxGFUcdQSjAtcDYWCnWzkzNxn3UWW7fDALC4, 5DodvvgR7PdinFtfrq8hYjo5RMQxXGv1c5B8DifeRTfpA1Qo, 5DFZAuyRSBY2kqsT2w31Uyt6Tjjd5FbWJBxowECNH9v2eypD, 5FF99759ko3ZGEwVyheGfCvU3a1U428KYA2qKDgqyfRRyV7i, 5DvvkoutiYLAcKHzUH7tvtFZK2yBtx3wszNxUkTivLTjb8HU, 5Cai5JiDcAqrP3ht5JM5eQXAN4o6FfuNzucydvvvEktodqup, 5GqLVV3d7DB4ZntLdvx5HQsQy44EF1niCp14BwEiaXC9zCEp, 5DjvM9BQyE2gre7k3bZ2Ewt7ju7esgaqCwmsjYcGJffUhqrM, 5DJPthVaLDaMoGjjB8UX1oS3EWLfkkZrkswNjrBZxfmQumAS |
 
-#### -Blogging Acala
+#### -Acala ile ilgili Blog Yazma
 
 | Blog link | Mandala address | Results |
 | :--- | :--- | :--- |
@@ -606,9 +605,9 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://medium.com/@knowledgeiskey2017/acala-in-a-few-word-8ca3c88e76f9](https://medium.com/@knowledgeiskey2017/acala-in-a-few-word-8ca3c88e76f9) | 5Hg96xTCugbbFd55F9iBNofie4gpAgmJUVGd8nRL5vqCPCSp | Reward |
 | [https://bihu.com/article/1022529417](https://bihu.com/article/1022529417) | 5CB6bxLb9jDna7tAeJMAMRaFDsSjRhiEvwFJJpRDCLXBE55o | Reward |
 
-#### -Runtime Bugs
+#### -Bug Çalıştırma
 
-#### -UI Bugs
+#### -Arayüz Bugları
 
 | Github issue | Mandala address | Judging results |
 | :--- | :--- | :--- |
@@ -633,61 +632,61 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://github.com/AcalaNetwork/acala-dapp/issues/119](https://github.com/AcalaNetwork/acala-dapp/issues/119) | 5FGx48oGW6muZspe3X7EysKdseqWvGcwD1DSJTx1RLetpnKZ | bug-C |
 | [https://github.com/AcalaNetwork/acala-dapp/issues/123](https://github.com/AcalaNetwork/acala-dapp/issues/123) | 5F3rYPmFB53XttPd8Zq9QqPxMFDUuVqDx4zjVjmqy6n4Ve4M | bug-C |
 
-### Season 2 Rules & Rewards
+### 2. Sezon Kuralları ve Ödülleri
 
-#### Node Runners \(11th - 31st May\)
+#### Bağlantı Noktası Koşucuları \(11 - 31 Mayıs\)
 
-**Prize**
+**Ödül**
 
-* Total: **1575 ACA + 107,100 KAR**
-* Each Prize: **25 ACA + 1,700 KAR**
-* Prize draw at UTC 00:00, **3 prizes each day**
+* Toplam: **1575 ACA + 107,100 KAR**
+* Her Ödül: **25 ACA + 1700 KAR**
+* UTC 00:00'da ödül çekilişi, **Her gün 3 ödül**
 
-**Rules**
+**Tüzük**
 
-* Run a Mandala TC3 Node, follow [this guide](https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers) & check telemetry [here](https://telemetry.polkadot.io/#list/Acala%20Mandala%20TC3)
-* Remember to run your node with `--name` parameter plus first 10 characters of your reward receiving address e.g. **--name "5DcvxiYpLn"**
-* Make sure [**get some test tokens**](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started#get-test-tokens) **for this address**, otherwise it cannot be verified nor be in a draw
+* Bir Mandala TC3 Düğümü çalıştırın, [bu kılavuzu](https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers) takip edin ve telemetriyi kontrol edin [buradan](https://telemetry.polkadot.io/# liste/Acala%20Mandala%20TC3)
+* Düğümünüzü `--name` parametresi artı ödül alma adresinizin ilk 10 karakteri ile çalıştırmayı unutmayın, ör. **--ad "5DcvxiYpLn"**
+* Bu adres için [**bazı test jetonları**](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started#get-test-tokens) ** olduğundan emin olun, aksi takdirde doğrulanamaz veya berabere olamaz
 
-#### App Users \(11th - 31st May\)
+#### Uygulama Kullanıcıları \(11 - 31 Mayıs\)
 
-**Prize**
+**Ödül**
 
-* Total: **6,000 ACA + 300,000 KAR**
-* Each Prize: **20 ACA + 1,000 KAR**
-* Prize draw: **100 lucky winners every week** for 3 weeks 🎉
+* Toplam: **6.000 ACA + 300.000 KAR**
+* Her Ödül: **20 ACA + 1.000 KAR**
+* Ödül çekilişi: **3 hafta boyunca her hafta 100 şanslı kişi** 🎉
 
-**Rules** Try Acala App and do the following to be in the draw: 1. Use **Liquid DOT \(LDOT\)** to get DOT derivative 2. Then use LDOT for any effective transactions including: use **Self Service Loan** to borrow aUSD with LDOT, or trade on **Swap** exchange, or **Deposit & Earn**, or **participate in collateral auctions** etc. excluding transfers. 3. Get started [here](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started)
+**Kurallar** Acala Uygulamasını deneyin ve çekilişe katılmak için aşağıdakileri yapın: 1. DOT türevini almak için **Liquid DOT \(LDOT\)** kullanın 2. Ardından, aşağıdakiler dahil tüm etkili işlemler için LDOT kullanın: ** kullanın LDOT ile bir USD ödünç almak veya **Swap** borsasında işlem yapmak veya **Para Yatır ve Kazan** veya **teminat ihalelerine katılmak** vb. için transferler hariç Self Servis Kredisi**. 3. Başlayın [buradan](https://github.com/AcalaNetwork/Acala/wiki/1.-Get-Started)
 
-#### Bloggers \(till 15th June\)
+#### Blogcular \(15 Haziran'a kadar\)
 
-**Prize**
+**Ödül**
 
-* Total: **2,000 ACA + 150,000 KAR**
-* Each Prize: **200 ACA + 15,000 KAR**
-* **Total 10 bloggers awards** will be announced a week after 15th June.
+* Toplam: **2.000 ACA + 150.000 KAR**
+* Her Ödül: **200 ACA + 15.000 KAR**
+* **Toplam 10 blogcu ödülü** 15 Haziran'dan bir hafta sonra açıklanacak.
 
-**Rules**
+**Tüzük**
 
-* Original blog post submitted to [Medium](https://medium.com) or [Bihu](https://bihu.com)
-* Remember to **include your Acala Mandala Address in the article to receive prizes**
-* Submit the article link to [https://riot.im/app/\#/room/\#acala:matrix.org](https://riot.im/app/#/room/#acala:matrix.org) with keyword CANDY\_BLOG
-* The blog must be original. 
-* We will judge both the quality \(how appealing is the story, idea, perspective, insights, analysis etc\) as well as social reactions \(number of comments, likes, twitter or other social sharing etc\).
+* [Medium](https://medium.com) veya [Bihu](https://bihu.com)'a gönderilen orijinal blog gönderisi
+*Ödülleri almak için **Acala Mandala Adresinizi makaleye eklemeyi unutmayın**
+* Makale bağlantısını [https://riot.im/app/\#/room/\#acala:matrix.org](https://riot.im/app/#/room/#acala:matrix) adresine gönderin. org) CANDY\_BLOG anahtar kelimesiyle
+* Blog özgün olmalıdır.
+* Hem kaliteyi \(hikaye, fikir, bakış açısı, içgörü, analiz vb\) hem de sosyal tepkileri \(yorumların, beğenilerin, twitter veya diğer sosyal paylaşımların vb. sayısı\) değerlendireceğiz.
 
-#### Runtime Bug Hunters
+#### Çalışma Zamanı Hata Avcıları
 
-[See Runtime Bug Bounty](https://wiki.acala.network/general/contribution-rewards#runtime-bug-bounty)
+[Çalışma Zamanı Hata Ödülü'ne bakın](https://wiki.acala.network/general/contribution-rewards#runtime-bug-bounty)
 
-#### UI Bug Hunters
+#### Kullanıcı Arayüzü Hata Avcıları
 
-[See UI Bug Bounty](https://wiki.acala.network/general/contribution-rewards#ui-bug-bounty)
+[Kullanıcı Arayüzü Hata Ödülü'ne bakın](https://wiki.acala.network/general/contribution-rewards#ui-bug-bounty)
 
-## Mandala Festival Season 1 \(Finished\)
+## Mandala Festivali 1. Sezonu \(Bitti\)
 
-### Prize Giving
+### Ödül Verme
 
-#### -Running a Node
+#### -Bir Düğüm Çalıştırma
 
 | Date | Lottery block height | Lottery block hash | Prize winner |
 | :--- | :--- | :--- | :--- |
@@ -713,9 +712,9 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | 03.26 | \#478,671 | 0x6b514841e8bd765f38d751c88b61148bec684a49c56a54daa64a79379c861172 | 5DyEcs3fV2pmcTQVshC3Gr5WyA9f5xSMxirvzrgr7muoVG7M, 5HQFXgz67bre8PdfcNVJywWX3rNo7R1do9HfB3g6edDffR46, 5FHCaBgXVmj4iStBArBgPKubNJGRZCjja1j1SfdaKMu5KA2X |
 | 03.27 | \#500,346 | 0xe9119a9f5c3606823b409802607c402996f4638b964cf49b48c7c30ffc56a43b | 5HmbZEZ6QFTBB5hXaYDi2Qx9Yq4vscLGqa1B2AD3McCNNQ98, 5DskzyXfQsxD2vJZDzCfXFnRhicHfAtrZ8qcM7BHsQFg7Wrg, 5ENZGGyRryWv2siiDtCJjoVfQ1kWyTAAdeJqdpd8UBwoQqwE |
 
-#### -Using Acala
+#### -Acala Kullanma
 
-> **10 top accounts**
+> **Top 10 Hesap**
 
 | Date | Winners |
 | :--- | :--- |
@@ -723,7 +722,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | Second week \(2020.3.19\) | 5FNmkE5pVgNYD8bhQQHYdTsDTcjQfLcjvJDwpKtLu3VXzfdA, 5CAyvM4JtZQqjs1eFUG3LcDzs8fZiPtNHRtBc7kPYfxfVB6s, 5CoMtmPFgJRdf7mShziKeRq1gJoRyJVex9b83GHq3yH3C8Tk, 5FsEUyCnLhdv8jdT6X4rYB6WKi8VKazXahnSeh1ezhkTWUgz, 5CqduWFn7pKiGTvrYPe4BQCp3G5Egv6cqo7RtoVshZLFFdMy, 5H4Em4gYZe5g6Gzdsf38PWSuDSyU69neG2DhR45YQivTWZ3e, 5DA9yUXbMd6pwuZ5GyYTEMb6Um8XLVKUcaTsqqgwy7GVZCQ8, 5DCdUUZSEsdB3JBwdyQsKjEwdjWLyVajJaeki66M5YhGYWyK, 5GZSvT7Fda3wfZ5qx2kdSP526h3ddfn6BnL4jVyqD8NPN1zL, 5CtTGP7D9Re7AdGbViCrDGb8NFXJo9r74AnJsCmsfUBFTyx3 |
 | Third week\(2020.3.26\) | 5FNmkE5pVgNYD8bhQQHYdTsDTcjQfLcjvJDwpKtLu3VXzfdA, 5CwSTvtMUvt6eFnrqKjpiZs8nzXvS5AmrSttpNyihfVAvuQC, 5GgivqrWGmUjkJSrZs5x3ifNgENsq2eM4ASta7LDtRnAkUqT, 5H6AEtxBvRgWPLqJKjy8MLnMdpXBHnuJLGFN1X1CZLTwidEL, 5Ckonmbx6tK1WGNPUqn1nke8JJKpFgKpQBUquRojM7gW51Me, 5GZSvT7Fda3wfZ5qx2kdSP526h3ddfn6BnL4jVyqD8NPN1zL, 5H4Em4gYZe5g6Gzdsf38PWSuDSyU69neG2DhR45YQivTWZ3e, 5DA9yUXbMd6pwuZ5GyYTEMb6Um8XLVKUcaTsqqgwy7GVZCQ8, 5GWj7uVdbEhTad1SwTyqaD2W7h1jX3fMSaWweHR3M3KHj9Qs, 5CtTGP7D9Re7AdGbViCrDGb8NFXJo9r74AnJsCmsfUBFTyx3 |
 
-> **106 lucky accounts**
+> **106 şanslı hesap**
 
 | Date | Winners |
 | :--- | :--- |
@@ -731,7 +730,7 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | Second week\(2020.3.19\) | 5CaME74bajSwYpHzEHokqTbYTAYK4nBjRj1s3GLfHaK5hU9i, 5CApcfdm4JqQ28GK4XfEK4CrPrKgs5gp9JpZuDesvL8UagDb, 5CCdo3gfsnjg8WCTChrB4jQKXNncfbSN3H9NhNVqfD7EjNmz, 5CD2jb9ymzGxNyv8bZUzFv1MxG36rKgM5V1F5hooa6Q6CNur, 5CDTUWCWrRxayVmxHbHPhRDSh56fbvjzYrdu46q26u24Qf3w, 5CLtcEva82FZzmTL9kr2TbyLG3z1P9yVgpHeb5RJPp1a1jEo, 5CMW4BiVqfJ9Li5uxiG1HnzqigvcZfWbK8pekrUp6teHw7GA, 5Cni8QpH5uoxCrueohD1anzVy5tHsGzRzcgEh3KnpoAjyL5p, 5CQBYBqkNzrQhPk7Aphiao6PbfReTA8ZL1rhXPyN89N6oYq5, 5CSbbih3GNn3XYx1Y4YEouasWNbQUuniLBgKNFeUHtuKN5fi, 5Ctt7FJubQyy5tvfnZeH2nhxgCDgZ9kLH9FtHd3b45MooLvF, 5CtuxGvKZ3A7TXWLYk7GZrgkoJL8YxoJ6xefZDqXJXzdVRzS, 5CUQQGvpNe6fpqnNyQZACDcwYGMyjmmMcBFu5KoJ7PwvYNgj, 5CX3t4uc6UwbHA93LLjAqqyGb9Knk8w1G8jE4U38SLLGvoxz, 5D5Wtvop2EJhtPBnznQkNg7nXutghEPNmR1Z4C5a7NMomfhU, 5D7eU4gL7GYQy1GhiwfLBUkXWogVnuaqag86SBXgvwxZQSxn, 5D8ETR2iZNihfnt9UJwUcB6JdyXMdMqbVk4eA1wag2zfSeWx, 5DaD5WtNkNmiXpWeUgN2yozFV7DDS7Ldtpp8dyoRDDt4bw9w, 5DALdXmk5mzHHYoYHG7kp7ZGD8NZdYf7s6ATUzXsHpgXXWHk, 5DfVaYbSpA8gFheWLvte2wrV3HhUBdvPn6kTe3QX3D6zUeme, 5Dhahn4Wnziic2gExmc3qqiuy8Qvv3xTY7BaZZ78hU9a1gk1, 5DHtpAMFU5orY2SQQ5pr9KLC5ktzCuS4Tynx1WT3vQc4Pw5b, 5DqFgUVwGMGurJrJJTbtFA3U6HS6ezomTHnpbREKbnKjD9md, 5DSKU5oM1FcCjvRVKpF6rGPpvnZaMk6HmP9tZjSiJwakGhzn, 5DsnnPUSteS97tobbTsFoqr5q1tfqYa3Z5pJFpsVC1o2Qrx5, 5Dt2VSN2c2yEYXrMZWQ637k12SV1LQ8xcqGoC2KhbM5qjDB8, 5DvpnQx5AhaG5LMTcQGFbawfx4c1WPSBt3Yi3LaKVRsTVCBm, 5DvszTc6FJAmyhE6v5ZJhchtGH1ZQ2KR7iZi7g2776EX2ZQ7, 5DXBe7fb2v4kRsLpKzArkLXfdd4ZrjX6VqUrWDC1jVQnXVVy, 5Dz8mYhe2ji4n6xwSHTWPuFGmbxpMnnkwWMTP2nTAKZ5xUcd, 5DZsZrAaA1WMZUQ9e9C8WbodnEnbdKcBpsVXpVGztyQkjvVZ, 5E4PBrtxKguhK2UwwqKWUqJFsbci9t1q9rS7rHE1gu1aBFmU, 5Ec2mAe7Bt8ohdASVF5XmchtH2YZi7EdaDqXPGLFqeeAjUax, 5ECwTNTdTscgQUmKLpPK9TwJUc2rsqQ4M6qBfeRow5Mk2H6j, 5Eh5wzrkyxH3PmS9ahEftWLyCLwjirecohy8mvzwt2v5iHmE, 5EHPJHWewSnyni4Veqp6A4TDqUnN1K6fnzb1GRH1Y5uYHJrz, 5Ejmeh5oDc9KAh1yhr6hWQpPGHjV1EREBdXL11CdkVcw229x, 5EJR3vqBw8y2X4TNhqGHi7NzYM5H9DcyfdJM5XjrnH2CC6jt, 5Ek4bNRtJh3rQBD78bmoBvfk5C2Xmuy7nqM9K7X8WdSWmbim, 5EL71n847E1mtdrhrhEWc81J6eLXpG6tGbjAq2yg2FvFqHDS, 5ERd1oVWtXy1N9hW2SxHutdsMPDvUkCFvLtMaHYbPXzFrdSn, 5ERDK6jpUVqTqVVtN5sZHki5HGegZLqTLL72psDCJWr9btXm, 5ERpNXhqX56i6eCDYCygwCegs2VCw6d6KNPTqfqg37GJGq3n, 5EUudY9pLJ17acK69CoeP3x5DxF7b1euinNZZFfCDeB3vRKy, 5EX2MLZN8bBSKTWLoTsKeryLjvRKrKCgid4AXtFJsddXQX3g, 5EykxaQicsqV5uDb9mkQqDBPXVeXz3Q6qwz12TaRDwrQTmnZ, 5F1TGRBPEwSnRdwJpMe5DicVvFfArfuHg3bCqez9iymweDTP, 5FbbWe8EEbfy22TGbQjtUhQNpzwGPBDwqyRHodZdGpMDaXyk, 5Fgkcy5KGTCgvWPkoiaJURP4siSV5c3STfNc2JfGd1j2RaNh, 5FHfYwu5mfkJzzpVtNumv8WyTZs9vvpwCBEYzEqi6xgNPHey, 5FjXFxPrEyLwXBVYC12CXufXgWQzddnpsArg8P8fJi7KwsFq, 5FRg2xXPHAxQEa9gs9kgT8kEuKce8t3PECeEBVngvKiY1eVY, 5FukjmoYH9wZMme5zLBwfT4tMDsqXGEacbidqw4JsUZEG7fv, 5FvmpDcdJiVTJsFxZ9ruz7GRM9JFGEAxDWPp83y93rtegLoU, 5FxpytyEjhWsFkQBfkYo523fhadtQZiPcFwxW2B39xspctkT, 5FYvKmBGhd85r5MfuMMcQ2hTRjSgCgGD7vpTdvjtNgLjSBcu, 5G1VFd4fgc2xP9AJt9vL8KCtva2Wbrf6vVjFvsdueQM3rvrL, 5HmbZEZ6QFTBB5hXaYDi2Qx9Yq4vscLGqa1B2AD3McCNNQ98, 5G3gNV9ZAsfKB7ajMH6RhqmFda6xgAjUbjNzVanHzYLGQ87D, 5G6trpf7pZQce1PuumLkmkdsuCAVqUSBQTceHoDCGjyjbcrH, 5G6upgJNi99Co55Dsv57gnimrourzdf5RoS2e1rKc2n8TJ4k, 5G9i9UgfogCH6VGSX3eb1LG44XYdgcpj5PRbCFP7qMN3A8MF, 5GbANjH5q3kPrXSbJ5fNcXuMDr1tDJW3pJo2c8cHEhEvXZbk, 5GbS9EpYangQpDaNz9VghK3VJe1Vxsup1yMrve3VNV8Bs2gd, 5GbstTqbFPegS3JjunbXjuTnS2qhwJPMsUasZA4x7TEqDYu8, 5GCFMEMkb9SYqkPQbnJwDboc1dBM6ZBRPazSzGDHNNH1trUY, 5Ge9U2ZMnoVfx57FUBoKA9WPjsxD7JF2C9PLbFV9wKn88E4M, 5GERE35iVpdBs5KE4GUy9TiNwcjheZkgBDkaEnQn3j7W9oTv, 5GeSLp5DnRpVBH142dnzVZ7KJPa8UoBxk5wpVks5irT6fikE, 5GGhnPcLBRfR9FgwfzzCaEDbbyoLoswj9KAX1zxyC1ej2S9k, 5GjZWQ1CA7EbYzgBmKQqeCMhFMKctuLxKQ6R7uPgHboCLJ4u, 5GmUtqsaGNBu2gP8nAqQsJA7uGemWxS17RgDVTf8TNTkGSNq, 5GNz45kRQHebeUvh4xEk2bPDHWnHkxmmdJfPz42FuUQD9o9b, 5GpEVSLKNUG2HBSDB58LQPRLZMLPruK8uwyMVXd9Bvf7fuEy, 5GuXzQXqq4AboeTqwA8PwaVXJNNo5WVQXL9xLRkchKx5EA5U, 5GVnBAzqGhRCkKbr4jKsSHC9z5V9iqfG3PZMXiiXPEgtom6p, 5GWsLUrtX3pxiA2ppt3BHww9QpYsSucdug2KgrSQ3F5FdhPe, 5GYzQxeDFLN7ZW9piukRYydK8P5N1oJuzrCfPCF9BBaX8NJ1, 5H15dtXREueUfud6bdFkrR8ru41bxEjuekLfkXCiaKAp57o4, 5H3mwRQWsZv4TdJiqgU237LADWiFGwetf1RC8oJcZHdQx5re, 5H3rq3eR3gwtAZhhctacokHZWEdPMi7jcPoJGPGjKHgCYJNW, 5Hdk2KXSp2W5szxU4fKJTnPCrjcGK7FToGZ292vkXzABUuyw, 5HeAqbF9FtMW4xitwF4BjySPFtqoFX7EECr2QcftGsPMFoWE, 5HETz3bu4SxnyeM4f3XhHSYvbwAveNdepdiKAePzZNXSDKbq, 5Hgx2vu9bWECxfsPwdepAzRT1qtdcruxyDX3XnGNSypckWZW, 5Hh1jyjseRp89PkxiLzL287egevzuDCKbSfsQQTHgnTezo8h, 5HH8NRNe9md45Gjzop6N1CCdRVXvfXBxYWoKtHHYtLmojH3B, 5HjhTLGk5V6HXuwjpdbHMWUXc5LH3rMtLKpcqSn8Z5x8xLUS, 5Hpngv1Pp8JBHfDN8BZdSawKNTBrSN5vKktr6VJvzjkzwaLr, 5HQa6qViQEjnTKfBkfLzvR7R2aKQga1gnAe2CPjLr83hHCxL, 5HR2Uzwi72AgrwUougEJNkSt1yH8Hd6dokC6iQ7RsZPbuSW4, 5HTPMLGoZKZVz8kJQcTaQPQpXKAmc7KpWttMWUCmyYYavv1W, 5HTZDXFep67Z6KJv4y7Jhh7is2D6F7KF5Yx2qa6yAADodoCZ, 5HW3oF1Tuyxt9ZSFfeq6ZXTfxei5oGBzRGKzK13wNtJQkw2X, 5HYfqv8CYXrvAYWTnMdRUymPU9oHjemiC3C4qFYpBS4B2VFr, 5HZAj8h7KAwsc4AWubveD2k1bUQ6irg4DRxqW3UJWCkjFpLw, 5C4rHmiSuvhtBbNgM5SExDavrLKKiy6cj69XAXiWkA3GXWqM, 5Cai5JiDcAqrP3ht5JM5eQXAN4o6FfuNzucydvvvEktodqup, 5CojknH9daMVDQ6rZuUSsDjnzDcofvGWRtCsG6y35HJyiDvE, 5CtTGP7D9Re7AdGbViCrDGb8NFXJo9r74AnJsCmsfUBFTyx3, 5ENZGGyRryWv2siiDtCJjoVfQ1kWyTAAdeJqdpd8UBwoQqwE, 5EqaTXJdJL5yxA2aGmDJqZ5wdAVgMQV5HQvjhQs1EDas91w3, 5EqgctbbbAQd3j15fHSU6j2X5UZ2bap25sbW1vAUUxiquT6x, 5FNrTnVFL9zXUuaECGmMEgBSY6CLSc55JkVT4hATr7UGTCSF, 5Fpv2bqceAVA4GyX5BVfeJDwLdvjQEkaBbowJ9zAEGUQSsQJ, 5FqNMQqhaKPKc37jeFkPEUT5UhyArrDsmmkiv2GNoopXXp7M |
 | Third week\(2020.3.26\) | 5FTaCPEmwhMJ993ZLNM8GoHDw29SHxrpGogDB82sboCpMJRn, 5CqLTf8v2VpSnsCNjaRK78j6CRarcpQ8ZFD37XfSoCZZv1gY, 5GVrq2GR3xrGViFwV62rLDN6h8JnbaD2yp6rpYwYPNqVTb5Y, 5D77Fa9D5C2UgpQUGMioU468rTkoiCkRgQzfmAVxAN1RybB8, 5Ft5vRXS3K5JM8qNKM7AHDNRL7Ba8WvFtncDoSXuZx8WmbRf, 5FsQW2be7EaX4heyMML2GTJ8YRubCCmPDJGnUcyWi6x5oHFD, 5EUX3WAcTY6MVwcwHhPHodws9AHvKzi8JSe6n8RRmu3kktaY, 5H4Em4gYZe5g6Gzdsf38PWSuDSyU69neG2DhR45YQivTWZ3e, 5Cw43rv2Lk55UXqCpd4aDqo3iBPQ9PysBJYcGfsyQReyXSNP, 5F1TGRBPEwSnRdwJpMe5DicVvFfArfuHg3bCqez9iymweDTP, 5FsEUyCnLhdv8jdT6X4rYB6WKi8VKazXahnSeh1ezhkTWUgz, 5GNMwnyfd61242esJJGgbG5HbPXSkyQDZtiwdYoWnkoGr4zM, 5DqFgUVwGMGurJrJJTbtFA3U6HS6ezomTHnpbREKbnKjD9md, 5GYVq3dUaELqNN2idbmexv4PGWVhe7Pnp55m59WRGPpC7umX, 5HiYHwLSQme1Tmy3VAJYtkCiCSzPhrhfdnKDzvqZtpP6Npna, 5E1rH4B1Nji2xUeepgLCsEDuAdK7LZcWzwHvyM1iCjkkGk6K, 5GCc7JDdXQ8QKnm8itDBd7hbKCKziS8eDrTTFeXmj6HhKTHk, 5E4PBrtxKguhK2UwwqKWUqJFsbci9t1q9rS7rHE1gu1aBFmU, 5H1ea9WWJeTDLnMjcZ5eQFD6Twybnt8Ug3aVVjWGac4jwf78, 5H1ivDgZNqVAXKBsJz1mcfKPkZ6uqRFY7fAn6y2E1X7Yoxcx, 5FncmEPgwKZsb1Py2H9cV7uJqcv2SnYoatxkjNNTDjmH2fPt, 5DALdXmk5mzHHYoYHG7kp7ZGD8NZdYf7s6ATUzXsHpgXXWHk, 5H63r5WSEiCeKCif3r5dNvs6FfqWTNbTfQPhCiTUcGvgvrdN, 5EAXdqJxWoMDyguXvRdq9HSbekLjm4zATUriPMsiMRg7yyML, 5Dhahn4Wnziic2gExmc3qqiuy8Qvv3xTY7BaZZ78hU9a1gk1, 5HYYvAgKvhrLtZ1qvvoqEbZofPr6M2rngjNShHrz3YSHA1LN, 5FHCaBgXVmj4iStBArBgPKubNJGRZCjja1j1SfdaKMu5KA2X, 5HN3psqJsjtdpuH37ur6KVt4kywXCs5ox1bFnpMdEzBLF4Tf, 5Fgkcy5KGTCgvWPkoiaJURP4siSV5c3STfNc2JfGd1j2RaNh, 5GF6DQDRA6Gvva5L919Dk25vDRZe3q1gtGfMZ3A5vfEeERL6, 5Fni3JNZaBT9BEkHGVACPzvSuKJzL9JwiXTTNC4urK7FiFdp, 5GivH9nb6WsNPpKFXeqmr8RfMJeFFfy2GohkiwS79Di6wWR1, 5HjYCMgSjJB6Z7zuwV363QgVfn5vELCBDqPinXRbSmS7g3js, 5EvAprh9QEVm8RpcvLzPnyN4KkWvcyYovNphWJKtuL8k2hk4, 5GzotcPuXTpM7DKoErHDcEDxVDZamGvUDDyCPzpibaAgMKUa, 5Ec2mAe7Bt8ohdASVF5XmchtH2YZi7EdaDqXPGLFqeeAjUax, 5CB6bxLb9jDna7tAeJMAMRaFDsSjRhiEvwFJJpRDCLXBE55o, 5Gb2tKDMDz3RbQ7aMgmbfV7tEt9dBgdWEWz45YEZ1HvtZMJF, 5E9mW8wEG4nv2Q3kjMaKhhvi3N2d74GyD7pSzVUpsM5iPtTF, 5FLgkZCDXh76uoeCkmb3BG3Kg89Vg93y6mHf9qLta5zrSueM, 5Co5gdHrGVPSWtqJNH4sCZT2CpfSLKT6CHv4FrBWTVKGR8BT, 5E2R218ryzuina6vtSFn9vWsV8Wzt4tgFv76x4Cm1KaDGLMC, 5Cai5JiDcAqrP3ht5JM5eQXAN4o6FfuNzucydvvvEktodqup, 5HTHjJib4wzqsCGAvD8ekSUn1ZXu7tAk44Sv5wG5BEER8WoZ, 5DHtpAMFU5orY2SQQ5pr9KLC5ktzCuS4Tynx1WT3vQc4Pw5b, 5DhKbq3xPogHtt1qq1H999uuxhEcX649t2uF7TPswjFjhbGc, 5CwnyUJXNNgLG3EH1ckh8ztbs9Er5BWDhp6SpmSeEU8AjnS4, 5Ctt7FJubQyy5tvfnZeH2nhxgCDgZ9kLH9FtHd3b45MooLvF, 5DyEcs3fV2pmcTQVshC3Gr5WyA9f5xSMxirvzrgr7muoVG7M, 5CkkeUawQnUahc7r4MGEJZzG2Hk6Ks4FdUS5mbuupxhYjPQ7, 5Ei1MrxjHevWAC1csMj7fLbQSthkKTq6fdr99Wjdb9efU8vr, 5GVs4qFFeqPW6TDMgQndS5naDJaPupH9BPh89yFasvaJR3w6, 5ERFkyHHuuSvgKYLuPi5a6M21nmjNetF9ebwBD8j8ougSqJZ, 5FRg2xXPHAxQEa9gs9kgT8kEuKce8t3PECeEBVngvKiY1eVY, 5G9nNLmSu3V6wN9ak1wAcggjkBTYCiekktXPes277r1N7QgT, 5FNe2jbVpKSrYxQWeDGDCqADdBzCti4eLQvZQGbGg77t738w, 5FNmkE5pVgNYD8bhQQHYdTsDTcjQfLcjvJDwpKtLu3VXzfdA, 5G8s36VJDBosJyU2DSXo6EfPLdRAoseWKvCdheMkE1GTWQxw, 5HdVeZgqGHpobSTiGoSjEoFPgymQ8ntqKDAzPX34L1iqZhhJ, 5H6HU8HGXCjQuQ89rQsYWJ9F5514GL79JEPm73YqEKoSkuJs, 5E7Q7bmzGTM9nucizj4aU7BvNMAEYmLrqyDLP778Af4MTcTC, 5CQBYBqkNzrQhPk7Aphiao6PbfReTA8ZL1rhXPyN89N6oYq5, 5GWiHwc8op5bfpgKUC9PvHEq6SAGcpKS56UbKpzDQiWcFNiK, 5HBTBEGrBXiYyKTKoUoZNdMh9rWFGkbaKH3gYzB4GiCicrPx, 5CFWEetvgMwrD3DKAWTx2GvzGQAp92HXrmUQ5ZWdFJugMEfY, 5DfhQHjxm76hqBdspSUFQkpLi6kW9rC68S79TybwEsRHTXnv, 5HjhTLGk5V6HXuwjpdbHMWUXc5LH3rMtLKpcqSn8Z5x8xLUS, 5DwGBQghKE1G866jSEoQNmsEd6vmhDsZV8c294teVfiSAwiC, 5HC98cwkHcoUCUMNa1FkFhdRfVCJcmbme2g9A7k2d8AqDaf2, 5CD2P3xb3rRZrgBU9gg3EnAs8vHeePh7dLNvTmNTYFWHY15f, 5E9j9vym4fkYNPoiCZYoaDFPsFfh5xT8ZYVtUdG4dSjcGKHv, 5EWtmwLeMbsSHhYrPdZTYvhrmCEdgKwg2xtQYWqPHwjpuiEN, 5EcMpfF25Qavx7rXM8iUFYP4MiPyovY7DvMMag6stLfdRzQj, 5GBM5hNhzHerACkb5aFvK1X4T4CMmBSAVxSGmtsLFp7iPtky, 5Fpv2bqceAVA4GyX5BVfeJDwLdvjQEkaBbowJ9zAEGUQSsQJ, 5HgU1yCa7JbxzKMbRFpQSyEAqaB7fkyfBSUSsqBGRmDEE4cJ, 5F4TsvLEf1sny5Sdme59CHTWW6woKENiBQ4ifg23rjppe5Wg, 5G1J3dEnZ8UFzm7A98TPh3HxeETSgUANiCoN6DuiznfofHoc, 5FgqWEW3pmXrBmv5fxKxWnGXbbXgWvKbUowWPiXGxb1xZFv6, 5EU9HJ4cZ9mNuiHWTuLfoF2r1wSVZHERk6N19HACgwqKVbwM, 5ERoUbf1vi3AyPHgdmpq3YY3f6cghZHHiTWRMpeqXCBBnHNh, 5E7a8BMH7qM5YEj5F9srTP2EsjPqpehFpreecNSC8go5MMwG, 5FQu4kbg2xmrGJRTav8fjLjgFHqexDRaC2B6sajdaWeKNm2A, 5FWnCJZmjmKePwa4GgZTKXixroPdcSqJxcetNe5rQgBCq8S1, 5FbntrjzEG52j24fu2LWh9E5npkmAUzkTtqZRyAgGQRZ2SkF, 5EnufWonqNdwG8PKcyR5zr4ZU4ikHmLssJgurS4WeiuTfxuW, 5D8ETR2iZNihfnt9UJwUcB6JdyXMdMqbVk4eA1wag2zfSeWx, 5HYfqv8CYXrvAYWTnMdRUymPU9oHjemiC3C4qFYpBS4B2VFr, 5GWSkXePdirfvjPTDfci5WjQJ8D3UtvZ76ezaDbWAUu2FdsZ, 5EJ2oFrVRPYeqNRjeWby4j9YE9xAYgi9d85Wsbzbz65ZA5P8, 5DPp1sn9ej8Dk4TEtjgxpL77J8aVSYvutDx2FUkMcsaNkKsV, 5G9i9UgfogCH6VGSX3eb1LG44XYdgcpj5PRbCFP7qMN3A8MF, 5CaME74bajSwYpHzEHokqTbYTAYK4nBjRj1s3GLfHaK5hU9i, 5FLRD9adTbffu9fhXhWDJ1gebvRX6agwAvjwjHASH2Vbibh1, 5DZbHfGpV35KGKX8Tbk31SFTm21fK45XsjW6SUadXGM52Fad, 5E6yNVh4xvz6MM9F5HCADgsXHJaGy562aSCZsiDkJSXmgcts, 5HQUyy93BQn5cQPK4ZFCjLNSZhSGesHiuHayvXxD7jThoQcT, 5EHPJHWewSnyni4Veqp6A4TDqUnN1K6fnzb1GRH1Y5uYHJrz, 5DvvkoutiYLAcKHzUH7tvtFZK2yBtx3wszNxUkTivLTjb8HU, 5FZWwEnfMuUgxCxvWkfxuUh7nnEct1tEuDpDmfbCQ3duWpaE, 5Da7gXBqzNax61FPu4F53GTCnVippegmRK96d5vs79XUoqNZ, 5Dk8XfuSZvsu6tYTcEX3yBQgK4xfAyoQQzErQAXkpHuScL4F, 5F9uATGtQairBzbLRW4jjNucCrAVCD74iDHan5Z4wMLjPkoR, 5DcvxiYpLnAUxNopcTYZFKKi7igp9CuRExAV5QUErroBGA3E, 5DxsXxCQtcR9AMyV5ENccP5pkTii2hGnwo9uMJSL1HrUZqLz, 5FCe5niGxQmKZWfzLWeujk65tAM8q9mkHfgbHdVWNxZ5Nhfu |
 
-#### -Blogging Acala
+#### -Acala ile ilgili Blog Yazma
 
 | Medium link | Mandala address | Results |
 | :--- | :--- | :--- |
@@ -764,15 +763,15 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://bihu.com/article/1898324332](https://bihu.com/article/1898324332) | 5EKsgSQKi6TGhmHVfVpC3n75G7LSXbAFp68xVmrcKx6V9WQK | reward |
 | [https://bihu.com/article/1613514055](https://bihu.com/article/1613514055) | 5HEfj4Tbk8xNtSPoF1Qg1DocZmTZ3BZedF8ucJhm6GavgrmW | reward |
 
-#### -Coding
+#### -Kodlama
 
-#### -Runtime Bugs
+#### -Bug Çalıştırma
 
 | Github issue | Mandala address | Judging results |
 | :--- | :--- | :--- |
 | [https://github.com/AcalaNetwork/Acala/issues/152](https://github.com/AcalaNetwork/Acala/issues/152) | 5FLcXWfs1hpRqbT4Rv5ACHkenqCGL5MPTDDeFtBFrogY3D9V | reward |
 
-#### -UI Bugs
+#### -Arayüz Bugları
 
 | Github issue | Mandala address | Judging results |
 | :--- | :--- | :--- |
@@ -788,78 +787,77 @@ The reward for each lucky account: 20 ACA + 20 KAR
 | [https://github.com/AcalaNetwork/honzon-platform/issues/49](https://github.com/AcalaNetwork/honzon-platform/issues/49) | 5GBM5hNhzHerACkb5aFvK1X4T4CMmBSAVxSGmtsLFp7iPtky | reward |
 | [https://github.com/AcalaNetwork/honzon-platform/issues/53](https://github.com/AcalaNetwork/honzon-platform/issues/53) | 5FHCaBgXVmj4iStBArBgPKubNJGRZCjja1j1SfdaKMu5KA2X | reward |
 
-### Mandala Festival Season 1 Rules & Rewards
+### Mandala Festivali 1. Sezon Kuralları ve Ödülleri
 
-To celebrate & reward supporters, we're hosting the Mandala Festival Prize Drops Party popper Giving out approx. 100,000 ACA & 5,000,000 KAR \(Karura Canary Network token\). See details [here](https://medium.com/acalanetwork/mandala-festival-prize-drops-3ae68df0dfa6).
+Destekçileri kutlamak ve ödüllendirmek için Mandala Festivali Ödül Damlaları Partisi popper'ına ev sahipliği yapıyoruz. 100.000 ACA & 5.000.000 KAR \(Karura Kanarya Ağı jetonu\). Ayrıntıları [burada](https://medium.com/acalanetwork/mandala-festival-prize-drops-3ae68df0dfa6) görün.
 
-#### Time-limited Candy Drops
+#### Zaman Sınırlı Şeker Damlaları
 
-**Run a Node**
+**Bir Düğüm Çalıştırın**
 
-**3 prizes \(55 ACA & 2,777 KAR\) EACH DAY** till 27th Mar Collision symbol
+**3 ödül \(55 ACA & 2.777 KAR\) HER GÜN** 27 Mart Çarpışma sembolüne kadar
 
-* Follow this guide  [https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers](https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers) 
-* Remember to put **first 10 char of your prize claim address using `--name`**
-* Also remember to get some test tokens so we can verify it
+* Bu kılavuzu takip edin [https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers](https://github.com/AcalaNetwork/Acala/wiki/4.-Maintainers)
+* Ödül talebi adresinizin **ilk 10 karakterini `--name`** ile yazmayı unutmayın.
+* Ayrıca, doğrulayabilmemiz için bazı test belirteçleri almayı da unutmayın.
 
-**Use Acala DApp**
+**Acala DApp'i kullanın**
 
-**116 prizes \(66 ACA & 3,333 KAR\) every week**
+**Her hafta 116 ödül \(66 ACA & 3.333 KAR\)**
 
-* 10 top accounts with maximum gain or loss will be awarded
-* 106 lucky accounts will be drawn from all qualified
+* Maksimum kazanç veya kayıp ile en iyi 10 hesap verilecektir
+* Tüm niteliklilerden 106 şanslı hesap çekilecek
 
-  Use [https://apps.acala.network](https://apps.acala.network) or [https://console.acala.network](https://console.acala.network)
+  [https://apps.acala.network](https://apps.acala.network) veya [https://console.acala.network](https://console.acala.network) kullanın
 
 **Blog Acala**
 
-**20 prizes \(666 ACA & 33,333 KAR\)** till 31 Mar
+**20 ödül \(666 ACA & 33.333 KAR\)** 31 Mart'a kadar
 
-* Submit a blog to Medium or Bihu
-* Remember to **include your Acala Mandala Address in the article to receive prizes**
-* Submit the article link to [https://riot.im/app/\#/room/\#acala:matrix.org](https://riot.im/app/#/room/#acala:matrix.org) with keyword CANDY\_BLOG
+* Medium veya Bihu'ya bir blog gönderin
+*Ödülleri almak için **Acala Mandala Adresinizi makaleye eklemeyi unutmayın**
+* Makale bağlantısını [https://riot.im/app/\#/room/\#acala:matrix.org](https://riot.im/app/#/room/#acala:matrix) adresine gönderin. org) CANDY\_BLOG anahtar kelimesiyle
 
-## Ongoing Rewards
+## Devam Eden Ödüller
 
-### Coding
+### Kodlama
 
-**ELIGIBILITY** Anything built with or on top of Acala that inspires you and excites you. This could be bots, DApps, services, tooling… Please provide the following: 1. Clearly articulate the problem and solution 2. Complete at least a proof-of-concept runnable code 3. Provide appropriate documentation 4. Put your Acala Mandala Address inside your code repo e.g. in README 5. Submit your code to [Acala Riot Channel](https://riot.im/app/#/room/#acala:matrix.org) with keyword CANDY\_CODE
+**UYGUNLUK** Size ilham veren ve sizi heyecanlandıran Acala ile veya Acala'nın üzerine inşa edilen her şey. Bu botlar, DApp'ler, hizmetler, araçlar olabilir… Lütfen aşağıdakileri sağlayın: 1. Sorunu ve çözümü açıkça belirtin 2. En azından bir kavram kanıtı çalıştırılabilir kodu doldurun 3. Uygun belgeleri sağlayın 4. İçine Acala Mandala Adresinizi koyun kod deponuz örn. README'de 5. Kodunuzu CANDY\_CODE anahtar kelimesiyle [Acala Riot Channel](https://riot.im/app/#/room/#acala:matrix.org)'a gönderin.
 
-**REWARD** Each prize will be **at least 1,000 ACA and 60,000 KAR**, more can be awarded depends on coolness, significance, usefulness, quality, and other aspects the Acala Engineers may see fit.
+**ÖDÜL** Her ödül **en az 1.000 ACA ve 60.000 KAR** olacaktır, daha fazlası soğukluk, önem, kullanışlılık, kalite ve Acala Mühendislerinin uygun göreceği diğer hususlara bağlı olarak verilebilir.
 
-The total prize pool is capped at 40,000 ACA and 2,000,000 KAR, and Acala reserves the right to extend it further.
+Toplam ödül havuzu 40.000 ACA ve 2.000.000 KAR ile sınırlıdır ve Acala bunu daha da genişletme hakkını saklı tutar.
 
-**PRIZE GIVING** 1. Please allow 2 weeks upon submission for review. 2. Prize tokens will be dropped to the address provided inside the code repo submitted. 3. **We may fund the project further where it seems fit** 🚀
+**ÖDÜL VERME** 1. İnceleme için gönderdikten sonra lütfen 2 hafta bekleyin. 2. Ödül jetonları, gönderilen kod deposunda belirtilen adrese bırakılacaktır. 3. **Uygun göründüğü durumlarda projeyi daha fazla finanse edebiliriz** 🚀
 
-### Runtime Bug Bounty
+### Çalışma Zamanı Hata Ödülü
 
-**ELIGIBILITY** Help identify bugs in Acala mainly for this repo [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala).
+**UYGUNLUK** Bu depo için Acala'daki hataları belirlemeye yardımcı olun [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala).
 
-Generally, a bug that poses significant vulnerability or causing systemic defects would be eligible. 1. Open an issue in Github, provide as much information as you can, including a description of the bug, its potential impact, steps for reproducing it 2. Include your Acala Mandala Address for prize giving in the Github issue 3. Submit the issue to [Acala Riot Channel](https://riot.im/app/#/room/#acala:matrix.org) with keyword CANDY\_RUNTIME\_BUG
+Genel olarak, önemli güvenlik açığı oluşturan veya sistemik kusurlara neden olan bir hata uygun olacaktır. 1. Github'da bir konu açın, hatanın açıklaması, olası etkisi, yeniden oluşturma adımları dahil olmak üzere mümkün olduğunca fazla bilgi sağlayın 2. Github sayısına ödül vermek için Acala Mandala Adresinizi ekleyin 3. Sorunu gönderin CANDY\_RUNTIME\_BUG anahtar kelimesiyle [Acala Riot Kanalına](https://riot.im/app/#/room/#acala:matrix.org)
 
-**PRIZE** **Total Prize Pool**: 16,666 ACA and 833,333 KAR, and Acala reserves the right to extend it further.
+**ÖDÜL** **Toplam Ödül Havuzu**: 16.666 ACA ve 833.333 KAR ve Acala bunu daha da uzatma hakkını saklı tutar.
 
-Bugs are judged on significance and severity by the Acala Engineering team, and are awarded based roughly on the levels below:
+Hatalar, Acala Mühendislik ekibi tarafından önem ve önem derecesine göre değerlendirilir ve kabaca aşağıdaki seviyelere göre verilir:
 
-* **Level A \(2,000 ACA + 100,000 KAR\)**: significant logic and process volunerability; sensitive or highly probably to create significant impacts to the system
-* **Level B \(1,000 ACA + 50,000KAR\)**: intermediate logic and process volunerability
-* **Level C \(300 ACA + 15,000 KAR\)**: mild vulnerability or bugs that interrupts or breaks system expected operation
+* **Düzey A \(2.000 ACA + 100.000 KAR\)**: önemli mantık ve süreç gönüllülüğü; hassas veya sistem üzerinde önemli etkiler yaratma olasılığı yüksek
+* **Seviye B \(1.000 ACA + 50.000KAR\)**: orta seviye mantık ve süreç gönüllülüğü
+* **Seviye C \(300 ACA + 15.000 KAR\)**: sistemin beklenen çalışmasını kesintiye uğratan veya bozan hafif güvenlik açığı veya hatalar
 
-**PRIZE GIVING** 1. Please allow 1 week upon submission for review. 2. Prize tokens will be dropped to the address provided in the issue submitted.
+**ÖDÜL VERME** 1. İnceleme için gönderdikten sonra lütfen 1 hafta bekleyin. 2. Ödül jetonları, gönderilen sayıda belirtilen adrese bırakılacaktır.
 
-### UI Bug Bounty \(Closed\)
+### Kullanıcı Arayüzü Hata Ödülü \(Kapalı\)
 
-**ELIGIBILITY** Help identify bugs in Acala mainly for this repo [https://github.com/AcalaNetwork/honzon-platform](https://github.com/AcalaNetwork/honzon-platform)
+**UYGUNLUK** Acala'daki hataların çoğunlukla bu depo için belirlenmesine yardımcı olur [https://github.com/AcalaNetwork/honzon-platform](https://github.com/AcalaNetwork/honzon-platform)
 
-Generally, a bug that poses significant vulnerability or causing systemic defects would be eligible. 1. Open an issue in Github, provide as much information as you can, including a description of the bug, its potential impact, steps for reproducing it 2. Include your Acala Mandala Address for prize giving in the Github issue 3. Submit to the [Acala Riot Channel](https://riot.im/app/#/room/#acala:matrix.org) with keyword CANDY\_UI\_BUG
+Genel olarak, önemli güvenlik açığı oluşturan veya sistemik kusurlara neden olan bir hata uygun olacaktır. 1. Github'da bir konu açın, hatanın açıklaması, olası etkisi, yeniden oluşturma adımları dahil olmak üzere olabildiğince fazla bilgi sağlayın 2. Ödül vermek için Acala Mandala Adresinizi Github sayısına ekleyin 3. [Acala Riot Channel](https://riot.im/app/#/room/#acala:matrix.org) CANDY\_UI\_BUG anahtar kelimesiyle
 
-**PRIZE** **Total Prize Pool**: 2,000 ACA and 100,000 KAR, and Acala reserves the right to extend it further.
+**ÖDÜL** **Toplam Ödül Havuzu**: 2.000 ACA ve 100.000 KAR ve Acala bunu daha da uzatma hakkını saklı tutar.
 
-Bugs are judged on significance and severity by the Acala Engineering team, and are awarded based roughly on the levels below:
+Hatalar, Acala Mühendislik ekibi tarafından önem ve önem derecesine göre değerlendirilir ve kabaca aşağıdaki seviyelere göre verilir:
 
-* **Level A \(1,000 ACA + 50,000 KAR\)**: significant logic and process volunerability; sensitive or highly probably to create significant impacts to the system.
-* **Level B \(200 ACA + 10,000KAR\)**: intermediate logic and process volunerability.
-* **Level C \(80 ACA + 4,000 KAR\)**: mild vulnerability or bugs that interrupts or breaks system expected operation.
+* **Düzey A \(1.000 ACA + 50.000 KAR\)**: önemli mantık ve süreç gönüllülüğü; hassas veya büyük olasılıkla sistem üzerinde önemli etkiler yaratması muhtemeldir.
+* **Seviye B \(200 ACA + 10.000KAR\)**: orta seviye mantık ve süreç gönüllülüğü.
+* **Seviye C \(80 ACA + 4.000 KAR\)**: hafif güvenlik açığı veya sistemin beklenen çalışmasını kesintiye uğratır veya bozar.
 
-**PRIZE GIVING** 1. Please allow 1 week upon submission for review. 2. Prize tokens will be dropped to the address provided in bug submission.
-
+**ÖDÜL VERME** 1. İnceleme için gönderdikten sonra lütfen 1 hafta bekleyin. 2. Ödül jetonları, hata gönderiminde sağlanan adrese bırakılacaktır.
