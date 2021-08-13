@@ -1,9 +1,8 @@
 ---
-description: Examples are helpful to demonstrate patterns of development.
+tanım: Örnekler, gelişim modellerini göstermek için yararlıdır.
 ---
 
-# Examples
+# Örnekler
 
-* [Ecosystem Template](https://github.com/AcalaNetwork/ecosystem-template/tree/f42c127bf10239821e1e7a56565cda4d64cd8d66) - You shall create a repo in your organization to be used as sub-module. 
-* More coming soon!
-
+* [Ekosistem Şablonu](https://github.com/AcalaNetwork/ecosystem-template/tree/f42c127bf10239821e1e7a56565cda4d64cd8d66) - Kuruluşunuzda alt modül olarak kullanılacak bir repo oluşturacaksınız.
+* Daha fazlası çok yakında!
