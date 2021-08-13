@@ -1,4 +1,4 @@
-# Audits
+# Denetimler
 
-Coming Soon!
+Yakında.
 
