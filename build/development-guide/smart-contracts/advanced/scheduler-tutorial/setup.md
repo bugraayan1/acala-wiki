@@ -1,14 +1,14 @@
-# Scheduler Tutorial
+# Zamanlayıcı Eğitimi
 
-In this tutorial we're going to be utilizing Acala's on chain scheduler to create an automatic subscription service that awards users the longer they're subscribed.
+Bu eğitimde, kullanıcılara daha uzun süre abone olduklarında ödül veren otomatik bir abonelik hizmeti oluşturmak için Acala'nın zincirleme zamanlayıcısını kullanacağız.
 
-## Setup
+## Kurulum
 
-We're going to be creating a project from scratch building it with using Waffle to allow us to create tests later in the tutorial. If you'd rather build your smart contracts using Remix check out this page [https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix](https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix).
+Eğitimde daha sonra testler oluşturmamıza izin vermek için Waffle kullanarak sıfırdan bir proje oluşturacağız. Akıllı sözleşmelerinizi Remix kullanarak oluşturmayı tercih ediyorsanız bu sayfaya göz atın [https://wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix](https:/ /wiki.acala.network/build/development-guide/smart-contracts/get-started-evm/use-remix).
 
-### 1. Install Depencencies
+### 1. Bağımlılıkların Yüklenmesi
 
-To start, lets install nodejs and yarn if you haven't already:
+Başlamak için, henüz yapmadıysanız, düğümü ve yarn'ı yükleyelim:
 
 ```text
 sudo apt install -y nodejs
@@ -16,7 +16,7 @@ sudo apt install -y nodejs
 npm install --global yarn
 ```
 
-Next, run the following commands in the folder where you want your project to live:
+Ardından, projenizin yaşamasını istediğiniz klasörde aşağıdaki komutları çalıştırın:
 
 ```text
 mkdir subscription-contract
@@ -26,15 +26,14 @@ yarn init -y
 yarn add --dev ethereum-waffle@3.2.1
 ```
 
-And add the following script to your `package.json`:
-
+Ve aşağıdaki betiği "package.json" dosyanıza ekleyin:
 ```text
 "build": "waffle"
 ```
 
-This will create a folder for our project, initialize a new yarn project, and add waffle as a dev dependency. We'll be using waffle to compile our smart contracts.
+Bu, projemiz için bir klasör oluşturacak, yeni bir yarn projesi başlatacak ve bir geliştirme bağımlılığı olarak waffle ekleyecektir. Akıllı sözleşmelerimizi derlemek için waffle kullanacağız.
 
-Within your project folder, create a file called `waffle.json` and paste the following inside the file:
+Proje klasörünüzde `waffle.json` adında bir dosya oluşturun ve aşağıdakini dosyanın içine yapıştırın:
 
 ```text
 {
@@ -44,10 +43,9 @@ Within your project folder, create a file called `waffle.json` and paste the fol
   "outputDirectory": "./build"
 }
 ```
+Bu dosya, akıllı sözleşmelerimizi oluştururken kullanılacak 'waffle' yapılandırmalarıdır.
 
-This file is the configurations for `waffle` to use when building our smart contracts.
-
-Finally let's create our `contracts` folder.
+Son olarak 'sözleşmeler' klasörümüzü oluşturalım.
 
 ```text
 mkdir contracts
