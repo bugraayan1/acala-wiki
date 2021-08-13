@@ -1,55 +1,54 @@
 ---
-description: >-
-  The Acala community includes over 350,000 members distributed around the
-  world. Below are links to official platforms, as well as unofficial, and
-  regional-specific, community-managed channels.
+açıklama: >-
+  Acala topluluğu, dünyanın dört bir yanına dağılmış 350.000'den fazla üyeye sahiptir.
+  Dünya. Aşağıda resmi platformların yanı sıra gayri resmi ve
+  bölgeye özgü, topluluk tarafından yönetilen kanallar.
 ---
 
-# Community
+# Topluluk
 
-## General Discussion & Support
+## Genel Tartışma ve Destek
 
-[Discord](https://discord.gg/vdbFVCH) **\|** [Discourse Forum](https://acala.discourse.group/) **\|** [Riot](https://riot.im/app/#/room/#acala:matrix.org) **\|** [General Enquiry Email](mailto:hello@acala.network)
+[Discord](https://discord.gg/vdbFVCH) **\|** [Sohbet Forumu](https://acala.discourse.group/) **\|** [Riot](https:// riot.im/app/#/room/#acala:matrix.org) **\|** [Genel Sorgu E-postası](mailto:hello@acala.network)
 
-Issues can be raised directly in the respective [Github](https://github.com/AcalaNetwork) repo or via Riot channel
+Sorunlar doğrudan ilgili [Github](https://github.com/AcalaNetwork) deposunda veya Riot kanalı aracılığıyla gündeme getirilebilir.
 
-## **Social & Announcements**
+## **Sosyal ve Duyurular**
 
-#### Acala 
+#### Acala
 
-[Discord](https://discord.gg/vdbFVCH) \| [Twitter](https://twitter.com/AcalaNetwork) \| [Telegram](https://t.me/AcalaAnnouncement) **\|** [Medium](https://medium.com/acalanetwork) \| [Facebook](https://www.facebook.com/acalanetwork/) \| [LinkedIn](https://www.linkedin.com/company/acalanetwork) \| [Reddit](https://www.reddit.com/r/acalanetwork) \| [YouTube](http://youtube.com/c/acalanetwork)
+[Discord](https://discord.gg/vdbFVCH) \| [Twitter](https://twitter.com/AcalaNetwork) \| [Telegram](https://t.me/AcalaAnnouncement) **\|** [Orta](https://medium.com/acalanetwork) \| [Facebook](https://www.facebook.com/acalanetwork/) \| [LinkedIn](https://www.linkedin.com/company/acalanetwork) \| [Reddit](https://www.reddit.com/r/acalanetwork) \| [YouTube](http://youtube.com/c/acalanetwork)
 
 #### **Karura**
 
-[Discord](https://discord.gg/vdbFVCH) \| [Twitter](https://twitter.com/KaruraNetwork) \| [Telegram](https://t.me/karuraannouncements) **\|** [LinkedIn](https://www.linkedin.com/showcase/karuranetwork/) \| [Reddit](https://www.reddit.com/r/karuranetwork) 
+[Discord](https://discord.gg/vdbFVCH) \| [Twitter](https://twitter.com/KaruraNetwork) \| [Telegram](https://t.me/karuraannouncements) **\|** [LinkedIn](https://www.linkedin.com/showcase/karuranetwork/) \| [Reddit](https://www.reddit.com/r/karuranetwork)
 
-For more updates on the Acala and Karura ecosystems, subscribe to the [newsletter](https://share.hsforms.com/1X9RxkXk-R62I0VNbATaDXw4h8qc).
+Acala ve Karura ekosistemleri hakkında daha fazla güncelleme için [bültene](https://share.hsforms.com/1X9RxkXk-R62I0VNbATaDXw4h8qc) abone olun.
 
-## **Regional and Language-Specific Communities**
+## **Bölgesel ve Dile Özgü Topluluklar**
 
-Please use best practices when engaging with community-managed channels. Keep in mind that no admin or representative from Acala will ever message you or add you to a channel. Beware of imitation Acala representatives and always confirm information with our official channels. 
+Lütfen topluluk tarafından yönetilen kanallarla etkileşim kurarken en iyi uygulamaları kullanın. Acala'dan hiçbir yönetici veya temsilcinin size mesaj göndermediğini veya sizi bir kanala eklemediğini unutmayın. Taklit Acala temsilcilerinden sakının ve bilgileri her zaman resmi kanallarımızdan teyit edin.
 
-#### **Telegram**
+#### **Telgraf**
 
-\*\*\*\*[French](https://t.me/AcalaFR) **\|** [Italian](https://t.me/acalaitalia) **\|** [Japanese](https://t.me/AcalaJapan) **\|** [Portuguese](https://t.me/acalaportugues) **\|** [Russian](https://t.me/acalarussia) **\|** [Spanish](https://t.me/acalaespanol) **\|** [Thai](https://t.me/acalathai) **\|** [Turkish](https://t.me/Acala_Turkiye) **\|** [Ukrainian](https://t.me/acalaukraine)
+\*\*\*\*[Fransızca](https://t.me/AcalaFR) **\|** [İtalyanca](https://t.me/acalaitalia) **\|** [Japonca ](https://t.me/AcalaJapan) **\|** [Portekizce](https://t.me/acalaportugues) **\|** [Rusça](https://t.me/ acalarussia) **\|** [İspanyolca](https://t.me/acalaespanol) **\|** [Thai](https://t.me/acalathai) **\|** [Türkçe ](https://t.me/Acala_Turkiye) **\|** [Ukraynaca](https://t.me/acalaukraine)
 
 #### **WeChat**
 
-[Chinese](https://u.wechat.com/MODhkDzRP9Lve93NmBI3EI8)
+[Çince](https://u.wechat.com/MODhkDzRP9Lve93NmBI3EI8)
 
-## **Unofficial Communities**
+## **Resmi Olmayan Topluluklar**
 
-#### **Telegram**
+#### **Telgraf**
 
-[Acala & Karura Unofficial](https://t.me/acala_karura_unofficial) 
+[Acala ve Karura Resmi Olmayan](https://t.me/acala_karura_unofficial)
 
-## Acala Ecosystem 
+## Acala Ekosistemi
 
-Looking to build on our networks, discuss integrations, or get in contact with the team? 
+Ağlarımızı geliştirmek, entegrasyonları tartışmak veya ekiple iletişime geçmek mi istiyorsunuz?
 
-Acala Ecosystem projects may participate in any number of ways including using and integrating Acala's technologies and products such as aUSD stablecoin, staking derivative Liquid DOT, providing liveness \(validation\), oracle or other services to Acala network, and/or other forms of collaboration mutually agreed upon. Ecosystem projects will enjoy first-line support from the Acala team, technical collaboration, have opportunities to partake in product promotion/incentive programs, and co-marketing etc.
+Acala Ekosistem projeleri, Acala'nın aUSD stabilcoin gibi teknolojilerini ve ürünlerini kullanmak ve entegre etmek, türev Liquid DOT'u stake etmek, Acala ağına canlılık \(validation\), oracle veya diğer hizmetleri sağlamak ve/veya diğer formları dahil olmak üzere herhangi bir sayıda yolla katılabilir. işbirliği karşılıklı olarak kabul edildi. Ekosistem projeleri, Acala ekibinin birinci basamak desteğinden, teknik işbirliğinden, ürün tanıtım/teşvik programlarına ve ortak pazarlamaya vb. katılma fırsatlarına sahip olacak.
 
-There are multiple ways you can build with Acala: deploying smart contracts on the Acala Network, developing runtime modules on Acala, or integrating as a parachain. Find out more on how to get started, visit [Build with Acala](https://wiki.acala.network/build/builders-portal).
+Acala ile oluşturmanın birden çok yolu vardır: Acala Ağı üzerinde akıllı sözleşmeler dağıtmak, Acala üzerinde çalışma zamanı modülleri geliştirmek veya bir parachain olarak entegre etmek. Nasıl başlayacağınız hakkında daha fazla bilgi edinin, [Build with Acala](https://wiki.acala.network/build/builders-portal) sayfasını ziyaret edin.
 
-Join the [Acala Ecosystem Program](https://share.hsforms.com/1fgY6nspDShuyea2-WYyZxg4h8qc).
-
+[Acala Ekosistem Programına](https://share.hsforms.com/1fgY6nspDShuyea2-WYyZxg4h8qc) katılın.
