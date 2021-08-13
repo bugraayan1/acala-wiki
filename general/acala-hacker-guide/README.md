@@ -59,7 +59,7 @@ Acala aynı zamanda Ethereum Apps'ın Polkadot ekosistemine erişmesi için ağ 
 
 * [Acala Ana Sayfası](https://acala.network/)
 * [Twitter](https://twitter.com/AcalaNetwork)
-* [Anlaşmazlık](https://discord.gg/vdbFVCH)
+* [Discord](https://discord.gg/vdbFVCH)
 * [Acala Bülteni](https://acala.network/newsletter-sign-up.html)
 
 ###
