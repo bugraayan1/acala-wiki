@@ -11,4 +11,4 @@ ETHenver canlı test ağında Acala'nın DeFi Suite'ini deneyin
 
 DApp web sitesine ilk indiğinizde, meta verileri yüklemeniz, "Yükle"yi tıklamanız ve Polkadot{js} uzantı isteminde işlemi imzalamanız istenir. Uzantı, henüz EVM dağıtımındaki en son değişikliklere sahip değil - henüz gerçekten yolun başındayız!
 
-![](../../.gitbook/assets/screen-shot-2021-02-03-at-4.39.46-pm%20%281%29%20%281%29%20%281%29 %20%281%29.png)
+![](../../.gitbook/assets/screen-shot-2021-02-03-at-4.39.46-pm%20%281%29%20%281%29%20%281%29%20%281%29.png)
