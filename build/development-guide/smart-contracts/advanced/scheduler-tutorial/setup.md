@@ -1,4 +1,4 @@
-# Zamanlayıcı Eğitimi
+# Zamanlayıcı Uygulaması
 
 Bu eğitimde, kullanıcılara daha uzun süre abone olduklarında ödül veren otomatik bir abonelik hizmeti oluşturmak için Acala'nın zincirleme zamanlayıcısını kullanacağız.
 
