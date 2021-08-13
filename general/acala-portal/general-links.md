@@ -1,10 +1,11 @@
 ---
-description: List of common links.
+açıklama: ortak linkler
+
 ---
 
-# General Links
+# Genel Linkler
 
-## Info
+## Bilgi
 
 * [Website](https://acala.network/)
 * [E-mail](mailto:hello@acala.network)
@@ -20,13 +21,13 @@ description: List of common links.
 * [Newsletter](https://share.hsforms.com/1X9RxkXk-R62I0VNbATaDXw4h8qc)
 * [PolkaDeFi](https://polkadefi.acala.network/)
 
-## Literature
+## Literatür
 
 * [&lt;Acala Whitepaper&gt;](https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Whitepaper.pdf)
 * [&lt;Acala Token Economy Paper&gt;](https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Token_Economy_Paper.pdf)
 * [&lt;Building a Decentralized Sovereign Wealth Fund&gt;](https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Building_a_Decentralized_Sovereign_Wealth_Fund.pdf)
 
-## UI and explorers
+## Arayüz ve tarayıcılar:
 
 * [Dapp](https://apps.acala.network/)
 * [Console Portal](https://console.acala.network/)
@@ -35,7 +36,7 @@ description: List of common links.
 * [Subscan](https://acala-testnet.subscan.io/)
 * [Polkadot{.js} extension](https://polkadot.js.org/extension)
 
-## Events Recording
+## Kaydedilen Etkinlikler:
 
 * [Overview of the Karura Parachain Auction Process](https://www.crowdcast.io/e/overview-karura-crowdloan)
 * [Polkadot Decoded - Acala’s Cross-Chain DeFi Hub, Stablecoin & Decentralized Sovereign Wealth Fund - Ruitao Su](https://www.crowdcast.io/e/polkadot-decoded/6)
