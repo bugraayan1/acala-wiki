@@ -1,21 +1,19 @@
-# Use Waffle
+Solidity sözleşmelerini geliştirmek ve derlemek için kullanabileceğiniz birden fazla araç var, burada iki tanesini seçenek olarak sunacağız.
 
-There are multiple tools you can use to develop and compile Solidity contracts, we'd present two here as options
+* Çevrimiçi web uygulaması Remix
+* Solidity geliştirme ve test çerçevesi Waffle
 
-* online web app Remix 
-* Solidity development and testing framework Waffle
+### Waffle Yorumunu Kullanarak Solidity Sözleşmesini Derleyin
 
-### Compile Solidity Contract using Waffle Comment
+**Not:** Akıllı sözleşmeyi Remix ile derlediyseniz bu bölümü atlayabilirsiniz.
 
-**Note:** you can skip this section if you compiled the smart contract with Remix.
+Bu kılavuz, [Waffle](https://github.com/EthWorks/Waffle) kullanarak Solidity tabanlı bir akıllı sözleşmeyi Acala'ya dağıtma sürecini anlatmaktadır. Waffle, Ethereum için en yaygın kullanılan akıllı sözleşme geliştirme çerçevelerinden biridir.
 
-This guide walks through the process of deploying a Solidity-based smart contract to Acala using [Waffle](https://github.com/EthWorks/Waffle). Waffle is one of the most commonly used smart contract development frameworks for Ethereum.
+### **1. Ön Koşulları Kontrol Edin**
 
-### **1. Check Prerequisites**
+Öncelikle Node.js \(bu örnekte v15.x kullanıyoruz\) ve npm paket yöneticisini kurmamız gerekiyor. Kurulum için işletim sisteminizin resmi belgelerindeki kılavuzları takip edin: [NodeJS'yi kurun](https://nodejs.org/en/download/package-manager/)
 
-First, we need to install Node.js \(we use v15.x in this example\) and the npm package manager. For installation follow guides in the official documentation for your operating system: [install NodeJS](https://nodejs.org/en/download/package-manager/)
-
-We can verify that everything installed correctly by querying the version for each package:
+Her paketin sürümünü sorgulayarak her şeyin doğru şekilde kurulduğunu doğrulayabiliriz:
 
 ```text
 node -v
@@ -25,22 +23,23 @@ node -v
 npm -v
 ```
 
-Install yarn package manager:
+Yarn paketi yöneticisini kurun:
 
 ```text
 npm install --global yarn
 ```
 
-Check if it's installed correctly:
+Doğru kurulup kurulmadığını kontrol edin:
+
 ```text
 yarn -v
 ```
 
-### **2. Using Waffle With Our Examples**
+### **2. Örneklerimizle Waffle Kullanımı**
 
-We've made it easy by collecting all required dependencies in the [AcalaNetwork/evm-examples](https://github.com/AcalaNetwork/evm-examples) repo.
+[AcalaNetwork/evm-examples](https://github.com/AcalaNetwork/evm-examples) deposunda gerekli tüm bağımlılıkları toplayarak bunu kolaylaştırdık.
 
-Simply clone the repository and install the dependencies.
+Depoyu klonlayın ve bağımlılıkları yükleyin.
 
 ```text
 git clone https://github.com/AcalaNetwork/evm-examples
@@ -49,39 +48,39 @@ cd evm-examples/erc20
 yarn install 
 ```
 
-### **3. Using Waffle from Scratch (optional)**
+### **3. Waffle'ı Sıfırdan Kullanma (isteğe bağlı)**
 
 
-Alternatively, you can install each library separately as the following: 
+Alternatif olarak, her kitaplığı aşağıdaki gibi ayrı ayrı kurabilirsiniz:
 
-Create a project folder `smart-contract-waffle`
+`smart-contract-waffle` proje klasörü oluşturun
 
 ```text
 mkdir smart-contract-waffle
 cd smart-contract-waffle
 ```
 
-Initiate package manager
+Paket yöneticisini başlatın
 
 ```text
 yarn init -y
 ```
 
-Install all following dependencies
+Bağımlılıkları yükleyin
 
 ```text
 yarn add --dev @openzeppelin/contracts@3.3.0 ethereum-waffle@3.2.1
 ```
 
-Note: it's recommended to install dependencies with exact versions as specified to avoid breaking changes.
+Not: Değişiklikleri bozmamak için tam sürümlerle bağımlılıkları yüklemeniz önerilir.
 
-Then create a waffle settings file
+Ardından bir waffle ayarları dosyası oluşturun.
 
 ```text
 touch waffle.json
 ```
 
-Paste the following in the `waffle.json` file
+Aşağıdakini `waffle.json` dosyasına yapıştırın.
 
 ```text
  {
