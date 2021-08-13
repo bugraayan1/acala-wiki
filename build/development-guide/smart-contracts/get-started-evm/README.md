@@ -1,4 +1,4 @@
-# Get Started
+# Hadi Başlayalım
 
 {% page-ref page="connect-to-a-node.md" %}
 
