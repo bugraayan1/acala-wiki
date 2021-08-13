@@ -1,55 +1,54 @@
-# Open-Web3-Stack & ORML
+# Open-Web3-Stack ve ORML
 
-Open Web3 Stack is a common-good collection of libraries to accelerate application development on Substrate. It aims to provide application building blocks that are common for most specialist chains.
+Open Web3 Stack, Substrate üzerinde uygulama geliştirmeyi hızlandırmak için yaygın olarak kullanılan bir kitaplık koleksiyonudur. Çoğu uzman zincir için ortak olan uygulama yapı taşları sağlamayı amaçlar.
 
-Open Web3 Stack contains the following repos
+Açık Web3 Yığını aşağıdaki depoları içerir
 
-* **Open Runtime Module Library \(ORML\)** where we implemented all the commonly used pallets, modules
-* **Open-web3.js** - frontend SDK for using extended Substrate logic from ORML
-* **Guardian** - a worker for monitoring and executing certain tasks
-* **Rococo-community**: a hosted environment for testing parachains and cross-chain communication
+* **Açık Çalışma Zamanı Modül Kitaplığı \(ORML\)** yaygın olarak kullanılan tüm paletleri, modülleri uyguladığımız yer
+* **Open-web3.js** - ORML'den genişletilmiş Substrate mantığını kullanmak için ön uç SDK'sı
+* **Guardian** - belirli görevleri izlemek ve yürütmek için çalışan bir işçi
+* **Rokoko topluluğu**: parachainleri ve zincirler arası iletişimi test etmek için barındırılan bir ortam
 
 ### ORML
 
-Find out more [here](https://github.com/open-web3-stack/open-runtime-module-library).
+Daha fazlasını [buradan](https://github.com/open-web3-stack/open-runtime-module-library) öğrenin.
 
 * [orml-traits](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/traits)
-  * Shared traits including `BasicCurrency`, `MultiCurrency`, `Auction` and more.
+  * "Temel Para Birimi", "Çok Para Birimi", "Açık Artırma" ve daha fazlasını içeren paylaşılan özellikler.
 * [orml-utilities](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/utilities)
-  * Various utilities including `OrderSet`.
-* [orml-tokens](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/tokens)
-  * Fungible tokens module that implements `MultiCurrency` trait.
-* [orml-currencies](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/currencies)
-  * Provide `MultiCurrency` implementation using `pallet-balances` and `orml-tokens` module.
+  * 'OrderSet' dahil olmak üzere çeşitli yardımcı programlar.
+* [orml-belirteçleri](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/tokens)
+  * 'MultiCurrency' özelliğini uygulayan Fungible belirteçleri modülü.
+* [orml-para birimleri](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/currencies)
+  * 'Palet-balances' ve 'orml-tokens' modülünü kullanarak 'MultiCurrency' uygulamasını sağlayın.
 * [orml-nft](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/nft)
-  * Non-fungible-token module provides basic functions to create and manager NFT\(non fungible token\)
+  * Fungible olmayan token modülü, NFT\(nonfunble token\) oluşturmak ve yönetmek için temel işlevler sağlar
 * [orml-oracle](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/oracle)
-  * Oracle module that makes off-chain data available on-chain.
-* [orml-auction](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/auction)
-  * Auction module that implements `Auction` trait.
+  * Zincir dışı verileri zincir üzerinde kullanılabilir hale getiren Oracle modülü.
+* [orml-açık artırma](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/auction)
+  * "Açık Artırma" özelliğini uygulayan Müzayede modülü.
 * [orml-vesting](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/vesting)
-  * Provides scheduled balance locking mechanism, in a _graded vesting_ way.
-* [orml-gradually-update](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/gradually-update)
-  * Provides way to adjust numeric parameter gradually over a period of time.
+  * Kademelendirilmiş bir şekilde, planlı denge kilitleme mekanizması sağlar.
+* [orml-kademeli olarak güncelleme](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/gradually-update)
+  * Belirli bir süre boyunca kademeli olarak sayısal parametreyi ayarlamanın yolunu sağlar.
 * [orml-xtokens](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/xtokens)
-  * Provides way to do cross-chain assets transfer.
-  * [Step-by-Step guide](https://github.com/open-web3-stack/open-runtime-module-library/wiki/xtokens) to make XCM cross-chain fungible asset transfer available on your parachain
+  * Zincirler arası varlık transferi yapmanın yolunu sağlar.
+  * [Adım Adım kılavuz](https://github.com/open-web3-stack/open-runtime-module-library/wiki/xtokens) XCM çapraz zincir değiştirilebilir varlık transferini para zincirinizde kullanılabilir hale getirmek için
 * [orml-xcm-support](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/xcm-support)
-  * Provides traits, types, and implementations to support XCM integration.
+  * XCM entegrasyonunu desteklemek için özellikler, türler ve uygulamalar sağlar.
 
-### Guardian
+### Muhafız
 
-With Guardian, **with mere configuration**, you can set up a number of automatic tasks for monitoring and executing commands for a chain of concern. A task can be `monitoring margin positions` with conditions \(if collateral ratio &lt; 110%\) then trigger actions \(e.g. post warning message to database service, or execute a script to add position\).
+Guardian ile **sadece konfigürasyonla**, bir endişe zinciri için komutları izlemek ve yürütmek için bir dizi otomatik görev ayarlayabilirsiniz. Bir görev, koşullarla \(teminat oranı <%110 ise\) "marj pozisyonlarını izlemek" olabilir ve ardından eylemleri \(örneğin, veritabanı hizmetine uyarı mesajı göndermek veya pozisyon eklemek için bir komut dosyası yürütmek\) tetikleyebilir.
 
-Here're the [examples](https://github.com/open-web3-stack/guardian/tree/master/packages/example-guardian) and relevant [documentation](https://github.com/open-web3-stack/guardian/tree/master/packages/guardian/docs).
+İşte [örnekler](https://github.com/open-web3-stack/guardian/tree/master/packages/example-guardian) ve ilgili [belgeler](https://github.com/open- web3 yığını/koruyucu/ağaç/ana/paketler/koruyucu/belgeler).
 
 ### Open-web3.js
 
-Open-web3 is a bunch of frontend packages that allow to interact with orml, indexer and oracles. Find out more [here](https://github.com/open-web3-stack/open-web3.js).
+Open-web3, orml, indeksleyici ve oracles ile etkileşime izin veren bir grup ön uç paketidir. Daha fazlasını [buradan](https://github.com/open-web3-stack/open-web3.js) öğrenin.
 
-### Community Rococo Testnet
+### Topluluk Rokoko Test Ağı
 
-We launched the community Rococo parachain testnet with shared infrastructure. It allows everyone to test cross-chain token transfers, running collators, validators, etc with lower overhead.
+Ortak altyapı ile topluluk Rococo parachain test ağını başlattık. Herkesin zincirler arası jeton transferlerini, harmanlayıcıları, doğrulayıcıları vb. daha düşük ek yük ile test etmesine olanak tanır.
 
-Get started [here](https://github.com/open-web3-stack/rococo-community).
-
+[Buradan](https://github.com/open-web3-stack/rococo-community) başlayın.
