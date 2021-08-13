@@ -4,41 +4,41 @@ description: >-
   sign, and broadcast transactions.
 ---
 
-# Transaction Construction
+# Transaction Yapısı
 
-This page will discuss the transaction format in Polkadot and how to create, sign, and broadcast transactions. Like the other pages in this guide, this page demonstrates some of the available tools. **Always refer to each tool's documentation when integrating.**
+Bu sayfada Polkadot'taki işlem formatı ve işlemlerin nasıl oluşturulacağı, imzalanacağı ve yayınlanacağı açıklanacaktır. Bu kılavuzdaki diğer sayfalar gibi, bu sayfada da mevcut araçlardan bazıları gösterilmektedir. **Entegrasyon yaparken her zaman her aracın belgelerine bakın.**
 
-### Transaction Format
+### Transaction Formatı
 
-Polkadot has some basic transaction information that is common to all transactions.
+Polkadot, tüm işlemlerde ortak olan bazı temel işlem bilgilerine sahiptir.
 
-* Address: The SS58-encoded address of the sending account.
-* Block Hash: The hash of the checkpoint block.
-* Block Number: The number of the checkpoint block.
-* Genesis Hash: The genesis hash of the chain.
-* Metadata: The SCALE-encoded metadata for the runtime when submitted.
-* Nonce: The nonce for this transaction.\*
-* Spec Version: The current spec version for the runtime.
-* Transaction Version: The current version for transaction format.
-* Tip: Optional, the tip to increase transaction priority.
-* Era Period: Optional, the number of blocks after the checkpoint for which a transaction is valid. If zero, the transaction is immortal.
+* Adres: Gönderen hesabın SS58 kodlu adresi.
+* Blok Hash: Kontrol noktası bloğunun hash'i.
+* Blok Numarası: Kontrol noktası bloğunun numarası.
+* Genesis Hash: Zincirin genesis hash'i.
+* Meta veriler: Gönderildiğinde çalışma zamanı için SCALE kodlu meta veriler.
+* Nonce: Bu işlem için nonce.\*
+* Özel Sürüm: Çalışma zamanı için geçerli özel sürüm.
+* İşlem Sürümü: İşlem biçimi için geçerli sürüm.
+* İpucu: İsteğe bağlı, işlem önceliğini artırmak için ipucu.
+* Dönem Dönemi: İsteğe bağlı, bir işlemin geçerli olduğu kontrol noktasından sonraki blok sayısı. Sıfır ise, işlem ölümsüzdür.
 
-\*The nonce queried from the System module does not account for pending transactions. You must track and increment the nonce manually if you want to submit multiple valid transactions at the same time.
+\*Sistem modülünden sorgulanan nonce, bekleyen işlemleri hesaba katmaz. Aynı anda birden fazla geçerli işlem göndermek istiyorsanız nonce'yi manuel olarak izlemeli ve artırmalısınız.
 
-Each transaction will have its own \(or no\) parameters to add. For example, the `transferKeepAlive` function from the Balances pallet will take:
+Her işlemin eklenecek kendi \(veya no\) parametreleri olacaktır. Örneğin, Bakiye paletindeki 'transferKeepAlive' işlevi,:
 
 * `dest`: Destination address
 * `#[compact] value`: Number of tokens \(compact encoding\)
 
-Once you have all the necessary information, you will need to:
+Gerekli tüm bilgilere sahip olduğunuzda, yapmanız gerekenler:
 
-1. Construct an unsigned transaction.
-2. Create a signing payload.
-3. Sign the payload.
-4. Serialize the signed payload into a transaction.
-5. Submit the serialized transaction.
+1. İmzasız bir işlem oluşturun.
+2. Bir imzalama yükü oluşturun.
+3. Yükü imzalayın.
+4. İmzalı yükü bir işleme seri hale getirin.
+5. Serileştirilmiş işlemi gönderin.
 
-Parity provides the following tools to help perform these steps.
+Parity, bu adımları gerçekleştirmenize yardımcı olacak aşağıdaki araçları sağlar.
 
 ### Acala JS
 
@@ -46,9 +46,9 @@ Parity provides the following tools to help perform these steps.
 
 ### Tx Wrapper
 
-If you do not want to use the CLI for signing operations, Parity provides an SDK called [TxWrapper](https://github.com/paritytech/txwrapper) to generate and sign transactions offline. See the [examples](https://github.com/paritytech/txwrapper/tree/master/examples) for a guide.
+İmza işlemleri için CLI'yi kullanmak istemiyorsanız, Parity, işlemleri çevrimdışı oluşturmak ve imzalamak için [TxWrapper](https://github.com/paritytech/txwrapper) adlı bir SDK sağlar. Kılavuz için [örneklere](https://github.com/paritytech/txwrapper/tree/master/examples) bakın.
 
-**Import a private key**
+**Özel anahtarı içe aktarın**
 
 ```text
 import { importPrivateKey } from '@substrate/txwrapper';
@@ -56,7 +56,7 @@ import { importPrivateKey } from '@substrate/txwrapper';
 const keypair = importPrivateKey(“pulp gaze fuel ... mercy inherit equal”);
 ```
 
-**Derive an address from a public key**
+**Bir ortak anahtardan bir adres türetme**
 
 ```text
 import { deriveAddress } from '@substrate/txwrapper';
@@ -66,7 +66,7 @@ const publicKey = “0x2ca17d26ca376087dc30ed52deb74bf0f64aca96fe78b05ec3e720a72
 const address = deriveAddress(publicKey);
 ```
 
-**Construct a transaction offline**
+**Çevrimdışı bir işlem oluşturun**
 
 ```text
 import { methods } from "@substrate/txwrapper";
@@ -95,7 +95,7 @@ const unsigned = methods.balances.transferKeepAlive(
 );
 ```
 
-**Construct a signing payload**
+**Bir imzalama yükü oluşturun**
 
 ```text
 import { methods, createSigningPayload } from '@substrate/txwrapper';
@@ -105,7 +105,7 @@ const unsigned = methods.balances.transferKeepAlive({...}, {...}, {...});
 const signingPayload = createSigningPayload(unsigned, { registry });
 ```
 
-**Serialize a signed transaction**
+**İmzalı bir işlemi seri hale getirin**
 
 ```text
 import { createSignedTx } from "@substrate/txwrapper";
@@ -117,9 +117,9 @@ const signature = await signWithAlice(signingPayload);
 const signedTx = createSignedTx(unsigned, signature, { metadataRpc, registry });
 ```
 
-**Decode payload types**
+**Yük türlerinin kodunu çözün**
 
-You may want to decode payloads to verify their contents prior to submission.
+Göndermeden önce içeriklerini doğrulamak için yüklerin kodunu çözmek isteyebilirsiniz.
 
 ```text
 import { decode } from "@substrate/txwrapper";
@@ -134,24 +134,23 @@ const txInfo = decode(signingPayload, { metadataRpc, registry });
 const txInfo = decode(signedTx, { metadataRpc, registry });
 ```
 
-**Check a transaction's hash**
+**Bir işlemin karmasını kontrol edin**
 
 ```text
 import { getTxHash } from ‘@substrate/txwrapper’;
 const txHash = getTxHash(signedTx);
 ```
+### İmzalı Bir Yük Gönderme
 
-### Submitting a Signed Payload
+İmzalı bir yükü göndermenin birkaç yolu vardır:
 
-There are several ways to submit a signed payload:
-
-1. Signer CLI \(`yarn run:signer submit --tx <signed-transaction> --ws <endpoint>`\)
+1. İmzalayan CLI \(`yarn çalıştırma: imzalayan gönder --tx <signed-transaction> --ws <endpoint>`\)
 2. [Substrate API Sidecar](https://wiki.polkadot.network/docs/en/build-node-interaction#substrate-api-sidecar)
-3. [RPC](https://wiki.polkadot.network/docs/en/build-node-interaction#polkadot-rpc) with `author_submitExtrinsic` or `author_submitAndWatchExtrinsic`, the latter of which will subscribe you to events to be notified as a transaction gets validated and included in the chain.
+3. "author_submitExtrinsic" veya "author_submitAndWatchExtrinsic" ile [RPC](https://wiki.polkadot.network/docs/en/build-node-interaction#polkadot-rpc) bir işlem olarak bildirilir ve onaylanır ve zincire dahil edilir.
 
-### Notes
+### Notlar
 
-Some addresses to use in the examples. See [Subkey documentation](https://substrate.dev/docs/en/knowledgebase/integrate/subkey).
+Örneklerde kullanılacak bazı adresler. [Alt anahtar belgeleri](https://substrate.dev/docs/en/knowledgebase/integrate/subkey) konusuna bakın.
 
 ```text
 $ subkey --network polkadot generate
