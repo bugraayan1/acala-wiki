@@ -4,7 +4,7 @@ tanım: Bazı etkinlik kuralları ve ödüllerin kayıtları.
 
 # Katkı ve Ödüller
 
-## Hava Damlaları
+## Airdrop
 
 Artık airdrop KAR ve ACA bakiyelerinizi [https://apps.acala.network/wallet](https://apps.acala.network/wallet) adresinden kontrol edebilirsiniz. Bakiyeler, gerçek jetonları Karura Canary ağı ve Acala ana ağı oluşumuna tahsis etmek için kullanılacak olan 'airdrop' modülünde zincir üzerinde kaydedilir.
 
