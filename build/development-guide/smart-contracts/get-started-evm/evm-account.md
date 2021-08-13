@@ -1,4 +1,4 @@
-# EVM Hesabı Kur
+# EVM Hesabı Kurulumu
 
 ## **Tek Cüzdan, Tek Hesap Deneyimi**
 
