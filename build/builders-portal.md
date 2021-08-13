@@ -1,31 +1,30 @@
-# Builder's Portal
+# Geliştirici Portalı
 
-Welcome to the builders section of the Acala wiki.
+Acala wiki'nin geliştiriciler bölümüne hoş geldiniz.
 
-Here you will be able to find the most up-to-date information on the status of the development tools in the Acala ecosystem. We are always adding new tools and frameworks as we learn about them so if you are working on something that should be included please reach out to us on [Riot](https://riot.im/app/#/room/#acala:matrix.org).
+Acala ekosistemindeki geliştirme araçlarının durumu hakkında en güncel bilgileri burada bulabileceksiniz. Bunları öğrendikçe her zaman yeni araçlar ve çerçeveler ekliyoruz, bu nedenle dahil edilmesi gereken bir şey üzerinde çalışıyorsanız lütfen bize [Riot](https://riot.im/app/#/room/#acala) adresinden ulaşın. :matrix.org).
 
-This section of the wiki is divided into the following parts:
+Wiki'nin bu bölümü aşağıdaki bölümlere ayrılmıştır:
 
-### Development Guide
+### Geliştirme Kılavuzu
 
-* [Starter's Guide](https://wiki.acala.network/build/development-guide/builders-starters-guide) - High level overview on choosing a ecosystem modules, smart contracts or connect via XCMP.
-* [Open runtime module library](https://github.com/open-web3-stack/open-runtime-module-library) - a community maintained collection of Substrate runtime modules.
+* [Başlangıç ​​Kılavuzu](https://wiki.acala.network/build/development-guide/builders-starters-guide) - Ekosistem modülleri, akıllı sözleşmeler seçme veya XCMP aracılığıyla bağlanma hakkında üst düzey genel bakış.
+* [Çalışma zamanı modül kitaplığını açın](https://github.com/open-web3-stack/open-runtime-module-library) - Topluluk tarafından yürütülen bir Substrate çalışma zamanı modülleri koleksiyonu.
 
-### Integration Guide
+### Entegrasyon Kılavuzu
 
-This section is for service providers like wallets or data analysis who want to learn how to integrate Acala into their systems.
+Bu bölüm, Acala'yı sistemlerine nasıl entegre edeceklerini öğrenmek isteyen cüzdan veya veri analizi gibi hizmet sağlayıcılar içindir.
 
-* [Network Configuration](https://wiki.acala.network/build/integration-guide/network-configuration) - General information and F.A.Q.s about the Acala Network, e.g. address formats.
-* [Node Management](https://wiki.acala.network/build/integration-guide/node-management) - A short overview of the Acala client and the most relevant options/flags for infrastructure providers.
-* [Node Interaction](https://wiki.acala.network/build/integration-guide/node-interaction) - Learn how to interact with your node via RPC.
-* [Type Documentation](https://wiki.acala.network/build/integration-guide/types-doc) - Type doc needs to be used when integrating applications.
-* [Transaction Construction and Signing](https://wiki.acala.network/build/integration-guide/transaction-construction) - Learn the transaction format for Acala and how to construct and sign transactions offline.
+* [Ağ Yapılandırması](https://wiki.acala.network/build/integration-guide/network-configuration) - Acala Ağı hakkında genel bilgiler ve SSS'ler, ör. adres biçimleri.
+* [Düğüm Yönetimi](https://wiki.acala.network/build/integration-guide/node-management) - Acala istemcisine kısa bir genel bakış ve altyapı sağlayıcıları için en alakalı seçenekler/bayraklar.
+* [Düğüm Etkileşimi](https://wiki.acala.network/build/integration-guide/node-interaction) - RPC aracılığıyla düğümünüzle nasıl etkileşim kuracağınızı öğrenin.
+* [Type Documentation](https://wiki.acala.network/build/integration-guide/types-doc) - Uygulamaları entegre ederken tür belgesinin kullanılması gerekir.
+* [İşlem Oluşturma ve İmzalama](https://wiki.acala.network/build/integration-guide/transaction-construction) - Acala için işlem biçimini ve işlemlerin çevrimdışı olarak nasıl oluşturulup imzalanacağını öğrenin.
 
-### Tools
+### Araçlar
 
-* [Tools](https://wiki.acala.network/build/tools/tool-index) - Maintained list of tools.
+* [Araçlar](https://wiki.acala.network/build/tools/tool-index) - Güncel araç listesi.
 
-### Resources
+### Kaynaklar
 
-* [Examples](https://wiki.acala.network/build/resources/examples) - Example projects sourced from the community -- see what others are building.
-
+* [Örnekler](https://wiki.acala.network/build/resources/examples) - Topluluktan alınan örnek projeler -- başkalarının neler inşa ettiğini görün.
