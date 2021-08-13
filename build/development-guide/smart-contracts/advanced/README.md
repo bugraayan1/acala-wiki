@@ -1,4 +1,4 @@
-# Advanced
+# Gelişmiş
 
 {% page-ref page="use-native-tokens.md" %}
 
