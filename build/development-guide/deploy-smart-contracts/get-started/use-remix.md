@@ -1,27 +1,27 @@
-# Use Remix
+# Remix Kullanımı
 
-There are multiple tools you can use to develop and compile Solidity contracts, we'd present two here as options
+Solidity sözleşmelerini geliştirmek ve derlemek için kullanabileceğiniz birden fazla araç var, burada iki tanesini seçenek olarak sunacağız.
 
-* online web app Remix 
-* Solidity development and testing framework Waffle
+* Çevrimiçi web uygulaması Remix
+* Solidity geliştirme ve test uygulaması Waffle
 
-### Compile a Solidity Contract using Remix Comment
+### Remix kullanarak bir Solidity Sözleşmesi Derleyin
 
-This guide walks through the process of creating and deploying a Solidity-based smart contract to the Acala standalone node using the [Remix](http://remix.ethereum.org/). Remix is one of the commonly used development environments for smart contracts on Ethereum.
+Bu kılavuz, [Remix](http://remix.ethereum.org/) kullanılarak Acala bağımsız düğümüne Solidity tabanlı bir akıllı sözleşme oluşturma ve dağıtma sürecini açıklar. Remix, Ethereum'daki akıllı sözleşmeler için yaygın olarak kullanılan geliştirme ortamlarından biridir.
 
-### **1. Launch Remix**
+### **1. Remix'i Başlat**
 
-Navigate to [https://remix.ethereum.org/](https://remix.ethereum.org/). Under `Environments`, select `Solidity` to configure Remix for Solidity development, then navigate to the `File Explorers` view.
+[https://remix.ethereum.org/](https://remix.ethereum.org/) adresine gidin. 'Ortamlar' altında, Solidity geliştirme için Remix'i yapılandırmak için 'Solidity'yi seçin, ardından 'Dosya Gezgini' görünümüne gidin.
 
-Here’s an example to compile an ERC20 contract using Remix.
-Open Remix and under the `File` section click `New File`. 
+İşte Remix kullanarak bir ERC20 sözleşmesi derlemek için bir örnek.
+Remix'i açın ve 'Dosya' bölümünün altında 'Yeni Dosya'yı tıklayın.
 ![](https://i.imgur.com/J9jtCF4.png)
 
-In the file explorer in the left window will appear an input, where you write filename: `BasicToken.sol`.
+Dosya gezgininde sol pencerede dosya adını yazdığınız bir girdi görünecektir: `BasicToken.sol`.
 
-### **2. Compile the Solidity code**
+### **2. Solidity kodunu derleyin**
 
-Paste the following code into the editor tab that comes up.
+Açılan editör sekmesine aşağıdaki kodu yapıştırın.
 
 ```text
 pragma solidity ^0.7.0;
@@ -37,24 +37,23 @@ contract BasicToken is ERC20 {
 
 ```
 
-Note: this is a simple ERC-20 contract based on the Open Zeppelin ERC-20 template. On construction, it creates the BasicToken with the symbol BAT, and mints the total initial supply.
+Not: Bu, Open Zeppelin ERC-20 şablonuna dayalı basit bir ERC-20 sözleşmesidir. İnşaatta, BAT sembolüyle BasicToken'ı oluşturur ve toplam ilk arzı sağlar.
 
-Below is the editor view.
+Editör görünümü aşağıdadır.
 ![](https://i.imgur.com/le9ZroU.png)
 
-Then click the `Solidity compiler` on the left sidebar sidebar, make sure that you use exactly same compiler version that is shown in above screenshot; and click the `Compile BasicToken.sol` button. 
+Ardından sol kenar çubuğu kenar çubuğundaki 'Solidity derleyici'yi tıklayın, yukarıdaki ekran görüntüsünde gösterilenle tamamen aynı derleyici sürümünü kullandığınızdan emin olun; ve `Compile BasicToken.sol` butonuna tıklayın.
 
-Remix will all of the Open Zeppelin dependencies and compile the contract.
+Remix, tüm Open Zeppelin bağımlılıklarını yapacak ve sözleşmeyi derleyecektir.
 
-### **3. Get the ABI & bytecode File**
+### **3. ABI ve Bayt kodu Dosyasını Gösterme**
 
-To deploy smart contract into Acala EVM we will need a file with ABI (Application Binary Interface) - metadata of smart contract, allowing to interact with it; and bytecode - the compiled code which will be executed. For Acala EVM we need to have both of these data in one file.
+Akıllı sözleşmeyi Acala EVM'ye yerleştirmek için ABI (Uygulama İkili Arayüzü) içeren bir dosyaya ihtiyacımız olacak - akıllı sözleşmenin meta verileri, onunla etkileşime izin verir; ve bayt kodu - yürütülecek derlenmiş kodu oluşturur. Acala EVM için bu iki veriyi tek dosyada bulundurmamız gerekiyor.
 
-Navigate back to `File explorers` (the top icon in the left sidebar), in the opened explorer select folder `artifacts`, and find inside the `BasicToken.json` file, click on it. You will see the content of the file, copy this content.
+"Dosya Gezgini"ne (sol kenar çubuğundaki en üstteki simge) geri gidin, açılan gezginde "artifacts" klasörünü seçin ve "BasicToken.json" dosyasının içini bulun, üzerine tıklayın. Dosyanın içeriğini göreceksiniz, bu içeriği kopyalayın.
 ![](https://i.imgur.com/SHH7Mj3.png)
 
-Copy and paste the content and save it locally, this is the ABI & bytecode file that will be deployed to Acala EVM later.
+İçeriği kopyalayıp yapıştırın ve yerel olarak kaydedin, bu daha sonra Acala EVM'ye dağıtılacak olan ABI & bytecode dosyasıdır.
 
 
-####   <a id="Compile-a-Solidity-Contract-using-Remix"></a>
-
+#### <a id="Compile-a-Solidity-Contract-using-Remix"></a>
