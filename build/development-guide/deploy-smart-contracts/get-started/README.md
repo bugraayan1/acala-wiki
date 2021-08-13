@@ -1,4 +1,3 @@
-# Get Started
-
+# Başlangıç
 {% page-ref page="./" %}
 
