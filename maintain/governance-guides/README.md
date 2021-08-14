@@ -1,2 +1,2 @@
-# Governance
+# Yönetim
 
