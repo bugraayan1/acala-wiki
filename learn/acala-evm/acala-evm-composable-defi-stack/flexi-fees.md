@@ -1,8 +1,7 @@
-# Flexi Fees
+# Esnek Ücretler
 
-## **Pay Gas Fees in Virtually Any Token**
+## **Gaz Ücretlerini Hemen Her Token ile Öde**
 
-With the Acala EVM, fees can be paid in any accepted tokens, such as ACA, aUSD, DOT, and wrapped BTC. More tokens can be supported as native fee tokens with a simple governance approval.
+Acala EVM ile ücretler ACA, aUSD, DOT ve sarılmış BTC gibi kabul edilen herhangi bir token ile ödenebilir. Basit bir yönetim onayı ile yerel ücret belirteçleri olarak daha fazla belirteç desteklenebilir.
 
-Behind the scenes, Acala DeX is being used as a unified liquidity pool for settling the fees into the network token, but the experience is completely transparent to users and developers.
-
+Perde arkasında Acala DeX, ücretleri ağ belirtecine yatırmak için birleşik bir likidite havuzu olarak kullanılıyor, ancak deneyim kullanıcılar ve geliştiriciler için tamamen şeffaf.
