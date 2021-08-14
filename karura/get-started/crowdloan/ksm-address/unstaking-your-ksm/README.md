@@ -1,9 +1,8 @@
-# Unstaking Your KSM
+# KSM'nizi Kaldırma
 
-In preparation for the Karura [crowdloan event](https://wiki.acala.network/karura/crowdloan), supporters who are currently staking \(bonding\) their KSM will need to unstake prior to bonding their KSM to the crowdloan module. For recently unstaked KSM tokens, Kusama has a delayed exit period \(7 days\), which serves as cooldown. 
+Karura [crowdloan etkinliğine](https://wiki.acala.network/karura/crowdloan) hazırlanırken, şu anda KSM'lerini staking'e \(bonding\) yapan destekçilerin, KSM'lerini kitle kredisi modülüne bağlamadan önce hisselerini geri almaları gerekecektir. . Yakın zamanda kullanılmayan KSM jetonları için Kusama'nın bekleme süresi görevi gören gecikmeli bir çıkış süresi \(7 gün\) vardır.
 
-The following guides are available: 
+Aşağıdaki kılavuzlar mevcuttur:
 
-* [Unstaking Your KSM Tokens on Polkadot.{js} Extension](https://wiki.acala.network/karura/ksm-address/unstaking-your-ksm-tokens-on-polkadot.-js-extension)
-* [Unstaking Your KSM Tokens on Polkawallet](https://wiki.acala.network/karura/ksm-address/unstake-polkawallet)
-
+* [Polkadot'ta KSM Jetonlarınızı Kaldırma.{js} Uzantısı](https://wiki.acala.network/karura/ksm-address/unstaking-your-ksm-tokens-on-polkadot.-js-extension)
+* [Polkawallet'te KSM Jetonlarınızı Kaldırma](https://wiki.acala.network/karura/ksm-address/unstake-polkawallet)
