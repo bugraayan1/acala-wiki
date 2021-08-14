@@ -1,40 +1,39 @@
-# Check Address for Different Chains
+# Farklı Zincirler için Adresi Kontrol Edin
 
 
 
-If you already set up a Polkadot account, Acala account, or any Substrate-based chain account, there are two options to check the corresponding DOT address:
+Halihazırda bir Polkadot hesabı, Acala hesabı veya herhangi bir Substrate tabanlı zincir hesabı oluşturduysanız, ilgili DOT adresini kontrol etmek için iki seçenek vardır:
 
-* you can use [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform);
-* setting your wallets in polkadot.js extension 
-* use PolkaWallet mobile app
+* [Alt Tarama Adresi Dönüşümü](https://acala-testnet.subscan.io/tools/ss58_transform) kullanabilirsiniz;
+* polkadot.js uzantısında cüzdanlarınızı ayarlama
+* PolkaWallet mobil uygulamasını kullanın
 
-## Using Subscan transform
+## Alt Tarama dönüşümünü kullanma
 
-1. Navigate to [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform) and paste your existing account address into "Input Account or Public Key".
+1. [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform) öğesine gidin ve mevcut hesap adresinizi "Input Account or Public Key"e yapıştırın.
 
 ![](https://i.imgur.com/v7damrj.png)
 
-1. Press "Transform" and find the corresponding Polkadot address in the appeared list on the right \(in the screenshot, it is second from the top\).
+1. "Dönüştür"e basın ve sağda görünen listede ilgili Polkadot adresini bulun \(ekran görüntüsünde, üstten ikincidir\).
 
 ![](https://i.imgur.com/bv0T6dD.png)
 
-## Using Polkadot.js extension
+## Polkadot.js uzantısını kullanma
 
-1. Open polkadot.js extension in your browser and press 3 dots on the right from your account name.
-2. In the opened window click on the dropdown menu and pick "Polkadot Relay Chain"
+1. Tarayıcınızda polkadot.js uzantısını açın ve hesap adınızın sağ tarafında bulunan 3 noktaya basın.
+2. Açılan pencerede açılır menüye tıklayın ve "Polkadot Relay Chain" seçeneğini seçin.
 
    ![](https://i.imgur.com/GxbRxhs.jpg)
 
-3. Now all your accounts are converted to Polkadot format, you can copy them.
+3. Artık tüm hesaplarınız Polkadot formatına çevrildi, kopyalayabilirsiniz.
 
-## Using Polkawallet
+## Polkawallet'ı Kullanma
 
-1. Open PolkaWallet on your mobile device and click the menu button on the top-right corner. ![](https://i.imgur.com/JwPrsVe.jpg%20=250x)
-2. In the opened menu select Polkadot logo \(second from the top\) and press on the appeared address on the main screen.
-3.  ![](https://i.imgur.com/YGx8nne.jpg%20=250x)
-4. Click on the account block under the "Add Account" button, which will navigate you back to the main page.
+1. Mobil cihazınızda PolkaWallet'i açın ve sağ üst köşedeki menü düğmesine tıklayın. ![](https://i.imgur.com/JwPrsVe.jpg%20=250x)
+2. Açılan menüde Polkadot logosunu \(üstten ikinci\) seçin ve ana ekranda görünen adrese basın.
+3. ![](https://i.imgur.com/YGx8nne.jpg%20=250x)
+4. Sizi ana sayfaya geri götürecek olan "Hesap Ekle" düğmesinin altındaki hesap bloğuna tıklayın.
 
    ![](https://i.imgur.com/JwPrsVe.jpg%20=250x)
 
-5. Now your wallet is set up and you can copy your Polkadot address. You can see that your wallet changed color to black and among your assets you can see DOT.
-
+5. Artık cüzdanınız kuruldu ve Polkadot adresinizi kopyalayabilirsiniz. Cüzdanınızın renginin siyaha döndüğünü ve varlıklarınız arasında DOT'u görebilirsiniz.
