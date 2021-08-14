@@ -1,15 +1,14 @@
-# KSM Address
+# KSM Adresi
 
-To participate in Karura crowdloan, you must have a KSM address used to contribute KSM to the Karura crowdloan. This KSM address also has a corresponding Karura \(KAR\) address, that shares the same public-private-keypair, which will be used to receive your KAR rewards.
+Karura kitle kredisine katılmak için, KSM'yi Karura kitle kredisine katkıda bulunmak için kullanılan bir KSM adresinizin olması gerekir. Bu KSM adresi ayrıca, KAR ödüllerinizi almak için kullanılacak olan, aynı genel-özel-anahtar çiftini paylaşan, karşılık gelen bir Karura \(KAR\) adresine sahiptir.
 
-If you already set up an Acala account following [this guide](https://wiki.acala.network/learn/get-started#create-a-polkadot-account), then you can check its corresponding KSM address for use in the crowdloan.
+[Bu kılavuzu](https://wiki.acala.network/learn/get-started#create-a-polkadot-account) izleyerek zaten bir Acala hesabı oluşturduysanız, kullanım için ilgili KSM adresini kontrol edebilirsiniz. kitle kredisi.
 
-The guide below shows you how to check the corresponding address for KSM and KAR, how to create a new KSM address if you don't already have one. Note: you should NOT use an exchange address for the crowdloan.
+Aşağıdaki kılavuz, KSM ve KAR için karşılık gelen adresi nasıl kontrol edeceğinizi, henüz yoksa yeni bir KSM adresini nasıl oluşturacağınızı gösterir. Not: kitle kredisi için bir değişim adresi KULLANMAMALISINIZ.
 
-## Overview
+## Genel Bakış
 
-Once you have created an account \(a public-private-keypair\) in Polkadot{js} extension, that account can then derive a bunch of addresses, one for each Substrate-based chain e.g. the same account can have an address for Polkadot, a different one for Kusama, another different one for Acala. But they all share the same private key and public key. As an analogy, they share the same username and password, but the account display name are different for different blockchains you interact with.
+Polkadot{js} uzantısında bir hesap \(bir genel-özel-anahtar çifti\) oluşturduktan sonra, bu hesap daha sonra her bir Substrate tabanlı zincir için bir tane olmak üzere bir grup adres türetebilir; aynı hesabın Polkadot için bir adresi, Kusama için farklı, Acala için farklı bir adresi olabilir. Ancak hepsi aynı özel anahtarı ve ortak anahtarı paylaşır. Bir benzetme olarak, aynı kullanıcı adını ve şifreyi paylaşırlar, ancak etkileşimde bulunduğunuz farklı blok zincirleri için hesap görünen adı farklıdır.
 
-1. If you already have a Substrate address \(Polkadot address, Acala address or other\), we will [show you how to check the corresponding KSM address](check-ksm-addr.md) and vice-versa.
-2. If you don't have any account set up, we will show you how to [create a KSM account](create-new-ksm-account.md), which can also be used for Polkadot, Acala and else.
-
+1. Zaten bir Substrat adresi \(Polkadot adresi, Acala adresi veya diğer\) varsa, [ilgili KSM adresini nasıl kontrol edeceğinizi göstereceğiz](check-ksm-addr.md) ve tam tersini yapacağız.
+2. Herhangi bir hesabınız yoksa, Polkadot, Acala ve diğerleri için de kullanılabilen [bir KSM hesabı oluşturmayı](create-new-ksm-account.md) size göstereceğiz.
