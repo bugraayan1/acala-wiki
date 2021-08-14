@@ -1,37 +1,36 @@
-# Check KSM Address
+# KSM Adresini Kontrol Edin
 
-If you already set up a Polkadot account, Acala account, or any Substrate-based chain account, there are two options to check the corresponding KSM address:
+Halihazırda bir Polkadot hesabı, Acala hesabı veya herhangi bir Substrate tabanlı zincir hesabı oluşturduysanız, ilgili KSM adresini kontrol etmek için iki seçenek vardır:
 
-* you can use [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform);
-* setting your wallets in polkadot.js extension 
-* use PolkaWallet mobile app
+* [Alt Tarama Adresi Dönüşümü](https://acala-testnet.subscan.io/tools/ss58_transform) kullanabilirsiniz;
+* polkadot.js uzantısında cüzdanlarınızı ayarlama
+* PolkaWallet mobil uygulamasını kullanın
 
-## Using Subscan transform
+## Alt Tarama dönüşümünü kullanma
 
-1. Navigate to [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform) and paste your existing account address into "Input Account or Public Key".
+1. [Subscan Address Transform](https://acala-testnet.subscan.io/tools/ss58_transform) öğesine gidin ve mevcut hesap adresinizi "Input Account or Public Key"e yapıştırın.
 
 ![](https://i.imgur.com/v7damrj.png)
 
-1. Press "Transform" and find the corresponding Kusama address in the appeared list on the right \(in the screenshot, it is third from the top\).
+1. "Dönüştür"e basın ve sağda görünen listede ilgili Kusama adresini bulun \(ekran görüntüsünde, üstten üçüncüdür\).
 
 ![](https://i.imgur.com/bv0T6dD.png)
 
-## Using Polkadot.js extension
+## Polkadot.js uzantısını kullanma
 
-1. Open polkadot.js extension in your browser and press 3 dots on the right from your account name.
-2. In the opened window click on the dropdown menu and pick "Kusama Relay Chain"
+1. Tarayıcınızda polkadot.js uzantısını açın ve hesap adınızın sağ tarafında bulunan 3 noktaya basın.
+2. Açılan pencerede açılır menüye tıklayın ve "Kusama Relay Chain" seçeneğini seçin.
 
    ![](https://i.imgur.com/IVZqsAR.png)
 
-3. Now all your accounts are converted to Kusama format, you can copy them.
+3. Artık tüm hesaplarınız Kusama formatına çevrildi, kopyalayabilirsiniz.
 
-## Using Polkawallet
+## Polkawallet'ı Kullanma
 
-1. Open PolkaWallet on your mobile device and click the menu button on the top-right corner. ![](https://i.imgur.com/z7uFoCj.jpg%20=250x)
-2. In the opened menu select Kusama logo \(second from the top\) and press on the appeared address on the main screen. ![](https://i.imgur.com/chGwQDP.jpg%20=250x)
-3. Click on the account block under the "Add Account" button, which will navigate you back to the main page.
+1. Mobil cihazınızda PolkaWallet'i açın ve sağ üst köşedeki menü düğmesine tıklayın. ![](https://i.imgur.com/z7uFoCj.jpg%20=250x)
+2. Açılan menüde Kusama logosunu \(üstten ikinci\) seçin ve ana ekranda görünen adrese basın. ![](https://i.imgur.com/chGwQDP.jpg%20=250x)
+3. Sizi ana sayfaya geri götürecek olan "Hesap Ekle" düğmesinin altındaki hesap bloğuna tıklayın.
 
    ![](https://i.imgur.com/Btjlla4.jpg%20=250x)
 
-4. Now your wallet is set up and you can copy your Kusama address. You can see that your wallet changed color to black and among your assets you can see KSM.
-
+4. Artık cüzdanınız kuruldu ve Kusama adresinizi kopyalayabilirsiniz. Cüzdanınızın renginin siyaha döndüğünü ve varlıklarınız arasında KSM'yi görebilirsiniz.
