@@ -1,26 +1,25 @@
-# Treasury
+# Hazine
 
-## What is Karura Treasury
+## Karura Hazinesi Nedir?
 
-Karura Treasury experiments with similar concepts and mechanisms of the Acala Treasury. Watch [the Acala Treasury intro video](https://www.youtube.com/watch?v=Wh8g89OPFH8) to learn more.
+Karura Hazinesi, Acala Hazinesi'nin benzer kavram ve mekanizmalarıyla deneyler yapıyor. Daha fazla bilgi edinmek için [Acala Hazinesi tanıtım videosunu](https://www.youtube.com/watch?v=Wh8g89OPFH8) izleyin.
 
-The Karura Treasury is a reserve of digital tokens, native and foreign to the Acala ecosystem, governed by KAR holders and funded from Karura’s protocol fees and community contribution events with the purpose of enabling long-term network self-sustainability and growth.
+Karura Hazinesi, KAR sahipleri tarafından yönetilen ve uzun vadeli ağın kendi kendini sürdürülebilirliğini ve büyümesini sağlamak amacıyla Karura'nın protokol ücretlerinden ve topluluk katkı etkinliklerinden finanse edilen Acala ekosistemine yerli ve yabancı bir dijital token rezervidir.
 
-Deployment of the Treasury is initiated via Karura Treasury Proposals \(KTP\) that could include, but are not limited to:
+Hazine'nin konuşlandırılması, aşağıdakileri içerebilen ancak bunlarla sınırlı olmayan Karura Hazine Teklifleri \(KTP\) aracılığıyla başlatılır:
 
-* Self-funding a parachain slots on Kusama
-* Bootstrapping protocol liquidity \(e.g. provide LKSM, kUSD or DEX pair liquidity\)
-* Platform and protocol operations and improvements
-* Network security operations and enhancements
-* Software and tool development
-* Community, marketing, and event funding
-* Any other future community Karura Treasury Proposals \(KTPs\)
+* Kusama'da bir parachain slotunu kendi kendine finanse etme
+* Önyükleme protokolü likiditesi \(ör. LKSM, kUSD veya DEX çifti likiditesi sağlayın\)
+* Platform ve protokol işlemleri ve iyileştirmeleri
+* Ağ güvenliği işlemleri ve geliştirmeleri
+* Yazılım ve araç geliştirme
+* Topluluk, pazarlama ve etkinlik finansmanı
+* Gelecekteki herhangi bir topluluk Karura Hazine Teklifleri \(KTP'ler\)
 
-## Existential Goal
+## Varoluşsal Hedef
 
-The primary objective of the Karura Treasury is to build up its KSM reserve to ensure Karura has a sustainable reservoir of KSM to lease a parachain slot from Kusama for the foreseeable future. The Treasury can trustlessly deploy the tokens to bond a parachain for itself to sustain its operation, bootstrap liquidity of the DeFi protocols on Karura to solve the chick-and-egg problem of market makers and takers hence benefiting the entire network, and support continuous platform and ecosystem development. This experiment may demonstrate positive reinforcement that will trickle up Karura’s network security, sustainability and network utility.
+Karura Hazinesinin birincil amacı, Karura'nın öngörülebilir bir gelecek için Kusama'dan bir parachain yuvası kiralamak için sürdürülebilir bir KSM rezervine sahip olmasını sağlamak için KSM rezervini oluşturmaktır. Hazine, operasyonunu sürdürmek, piyasa yapıcıların ve alıcıların civciv ve yumurta sorununu çözmek için Karura'daki DeFi protokollerinin likiditesini önyüklemek ve dolayısıyla tüm ağa fayda sağlamak için bir parachain bağlamak için belirteçleri güvenilir bir şekilde dağıtabilir ve sürekli platformu destekleyebilir. ve ekosistem gelişimi. Bu deney, Karura'nın ağ güvenliğini, sürdürülebilirliğini ve ağ faydasını artıracak olumlu pekiştirme gösterebilir.
 
-## Creating a Treasury Proposal
+## Hazine Teklifi Oluşturma
 
-Coming soon...
-
+Çok yakında...
