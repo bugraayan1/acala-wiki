@@ -1,4 +1,4 @@
-# Ev
+# Anasayfa
 
 Karura, Acala için bir "kanarya ağı"dır ve ilk olarak mevcut olan ve gerçek ekonomik değeri olan kodun erken denetlenmemiş bir sürümüdür.
 
@@ -20,6 +20,6 @@ Kusama, Polkadot'un kanarya ağıdır - radikal inovasyon için çok zincirli bi
 
 [Web sitesi](https://kusama.network/) \| [Wiki](https://guide.kusama.network/docs/kusama-index)
 
-## Temas etmek
+## İletişim
 
 Tüm sosyal kanalları [burada](https://linktr.ee/karuranetwork) bulun.
