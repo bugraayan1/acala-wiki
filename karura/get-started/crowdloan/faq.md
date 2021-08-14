@@ -1,175 +1,100 @@
-# FAQ
+# SSS
 
-## Top Questions
+## En Çok Sorulan Sorular
 
-### **I'm having problems contributing and can't submit my transaction on the Karura website?**
+### **Katkıda bulunurken sorun yaşıyorum ve işlemimi Karura web sitesinde gönderemiyorum?**
 
-Check the following:
+Aşağıdakileri kontrol et:
 
-* Ledger is not supported at all, you can participate **only** with the polkadot.js extension
-* Ensure that you selected "Allow use on any chain" in your polkadot.js extension
+* Defter hiç desteklenmemektedir, **sadece** polkadot.js uzantısı ile katılabilirsiniz.
+* Polkadot.js uzantınızda "Herhangi bir zincirde kullanıma izin ver"i seçtiğinizden emin olun.
 
-  ![](https://lh5.googleusercontent.com/5PwNfrcbxBhKFR6Ahlg_jan700Xvi3PBl51ulamlKAPuSWs-sqSv4g3_zKza9hdg3qFJMxoeRr18a7Jwjia8ocfmoJyp2HDJlAMBeODVmd130EPL8oeKuvzw_VIUayknq5PiMwXv)
+  ![](https://lh5.googleusercontent.com/5PwNfrcbxBhKFR6Ahlg_jan700Xvi3PBl51ulamlKAPuSWs-sqSv4g3_zKza9hdg3qFJMxoeRr18a7Jwjia8ocfmoJyp2HDJlAMBeOD8VmK)
 
-* Try changing the browser you are using to contribute. Firefox and Chrome are working well, but can occasionally have difficulty
+* Katkıda bulunmak için kullandığınız tarayıcıyı değiştirmeyi deneyin. Firefox ve Chrome iyi çalışıyor, ancak bazen zorluk çekebilir
 
-### **Can I generate my own referral code?**
+### **Kendi yönlendirme kodumu oluşturabilir miyim?**
 
-No. The referral codes were given to those who registered on the Karura waiting list. The registration for Karura Waiting List was finished on 31 March 2021. 
+Hayır. Yönlendirme kodları, Karura bekleme listesine kaydolanlara verildi. Karura Bekleme Listesi kayıtları 31 Mart 2021'de tamamlandı.
 
-However, you can still use another person’s referral code to receive a 5% bonus, you just won’t be able to use that code to refer other people.
+Ancak, %5 bonus almak için başka bir kişinin yönlendirme kodunu kullanmaya devam edebilirsiniz, bu kodu başka kişileri yönlendirmek için kullanamazsınız.
 
-### How can I track my rewards?
+### Ödüllerimi nasıl takip edebilirim?
 
-You can track your rewards by entering your Kusama address on the [Karura site](https://acala.network/karura/join-karura) under the "Check rewards & bonus here" link \(screenshot below\).
+Kusama adresinizi [Karura sitesinde](https://acala.network/karura/join-karura) "Ödülleri ve bonusu buradan kontrol edin" bağlantısının \(ekran görüntüsü aşağıda\) altına girerek takip edebilirsiniz.
 
 ![](../../../.gitbook/assets/rewards-link.png)
 
-### **Which wallets can I use for the Karura crowdloan?**
+### **Karura kitle kredisi için hangi cüzdanları kullanabilirim?**
 
-Please check this section: [Crowdloan Ways to Participate](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
+Lütfen bu bölümü kontrol edin: [Katılım Yolları](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
 
-### **Is Ledger compatible with the crowdloan?**
+### **Ledger kitle kredisi ile uyumlu mu?**
 
-No. Check the ways to participate here: [Crowdloan Ways to Participate](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
+Hayır. Katılmanın yollarını buradan kontrol edin: [Crowdloan Ways to Participate](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
 
-### **When will the auction end?**
+### **Açık artırma ne zaman sona erecek?**
 
-The auction is set to end on June 22nd 2021 at 9:00 GMT.
+Açık artırma 22 Haziran 2021'de saat 9:00 GMT'de sona erecek.
 
-### **Where will I receive my KAR tokens from the crowdloan?**
+### **Kitle kredisinden KAR jetonlarımı nereden alacağım?**
 
-After Karura has won the parachain auction, it will launch network Genesis on Kusama. The KAR rewards will be distributed after the network is launched to the Karura address associated with the Kusama address you used to contribute. For those who did not participate via the Karura website \(without agreeing to the T&C\), there will be a KAR claim process upon launch where you will need to agree to the T&C. Learn more on Karura launch process[ here](https://www.notion.so/acala/dcabf9ba7c6246c69b913d5972503227?v=4121894373fd43d98ffcac260803928d).
+Karura parachain müzayedesini kazandıktan sonra, Kusama'da Genesis ağını başlatacak. KAR ödülleri, katkıda bulunmak için kullandığınız Kusama adresiyle ilişkili Karura adresine ağ başlatıldıktan sonra dağıtılacaktır. Karura web sitesi aracılığıyla \(Ş&Ş'yi kabul etmeden\) katılmayanlar için, başlatmanın ardından Şartlar ve Koşullar'ı kabul etmeniz gereken bir KAR talep süreci olacaktır. Karura lansman süreci hakkında daha fazla bilgiyi[ buradan](https://www.notion.so/acala/dcabf9ba7c6246c69b913d5972503227?v=4121894373fd43d98ffcac260803928d) öğrenin.
 
-### **What is the minimum amount I can contribute?**
+### **Katkıda bulunabileceğim minimum miktar nedir?**
 
-0.1 KSM if participating from Karura website or Polkawallet  
-If you are participating from other apps, check their local policy for minimum contribution.
+Karura web sitesinden veya Polkawallet'ten katılıyorsanız 0.1 KSM
+Diğer uygulamalardan katılıyorsanız, minimum katkı için yerel politikalarını kontrol edin.
 
-## **How to Participate**
+## **Nasıl katılacağım**
 
-### **How do I create a Kusama wallet?**
+### **Kusama cüzdanını nasıl oluştururum?**
 
-By creating a wallet through the Polkawallet mobile app or the Polkadot{.js} browser extension. Guides to setting up these wallets can be found [here](https://wiki.acala.network/karura/ksm-address/create-new-ksm-account).
+Polkawallet mobil uygulaması veya Polkadot{.js} tarayıcı uzantısı aracılığıyla bir cüzdan oluşturarak. Bu cüzdanları kurma kılavuzlarını [burada](https://wiki.acala.network/karura/ksm-address/create-new-ksm-account) bulabilirsiniz.
 
-### **How do I find my Kusama address if I already have a wallet?**
+### **Zaten bir cüzdanım varsa Kusama adresimi nasıl bulabilirim?**
 
-You can find your Kusama address by referring to our guide found [here](https://wiki.acala.network/karura/ksm-address/check-ksm-addr).
+Kusama adresinizi [burada](https://wiki.acala.network/karura/ksm-address/check-ksm-addr) bulunan rehberimize başvurarak bulabilirsiniz.
 
-### **Is there a step-by-step guide on how to participate in the Karura crowdloan?**
+### **Karura kitle kredisine nasıl katılacağınıza dair adım adım bir kılavuz var mı?**
 
-A step-by-step guide on how to participate through Polkadot{.js} browser extension and Polkawallet can be found [here](https://wiki.acala.network/karura/crowdloan/how-to-crowdloan).
+Polkadot{.js} tarayıcı uzantısı ve Polkawallet üzerinden nasıl katılacağınıza ilişkin adım adım kılavuza [buradan](https://wiki.acala.network/karura/crowdloan/how-to-crowdloan) ulaşabilirsiniz.
 
-### Am I allowed to contribute to the crowdloan multiple times?
+### Kitle kredisine birden çok kez katkıda bulunmama izin var mı?
 
-Yes. As long as the auction has not expired, you are allowed to contribute.
+Evet. Açık artırmanın süresi dolmadığı sürece katkıda bulunmanıza izin verilir.
 
-### **How does the referral bonus work?**
+### **Tavsiye bonusu nasıl çalışır?**
 
-* If you're using someone else's link, you get a 5% KAR bonus on the amount **you** contributed
-* If someone is using your link, you will receive a 5% KAR bonus on the amount **they** contributed
+* Başka birinin bağlantısını kullanıyorsanız, katkıda bulunduğunuz **sizin** miktarı üzerinden %5 KAR bonusu alırsınız.
+* Eğer birisi sizin bağlantınızı kullanıyorsa, **onların** katkıda bulunduğu miktar üzerinden %5 KAR bonusu alacaksınız.
 
-For example, if Alice shares her referral link with Bob, and Bob contributes 10 KSM to the crowdloan module, both will receive 6 KAR as a bonus \(10 KSM x 12KAR:1KSM reward ratio x 5%\).
+Örneğin, Alice tavsiye bağlantısını Bob ile paylaşırsa ve Bob kitle kredisi modülüne 10 KSM katkıda bulunursa, her ikisi de bonus olarak 6 KAR alır \(10 KSM x 12KAR:1KSM ödül oranı x %5\).
 
-### Which platforms support the Referral program?
+### Tavsiye programını hangi platformlar destekliyor?
 
-* Karura official website
-* Polkawallet
-* Fearless Wallet
-* Other platforms may also support them in a variety of ways. You can ask those platforms for details
+* Karura resmi web sitesi
+* Puantiyeli
+* Korkusuz Cüzdan
+* Diğer platformlar da bunları çeşitli şekillerde destekleyebilir. Detaylar için bu platformlara sorabilirsiniz
 
-### **Can I make multiple referrals and get a bonus for each one?**
+### **Birden fazla tavsiyede bulunabilir ve her biri için bonus alabilir miyim?**
 
-Yes. For each referral you make, you and your referee will both receive a 5% bonus on the amount they contribute to the Karura crowdloan. For example, if Alice shares her referral link with Bob and Carl, Alice's bonus is equivalent to 5% of Bob's contribution plus 5% of Carl's contribution.
+Evet. Yaptığınız her tavsiye için, hem siz hem de hakeminiz, Karura kitle kredisine katkıda bulundukları miktar üzerinden %5 bonus alacaksınız. Örneğin, Alice tavsiye bağlantısını Bob ve Carl ile paylaşırsa, Alice'in bonusu Bob'un katkısının %5'i artı Carl'ın katkısının %5'ine eşittir.
 
-### Do referrals work if I'm participating through an exchange?
+### Bir değişime katılırsam tavsiyeler işe yarar mı?
 
-Exchanges may have different promotion schemes. The following exchanges will be supporting Karura crowdloan. Please contact them to find out.
+Borsaların farklı promosyon şemaları olabilir. Aşağıdaki borsalar Karura kitle kredisini destekleyecek. Lütfen öğrenmek için onlarla iletişime geçin.
 
 * Kraken
-* OKEx
+* Tamam
 * Kucoin
 * Huobi \(TBD\)
 
-### **Can I refer to my own KSM address and still qualify for bonuses?**
+### **Kendi KSM adresime başvurabilir ve yine de ikramiye almaya hak kazanabilir miyim?**
 
-Yes, you can self-refer and earn 5% bonus rewards in KAR as both the referrer and the referee.
+Evet, hem yönlendiren hem de hakem olarak KAR'da kendi kendinize başvurabilir ve %5 bonus ödülü kazanabilirsiniz.
 
-### **How long will my tokens be locked if I participate in the crowdloan?**
+### **Toplu krediye katılırsam jetonlarım ne kadar süreyle kilitlenir?**
 
-Your KSM tokens will be locked for the full duration of Karura’s parachain lease, which is 48 weeks since the launch of the Karura network.
-
-### **Will my KSM be returned after the parachain lease ends?**
-
-Yes, your KSM tokens will be automatically returned to you when the parachain lease ends.
-
-Karura never has custody of your KSM tokens. Your KSM tokens are bonded to the crowdloan module, which lives on the Kusama Relay Chain, and remain visible within your wallet.
-
-### **Can I withdraw my KSM from the crowdloan?**
-
-All submissions to the crowdloan module are final and cannot be withdrawn. You will automatically receive your funds at the end of the parachain lease.
-
-### **Will I get my KSM tokens back if Karura doesn’t win the auction?**
-
-If Karura does not win the initial auction, it will continue to bid in the subsequent auctions. If Karura fails to win any auction for six weeks after the beginning of the crowdloan, then it will end the crowdloan and return all funds to holders.
-
-### **Can I earn KSM staking rewards while my KSM are locked?**
-
-No. KSM contributed to the crowdloan are locked on the Kusama Relay Chain. You will however receive KAR tokens based on your contribution, once Karura wins the auction and launches mainnet.
-
-## KAR Tokens
-
-### **How many KAR tokens will I receive for participating in the crowdloan?**
-
-Karura will distribute KAR tokens to crowdloan supporters at a ratio of at least 12 KAR for every 1 KSM.
-
-### **What is the purpose of the KAR token?**
-
-The KAR token serves three key functions:
-
-* The foundation of governance of Karura
-* Proof-of-liveness of the network \(rewards for collators\)
-* KAR as utility token to pay fees for various network activities
-
-### **What is the KAR token supply?**
-
-There are 100,000,000 KAR tokens.
-
-### **How many KAR tokens will be distributed in the crowdloan?**
-
-11 million KAR tokens, which is equivalent to 11% of the token supply, will be distributed to contributors of the crowdloan module.
-
-### What happens if **there is more KSM bonded than the amount allocated for the crowdloan?**
-
-If there're more KSM bonded than the amount allocated for the crowdloan, we will increase the KAR reward allocation. This will allow us to honor the 12 KAR for every 1 KSM reward.
-
-### Is there a vesting period on KAR tokens?
-
-Yes. Upon receipt of your KAR tokens, 30% will be unlocked and transferrable, while the remaining 70% will be vested and gradually unlocked over the lease period. However, the full balance can be used to participate in governance.
-
-### Where can I buy KAR tokens?
-
-No exchanges currently list KAR tokens. However, you can receive KAR tokens by contributing KSM to the crowdloan module in the Karura Parachain Auction.
-
-### What is the price of the KAR token?
-
-The price will be defined by the open market after the Karura launch.
-
-### **Will I receive KAR tokens for participating in the testnet?**
-
-No.
-
-## **Accessing Your KAR Tokens**
-
-### **Is KAR a stablecoin?**
-
-No. The Karura Dollar \(kUSD\) is a stablecoin. KAR is the native token of the Karura network.
-
-### **When will I receive my KAR tokens from the crowdloan?**
-
-Tokens will be distributed after the Karura network goes live.
-
-### \*\*\*\*
-
-**Didn't find the answer? Ask our support team: support@acala.network**
-
+KSM jetonlarınız f için kilitlenecek
