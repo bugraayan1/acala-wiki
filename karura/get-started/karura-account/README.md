@@ -1,177 +1,178 @@
-# Karura Account
+# Karura Hesabı
 
-This document covers the basics of Acala, Karura, Polkadot and Kusama account addresses.
+Bu belge Acala, Karura, Polkadot ve Kusama hesap adreslerinin temellerini kapsar.
 
-## Address Format
+## Adres Biçimi
 
-Acala and Karura use the Substrate-based chain address format SS58. Read more [here](https://wiki.polkadot.network/docs/en/learn-accounts).
+Acala ve Karura, Substrat tabanlı zincir adres biçimi SS58'i kullanır. Daha fazlasını [buradan](https://wiki.polkadot.network/docs/en/learn-accounts) okuyun.
 
-* Acala addresses always start with the number 2.
-* Karura addresses could start with a small letter like l, r, p, q, o...
-* Polkadot addresses always start with the number 1.
-* Kusama addresses always start with a capital letter like C, D, F, G, H, J...
-* Generic Substrate addresses start with 5.
+* Acala adresleri her zaman 2 ile başlar.
+* Karura adresleri l, r, p, q, o gibi küçük bir harfle başlayabilir...
+* Polkadot adresleri her zaman 1 ile başlar.
+* Kusama adresleri her zaman C, D, F, G, H, J gibi büyük harfle başlar...
+* Genel Substrat adresleri 5 ile başlar.
 
-## Existential Deposit
+## Varoluşsal Mevduat
 
-Karura uses an [_existential deposit_ \(ED\)](https://wiki.polkadot.network/docs/learn-accounts#existential-deposit-and-reaping) to prevent dust accounts from bloating state. If an account drops below the ED, the state of this account will be removed from the blockchain to preserve scarce on-chain storage resources. The balance on this account will be removed and donated to the Treasury. You still retain access to the account, but it no longer has an on-chains state.
+Karura, toz hesaplarının şişmesini önlemek için bir [_existential mevduat_ \(ED\)](https://wiki.polkadot.network/docs/learn-accounts#existential-deposit-and-reaping) kullanır. Bir hesap ED'nin altına düşerse, kıt zincir üstü depolama kaynaklarını korumak için bu hesabın durumu blok zincirinden kaldırılacaktır. Bu hesaptaki bakiye kaldırılarak Hazine'ye bağışlanacak. Hesaba erişiminiz devam eder, ancak artık zincirleme durumu yoktur.
 
-**Transfers:** when you transfer an amount from account A to account B
+**Transferler:** A hesabından B hesabına bir miktar transfer ettiğinizde
 
-* if after the transfer, account A's balance is below ED, it will be removed. So make sure to leave enough balance on account A to keep it alive.
-* if account B has no balance, and the transfer amount is below ED, account B would be as if never receive any amount, because its state would be removed from the chain. So make sure to send enough amount to keep a fresh account alive.
+* Transferden sonra A hesabının bakiyesi ED'nin altındaysa, kaldırılacaktır. Bu yüzden, A hesabını canlı tutmak için yeterli bakiye bıraktığınızdan emin olun.
+* B hesabının bakiyesi yoksa ve transfer tutarı ED'nin altındaysa, durumu zincirden kaldırılacağı için B hesabı hiç tutar almıyormuş gibi olur. Bu nedenle, yeni bir hesabı canlı tutmak için yeterli miktarda gönderdiğinizden emin olun.
 
-**Swap**: when you swap token A for token B, if token A balance then falls below ED requirement, then the transaction might fail. Anyone can build a front-end using acala.js SDK to facilitate this transaction and check ED for you, but you shall always be aware of it.
+**Takas**: A jetonunu B jetonuyla değiştirdiğinizde, A jetonu bakiyesi ED gereksiniminin altına düşerse, işlem başarısız olabilir. Bu işlemi kolaylaştırmak ve ED'yi sizin için kontrol etmek için herkes acala.js SDK kullanarak bir ön uç oluşturabilir, ancak bunun her zaman farkında olacaksınız.
 
-**Claim rewards**: when claiming LP tokens or other rewards, if the balance is below ED requirement after the claim, then the balance might be wiped.
+**Ödülleri talep edin**: LP jetonlarını veya diğer ödülleri talep ederken, talepten sonra bakiye ED gereksiniminin altındaysa, bakiye silinebilir.
 
-ED applies to all supported token accounts, and each type of token account e.g. KSM account has its own ED requirement. Any transactions that change the balance of a particular token e.g. swap, then you shall be aware of its ED requirement. Here's the list of ED requirements for currently available tokens on Karura:
+ED, desteklenen tüm jeton hesapları ve her jeton hesabı türü için geçerlidir; KSM hesabının kendi ED gereksinimi vardır. Belirli bir jetonun bakiyesini değiştiren herhangi bir işlem, ör. takas, o zaman ED gereksiniminin farkında olacaksınız. Karura'da şu anda mevcut olan jetonlar için ED gereksinimlerinin listesi:
 
 * KAR ED: 0.1 KAR
-* kUSD ED: 0.01 kUSD
+* kUSD ED: 0,01 kUSD
 * KSM ED: 0.0001 KSM
 * LKSM ED: 0.0001 LKSM
 
-\([Source code](https://meet.google.com/pye-erkv-duy)\)
+\([Kaynak kodu](https://meet.google.com/pye-erkv-duy)\)
 
-## Account Generation 
+## Hesap Oluşturma
 
-Before the network is live, and during the initial launch period, below is the only recommended method for generating an Acala and Karura account:
+Ağ yayınlanmadan önce ve ilk başlatma döneminde, Acala ve Karura hesabı oluşturmak için önerilen tek yöntem aşağıdadır:
 
-* Polkadot{.js} Browser Plugin 
+* Polkadot{.js} Tarayıcı Eklentisi
 
-## Polkadot{.js} Browser Plugin 
+## Polkadot{.js} Tarayıcı Eklentisi
 
-### Install the Browser Plugin
+### Tarayıcı Eklentisini Yükleyin
 
-The browser plugin is available for both [Google Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) \(and Chromium based browsers like Brave\) and [FireFox](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension). Download the plugins [here](https://polkadot.js.org/extension/).
+Tarayıcı eklentisi hem [Google Chrome](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=tr) \(ve Brave\ gibi Chromium tabanlı tarayıcılar) için kullanılabilir. ve [FireFox](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension). Eklentileri [buradan](https://polkadot.js.org/extension/) indirin.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-14-at-4.49.27-pm.png)
 
-### Create Account
+### Hesap oluştur
 
-Open the Polkadot{.js} browser extension by clicking the logo on the top bar of your browser. You will see a browser popup not unlike the one below
+Tarayıcınızın üst çubuğundaki logoya tıklayarak Polkadot{.js} tarayıcı uzantısını açın. Aşağıdakinden farklı olmayan bir tarayıcı açılır penceresi göreceksiniz
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-14-at-4.52.43-pm.png)
 
-Click the big plus button or select "Create new account" from the small plus icon in the top right. The Polkadot{.js} plugin will then use system randomness to make a new seed for you and display it to you in the form of twelve words.
+Büyük artı düğmesini tıklayın veya sağ üstteki küçük artı simgesinden "Yeni hesap oluştur"u seçin. Polkadot{.js} eklentisi daha sonra sizin için yeni bir tohum oluşturmak için sistem rastgeleliğini kullanacak ve bunu on iki kelime şeklinde size gösterecektir.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-14-at-4.53.46-pm.png)
 
-You should back up these words as [explained here](https://wiki.polkadot.network/docs/en/learn-account-generation#storing-your-key-safely). It is imperative to store the seed somewhere safe, secret, and secure. If you cannot access your account via Polkadot{.js} for some reason, you can re-enter your seed through the "Add account menu" by selecting "Import account from pre-existing seed".
+Bu kelimeleri [burada açıklandığı gibi](https://wiki.polkadot.network/docs/en/learn-account-generation#storing-your-key-safely) yedeklemelisiniz. Tohumu güvenli, gizli ve güvenli bir yerde saklamak zorunludur. Herhangi bir nedenle Polkadot{.js} üzerinden hesabınıza erişemezseniz, "Hesap ekle" menüsünden "Önceden var olan tohumdan hesabı içe aktar"ı seçerek tohumunuzu yeniden girebilirsiniz.
 
-### Name Account & Password
+### Adı Hesap ve Şifre
 
-The account name is arbitrary and for your use only. The password will be used to encrypt this account's information. You will need to re-enter it when using the account for any kind of outgoing transaction or when using it to cryptographically sign a message.
+Hesap adı isteğe bağlıdır ve yalnızca sizin kullanımınız içindir. Şifre, bu hesabın bilgilerini şifrelemek için kullanılacaktır. Hesabı herhangi bir giden işlem için kullanırken veya bir mesajı kriptografik olarak imzalamak için kullanırken tekrar girmeniz gerekecektir.
 
-Note that this password does NOT protect your seed phrase. If someone knows the twelve words in your mnemonic seed, they still have control over your account even if they do not know the password.
+Bu parolanın tohum ifadenizi KORUMADIĞINI unutmayın. Birisi anımsatıcı tohumunuzdaki on iki kelimeyi biliyorsa, şifreyi bilmese bile hesabınız üzerinde kontrol sahibi olmaya devam eder.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-14-at-4.54.44-pm.png)
 
-### Set Address for Acala Mainnet
+### Acala Mainnet Adresini Ayarla
 
-Now we will ensure that the addresses are displayed as Acala mainnet addresses.
+Şimdi adreslerin Acala mainnet adresleri olarak görüntülenmesini sağlayacağız.
 
-Click on "Options" at the top-right corner of the plugin window, and under "Display address format for" select "Acala".
+Eklenti penceresinin sağ üst köşesindeki "Seçenekler"e tıklayın ve "Görüntülenen adres formatı" altında "Acala"yı seçin.
 
-**Your address's format is only visual** - the data used to derive this representation of your address are the same, so **you can use the same address on multiple chains**. 
+**Adresinizin biçimi yalnızca görseldir** - adresinizin bu temsilini elde etmek için kullanılan veriler aynıdır, dolayısıyla **aynı adresi birden çok yerde kullanabilirsiniz
 
-You can copy your address by clicking on the account's icon.
+uç zincirler**.
+
+Hesabın simgesine tıklayarak adresinizi kopyalayabilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-14-at-4.58.59-pm.png)
 
-### Set Address for Karura Mainnet
+### Karura Ana Ağı için Adres Ayarla
 
-Click on "Options" at the top-right corner of the plugin window, and under "Display address format for" select "Karura".
+Eklenti penceresinin sağ üst köşesindeki "Seçenekler"e tıklayın ve "Görüntülenen adres formatı" altında "Karura"yı seçin.
 
-**Your address's format is only visual** - the data used to derive this representation of your address are the same, so **you can use the same address on multiple chains**. 
+**Adresinizin biçimi yalnızca görseldir** - adresinizin bu temsilini elde etmek için kullanılan veriler aynıdır, dolayısıyla **aynı adresi birden fazla zincirde kullanabilirsiniz**.
 
-You can copy your address by clicking on the account's icon.
+Hesabın simgesine tıklayarak adresinizi kopyalayabilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-06-08-at-2.27.20-pm.png)
 
-### Set Address for Polkadot Mainnet
+### Polkadot Ana Ağı için Adres Ayarla
 
-Click on "Options" at the top-right corner of the plugin window, and under "Display address format for" select "Polkadot".
+Eklenti penceresinin sağ üst köşesindeki "Seçenekler"e tıklayın ve "Görüntülenen adres formatı" altında "Polkadot"u seçin.
 
-**Your address's format is only visual** - the data used to derive this representation of your address are the same, so **you can use the same address on multiple chains**. 
+**Adresinizin biçimi yalnızca görseldir** - adresinizin bu temsilini elde etmek için kullanılan veriler aynıdır, dolayısıyla **aynı adresi birden fazla zincirde kullanabilirsiniz**.
 
-You can copy your address by clicking on the account's icon.
+Hesabın simgesine tıklayarak adresinizi kopyalayabilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-16-at-9.45.59-am.png)
 
-### Set Address for Kusama Mainnet
+### Kusama Mainnet Adresini Ayarla
 
-Click on "Options" at the top of the plugin window, and under "Display address format for" select "Kusama".
+Eklenti penceresinin üst kısmındaki "Seçenekler"e tıklayın ve "Görüntülenen adres biçimi" altında "Kusama"yı seçin.
 
-**Your address's format is only visual** - the data used to derive this representation of your address are the same, so **you can use the same address on multiple chains**. 
+**Adresinizin biçimi yalnızca görseldir** - adresinizin bu temsilini elde etmek için kullanılan veriler aynıdır, dolayısıyla **aynı adresi birden fazla zincirde kullanabilirsiniz**.
 
-You can copy your address by clicking on the account's icon.
+Hesabın simgesine tıklayarak adresinizi kopyalayabilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-05-16-at-9.46.09-am.png)
 
-### Convert Address for different chain formats
+### Farklı zincir biçimleri için Adresi Dönüştür
 
-You can use the [Subscan Address Transform tool](https://polkadot.subscan.io/tools/ss58_transform) to convert your address between the different chain formats.
+Adresinizi farklı zincir biçimleri arasında dönüştürmek için [Alt Tarama Adresi Dönüştürme aracını](https://polkadot.subscan.io/tools/ss58_transform) kullanabilirsiniz.
 
-Enter any address in the input box on the left-hand side, then click **`Transform`** button, you can see address formats for all chains on the right-hand side.
+Sol taraftaki giriş kutusuna herhangi bir adresi girin, ardından **`Dönüştür`** düğmesine tıklayın, sağ tarafta tüm zincirler için adres formatlarını görebilirsiniz.
 
-## **Polkawallet**
+## **Pulkawallet**
 
-### **Install Polkawallet App**
+### **Polkawallet Uygulamasını Yükleyin**
 
-Download the Polkawallet app via [its official website](https://polkawallet.io/). The app is available through the Apple App Store for iOS devices, Google Play for Android devices, and as Android APK.
+Polkawallet uygulamasını [resmi web sitesi](https://polkawallet.io/) üzerinden indirin. Uygulama, iOS cihazlar için Apple App Store, Android cihazlar için Google Play ve Android APK olarak kullanılabilir.
 
-### Create Account
+### Hesap oluştur
 
-1. Click on the "Create Account" button.
+1. "Hesap Oluştur" düğmesine tıklayın.
 
-![](https://lh5.googleusercontent.com/VaB4EcpFPO9Qmvl2K_MVKk8rVevhEzDsD45WZzkWKe3B6DXyoSU8-IenMk3slTe4uGLVl4IzAEmOz-A0SyJ508VUy49UfiGpsBT5R7q2QRmeybP1cE-2fU52iOdoudgcdmsLv_Kl)
+![](https://lh5.googleusercontent.com/VaB4EcpFPO9Qmvl2K_MVKk8rVevhEzDsD45WZzkWKe3B6DXyoSU8-IenMk3slTe4uGLVl4IzAEmOz-A0SyJ508VUy5DsD45WZzkWKe3slTe4uGLVl4IzAEmOz-A0SyJ508VUy5Ry7SyJ508VUy49U7SyJ508VUy49U7SyJ508VUy49U7SyJ508VUy49U7B)
 
-2. A new screen will appear explaining the importance of recording your mnemonic phrase in a safe place. Click the "Next" button.
+2. Anımsatıcı ifadenizi güvenli bir yere kaydetmenin önemini açıklayan yeni bir ekran açılacaktır. "İleri" düğmesini tıklayın.
 
-![](https://lh6.googleusercontent.com/509_xAUccOu0djt4YJZsvrLW4H_fdBxmOmMMwpRrseGSt9xcyZdx4Tgge7ZofXk6um7rSR6LcPL7c23rJHF2ZHv7FlLl2SbYciqd3-ck_v_hlco0RRP7oPpin90nv2YETvvN_cEb)
+![](https://lh6.googleusercontent.com/509_xAUccOu0djt4YJZsvrLW4H_fdBxmOmMMwpRrseGSt9xcyZdx4Tgge7ZofXk6um7rSR6LcPL7c23rJHF2ZHv7Flql2SvrLW4H_fdBxmOmMMwpRrseGSt9xcyZdx4Tgge7ZofXk6um7rSR6LcPL7c23rJHF2ZHv7Flql2SvPinRpLql2Sb)
 
-‌3. Your mnemonic phrase will appear. Write the mnemonic on a piece of paper and store it somewhere safe. Click on the "Next" button.
+‌3. Anımsatıcı ifadeniz görünecektir. Anımsatıcıyı bir kağıda yazın ve güvenli bir yerde saklayın. "İleri" düğmesine tıklayın.
 
-![](https://lh5.googleusercontent.com/XD1NG32OkmzZYToN8Fb-noLzUJmacWIACYhi-gSyV3-s58n4Ovu6sS0qQMRe1NkMMyLA4LBz_wEHRnEDwVnQgEaXQwCrgvUr0fNvA8SDilS7mrrnP--9bx3-SnHaioy_prFD4KoE)
+![](https://lh5.googleusercontent.com/XD1NG32OkmzZYToN8Fb-noLzUJmacWIACYhi-gSyV3-s58n4Ovu6sS0qQMRe1NkMMyLA4LBz_wEHRnEDwVnQgEaXQwCrgvArr8)
 
-4. Confirm your mnemonic by entering the words in the correct order. Click on the "Next" button when completed.
+4. Sözcükleri doğru sırada girerek anımsatıcınızı onaylayın. Tamamlandığında "İleri" düğmesine tıklayın.
 
-![](https://lh4.googleusercontent.com/ROVs8A4woJy9RYKmsGd6Jm1W8GMzG_cpB6ba3XLViS18GMTmRK0giSV7qkDh2XZrKxxLv4LFLEFuiRT6Lw3wri8yu6cT9tBMyw00vMhxq5Vmwb2qBOUg9-Eey7RHMbh4araqvk7P)
+![](https://lh4.googleusercontent.com/ROVs8A4woJy9RYKmsGd6Jm1W8GMzG_cpB6ba3XLViS18GMTmRK0giSV7qkDh2XZrKxxLv4LFLEFuiRT6Lw3wri8yu6cT9tBMxyw5v)
 
-### **Name Account & Password**
+### **Hesap Adı ve Şifre**
 
-Name your account and create a strong password \(at least 6 characters\). Click on the "Next" button when completed.
+Hesabınıza bir ad verin ve güçlü bir parola oluşturun \(en az 6 karakter\). Tamamlandığında "İleri" düğmesine tıklayın.
 
-![](https://lh4.googleusercontent.com/PWXIJxAuCBlb-QGBrpce0gvFgG_C_jWUL125eOU_ke_thRY4WDhUq1AvDa6bAWHWy_sD5BXp40gM5zzJRdkDGF5XrtLEuLD5TwJ1sV8FDdjr1QRjDm9I-hzfXGsqBLsq0QVFgb02)
+![](https://lh4.googleusercontent.com/PWXIJxAuCBlb-QGBrpce0gvFgG_C_jWUL125eOU_ke_thRY4WDhUq1AvDa6bAWWy_sD5BXp40gM5zzJRdkDGF5XrtLEuLD5Twdj02sGFD5Twdj2r)
 
-Your wallet is now set up! The screen will default to the Polkadot network. You can determine which network you're connected to by looking at the grey text under the account name. In the case of this screenshot, it says "Polkadot."
+Cüzdanınız şimdi kuruldu! Ekran varsayılan olarak Polkadot ağına dönecektir. Hesap adının altındaki gri metne bakarak hangi ağa bağlı olduğunuzu belirleyebilirsiniz. Bu ekran görüntüsünde "Polkadot" yazıyor.
 
-![](https://lh5.googleusercontent.com/xlFLRGhSFMpRc1QeJrObC8vazj7YCLIe2AvW-euSwN4bvjlZWhTbcyBxF4SPTXQGuOCJtdxMW_1IMNyoL88RzC51RGN7CkLepjjOXTnJkEkp0ZSRzS58F7rAVMamcuXJ_01S6AhE)
+![](https://lh5.googleusercontent.com/xlFLRGhSFMpRc1QeJrObC8vazj7YCLIe2AvW-euSwN4bvjlZWhTbcyBxF4SPTXQGuOCJtdxMW_1IMNyoL88RzC51RGN7CkLep_k58TbcyBxF4SPTXQGuOCJtdxMW_1IMNyoL88RzC51RGN7CkLep_kOXT0)
 
-### Set Address for Polkadot Mainnet
+### Polkadot Mainnet Adresini Ayarla
 
-1. Click the menu button on the top-right corner.
+1. Sağ üst köşedeki menü düğmesine tıklayın.
 
  ![](https://i.imgur.com/JwPrsVe.jpg%20=250x)
 
-2. In the opened menu select the Polkadot logo, then press on the appeared address on the main screen.
+2. Açılan menüde Polkadot logosunu seçin, ardından ana ekranda görünen adrese basın.
 
  ![](https://i.imgur.com/YGx8nne.jpg%20=250x)
 
-### Set Address for Kusama Mainnet
+### Kusama Mainnet Adresini Ayarla
 
-1. Click the menu button on the top-right corner.
-2. In the opened menu select the Kusama logo, then press on the appeared address on the main screen.
+1. Sağ üst köşedeki menü düğmesine tıklayın.
+2. Açılan menüde Kusama logosunu seçin, ardından ana ekranda görünen adrese basın.
 
-### Set Address for Acala Mainnet \(Coming Soon\)
+### Acala Mainnet Adresini Ayarla \(Çok Yakında\)
 
-### Set Address for Karura Mainnet \(Coming Soon\) 
+### Karura Mainnet Adresini Ayarla \(Çok Yakında\)
 
  
 
 
 
-###  
-
+###
