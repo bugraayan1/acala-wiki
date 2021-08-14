@@ -1,8 +1,7 @@
-# Queryable & Lightweight
+# Sorgulanabilir ve Hafif
 
-### **Keep Nodes Lightweight while Queryable**
+### **Sorgulanabilirken Düğümleri Hafif Tutun**
 
-We retain the standard Substrate node which is lightweight and easily maintainable. For querying transactions and event logs, we offer an indexer node that is open-sourced and anyone can run a copy of it like a full-node.
+Hafif ve bakımı kolay standart Substrate düğümünü koruyoruz. İşlemleri ve olay günlüklerini sorgulamak için açık kaynaklı bir dizin oluşturucu düğümü sunuyoruz ve herkes bunun bir kopyasını tam düğüm gibi çalıştırabilir.
 
-For convenience, we’d offer one docker image to run both nodes, but it is important that there’s a choice for people who want to run one or another for their purposes.
-
+Kolaylık olması açısından, her iki düğümü de çalıştırmak için bir liman işçisi görüntüsü sunardık, ancak amaçları doğrultusunda birini veya diğerini çalıştırmak isteyen kişiler için bir seçenek olması önemlidir.
