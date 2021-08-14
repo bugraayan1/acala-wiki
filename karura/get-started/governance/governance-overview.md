@@ -1,58 +1,57 @@
-# Overview
+# Genel Bakış
 
-Karura takes a phased approach to employ various governance mechanisms that will allow it to progressively decentralize and ultimately be commanded by the majority network stakeholders. Karura's governance framework is based on Polkadot's technology that employs a Referenda chamber, a General Council, and a Technical Committee to govern the network.
+Karura, aşamalı olarak merkezileşmemesine ve nihayetinde çoğunluk ağ paydaşları tarafından komuta edilmesine izin verecek çeşitli yönetişim mekanizmalarını kullanmak için aşamalı bir yaklaşım benimsiyor. Karura'nın yönetişim çerçevesi, ağı yönetmek için bir Referandum odası, bir Genel Konsey ve bir Teknik Komite kullanan Polkadot teknolojisine dayanmaktadır.
 
-Karura however has sub councils that manage specialized aspects of the network including the Financial Council and the Liquid Staking Council. 
+Ancak Karura, Finans Konseyi ve Likit Stake Konseyi dahil olmak üzere ağın özel yönlerini yöneten alt konseylere sahiptir.
 
-Find out more on Karura Launch Phases and progressive decentralization roadmap [here](https://www.notion.so/acala/dcabf9ba7c6246c69b913d5972503227?v=4121894373fd43d98ffcac260803928d). 
+Karura Lansman Aşamaları ve aşamalı ademi merkeziyet yol haritası hakkında daha fazla bilgi edinin [buradan](https://www.notion.so/acala/dcabf9ba7c6246c69b913d5972503227?v=4121894373fd43d98ffcac260803928d).
 
-## Referenda
+## referandum
 
-Referenda is a simple, inclusive, stake-based voting scheme. Referenda can be started by public proposals or council proposals. There is a 8-day enactment delay associated with it. Emergency proposals \(e.g. fix urgent network issues\) can be "fast-tracked" to have a shorter enactment period. 
+Referandum, basit, kapsayıcı, hisse bazlı bir oylama planıdır. Referandum, halk teklifi veya meclis teklifi ile başlatılabilir. Bununla ilişkili 8 günlük bir yürürlüğe girme gecikmesi var. Acil durum teklifleri \(ör. acil ağ sorunlarını düzeltin\), daha kısa bir yürürlüğe girme süresine sahip olmak için "hızlı izlenebilir".
 
-Karura experiments with Polkadot's voting mechanisms including Tallying, Voluntary Locking, Adaptive Quorum Biasing. Read more [here](https://wiki.polkadot.network/docs/learn-governance/#referenda). 
+Karura, Polkadot'un Tallying, Voluntary Locking, Adaptive Quorum Biasing dahil olmak üzere oylama mekanizmalarıyla deneyler yapıyor. Daha fazlasını [buradan](https://wiki.polkadot.network/docs/learn-governance/#refrenda) okuyun.
 
-## Councils
+## Konseyler
 
-### General Council
+### Genel Konsey
 
-Karura will initially be governed by a Referenda chamber together with a General Council appointed by the Acala Foundation whose decisions regarding the network such as runtime upgrades, resolving network issues and improvements are made transparent on-chain. Meanwhile, any KAR holders can propose any changes to the network, protocols and the Karura Treasury will be collectively voted for or against via the Referenda chamber. The General Council then provides oversight with veto rights to stop proposals that may deem malicious, posing security risks or not in the best interest of the Karura network.
+Karura, başlangıçta, çalışma zamanı yükseltmeleri, ağ sorunlarının çözülmesi ve iyileştirmeler gibi ağla ilgili kararları zincir üzerinde şeffaf hale getirilen Acala Vakfı tarafından atanan bir Genel Konsey ile birlikte bir Referandum odası tarafından yönetilecek. Bu arada, herhangi bir KAR sahibi ağda, protokollerde herhangi bir değişiklik önerebilir ve Karura Hazinesi, Referandum odası aracılığıyla toplu olarak lehte veya aleyhte oylanacaktır. Daha sonra Genel Konsey, kötü niyetli, güvenlik riski oluşturan veya Karura ağının çıkarına olmayan teklifleri durdurmak için veto haklarıyla gözetim sağlar.
 
-Once the network is sufficiently bootstrapped, stabilized, and security measures are in place, a Referenda will be started to move governance to the Elected Council phase where the candidacy of councilors is open, and councilors are elected by public voting. 
+Ağ yeterince önyüklendiğinde, istikrara kavuştuğunda ve güvenlik önlemleri alındığında, yönetimi meclis üyelerinin adaylığının açık olduğu ve meclis üyelerinin halk oylamasıyla seçildiği Seçilmiş Konsey aşamasına taşımak için bir Referandum başlatılacaktır.
 
-### Financial Council
+### Mali Konsey
 
-Overseeing updates of stablecoin parameters, DeX parameters, Liquid Staking fees, and protocol tasks.
+Stabilcoin parametreleri, DeX parametreleri, Liquid Stake ücretleri ve protokol görevlerinin güncellemelerini denetleme.
 
-* Elected by the General Council via 2/3 approval rating. 
+* Genel Konsey tarafından 2/3 onay oranı ile seçilir.
 
-### Liquid Staking Council
+### Likit Staking Konseyi
 
-Overseeing updates of Liquid Staking parameters e.g. validator selection
+Liquid Staking parametrelerinin güncellemelerini denetleme, ör. doğrulayıcı seçimi
 
-* Elected by LKSM holders.
+* LKSM sahipleri tarafından seçildi.
 
-### Oracle Collective
+### Oracle Kolektifi
 
-Electing Oracle operators. Membership of the [Oracle Gateway](../../../learn/basics/oracle/) requires approval from the General Council, which is essentially a Proof-of-Authority model that only authorized trusted operators can provide price feeds into the network. This model will evolve with the contemporary R&D on the Oracle problem.
+Oracle operatörlerinin seçilmesi. [Oracle Ağ Geçidi](../../../learn/basics/oracle/) üyeliği, esasen yalnızca yetkili güvenilir operatörlerin fiyat beslemeleri sağlayabildiği bir Yetki Kanıtı modeli olan Genel Konsey'den onay gerektirir. ağ içine. Bu model, Oracle problemindeki çağdaş Ar-Ge ile gelişecektir.
 
-* Elected by the General Council via 2/3 approval rating. 
+* Genel Konsey tarafından 2/3 onay oranı ile seçilir.
 
-## Technical Committee
+## Teknik Komite
 
-Fastracking emergency proposals that are critical to the network operation, delaying an enactment, and canceling uncontroversially dangerous proposals. 
+Ağın çalışması için kritik olan acil durum tekliflerini hızlandırmak, bir yasayı geciktirmek ve tartışmasız tehlikeli teklifleri iptal etmek.
 
-* Elected by the General Council via 2/3 approval rating. 
+* Genel Konsey tarafından 2/3 onay oranı ile seçilir.
 
-## Emergency Actions
+## Acil Durum Eylemleri
 
-* Fasttrack a scheduled task to 12 hours+
-  * Requires: 1/3+ Technical Committee consensus
-* Fasttrack a scheduled task to &lt;12 hours
-  * Requires: 2/3+ Technical Committee consensus
-* Delay a scheduled task for up to 48 hours
-  * Requires: 1/3 Technical Committee consensus
-* Cancel a scheduled task
-  * Requires: from schedule Origin OR
-  * 3/4+ General Council consensus
-
+* Zamanlanmış bir görevi 12 saate hızlandırın+
+  * Gerekli: 1/3+ Teknik Komite mutabakatı
+* Zamanlanmış bir görevi <12 saate hızlı takip edin
+  * Gerekli: 2/3+ Teknik Komite mutabakatı
+* Zamanlanmış bir görevi 48 saate kadar geciktirme
+  * Gerekli: 1/3 Teknik Komite mutabakatı
+* Zamanlanmış bir görevi iptal et
+  * Gerektirir: programdan Origin VEYA
+  * 3/4+ Genel Konsey mutabakatı
