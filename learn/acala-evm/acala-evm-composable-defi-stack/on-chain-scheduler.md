@@ -1,12 +1,11 @@
-# On-chain Scheduler
+# Zincir Üzerinde Zamanlayıcı
 
-## **On-chain Automatic Scheduler**
+## **Zincir Üstü Otomatik Zamanlayıcı**
 
-On Ethereum and most other EVM platforms, there is no way to automatically schedule a transaction natively. This means many useful and perhaps essential financial services that we take for granted today, such as subscription, are not possible.
+Ethereum ve diğer birçok EVM platformunda, yerel olarak bir işlemi otomatik olarak planlamanın bir yolu yoktur. Bu, abonelik gibi bugün kabul ettiğimiz birçok yararlı ve belki de temel finansal hizmetlerin mümkün olmadığı anlamına gelir.
 
-On Acala and Substrate, the automatic scheduler is a native feature of the blockchain. It is now made available in the Acala EVM in the form of pre-compiled contracts that any smart contract can call upon.
+Acala ve Substrate'de otomatik zamanlayıcı, blok zincirinin yerel bir özelliğidir. Şimdi Acala EVM'de, herhangi bir akıllı sözleşmenin başvurabileceği önceden derlenmiş sözleşmeler şeklinde sunuluyor.
 
-This will enable a wide range of use cases such as automatic and recurring payment rails, subscription services such as a Web3 version of Stripe, automatic profit-taking, reinvestment mechanisms, and a means to liquidate risky positions without external actors like keepers.
+Bu, otomatik ve yinelenen ödeme rayları, Stripe'ın Web3 sürümü gibi abonelik hizmetleri, otomatik kar alma, yeniden yatırım mekanizmaları ve bakıcılar gibi harici aktörler olmadan riskli pozisyonları tasfiye etme aracı gibi çok çeşitli kullanım durumlarını mümkün kılacaktır.
 
-Try the auto-scheduler contract [here](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler).
-
+Otomatik zamanlayıcı sözleşmesini [buradan](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler) deneyin.
