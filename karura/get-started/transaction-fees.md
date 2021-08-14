@@ -1,34 +1,33 @@
-# Transaction Fees
+# İşlem ücretleri
 
-**🔔 Karura allows fees to be paid in any supported token.** However once transfer is enabled, there will be a period of time transaction fees are required to be paid in the native token $KAR, until KSM/KAR, kUSD/KAR and other [Karura Swap](../defi-hub/swap/) pools are bootstrapped, then KSM, kUSD and other tokens can be used to pay transaction fees.
+**🔔 Karura, ücretlerin desteklenen herhangi bir simgede ödenmesine izin verir.** Ancak aktarım etkinleştirildikten sonra, yerel belirteç $KAR'da KSM/KAR, kUSD/'ye kadar işlem ücretlerinin ödenmesi gereken bir süre olacaktır. KAR ve diğer [Karura Swap](../defi-hub/swap/) havuzları önyüklenir, ardından işlem ücretlerini ödemek için KSM, kUSD ve diğer tokenler kullanılabilir.
 
-Transaction fees are used to prevent users from consuming too much limited resources of the blockchain, such as storage and computation power. Karura uses weight-based fees, unlike gas, are predictable and charged pre-dispatch. 
+İşlem ücretleri, kullanıcıların depolama ve hesaplama gücü gibi blok zincirinin çok fazla sınırlı kaynaklarını tüketmesini önlemek için kullanılır. Karura, gazın aksine ağırlığa dayalı ücretler kullanır, tahmin edilebilir ve sevkiyat öncesi ücretlendirilir.
 
-### Fee Estimates
+### Ücret Tahminleri
 
-These are rough estimates of typical relevant transactions:
+Bunlar tipik ilgili işlemlerin kaba tahminleridir:
 
-* **Transfer from Kusama to Karura,** there are two components to the cross-chain transfer fees:
-  * Kusama fee, determined by Kusama
-  * Karura fee: 0.3 milliKSM~
-* **Transfer from Karura to Kusama,** there are two components to the cross-chain transfer fees:
-  * Karura fee: 4 milliKAR \(0.004 KAR\)~
-  * Kusama fee, determined by Kusama
-* **Karura** 
-  * **Transfer:** 4 milliKAR \(0.004 KAR\)~
-  * **DeX swap:** 12 milliKAR~
-  * **Add liquidity:** 18 milliKAR~
-  * **Adjust kUSD loan:** 18 milliKAR~
+* **Kusama'dan Karura'ya transfer,** Zincirler arası transfer ücretlerinin iki bileşeni vardır:
+  * Kusama tarafından belirlenen Kusama ücreti
+  * Karura ücreti: 0.3 milliKSM~
+* **Karura'dan Kusama'ya transfer,** Zincirler arası transfer ücretlerinin iki bileşeni vardır:
+  * Karura ücreti: 4 milliKAR \(0,004 KAR\)~
+  * Kusama tarafından belirlenen Kusama ücreti
+* **Karura**
+  * **Transfer:** 4 milliKAR \(0,004 KAR\)~
+  * **DeX takası:** 12 milliKAR~
+  * **Likidite ekleyin:** 18 milliKAR~
+  * **KUSD kredisini ayarlayın:** 18 milliKAR~
 
-Note: these are estimates and will be changed based on actual transaction size, network conditions and other factors.
+Not: bunlar tahminlerdir ve gerçek işlem boyutuna, ağ koşullarına ve diğer faktörlere göre değişecektir.
 
-For now, all transaction fees go to the Karura Treasury - a tiny contribution to a sustainable future. Read more [here](treasury.md).
+Şimdilik, tüm işlem ücretleri Karura Hazinesine gidiyor - sürdürülebilir bir geleceğe küçük bir katkı. Daha fazlasını [buradan](treasury.md) okuyun.
 
-### Fee Adjustment <a id="fee-adjustment"></a>
+### Ücret Ayarlaması <a id="ücret-adjustment"></a>
 
-Fees on Karura are adjusted based on transaction volume, while still predictable. Karura has a block fullness target, fees increase or decrease for the next block based on the fullness of the current block relative to the target. 
+Karura'daki ücretler, işlem hacmine göre ayarlanır, ancak yine de tahmin edilebilir. Karura'nın bir blok doluluk hedefi vardır, hedefe göre mevcut bloğun doluluğuna bağlı olarak bir sonraki blok için ücretler artar veya azalır.
 
-### Bring Your Own Gas
+### Kendi Gazınızı Getirin
 
-Why users are restricted to pay fees in the native token when transferring other tokens?! On Karura you don't need to. Users can pay fees in any tokens that are supported on the Karura network. When paying fees in tokens other than KAR, fees are still estimated in KAR, a real-time swap operation \(between paid token and KAR\) is executed automatically by the chain. This operation is atomic and transparent to the users. 
-
+Kullanıcılar neden diğer belirteçleri aktarırken yerel belirteçte ücret ödemekle sınırlandırılıyor?! Karura'da buna gerek yok. Kullanıcılar, Karura ağında desteklenen herhangi bir belirteçte ücret ödeyebilir. KAR dışındaki jetonlarda ücretler ödenirken, ücretler hala KAR cinsinden tahmin edilir, zincir tarafından otomatik olarak gerçek zamanlı bir takas işlemi \(ödenen jeton ile KAR\ arasında) yürütülür. Bu işlem atomik ve kullanıcılar için şeffaftır.
