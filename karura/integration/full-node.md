@@ -1,37 +1,37 @@
-# Full Node
+# Tam Düğüm
 
-## Spec Requirement
+## Özel Gereksinim
 
-Same as the Kusama full node requirements.
+Kusama tam düğüm gereksinimleriyle aynı.
 
-## Run from Source Code
+## Kaynak Kodundan Çalıştır
 
-* Clone the repo: [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)
-* Checkout tag here: [https://github.com/AcalaNetwork/Acala/tags](https://github.com/AcalaNetwork/Acala/tags)
-* Install dependencies
-* Build Karura: `cargo build --release --features with-karura-runtime`
-* Run `./target/release acala --chain=karura`
+* Depoyu klonlayın: [https://github.com/AcalaNetwork/Acala](https://github.com/AcalaNetwork/Acala)
+* Ödeme etiketi burada: [https://github.com/AcalaNetwork/Acala/tags](https://github.com/AcalaNetwork/Acala/tags)
+* Bağımlılıkları yükleyin
+* Karura'nın Derlenmesi: `cargo build --release --features with-karura-runtime`
+* Çalıştırma `./target/release acala --chain=karura`
 
-## Using Docker
+## Docker Yükleme
 
 * Image: `acala/karura-node:latest` or `acala/karura-node:[version number]`
 * `docker run acala/karura-node:latest --chain=karura`
 
-## Common CLI
+## Ortak CLI
 
-* CLI is mostly the same as any Substrate-based chain such as Polkadot and Kusama
-* Because there are two node services are running, `--` is used to split the CLI. Arguments before `--` are passed to the parachain full-node service and arguments after `--` is passed to the Relay Chain full-node service.
-  * For example `--chain=parachain.json --ws-port=9944 -- --chain=relaychain.json --ws-port=9945` means
-    * The parachain service is using `parachian.json` as the chain spec and the web socket RPC port is 9944
-    * The Relay Chain service is using `relaychain.json` as the chain spec and the web socket
+* CLI, çoğunlukla Polkadot ve Kusama gibi herhangi bir Substrat tabanlı zincirle aynıdır.
+* Çalışan iki düğüm hizmeti olduğundan, CLI'yi bölmek için `--' kullanılır. "--"den önceki argümanlar parachain tam düğüm hizmetine iletilir ve "--"den sonraki argümanlar Relay Chain tam düğüm hizmetine iletilir.
+  * Örneğin; `--chain=parachain.json --ws-port=9944 -- --chain=relaychain.json --ws-port=9945` anlamı
+* Parachain hizmeti, zincir özelliği olarak 'parachian.json'u kullanıyor ve web soketi RPC bağlantı noktası 9944'tür
+     * Relay Chain hizmeti, zincir özelliği ve web soketi olarak "relaychain.json"u kullanıyor
 
-      RPC port is 9945
-* It is recommended to explicitly specify the ports for both services to avoid confusion
-  * For example `--listen-addr=/ip4/0.0.0.0/tcp/30333 --listen-addr=/ip4/0.0.0.0/tcp/30334/ws -- --listen-addr=/ip4/0.0.0.0/tcp/30335 --listen-addr=/ip4/0.0.0.0/tcp/30336/ws`
+       RPC bağlantı noktası 9945
+* Karışıklığı önlemek için her iki hizmet için de bağlantı noktalarını açıkça belirtmeniz önerilir.
+  * Örneğin `--listen-addr=/ip4/0.0.0.0/tcp/30333 --listen-addr=/ip4/0.0.0.0/tcp/30334/ws -- --listen-addr=/ip4/0.0.0.0/tcp/30335 --listen-addr=/ip4/0.0.0.0/tcp/30336/ws`
 
-## Example CLI
+## Örnek CLI
 
-### Archive PRC Node
+### Arşiv PRC Düğümü
 
 ```text
 --base-path=/acala/data
