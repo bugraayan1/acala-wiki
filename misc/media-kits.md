@@ -1,41 +1,39 @@
-# Media Kits
+# Medya Kitleri
 
-## **Brand Assets**
+## **Marka Varlıkları**
 
-### **Acala Brand Assets**
+### **Acala Marka Varlıkları**
 
-Access the Acala brand assets[ here](https://drive.google.com/drive/folders/1kQ5KB8jEpdzKHGEDitEibEJZ2yy6KHmv?usp=sharing).
+Acala marka varlıklarına[ buradan](https://drive.google.com/drive/folders/1kQ5KB8jEpdzKHGEDitEibEJZ2yy6KHmv?usp=sharing) erişin.
 
-Follow the Acala brand guideline [here](https://drive.google.com/file/d/1-AFxC8AELULuMjCxa2vWi0RfdmCfi8q9/view?usp=sharing).
+Acala marka yönergesini [buradan](https://drive.google.com/file/d/1-AFxC8AELULuMjCxa2vWi0RfdmCfi8q9/view?usp=sharing) takip edin.
 
-### **Karura Brand Assets**
+### **Karura Marka Varlıkları**
 
-Access the Karura brand assets [here](https://drive.google.com/drive/folders/1kQj1ZoowzfU0w77C-JgAMSIq2Z4nfCut?usp=sharing).
+Karura marka varlıklarına [buradan](https://drive.google.com/drive/folders/1kQj1ZoowzfU0w77C-JgAMSIq2Z4nfCut?usp=sharing) erişin.
 
-Follow the Karura brand guideline [here](https://drive.google.com/file/d/1v0KBbtRWZtappOfiSvx1OjQQsZENY1yw/view?usp=sharing).
+Karura marka yönergesini [buradan](https://drive.google.com/file/d/1v0KBbtRWZtappOfiSvx1OjQQsZENY1yw/view?usp=sharing) takip edin.
 
-## **About Us**
+## **Hakkımızda**
 
-### **About Acala**
+### **Acala Hakkında**
 
-Acala is a scalable EVM-compatible multi-chain network optimized for DeFi. It is the decentralized financial hub of Polkadot that makes it fast and easy to build financial applications, improving trading efficiency and saving valuable time. Acala offers a suite of financial primitives, including: a trustless staking derivative \(liquid DOT - LDOT\), a multi-collateralized stablecoin \(aUSD\) backed by cross-chain assets, and an AMM DEX  – all with micro gas fees that can be paid in any token. Acala is a blockchain platform custom-built for DeFi and powered by ACA. 
+Acala, DeFi için optimize edilmiş, ölçeklenebilir bir EVM uyumlu çok zincirli ağdır. Finansal uygulamalar oluşturmayı hızlı ve kolay hale getiren, ticaret verimliliğini artıran ve değerli zamandan tasarruf sağlayan Polkadot'un merkezi olmayan finans merkezidir. Acala, aşağıdakiler de dahil olmak üzere bir dizi finansal ilkel ürün sunar: güvenilmez bir staking türevi \(likit DOT - LDOT\), zincirler arası varlıklar tarafından desteklenen çok teminatlı bir stabilcoin \(aUSD\) ve tümü mikro gaz ücretli bir AMM DEX herhangi bir jetonla ödenebilir. Acala, DeFi için özel olarak oluşturulmuş ve ACA tarafından desteklenen bir blok zinciri platformudur.
 
-Website: [https://acala.network  
-](https://acala.network)Follow Acala: [https://linktr.ee/acalanetwork](https://linktr.ee/acalanetwork)
+Web sitesi: [https://acala.network
+](https://acala.network)Acala'yı takip edin: [https://linktr.ee/acalanetwork](https://linktr.ee/acalanetwork)
 
-### **About Karura**
+### **Karura hakkında**
 
-Karura is the decentralized financial hub of Kusama, a scalable multi-chain network for radical innovation and early stage Polkadot deployments. Karura is EVM-compatible network optimized for DeFi, serves as the sister network to Acala, and offers a suite of financial primitives, including: a trustless staking derivative \(liquid KSM - LKSM\), a multi-collateralized stablecoin backed by cross-chain assets \(kUSD\), and an AMM DEX –  all with micro gas fees that can be paid in any token. Karura is a blockchain platform custom-built for DeFi and powered by KAR. 
+Karura, radikal inovasyon ve erken aşama Polkadot dağıtımları için ölçeklenebilir çok zincirli bir ağ olan Kusama'nın merkezi olmayan finans merkezidir. Karura, DeFi için optimize edilmiş EVM uyumlu bir ağdır, Acala'nın kardeş ağı olarak hizmet eder ve aşağıdakiler de dahil olmak üzere bir dizi finansal ilke sunar: zincir varlıkları \(kUSD\) ve bir AMM DEX - tümü herhangi bir jetonla ödenebilen mikro gaz ücretlerine sahiptir. Karura, DeFi için özel olarak oluşturulmuş ve KAR tarafından desteklenen bir blok zinciri platformudur.
 
-Website: [https://acala.network/karura](https://acala.network/karura)
+Web sitesi: [https://acala.network/karura](https://acala.network/karura)
 
-Follow Karura: [https://linktr.ee/karuranetwork](https://linktr.ee/karuranetwork)
+Karura'yı takip edin: [https://linktr.ee/karuranetwork](https://linktr.ee/karuranetwork)
 
-### **Press Contact**
+### **Basın İletişim**
 
-Our team is keen to assist in promoting your content on the Acala and/or Karura community channels. Please reach out to our Growth & Marketing contacts to strategize on co-marketing activities, timing, social copy, and/or potential PR placement. 
+Ekibimiz, içeriğinizin Acala ve/veya Karura topluluk kanallarında tanıtılmasına yardımcı olmaya isteklidir. Ortak pazarlama faaliyetleri, zamanlama, sosyal metin ve/veya potansiyel PR yerleştirme konusunda strateji oluşturmak için lütfen Büyüme ve Pazarlama bağlantılarımıza ulaşın.
 
-| **Dan Reecer** VP of Growth, Acala dan@acala.network | **Robin Whitney** Community & Growth Manager robin@acala.network |
+| **Dan Reecer** Büyümeden Sorumlu Başkan Yardımcısı, Acala dan@acala.network | **Robin Whitney** Topluluk ve Büyüme Müdürü robin@acala.network |
 | :--- | :--- |
-
-
