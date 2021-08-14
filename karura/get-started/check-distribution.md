@@ -1,28 +1,27 @@
-# Check Distribution
+# Dağıtımı Kontrol Et
 
-Rewards to be distributed are all recorded on the [`Distribution Website`](https://distribution.acala.network)
+Dağıtılacak ödüllerin tümü [`Dağıtım Web Sitesinde`](https://distribution.acala.network) kaydedilir.
 
-Most of the KAR rewards for Karura crowdloan event and Build Acala \#1  have been distributed \(except for the ones that need to be claimed\). You can check your balances in the following ways:
+Karura kitle kredisi etkinliği ve Build Acala \#1 için KAR ödüllerinin çoğu dağıtıldı \(talep edilmesi gerekenler hariç\). Bakiyelerinizi aşağıdaki şekillerde kontrol edebilirsiniz:
 
-* on the [Polkadot Apps - Karura parachain - Accounts](https://polkadot.js.org/apps/#/accounts) \(you need to switch to the Karura parachain under Kusama\) OR
-* on [Karura Subscan explorer](https://karura.subscan.io/)
-* If you participated via exchanges, all participated exchange rewards have been distributed to them, so please contact them directly
+* [Polkadot Uygulamaları - Karura parachain - Hesaplar](https://polkadot.js.org/apps/#/accounts) \(Kusama altında Karura parachain'e geçmeniz gerekir\) VEYA
+* [Karura Subscan gezgininde](https://karura.subscan.io/)
+* Değişim yoluyla katıldıysanız, katıldığınız tüm değişim ödülleri onlara dağıtılmıştır, bu nedenle lütfen doğrudan onlarla iletişime geçin.
 
-If your rewards are marked as `To be Claimed`, please [follow the guide here](../crowdloan/claim-kar.md) to claim.
+Ödülleriniz "Talep Edilecek" olarak işaretlenmişse, talep etmek için lütfen [buradaki kılavuzu izleyin](../crowdloan/claim-kar.md).
 
-## Check on Polkadot Apps
+## Polkadot Uygulamalarını Kontrol Edin
 
-Go to [Polkadot Apps - Karura parachain - Accounts](https://polkadot.js.org/apps/#/accounts), you need to switch to the Karura parachain and go to the Accounts page.
+[Polkadot Uygulamaları - Karura parachain - Hesaplar](https://polkadot.js.org/apps/#/accounts) bölümüne gidin, Karura parachain'e geçmeniz ve Hesaplar sayfasına gitmeniz gerekir.
 
 ![](../../.gitbook/assets/screen-shot-2021-07-13-at-8.11.19-am.png)
 
-Make sure your account in the Polkadot{js} extension is switched to **`Allow use on any chain`** 
+Polkadot{js} uzantısındaki hesabınızın **`Herhangi bir zincirde kullanıma izin ver`** olarak değiştirildiğinden emin olun.
 
 ![](../../.gitbook/assets/screen-shot-2021-07-13-at-8.14.12-am.png)
 
-## Check on Karura Subscan Explorer
+## Karura Subscan Explorer'ı kontrol edin
 
-Go to the [Karura Subscan Explorer](https://karura.subscan.io/), and search your address to see details of balances.
+[Karura Subscan Explorer](https://karura.subscan.io/) adresine gidin ve bakiye ayrıntılarını görmek için adresinizi arayın.
 
 ![](../../.gitbook/assets/screen-shot-2021-07-13-at-8.21.40-am.png)
-
