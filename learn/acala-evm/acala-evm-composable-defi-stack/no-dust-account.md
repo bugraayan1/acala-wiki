@@ -1,8 +1,7 @@
-# No Dust Account
+# Toz Hesabı Yok
 
-### **Avoid Dust Accounts**
+### **Toz Hesaplarından Kaçının**
 
-Dust accounts are accounts with very little funds, generally less than the amount needed to conduct a transaction. Too many dust accounts add unnecessary data to the blockchain, which would make it difficult for full nodes to sync with the network \(since every full node has a complete copy of the blockchain\).
+Toz hesaplar, genellikle bir işlemi gerçekleştirmek için gereken miktardan daha az olan, çok az fonu olan hesaplardır. Çok fazla toz hesabı blok zincirine gereksiz veriler ekler, bu da tam düğümlerin ağ ile senkronizasyonunu zorlaştırır \(çünkü her tam düğümde blok zincirinin tam bir kopyası vardır\).
 
-On the Acala network, an address is only active when it holds a minimum amount \(exact number TBD\). This minimum amount is called “Existential Deposit” \(ED\), similar to [ED on Polkadot](https://support.polkadot.network/support/solutions/articles/65000168651-what-is-the-existential-deposit-#:~:text=On%20the%20Polkadot%20network%2C%20an,needed%20to%20conduct%20a%20transaction.). All native tokens e.g. DOT, ACA, aUSD, BTC etc. would have this feature, but it is not enforced upon ERC-20 tokens in the EVM.
-
+Acala ağında, bir adres yalnızca minimum miktarda \(tam sayı TBD\) tuttuğunda etkindir. Bu minimum miktar, [Polkadot'ta ED](https://support.polkadot.network/support/solutions/articles/65000168651-what-is-the-existential-deposit)'e benzer şekilde "Varoluşsal Mevduat" \(ED\) olarak adlandırılır. -#:~:text=%20the%20Polkadot%20network%2C%20an,gerekli%20to%20conduct%20a%20transaction.). Tüm yerel belirteçler ör. DOT, ACA, aUSD, BTC vb. bu özelliğe sahip olacaktır, ancak EVM'deki ERC-20 belirteçleri üzerinde uygulanmaz.
