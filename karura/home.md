@@ -1,26 +1,25 @@
-# Home
+# Ev
 
-Karura is a "canary network" for Acala an early unaudited release of the code that is available first and holds real economic value. 
+Karura, Acala için bir "kanarya ağı"dır ve ilk olarak mevcut olan ve gerçek ekonomik değeri olan kodun erken denetlenmemiş bir sürümüdür.
 
-No promise, and expect chaos. 
+Söz verme ve kaos bekle.
 
-## What does Karura offer?
+## Karura ne sunuyor?
 
-Karura’s all-in-one DeFi hub of Kusama to give you a taste on the decentralized swap, minting stablecoin, liquid staking, earn rewards, and more – all with micro gas fees.
+Karura'nın hepsi bir arada Kusama DeFi merkezi, size merkezi olmayan takas, stabil coin basımı, likit stake etme, ödüller kazanma ve daha fazlasını - hepsi mikro gaz ücretleri ile.
 
-Founded by the Acala Foundation, Karura is a scalable, EVM-compatible network optimized for DeFi. The platform offers a suite of financial applications including: a trustless staking derivative \(liquid KSM\), a multi-collateralized stablecoin backed by cross-chain assets \(kUSD\), and an AMM DEX – all with micro gas fees that can be paid in any token.
+Acala Vakfı tarafından kurulan Karura, DeFi için optimize edilmiş, ölçeklenebilir, EVM uyumlu bir ağdır. Platform, aşağıdakileri içeren bir dizi finansal uygulama sunar: güvenilmez bir stake türevi \(likit KSM\), zincirler arası varlıklarla desteklenen çok taraflı bir stabilcoin \(kUSD\) ve bir AMM DEX - tümü mikro gaz ücretleriyle herhangi bir jetonla ödenebilir.
 
-For developers, Karura is a proving ground for protocol upgrades, experiment with new DeFi protocols, and on-chain governance. 
+Geliştiriciler için Karura, protokol yükseltmeleri, yeni DeFi protokolleriyle denemeler ve zincir içi yönetişim için kanıtlanmış bir zemindir.
 
-[Website](https://karura.network) \| [Whitepaper](https://github.com/AcalaNetwork/Acala-white-paper) \| [Github](https://github.com/AcalaNetwork/Acala)
+[Web sitesi](https://karura.network) \| [Beyaz Kağıt](https://github.com/AcalaNetwork/Acala-white-paper) \| [Github](https://github.com/AcalaNetwork/Acala)
 
-## Why build on Kusama?
+## Neden Kusama'yı geliştirelim?
 
-Kusama is Polkadot’s canary network – a multi-chain network for radical innovation. By launching on Kusama, Karura can push the limits of what’s possible, giving the Acala Foundation team a place to launch bold new financial innovations. Karura will access Kusama’s plug-and-play security while enjoying high-capacity processing speeds, micro-gas fees, and interoperability between multiple networks, all ultimately bridged to Polkadot.
+Kusama, Polkadot'un kanarya ağıdır - radikal inovasyon için çok zincirli bir ağdır. Karura, Kusama'da lansman yaparak mümkün olanın sınırlarını zorlayabilir ve Acala Vakfı ekibine cesur yeni finansal yenilikler başlatmak için bir yer verebilir. Karura, tümü Polkadot'a bağlanan yüksek kapasiteli işlem hızlarının, mikro gaz ücretlerinin ve birden fazla ağ arasında birlikte çalışabilirliğin keyfini çıkarırken Kusama'nın tak ve çalıştır güvenliğine erişecek.
 
-[Website](https://kusama.network/) \| [Wiki](https://guide.kusama.network/docs/kusama-index)
+[Web sitesi](https://kusama.network/) \| [Wiki](https://guide.kusama.network/docs/kusama-index)
 
-## Contact
+## Temas etmek
 
-Find all social channels [here](https://linktr.ee/karuranetwork).
-
+Tüm sosyal kanalları [burada](https://linktr.ee/karuranetwork) bulun.
