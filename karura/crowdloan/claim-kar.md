@@ -1,95 +1,92 @@
-# Claim KAR
+# KAR talebinde bulunun
 
-**🔔 UTC 3:00 am 19th July 2021: since** [**the Karura runtime upgrade**](https://acala.discourse.group/t/1-karura-runtime-upgrade-disable-sudo-enable-token-transfers/163) **- disable Sudo & enable transfer will be enacted in the next 24-48 hours, the Claim KAR service will be temporarily offline from now till the end of the week. Thanks for your understanding.**
+**🔔 UTC 03:00 19 Temmuz 2021: beri** [**Karura çalışma zamanı yükseltmesinden**](https://acala.discourse.group/t/1-karura-runtime-upgrade-disable-sudo- enable-token-transfers/163) **- Sudo'yu devre dışı bırak ve aktarımı etkinleştir önümüzdeki 24-48 saat içinde yürürlüğe girecek, Talep KAR hizmeti şu andan itibaren hafta sonuna kadar geçici olarak çevrimdışı olacak. Anlayışın için teşekkürler.**
 
-If you participated in Karura crowdloan from channels other than the officially supported ones, you will need to read and agree to our Terms and Conditions to claim your tokens. You can check if you need to claim KAR [here](https://distribution.acala.network/).
+Resmi olarak desteklenenler dışındaki kanallardan Karura kitle kredisine katıldıysanız, belirteçlerinizi talep etmek için Şartlar ve Koşullarımızı okumanız ve kabul etmeniz gerekir. KAR talebinde bulunmanız gerekip gerekmediğini [buradan](https://distribution.acala.network/) kontrol edebilirsiniz.
 
-## Using Polkadot{js} Extension
+## Polkadot{js} Uzantısını Kullanma
 
-You can navigate to the Claim Website from the Distribution site or directly [here](https://distribution.acala.network/claim). Connect your Polkadot{js} Extension, **using the same account that participated in the crowdloan event,** and follow the prompts to complete the process. 
+Talep Web Sitesine Dağıtım sitesinden veya doğrudan [buradan](https://distribution.acala.network/claim) gidebilirsiniz. Polkadot{js} Uzantınızı **Crowdloan etkinliğine katılan aynı hesabı kullanarak** bağlayın ve işlemi tamamlamak için talimatları izleyin.
 
-It requires you to use the extension to sign a message, but it does not cost any transaction fees. Once the process is completed, it may take up to 48 hours for distribution to be scheduled. 
+Bir mesajı imzalamak için uzantıyı kullanmanızı gerektirir, ancak herhangi bir işlem ücreti gerektirmez. İşlem tamamlandıktan sonra, dağıtımın planlanması 48 saat kadar sürebilir.
 
-## Manual Claim
+## Manuel Talep
 
-You can navigate to the Claim Website from the Distribution site or directly [here](https://distribution.acala.network/claim). If you did not participate in the crowdloan event with the Polkadot{js} extension, then select `Claim Manually` and **enter the address you used to participate in the Karura crowdloan**.
+Talep Web Sitesine Dağıtım sitesinden veya doğrudan [buradan](https://distribution.acala.network/claim) gidebilirsiniz. Kitle kredisi etkinliğine Polkadot{js} uzantısıyla katılmadıysanız, "Manuel Olarak Talep Edin"i seçin ve **Karura kitle kredisine katılmak için kullandığınız adresi girin**.
 
 ![](../../.gitbook/assets/screen-shot-2021-07-12-at-12.38.19-pm.png)
 
-There are two ways to claim
+iddia etmenin iki yolu var
 
-1. Send a System Remark on Kusama with a specific message OR
-2. Use Sign and Verify to sign the specific message
+1. Belirli bir mesajla Kusama'ya bir Sistem Açıklaması gönderin VEYA
+2. Belirli mesajı imzalamak için İmzala ve Doğrula'yı kullanın
 
-Below are the guides for how to use either to claim.
+Aşağıda, hak talebinde bulunmak için nasıl kullanılacağına ilişkin kılavuzlar bulunmaktadır.
 
-### Using Sign and Verify
+### İmzala ve Doğrula'yı Kullanma
 
-You can go to the [Polkadot App - Developer - Sign and Verify](https://polkadot.js.org/apps/#/signing) \(using either Polkadot, Kusama, or Karura are all fine\). Sign and Verify merely signs the message and requires no transaction cost. 
+[Polkadot Uygulaması - Geliştirici - İmzala ve Doğrula](https://polkadot.js.org/apps/#/signing) \(Polkadot, Kusama veya Karura'yı kullanmak sorun değil\) sayfasına gidebilirsiniz. İmzala ve Doğrula, yalnızca mesajı imzalar ve işlem maliyeti gerektirmez.
 
-1. You must select **the same account that was used in the Karura crowdloan**.
+1. **Karura kitle kredisinde kullanılan hesabın aynısını** seçmelisiniz.
 
 ![](../../.gitbook/assets/screen-shot-2021-07-12-at-11.33.10-am.png)
 
-2. In the `sign the following data` field, copy and paste in the required message to sign \(shown on the Claim website\).
+2. `Aşağıdaki verileri imzalayın` alanına, \(Talep web sitesinde gösterilir\) imzalamak için gerekli mesajı kopyalayıp yapıştırın.
 
-```text
-I hereby agree to the terms of the statement whose SHA-256 multihash is QmSfG9pSE3eaQzFDQ1S421nj6sKJxFE8AYefwojg1Rkt2W. (This may be found at the URL: https://acala.network/karura/terms)
+```metin
+SHA-256 multihash'i QmSfG9pSE3eaQzFDQ1S421nj6sKJxFE8AYefwojg1Rkt2W olan ifadenin şartlarını kabul ediyorum. (Bu URL'de bulunabilir: https://acala.network/karura/terms)
 ```
 
-3. Sign, copy the hash and paste it back to the Claim website to complete the process
+3. İşlemi tamamlamak için imzalayın, hash'i kopyalayın ve Talep web sitesine geri yapıştırın
 
 ![](../../.gitbook/assets/screen-shot-2021-07-12-at-11.37.17-am.png)
 
-Once the process is completed, it may take up to 48 hours for distribution to be scheduled. 
+İşlem tamamlandıktan sonra, dağıtımın planlanması 48 saat kadar sürebilir.
 
-### Using System Remark
+### Sistem Açıklamasını Kullanma
 
-If you are unable to use Sign and verify to sign the message e.g. you used a proxy account to participate or the agency \(e.g. wallet\) you used to participate in the crowdloan does not have a sign and verify facility, then you can send a System Remark on the Kusama chain to claim KAR. 
+Mesajı imzalamak için İmzala ve doğrula'yı kullanamıyorsanız, ör. Katılmak için bir proxy hesabı kullandıysanız veya kitle kredisine katıldığınız ajansın \(ör. cüzdan\) bir imza ve doğrulama olanağı yoksa, KAR talep etmek için Kusama zincirine bir Sistem Açıklaması gönderebilirsiniz.
 
-1. Log onto the [Polkadot Apps - Kusama](https://polkadot.js.org/apps/#/explorer), **you must switch to the Kusama App.** 
+1. [Polkadot Uygulamaları - Kusama](https://polkadot.js.org/apps/#/explorer)'da oturum açın, **Kusama Uygulamasına geçmelisiniz.**
 
 ![](../../.gitbook/assets/screen-shot-2021-07-12-at-12.22.02-pm.png)
 
-2. Go to the `Developer-Extrinsics` section
+2. "Geliştirici-Dışsal Bilgiler" bölümüne gidin
 
 ![](https://i.imgur.com/ryY5FGa.png)
 
-3. You must select **the same account that was used in the Karura crowdloan**.
+3. **Karura kitle kredisinde kullanılan hesabın aynısını** seçmelisiniz.
 
-In the `submit the following extrinsic` field, select `system` then `remarkWithEvent(_remark)` in the drop-down menu
+"Aşağıdaki harici bilgileri gönder" alanında, "sistem"i ve ardından açılır menüden "remarkWithEvent(_remark)" öğesini seçin
 
 ![](https://i.imgur.com/aRFAG4P.png)
 
-4. In the `_remark: Bytes` field, enter the message required to sign. Copy and paste in the required message to sign \(shown on the Claim website\).
+4. `_remark: Bayt` alanına imzalamak için gerekli mesajı girin. \(Talep web sitesinde gösterilir\) imzalamak için gerekli mesajı kopyalayıp yapıştırın.
 
-```text
-I hereby agree to the terms of the statement whose SHA-256 multihash is QmSfG9pSE3eaQzFDQ1S421nj6sKJxFE8AYefwojg1Rkt2W. (This may be found at the URL: https://acala.network/karura/terms)
+```metin
+SHA-256 multihash'i QmSfG9pSE3eaQzFDQ1S421nj6sKJxFE8AYefwojg1Rkt2W olan ifadenin şartlarını kabul ediyorum. (Bu URL'de bulunabilir: https://acala.network/karura/terms)
 ```
 
-5. And click `Submit Transaction` button.
+5. Ve `İşlemi Gönder` düğmesine tıklayın.
 
 ![](https://i.imgur.com/DWzU3bg.png)
 
-6. Enter your password and sign the transaction. Note that you’ll be required to pay a small fee to initiate the transaction, so make sure you have some funds in your account.
+6. Parolanızı girin ve işlemi imzalayın. İşlemi başlatmak için küçük bir ücret ödemeniz gerekeceğini unutmayın, bu nedenle hesabınızda biraz para olduğundan emin olun.
 
 ![](https://i.imgur.com/33Yb0qW.png)
 
-7. Your remark transaction has been submitted onto Kusama. You can view the signed remark on [Kusama Subscan Explorer](https://kusama.subscan.io/). Paste in your Kusama address used for sending the transaction.
+7. Yorum işleminiz Kusama'ya iletildi. İmzalı açıklamayı [Kusama Subscan Explorer](https://kusama.subscan.io/) adresinde görüntüleyebilirsiniz. İşlemi göndermek için kullandığınız Kusama adresinizi yapıştırın.
 
 ![](https://i.imgur.com/nCCwxXm.png)
 
-8. You’ll see the `system(remark_with_event)` in your transaction history. Click on the corresponding `Extrinsic ID`
+8. İşlem geçmişinizde `system(remark_with_event)` göreceksiniz. İlgili 'Dış Kimliğe' tıklayın
 
 ![](../../.gitbook/assets/sdxvujr.png)
 
-9. Copy the `Extrinsic Hash`
+9. 'Extrinsic Hash'i kopyalayın
 
 ![](../../.gitbook/assets/5i1qfz3.png)
 
-10. Paste the Extrinsic hash back to the Claim website to complete the process
+10. İşlemi tamamlamak için Extrinsic hash'i Claim web sitesine geri yapıştırın
 
-Once the process is completed, it may take up to 48 hours for distribution to be scheduled. 
-
-
-
+İşlem tamamlandıktan sonra, dağıtımın planlanması 48 saat kadar sürebilir.
