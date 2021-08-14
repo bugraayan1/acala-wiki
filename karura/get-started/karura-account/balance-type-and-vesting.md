@@ -1,28 +1,27 @@
-# Balance Type & Vesting
+# Bakiye Tipi ve Hakediş
 
-## Balance Types
+## Denge Çeşitleri
 
-On Karura there are the following steps balance types
+Karura'da aşağıdaki adımlar denge türleri vardır
 
-* **Transferrable Balance**: as the name suggests, this balance can be used for transfers, paying fees and performing any actions on-chain.
-* **Locked Balance:** this balance is frozen, depending on the scheme, it could be locked for a certain period of time before being transferrable, or it could be vested where a portion of the balance gradually becomes transferrable, or a combination of these. The tokens are released lazily, meaning you are required to perform a `claim` transaction to obtain it. The guide for claiming vested tokens is in the next section.
-* **Total Balance:** is the sum of transferrable balance plus the locked balance. The entire balance can be used for governance operations such as voting. 
+* **Aktarılabilir Bakiye**: Adından da anlaşılacağı gibi, bu bakiye transferler, ücret ödemeleri ve zincir üzerinde herhangi bir işlemin gerçekleştirilmesi için kullanılabilir.
+* **Kilitli Bakiye:** bu bakiye, şemaya bağlı olarak dondurulur, devredilebilir hale gelmeden önce belirli bir süre kilitlenebilir veya bakiyenin bir kısmının kademeli olarak devredilebilir hale gelmesi durumunda kazanılabilir veya bir kombinasyon olabilir. bunların. Belirteçler tembel bir şekilde serbest bırakılır, yani onu elde etmek için bir "talep" işlemi gerçekleştirmeniz gerekir. Kazanılmış jetonları talep etme kılavuzu bir sonraki bölümdedir.
+* **Toplam Bakiye:** devredilebilir bakiye ile kilitli bakiyenin toplamıdır. Bakiyenin tamamı oylama gibi yönetim işlemleri için kullanılabilir.
 
-## Check & Claim Vested Tokens
+## Kazanılmış Jetonları Çek ve Talep Et
 
-### On Polkadot App
+### Polkadot Uygulamasında
 
-Go to the [Polkadot App - Karura Parachain - Accounts section](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/accounts), expand the balance of your account, if there's a vested \(locked\) balance, it will be displayed.
+[Polkadot Uygulaması - Karura Parachain - Hesaplar bölümüne](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/accounts) gidin , hesabınızın bakiyesini genişletin, kazanılmış \(kilitli\) bir bakiye varsa görüntülenecektir.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-14-at-4.12.58-pm.png)
 
-Go to the `Developer - Extrinsics` section, use the account that you want to claim the vested balance. Select `vesting` then `claim()` in the `submit the following extrinsics` filed, then click the `Submit Transaction` button to complete the process.
+'Geliştirici - Dışsal Bilgiler' bölümüne gidin, hak talebinde bulunmak istediğiniz hesabı kullanın. Dosyalanan 'aşağıdaki dışsal bilgileri gönder' bölümünde 'hakediş' ve ardından 'talep()'i seçin, ardından işlemi tamamlamak için 'İşlemi Gönder' düğmesini tıklayın.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-14-at-4.17.00-pm.png)
 
-### On Karura App
+### Karura Uygulamasında
 
-You can claim the released portion of vested KAR on the [Karura App](https://apps.karura.network/).
+Kazanılmış KAR'ın serbest bırakılan kısmını [Karura Uygulamasında](https://apps.karura.network/) talep edebilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-14-at-2.01.13-pm.png)
-
