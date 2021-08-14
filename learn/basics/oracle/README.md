@@ -1,42 +1,41 @@
-# Open Oracle Gateway
+# Oracle Gateway'i açın
 
-## Overview
+## Genel Bakış
 
-The challenge of providing reliable, accurate and decentralized oracles cannot be solved by Acala alone. When taking into account that Acala is the DeFi hub and platform powering more cross-chain DeFi DApps on Polkadot, Kusama and beyond, creating a more open, inclusive, and decentralized oracle infrastructure with other leading projects in the industry becomes critical. The Open Oracle Gateway \(OOG\) is a significant step towards that vision. 
+Güvenilir, doğru ve merkezi olmayan kahinler sağlama zorluğu, yalnızca Acala tarafından çözülemez. Acala'nın Polkadot, Kusama ve ötesinde daha fazla zincirler arası DeFi DApp'lerine güç sağlayan DeFi merkezi ve platformu olduğu göz önüne alındığında, sektördeki diğer önde gelen projelerle daha açık, kapsayıcı ve merkezi olmayan bir oracle altyapısı oluşturmak kritik hale geliyor. Open Oracle Gateway \(OOG\) bu vizyona doğru atılmış önemli bir adımdır.
 
-The Gateway allows multiple oracles to be deployed on the Acala network, leveraging Acala's DeFi optimized oracle infrastructure, and serving any DApps on Acala, Polkadot, Kusama and beyond.  Specifically, the Gateway offers:
+Ağ Geçidi, Acala'nın DeFi optimize edilmiş oracle altyapısından yararlanarak ve Acala, Polkadot, Kusama ve ötesinde herhangi bir DApp'e hizmet vererek Acala ağında birden fazla oracle'ın kurulmasına izin verir. Ağ Geçidi özellikle şunları sunar:
 
-1. **Multiple Oracle Networks**: multiple parties in addition to Acala Oracle can operate their own oracle services. Providers can set up their own oracle network with node operators, or integrate with an oracle API. 
-2. **Price Feeds by Choice**: Dapps can choose to use an aggregated feed from all providers or a single provider, or they can obtain raw data from individual node operators and aggregate them themselves. 
-3. **Quality of Service**: All price feeds posted through the Gateway will be provided with Quality of Service - these transactions are _operational transactions_ \(system critical transactions\) that are prioritized and guaranteed to be included in a block.
-4. **FREE of Fees**: All valid feeds will be refunded with the transaction fees incurred, essentially making oracle feeds FREE for providers while preventing spam and ensuring integrity. 
-5. **Progressive Decentralization**: Acala network will progressively decentralize, start with PoA \(appointed Council governance\), then evolve into elected Council governance and eventually democracy. The Gateway then initially will require sitting Council approval for accepting new oracle providers and their node operators. 
+1. **Çoklu Oracle Ağları**: Acala Oracle'a ek olarak birden fazla taraf kendi Oracle servislerini çalıştırabilir. Sağlayıcılar, düğüm operatörleriyle kendi oracle ağlarını kurabilir veya bir Oracle API ile entegre edebilir.
+2. **Seçime Göre Fiyat Beslemeleri**: Dapps, tüm sağlayıcılardan veya tek bir sağlayıcıdan toplu bir özet akışı kullanmayı seçebilir veya bireysel düğüm operatörlerinden ham veriler alabilir ve bunları kendileri toplayabilir.
+3. **Hizmet Kalitesi**: Ağ Geçidi üzerinden gönderilen tüm fiyat akışları Hizmet Kalitesi ile sağlanacaktır - bu işlemler, öncelik verilen ve bir bloğa dahil edilmeleri garanti edilen _operasyonel işlemler_ \(sistem açısından kritik işlemler\)dir.
+4. **ÜCRETSİZ**: Tüm geçerli yayınlar, yapılan işlem ücretleri ile birlikte iade edilecektir, esasen Oracle yayınlarını sağlayıcılar için ÜCRETSİZ hale getirirken spam'i önler ve bütünlüğü sağlar.
+5. **Aşamalı Yerelleşme**: Acala ağı aşamalı olarak merkezileşmeyecek, PoA \(atanmış Konsey yönetimi\) ile başlayacak, ardından seçilmiş Konsey yönetimine ve nihayetinde demokrasiye dönüşecektir. Ağ Geçidi daha sonra başlangıçta yeni oracle sağlayıcılarını ve onların düğüm operatörlerini kabul etmek için oturma Konseyi onayını gerektirecektir.
 
-## Setting up a Provider
+## Sağlayıcı Ayarlama
 
-An oracle Network Provider can implement their own oracle pallets \(based on [the default oracle pallet](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/oracle)\) to meet their specific requirements such as validating cross-chain data feeds. We can also easily integrate with existing signed oracle APIs such as [Coinbase price oracle](https://blog.coinbase.com/introducing-the-coinbase-price-oracle-6d1ee22c7068) by simply adding a Coinbase Provider pallet and validate their signature.
+Bir Oracle Ağ Sağlayıcısı, kendi Oracle paletlerini uygulayabilir \([varsayılan Oracle paletine](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/oracle)\ ) zincirler arası veri beslemelerinin doğrulanması gibi özel gereksinimlerini karşılamak için. Ayrıca, yalnızca bir Coinbase Sağlayıcı paleti ekleyerek [Coinbase fiyat oracle](https://blog.coinbase.com/introduction-the-coinbase-price-oracle-6d1ee22c7068) gibi mevcut imzalı Oracle API'leriyle kolayca entegre olabilir ve bunların doğruluğunu onaylayabiliriz. imza.
 
-Then add the oracle provider to the runtime \(see [Acala Oracle](https://github.com/AcalaNetwork/Acala/blob/master/runtime/mandala/src/lib.rs#L447)\) which would be enacted through runtime upgrade. 
+Ardından, Oracle sağlayıcısını yürürlüğe girecek olan çalışma zamanına \(bkz. [Acala Oracle](https://github.com/AcalaNetwork/Acala/blob/master/runtime/mandala/src/lib.rs#L447)\) ekleyin çalışma zamanı yükseltmesi aracılığıyla.
 
-### Setting up Operator Nodes
+### Operatör Düğümlerini Ayarlama
 
-A Provider can add multiple operator nodes to its oracle network, an example operator node [here](https://github.com/laminar-protocol/oracle-server).
+Bir Sağlayıcı, Oracle ağına birden çok operatör düğümü ekleyebilir, örnek bir operatör düğümü [burada](https://github.com/laminar-protocol/oracle-server).
 
-## Join the Open Oracle Gateway
+## Open Oracle Gateway'e Katılın
 
-The Oracle Gateway is deployed and running on Acala’s Mandala Test Network. In addition to the Acala team and Laminar team, the Band Protocol team has also contributed to the development of the Gateway. We hope the Gateway becomes a common good infrastructure for the Acala, Polkadot, Kusama and the cross-chain DeFi ecosystem in general. Therefore we welcome oracle service providers to check out the Gateway source code, talk to us about integration, contribute to the codebase and provide your services to an ever-growing ecosystem.
+Oracle Gateway, Acala'nın Mandala Test Ağı üzerinde kurulu ve çalışıyor. Acala ekibi ve Laminar ekibinin yanı sıra Band Protokol ekibi de Gateway'in geliştirilmesine katkıda bulunmuştur. Ağ Geçidinin Acala, Polkadot, Kusama ve genel olarak zincirler arası DeFi ekosistemi için ortak bir iyi altyapı olmasını umuyoruz. Bu nedenle, Oracle servis sağlayıcılarını Gateway kaynak kodunu kontrol etmeye, entegrasyon hakkında bizimle konuşmaya, kod tabanına katkıda bulunmaya ve hizmetlerinizi sürekli büyüyen bir ekosisteme sunmaya davet ediyoruz.
 
-**Pre Acala/Karura genesis**
+**Acala öncesi/Karura oluşumu**
 
-* please contact us directly \(hello at acala dot network\) or ask on [Discord](https://discord.gg/vdbFVCH) to express your interest
-* submit a Pull Request
-* we'll review and approve PR
-* then merge the code and deploy on the testnet
+* lütfen doğrudan bizimle iletişime geçin \(acala dot network'ten merhaba\) veya ilginizi belirtmek için [Discord](https://discord.gg/vdbFVCH) üzerinden sorun.
+* bir Çekme Talebi gönderin
+* PR'yi inceleyip onaylayacağız
+* daha sonra kodu birleştirin ve test ağına dağıtın
 
-**Post Acala/Karura genesis**
+**Post Acala/Karura oluşumu**
 
-* please contact Acala/Karura council to raise interest & seek approval
-* upon approval, submit a Pull Request 
-* code review and merge
-* runtime upgrade
-
+* ilgiyi artırmak ve onay almak için lütfen Acala/Karura konseyi ile iletişime geçin.
+* onaylandıktan sonra bir Çekme Talebi gönderin
+* kod inceleme ve birleştirme
+* çalışma zamanı yükseltmesi
