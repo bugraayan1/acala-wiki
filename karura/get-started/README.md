@@ -1,2 +1,2 @@
-# Get Started
+# Hadi Başlayalım!
 
