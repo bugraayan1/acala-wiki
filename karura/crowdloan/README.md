@@ -1,17 +1,16 @@
 ---
-description: Crowdloan is a part of Karura's parachain launch process.
+tanım: Crowdloan, Karura'nın parachain lansman sürecinin bir parçası.
 ---
 
-# Crowdloan
+# Kitle kredisi
 
-🔥Base reward: 19.95 KAR for every 1 KSM contributed 🔥**Check your rewards** [**here**](crowdloan-rewards.md).
+🔥Temel ödül: Katılan her 1 KSM için 19,95 KAR 🔥**Ödüllerinizi kontrol edin** [**buradan**](crowdloan-rewards.md).
 
-## Contents
+## İçindekiler
 
-* [Crowdloan Event Details](crowdloan-event.md)
-* [Crowdloan Stats & Rewards](crowdloan-rewards.md)
-* [Claim KAR](claim-kar.md)
-* [How to Crowdloan Guide](how-to-crowdloan.md)
-* [FAQ](faq.md)
-* [KSM Address](ksm-address/)
-
+* [Crowdloan Etkinliği Ayrıntıları](crowdloan-event.md)
+* [Crowdloan İstatistikleri ve Ödülleri](crowdloan-rewards.md)
+* [KAR Talebi](talep-kar.md)
+* [Crowdloan Kılavuzu Nasıl Yapılır](nasıl yapılır-crowdloan.md)
+* [SSS](ss.md)
+* [KSM Adresi](ksm-adresi/)
