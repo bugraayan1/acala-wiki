@@ -1,22 +1,22 @@
 ---
-description: This page will guide you through some basic interactions with your node.
+açıklama: Bu sayfa, düğümünüzle bazı temel etkileşimlerde size rehberlik edecektir.
 ---
 
-# Node Interaction
+# Düğüm Etkileşimi
 
-This page will guide you through some basic interactions with your node. Always refer to the proper documentation for the tool you are using. This guide should _guide you to the proper tools,_ not be seen as canonical reference.
+Bu sayfa, düğümünüzle bazı temel etkileşimlerde size rehberlik edecektir. Her zaman kullandığınız alet için uygun belgelere bakın. Bu kılavuz, sizi uygun araçlara yönlendirmeli,_ kurallı referans olarak görülmemelidir.
 
 * [Substrate RPC API](https://crates.parity.io/sc_rpc_api/index.html)
-* [Polkadot JS RPC Documentation](https://polkadot.js.org/api/substrate/rpc.html)
+* [Polkadot JS RPC Belgeleri](https://polkadot.js.org/api/substrate/rpc.html)
 * [Substrate API Sidecar](https://github.com/paritytech/substrate-api-sidecar)
 
 ### RPC
 
-The Substrate Chain client exposes HTTP and WS endpoints for RPC connections. The default ports are 9933 for HTTP and 9944 for WS.
+Substrate Chain istemcisi, RPC bağlantıları için HTTP ve WS uç noktalarını kullanıma sunar. Varsayılan bağlantı noktaları, HTTP için 9933 ve WS için 9944'tür.
 
-To get a list of all RPC methods, the node has an RPC endpoint called `rpc_methods`.
+Tüm RPC yöntemlerinin bir listesini almak için, düğümün "rpc_methods" adlı bir RPC bitiş noktası vardır.
 
-For example:
+Örneğin:
 
 ```text
 $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "rpc_methods"}' http://localhost:9933/
@@ -24,7 +24,7 @@ $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method
 {"jsonrpc":"2.0","result":{"methods":["account_nextIndex","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","offchain_localStorageGet","offchain_localStorageSet","payment_queryInfo","state_call","state_callAt","state_getChildKeys","state_getChildStorage","state_getChildStorageHash","state_getChildStorageSize","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_subscribeRuntimeVersion","state_subscribeStorage","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","system_accountNextIndex","system_addReservedPeer","system_chain","system_health","system_name","system_networkState","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_version","unsubscribe_newHead"],"version":1},"id":1}
 ```
 
-Add parameters in the call, for example get a block by its hash value:
+Çağrıya parametreler ekleyin, örneğin hash değerine göre bir blok alın:
 
 ```text
 $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "chain_getBlock", "params":["0x3fa6a530850324391fde50bdf0094bdc17ee17ec84aca389b4047ef54fea0037"]}' http://localhost:9933
@@ -32,23 +32,23 @@ $ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method
 {"jsonrpc":"2.0","result":{"block":{"extrinsics":["0x280402000b50055ee97001","0x1004140000"],"header":{"digest":{"logs":["0x06424142453402af000000937fbd0f00000000","0x054241424501011e38401b0aab22f4d72ebc95329c3798445786b92ca1ae69366aacb6e1584851f5fcdfcc0f518df121265c343059c62ab0a34e8e88fda8578810fbe508b6f583"]},"extrinsicsRoot":"0x0e354333c062892e774898e7ff5e23bf1cdd8314755fac15079e25c1a7765f06","number":"0x16c28c","parentHash":"0xe3bf2e8f0e901c292de24d07ebc412d67224ce52a3d1ffae76dc4bd78351e8ac","stateRoot":"0xd582f0dfeb6a7c73c47db735ae82d37fbeb5bada67ee8abcd43479df0f8fc8d8"}},"justification":null},"id":1}
 ```
 
-Some return values may not appear meaningful at first glance. Substrate uses [SCALE encoding](https://substrate.dev/docs/en/knowledgebase/advanced/codec) as a format that is suitable for resource-constrained execution environments. You will need to decode the information and use the chain [metadata](https://substrate.dev/docs/en/knowledgebase/runtime/metadata) \(`state_getMetadata`\) to obtain human-readable information.
+Bazı dönüş değerleri ilk bakışta anlamlı görünmeyebilir. Substrat, kaynak kısıtlı yürütme ortamları için uygun bir biçim olarak [SCALE kodlamasını](https://substrate.dev/docs/en/knowledgebase/advanced/codec) kullanır. İnsanların okuyabileceği bilgileri elde etmek için bilgilerin kodunu çözmeniz ve [meta veri](https://substrate.dev/docs/en/knowledgebase/runtime/metadata) \(`state_getMetadata`\) zincirini kullanmanız gerekir.
 
-#### Tracking the Chain Head
+#### Zincir Başını İzleme
 
-Use the RPC endpoint `chain_subscribeFinalizedHeads` to subscribe to a stream of hashes of finalized headers, or `chain_FinalizedHeads` to fetch the latest hash of the finalized header. Use `chain_getBlock` to get the block associated with a given hash. `chain_getBlock` only accepts block hashes, so if you need to query intermediate blocks, use `chain_getBlockHash` to get the block hash from a block number.
+Sonlandırılmış üstbilgilerin karmaları akışına abone olmak için RPC uç noktası "chain_subscribeFinalizedHeads"i veya kesinleştirilmiş üstbilginin en son karmasını almak için "chain_FinalizedHeads"i kullanın. Belirli bir karma ile ilişkili bloğu almak için 'chain_getBlock' kullanın. "chain_getBlock" yalnızca blok karmalarını kabul eder, bu nedenle ara blokları sorgulamanız gerekiyorsa, bir blok numarasından blok karmasını almak için "chain_getBlockHash" kullanın.
 
 ### Substrate API Sidecar
 
-Parity maintains an RPC client, written in TypeScript, that exposes a limited set of endpoints. It handles the metadata and codec logic so that you are always dealing with decoded information. It also aggregates information that an infrastructure business may need for accounting and auditing, e.g. transaction fees.
+Parity, TypeScript'te yazılmış ve sınırlı sayıda uç nokta ortaya çıkaran bir RPC istemcisi tutar. Meta verileri ve kodek mantığını işler, böylece her zaman kodu çözülmüş bilgilerle uğraşırsınız. Ayrıca, bir altyapı işletmesinin muhasebe ve denetim için ihtiyaç duyabileceği bilgileri toplar, ör. işlem ücretleri.
 
-The sidecar can fetch blocks, get the balance of an address atomically \(i.e., with a corresponding block number\), get the chain's metadata, get a transaction fee prediction, and submit transactions to a node's transaction queue. If you have any feature/endpoint requests, log an issue in the [repo](https://github.com/paritytech/substrate-api-sidecar).
+Sepet blokları getirebilir, bir adresin bakiyesini atomik olarak \(yani, karşılık gelen bir blok numarasıyla\), zincirin meta verilerini alabilir, bir işlem ücreti tahmini alabilir ve işlemleri bir düğümün işlem kuyruğuna gönderebilir. Herhangi bir özellik/uç nokta isteğiniz varsa [repoda](https://github.com/paritytech/substrate-api-sidecar) bir sorun kaydedin.
 
-The client runs on an HTTP host. The following examples use python3, but you can query any way you prefer at `http://HOST:PORT/`. The default is `http://127.0.0.1:8080`.
+İstemci bir HTTP ana bilgisayarında çalışır. Aşağıdaki örnekler python3'ü kullanır, ancak `http://HOST:PORT/` adresinden istediğiniz şekilde sorgulayabilirsiniz. Varsayılan "http://127.0.0.1:8080"dir.
 
-#### Fetching a Block
+#### Blok Alma
 
-Fetch a block using the `block/number` endpoint. To get the chain tip, omit the block number.
+"block/number" uç noktasını kullanarak bir blok getirin. Zincir ucunu almak için blok numarasını atlayın.
 
 ```text
 import requests
@@ -61,9 +61,9 @@ if response.ok:
     print(block_info)
 ```
 
-This returns a fully decoded block. In the `balances.transfer` extrinsic, the `partialFee` item is the transaction fee. It is called "partial fee" because the total fee would include the `tip` field. Notice that some extrinsics do not have a signature. These are inherents.
+Bu, tamamen kodu çözülmüş bir blok döndürür. "balances.transfer" dış kısmında, "partialFee" maddesi işlem ücretidir. Toplam ücretin bahşiş alanını içermesi nedeniyle "kısmi ücret" olarak adlandırılır. Bazı dışsal öğelerin imzası olmadığına dikkat edin. Bunlar doğasında var.
 
-> When tracking transaction fees, the `extrinsics.paysFee` value is not sufficient for determining if the extrinsic had a fee. This field only means that it would require a fee if submitted as a transaction. In order to charge a fee, a transaction also needs to be signed. So in the following example, the `timestamp.set` extrinsic does not pay a fee because it is an _inherent,_ put in the block by the block author.
+> İşlem ücretlerini takip ederken, 'extrinsics.paysFee' değeri dışsalın ücretli olup olmadığını belirlemek için yeterli değildir. Bu alan yalnızca işlem olarak gönderildiğinde ücret talep edeceği anlamına gelir. Bir ücret almak için bir işlemin de imzalanması gerekir. Dolayısıyla, aşağıdaki örnekte, 'timestamp.set' dışsal öğesi, blok yazarı tarafından bloğa yerleştirilen _içsel,_ olduğu için bir ücret ödemez.
 
 ```text
 {'number': '2077200',
@@ -143,11 +143,11 @@ This returns a fully decoded block. In the `balances.transfer` extrinsic, the `p
  'onFinalize': {'events': []}}
 ```
 
-> The JS number type is a 53 bit precision float. There is no guarantee that the numerical values in the response will have a numerical type. Any numbers larger than `2**53-1` will have a string type.
+> JS sayı türü, 53 bitlik bir hassas kayan noktadır. Yanıttaki sayısal değerlerin sayısal bir türe sahip olacağının garantisi yoktur. "2**53-1"den büyük tüm sayıların bir dize türü olacaktır.
 
-#### Submitting a Transaction
+#### İşlem Gönderme
 
-Submit a serialized transaction using the `tx` endpoint with an HTTP POST request.
+Bir HTTP POST isteğiyle "tx" uç noktasını kullanarak serileştirilmiş bir işlem gönderin.
 
 ```text
 import requests
@@ -163,7 +163,7 @@ response = requests.post(
 tx_response = json.loads(response.text)
 ```
 
-If successful, this endpoint returns a JSON with the transaction hash. In case of error, it will return an error report, e.g.:
+Başarılı olursa, bu uç nokta, işlem karması ile bir JSON döndürür. Hata durumunda, bir hata raporu döndürür, örneğin:
 
 ```text
 {
