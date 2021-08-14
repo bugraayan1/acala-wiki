@@ -1,43 +1,42 @@
 ---
-description: Wiki contribution guide.
+tanım: Wiki katkı kılavuzu.
 ---
 
-# Contributing
+# Katkı
 
-The wiki was started and is maintained by the Acala Foundation. It is an Open-ish open source project and aims to be the most extensive resource of knowledge on Acala and the Acala ecosystem. A large part of the material currently focuses on Acala directly but it is not opposed to cover informational material for community projects. But please do not try to pull request any marketing material as this will be rejected.
+Wiki, Acala Vakfı tarafından başlatıldı ve sürdürülüyor. Açık kaynaklı bir açık kaynak projesidir ve Acala ve Acala ekosistemi hakkında en kapsamlı bilgi kaynağı olmayı amaçlamaktadır. Materyalin büyük bir kısmı şu anda doğrudan Acala'ya odaklanıyor, ancak topluluk projeleri için bilgi materyallerini kapsamaya karşı değil. Ancak, reddedileceği için lütfen herhangi bir pazarlama materyali talep etmeye çalışmayın.
 
-Pull requests, discussions and contributions from the community are encouraged. For certain active community members who demonstrate a record of good contributions, they may be given write access to the repository. Otherwise, the Acala Foundation holds the administrative position and final say on the content that is included. Specifically the Technical Education team at the foundation are most directly involved.
+Topluluktan gelen talepler, tartışmalar ve katkılar teşvik edilir. İyi katkıların kaydını gösteren belirli aktif topluluk üyelerine, havuza yazma erişimi verilebilir. Aksi takdirde, Acala Vakfı, içeriğinde yer alan içerik hakkında idari ve son söz sahibidir. Özellikle temeldeki Teknik Eğitim ekibi en doğrudan dahil olur.
 
-### How to Contribute
+### Nasıl Katkıda Bulunulur
 
-Contributing to the wiki is easy with a GitHub account. Every page is a markdown file, which is a [very easy to learn](https://guides.github.com/features/mastering-markdown/) syntax extension to plain text that makes creating links, rendering images, and nice-looking formatting simple.
+GitHub hesabıyla wiki'ye katkıda bulunmak kolaydır. Her sayfa, düz metin için [öğrenmesi çok kolay](https://guides.github.com/features/mastering-markdown/) sözdizimi uzantısı olan ve bağlantılar oluşturmayı, görüntü oluşturmayı ve güzel biçimlendirme basit görünüyor.
 
-Each page has an "Edit on Github" button on the top right of the content. By clicking this button you are taken to the GitHub sign in page, where you can either login or create an account.
+Her sayfada, içeriğin sağ üst köşesinde bir "Github'da Düzenle" düğmesi bulunur. Bu düğmeye tıklayarak, giriş yapabileceğiniz veya bir hesap oluşturabileceğiniz GitHub oturum açma sayfasına yönlendirilirsiniz.
 
 ![](../.gitbook/assets/ping-mu-kuai-zhao-20200708-xia-wu-6.51.24.png)
 
-Once logged in, you'll be taken to the GitHub text editor in which you can make your edits directly. When you've completed your changes, you can add any specific details on what was changed and commit to a new branch to create a new Pull Request to the repository. From there one of the maintainers will either merge it in or request changes very soon.
+Giriş yaptıktan sonra, düzenlemelerinizi doğrudan yapabileceğiniz GitHub metin düzenleyicisine yönlendirileceksiniz. Değişikliklerinizi tamamladığınızda, nelerin değiştirildiğiyle ilgili belirli ayrıntıları ekleyebilir ve depoya yeni bir Çekme İsteği oluşturmak için yeni bir şubeye söz verebilirsiniz. Oradan, bakıcılardan biri ya onu birleştirecek ya da çok yakında değişiklik talep edecek.
 
 ![](../.gitbook/assets/ping-mu-kuai-zhao-20200708-xia-wu-6.47.59.png)
 
-### Rules
+### Tüzük
 
-There are a few basic ground-rules for contributors:
+Katkıda bulunanlar için birkaç temel temel kural vardır:
 
-1. **No `--force` pushes** or modifying the Git history in any way.
-2. Pull requests are preferred to issues, especially for small changes such as typos. Issues should be used for generic or broad-based changes or missing content.
-3. **Non-master branches** ought to be used for ongoing work.
-4. **Significant modifications** ought to be subject to a **pull request** to solicit feedback from other contributors.
-5. Pull requests to solicit feedback are _encouraged_ for any other non-trivial contribution but left to the discretion of the contributor.
-6. Contributors should attempt to adhere to the prevailing Markdown style, language, and layout.
-7. Correct grammar should be used at all times. Pull requests with typos will not be merged until fixed.
-8. Care should be taken to remain as objective and informative as possible. There should be no editorializing, and external bias should not be present.
+1. **"--force" zorlaması** veya Git geçmişini herhangi bir şekilde değiştirme.
+2. Çekme istekleri, özellikle yazım hataları gibi küçük değişiklikler için sorunlara tercih edilir. Sorunlar, genel veya geniş tabanlı değişiklikler veya eksik içerik için kullanılmalıdır.
+3. Devam eden işler için **Ana dışı dallar** kullanılmalıdır.
+4. **Önemli değişiklikler**, diğer katkıda bulunanlardan geri bildirim almak için bir **çekme talebine** tabi olmalıdır.
+5. Geri bildirim istemek için yapılan çekme talepleri, diğer önemsiz olmayan katkılar için _teşvik edilir_ ancak katkıda bulunanın takdirine bırakılmıştır.
+6. Katkıda bulunanlar, geçerli Markdown stiline, diline ve düzenine bağlı kalmaya çalışmalıdır.
+7. Her zaman doğru dil bilgisi kullanılmalıdır. Yazım hataları olan çekme istekleri, düzeltilene kadar birleştirilmez.
+8. Mümkün olduğunca objektif ve bilgilendirici kalmaya özen gösterilmelidir. Editörlük olmamalı ve dış önyargı mevcut olmamalıdır.
 
-### Changes to this arrangement
+### Bu düzenlemedeki değişiklikler
 
-This document may also be subject to pull requests or changes by contributors where you believe you have something valuable to add or change.
+Bu belge ayrıca, eklemek veya değiştirmek için değerli bir şeyiniz olduğuna inandığınız katkıda bulunanların taleplerine veya değişikliklerine tabi olabilir.
 
-### Heritage
+### Miras
 
-This document was based on the Level contribution guidelines located here: [https://github.com/Level/community/blob/master/CONTRIBUTING.md](https://github.com/Level/community/blob/master/CONTRIBUTING.md)
-
+Bu belge, şu adreste bulunan Düzey katkı yönergelerine dayanmaktadır: [https://github.com/Level/community/blob/master/CONTRIBUTING.md](https://github.com/Level/community/blob/master/ KATKIDA.md)
