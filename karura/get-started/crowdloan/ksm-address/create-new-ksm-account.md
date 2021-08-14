@@ -1,96 +1,95 @@
-# Creating a New KSM Account
+# Yeni KSM Hesabı Oluşturma
 
-While there are several wallets that support Kusama, **we've found that the Polkadot.{js} browser extension best serves most desktop users and the Polkawallet mobile app best serves most mobile users.** Follow the guides below based on your wallet preference.
+Kusama'yı destekleyen birkaç cüzdan olsa da, **Polkadot.{js} tarayıcı uzantısının çoğu masaüstü kullanıcısına en iyi hizmeti verdiğini ve Polkawallet mobil uygulamasının çoğu mobil kullanıcıya en iyi hizmeti verdiğini bulduk.** Cüzdanınıza göre aşağıdaki kılavuzları izleyin tercih.
 
-## Step 1: Creating a wallet through Polkadot{.js} browser extension
+## 1. Adım: Polkadot{.js} tarayıcı uzantısıyla cüzdan oluşturma
 
-1\) Type polkadot.js.org/extension in the address bar of your web browser.
+1\) Web tarayıcınızın adres çubuğuna polkadot.js.org/extension yazın.
 
 ![](https://i.imgur.com/YO0m3tP.png)
 
-2\) Select download for your respective browser and follow the download prompts. Brave users should click on the "Download for Chrome" button.
+2\) İlgili tarayıcınız için indirmeyi seçin ve indirme komutlarını izleyin. Cesur kullanıcılar "Chrome için İndir" düğmesini tıklamalıdır.
 
-Chrome and Brave users will know if the download was successful when they click on the Extension button \(puzzle piece\) in the right-hand corner of their browser and the orange circle with a "P" appears. Chrome users can pin the extension into their toolbar by clicking on the pin icon \(see screenshot\). Firefox users will know if the download was successful because the orange circle with a "P" will appear in the top right-hand corner of their browser.
+Chrome ve Brave kullanıcıları, tarayıcılarının sağ köşesindeki Uzantı düğmesine \(bulmaca parçası\) tıkladıklarında ve üzerinde "P" bulunan turuncu daire göründüğünde indirme işleminin başarılı olup olmadığını anlayacaklardır. Chrome kullanıcıları, sabitle simgesini \(ekran görüntüsüne bakın\) tıklayarak uzantıyı araç çubuklarına sabitleyebilir. Firefox kullanıcıları, indirme işleminin başarılı olup olmadığını bilecekler çünkü tarayıcılarının sağ üst köşesinde "P" harfi bulunan turuncu daire belirecektir.
 
 ![](https://i.imgur.com/pkZuAht.png)
 
-3\) Click on the Polkadot logo in your browser. A welcome dialogue box will appear. Click "Understood, let me continue."
+3\) Tarayıcınızda Polkadot logosuna tıklayın. Bir hoş geldiniz iletişim kutusu görünecektir. "Anlaşıldı, devam edeyim"i tıklayın.
 
-4\) Click on the "+" in the center of the circle to add an account.
+4\) Bir hesap eklemek için dairenin ortasındaki "+" işaretine tıklayın.
 
 ![](https://i.imgur.com/sh0WAqQ.jpg)
 
-5\) A box will appear with your address along with your mnemonic seed phrase. Record the mnemonic phrase and store it somewhere safe. Don't share it with anyone. Your seed phrase can be used to recover your account if you forget your password or if you want to import your account.
+5\) Anımsatıcı tohum cümlenizle birlikte adresinizi içeren bir kutu görünecektir. Anımsatıcı ifadeyi kaydedin ve güvenli bir yerde saklayın. Onu kimseyle paylaşmayın. Parolanızı unutursanız veya hesabınızı içe aktarmak istiyorsanız, tohum ifadeniz hesabınızı kurtarmak için kullanılabilir.
 
-Click "I have saved my mnemonic seed safely" and proceed to the next step.
+"Anımsatıcı tohumumu güvenli bir şekilde kaydettim" seçeneğini tıklayın ve bir sonraki adıma geçin.
 
 ![](../../../../.gitbook/assets/q5facgu.png)
 
-6\) The next prompt will allow you to select a network, name your account and create a password for the account. Because you are creating a Kusama account, select the "Kusama Relay Chain" from the dropdown box. Also ensure that you use a strong password \(at least 6 characters\).
+6\) Sonraki istem bir ağ seçmenize, hesabınızı adlandırmanıza ve hesap için bir parola oluşturmanıza olanak tanır. Bir Kusama hesabı oluşturduğunuz için, açılır kutudan "Kusama Relay Chain" öğesini seçin. Ayrıca güçlü bir parola \(en az 6 karakter\) kullandığınızdan emin olun.
 
-Click on the "Add the account with the generated seed" button to create your account.
+Hesabınızı oluşturmak için "Oluşturulan tohumla hesabı ekle" düğmesini tıklayın.
 
 ![](https://i.imgur.com/480oGUb.png)
 
-7\) Your Polkadot.{js} browser extension is now set up! You should see your account in the browser extension.
+7\) Polkadot.{js} tarayıcı uzantınız şimdi kuruldu! Hesabınızı tarayıcı uzantısında görmelisiniz.
 
 ![](https://i.imgur.com/X7COwhL.png)
 
-## Step 2: Managing your account through the Polkadot UI
+## 2. Adım: Hesabınızı Polkadot UI üzerinden yönetme
 
-1\) Now it's time to connect the browser extension to the Polkadot-JS UI \(user interface\) to manage your account.
+1\) Şimdi, hesabınızı yönetmek için tarayıcı uzantısını Polkadot-JS kullanıcı arayüzüne \(kullanıcı arayüzü\) bağlamanın zamanı geldi.
 
-Type "polkadot.js.org/apps" in your search bar.
+Arama çubuğunuza "polkadot.js.org/apps" yazın.
 
-2\) A dialogue box will appear asking you to authorize website access. Click on the button that says "Yes, allow this application access."
+2\) Web sitesine erişim izni vermenizi isteyen bir iletişim kutusu görünecektir. "Evet, bu uygulamaya erişime izin ver" yazan düğmeyi tıklayın.
 
 ![](https://i.imgur.com/9yHKL2f.png)
 
-3\) To switch networks, look towards the left-hand side of the navigation ribbon \(pink in this example\) and select the dropdown near the network logo \(Polkadot logo in this example\).
+3\) Ağlar arasında geçiş yapmak için, gezinme şeridinin \(bu örnekte pembe\) sol tarafına bakın ve ağ logosunun \(bu örnekte Polkadot logosu\) yanındaki açılır menüyü seçin.
 
-Click on "Kusama" and select the option "hosted by Parity." Click on the pink "Switch" button.
+"Kusama" üzerine tıklayın ve "Parity tarafından barındırılan" seçeneğini seçin. Pembe "Anahtar" düğmesine tıklayın.
 
 ![](https://i.imgur.com/aF6aqn4.png)
 
-4\) You should see the account you established in your Polkadot.{js} extension listed in the accounts. You can use the Polkadot UI to send KSM, stake and participate in governance. Consult our other guides on these topics if you are interested in any of those areas.
+4\) Polkadot.{js} uzantınızda oluşturduğunuz hesabın hesaplarda listelendiğini görmelisiniz. Polkadot kullanıcı arayüzünü KSM göndermek, stake etmek ve yönetime katılmak için kullanabilirsiniz. Bu alanlardan herhangi biriyle ilgileniyorsanız, bu konulardaki diğer kılavuzlarımıza bakın.
 
 ![](https://i.imgur.com/p5m0D1J.png)
 
-## Creating a wallet through Polkawallet
+## Polkawallet aracılığıyla cüzdan oluşturma
 
-1\) Download the Polkawallet app through the Apple App Store for iOS devices and Google Play for Android devices.
+1\) Polkawallet uygulamasını iOS cihazlar için Apple App Store ve Android cihazlar için Google Play üzerinden indirin.
 
-2\) Click on the "Create Account" button.
+2\) "Hesap Oluştur" düğmesine tıklayın.
 
 ![](https://i.imgur.com/ul163Lo.jpg)
 
-3\) A new screen will appear explaining the importance of recording your mnemonic phrase in a safe place. Click the "Next" button.
+3\) Anımsatıcı ifadenizi güvenli bir yere kaydetmenin önemini açıklayan yeni bir ekran açılacaktır. "İleri" düğmesini tıklayın.
 
 ![](https://i.imgur.com/hyl3FDb.jpg)
 
-4\) Your mnemonic phrase will appear. Write the mnemonic on a piece of paper and store it somewhere safe. Click on the "Next" button.
+4\) Anımsatıcı ifadeniz görünecektir. Anımsatıcıyı bir kağıda yazın ve güvenli bir yerde saklayın. "İleri" düğmesine tıklayın.
 
 ![](../../../../.gitbook/assets/mkzxnjg.jpeg)
 
-5\) Confirm your mnemonic by entering the words in the correct order. Click on the "Next" button when completed.
+5\) Sözcükleri doğru sırada girerek anımsatıcınızı onaylayın. Tamamlandığında "İleri" düğmesine tıklayın.
 
 ![](../../../../.gitbook/assets/eaut7r7.jpeg)
 
-6\) Name your account and create a strong password \(at least 6 characters\). Click on the "Next" button when completed.
+6\) Hesabınıza bir ad verin ve güçlü bir parola oluşturun \(en az 6 karakter\). Tamamlandığında "İleri" düğmesine tıklayın.
 
 ![](https://i.imgur.com/3ouTHum.jpg)
 
-7\) Your wallet is now set up! The screen will default to the Polkadot network. You can determine which network you're connected to by looking at the grey text under the account name. In the case of this screenshot, it says "Polkadot."
+7\) Cüzdanınız şimdi kuruldu! Ekran varsayılan olarak Polkadot ağına dönecektir. Hesap adının altındaki gri metne bakarak hangi ağa bağlı olduğunuzu belirleyebilirsiniz. Bu ekran görüntüsünde "Polkadot" yazıyor.
 
-Click on the hamburger \(three lines\) in the right-hand corner.
+Sağ köşedeki hamburgere \(üç satır\) tıklayın.
 
 ![](https://i.imgur.com/YYYj1IN.jpg)
 
-8\) A series of logos showing the networks that you can connect to will appear on the left-hand side. Select the Kusama logo \(circle with a bird\) and then click on the box with the account name.
+8\) Sol tarafta bağlanabileceğiniz ağları gösteren bir dizi logo görünecektir. Kusama logosunu \(kuşlu daire\) seçin ve ardından hesap adının bulunduğu kutuya tıklayın.
 
 ![](https://i.imgur.com/XVfCuyy.jpg)
 
-9\) The page will reload, and you will be connected to the Kusama network.
+9\) Sayfa yeniden yüklenecek ve Kusama ağına bağlanacaksınız.
 
 ![](https://i.imgur.com/wy8GGsm.jpg)
-
