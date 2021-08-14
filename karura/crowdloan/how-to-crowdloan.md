@@ -1,80 +1,79 @@
-# How to Crowdloan
+# Kitle Kredisi Nasıl Alınır
 
-Crowdloan is a permissionless event, so you can make your own judgement on how you'd like to participate. We recommend the following ways to participate:
+Crowdloan izinsiz bir etkinliktir, bu nedenle nasıl katılmak istediğiniz konusunda kendi kararınızı verebilirsiniz. Katılmak için aşağıdaki yolları öneriyoruz:
 
-1. Participate via [Karura official website](https://acala.network/karura/join-karura) using Polkadot{.js} browser extension. Use a referral link to get an extra 5% bonus. Wallet setup guide [here](https://wiki.acala.network/karura/ksm-address/create-new-ksm-account). 
-2. Participate via partner exchanges.
-3. Participate via partner mobile wallets.
+1. Polkadot{.js} tarayıcı uzantısını kullanarak [Karura resmi web sitesi](https://acala.network/karura/join-karura) aracılığıyla katılın. Ekstra %5 bonus almak için bir tavsiye bağlantısı kullanın. Cüzdan kurulum kılavuzu [buradan](https://wiki.acala.network/karura/ksm-address/create-new-ksm-account).
+2. Ortak değişimleri yoluyla katılın.
+3. Ortak mobil cüzdanlar aracılığıyla katılın.
 
-## Via Karura Official Website
+## Via Karura Resmi Web Sitesi
 
-### Check Prerequisites 
+### Ön Koşulları Kontrol Edin
 
-* [ ] I have installed the [Polkadot.js browser extension](https://polkadot.js.org/extension/).
-* [ ] I have KSM in my Polkadot.js account.
-* [ ] My KSM has been ‘unbonded’. [Click here](https://wiki.acala.network/karura/ksm-address/unstaking-your-ksm) for instructions on unbonding if you’re staking KSM in Polkadot.js, or find the unstake/unbond option in your mobile wallet.
+* [ ] [Polkadot.js tarayıcı uzantısını](https://polkadot.js.org/extension/) yükledim.
+* [ ] Polkadot.js hesabımda KSM var.
+* [ ] KSM'm "bağsız" oldu. Polkadot.js'de KSM'yi stake ediyorsanız, bağın kaldırılmasıyla ilgili talimatlar için [burayı tıklayın](https://wiki.acala.network/karura/ksm-address/unstaking-your-ksm) veya şurada unstake/unbond seçeneğini bulun mobil cüzdanınız.
 
-### **Connect Polkadot{js} Extension Wallet**
+### **Polkadot{js} Uzatma Cüzdanını Bağlayın**
 
-Once you have connected the Polkadot{js} extension wallet, you shall see your KSM balance, and contribution amount to Karura if any.
+Polkadot{js} uzantılı cüzdanı bağladıktan sonra, KSM bakiyenizi ve varsa Karura'ya katkı tutarınızı göreceksiniz.
 
-### Read and Accept Terms & Conditions
+### Şartlar ve Koşulları Okuyun ve Kabul Edin
 
-To participate in the crowdloan, you must read and accept the terms and conditions. You are required to sign with the account used to participate in the crowdloan, but it will not cost you anything.
+Kitle kredisine katılmak için şartlar ve koşulları okumalı ve kabul etmelisiniz. Kitle kredisine katılmak için kullanılan hesapla imzalamanız gerekiyor, ancak bunun size hiçbir maliyeti olmayacak.
 
-![](https://lh6.googleusercontent.com/FOOxnudHAuG3tKNwJMfgYIsHbqMA1afVl2MfHM4VgwYNuabvKPwTuToPsgMdv1UI076OEs5qCiCL8_1xxe6LG4Se3sTJzu6aGw8WdF-RtxjVUa2cp5UqbEnVsO0b8uuaipYwljIo)
+![](https://lh6.googleusercontent.com/FOOxnudHAuG3tKNwJMfgYIsHbqMA1afVl2MfHM4VgwYNuabvKPwTuToPsgMdv1UI076OEs5qCiCL8_1xxe6LG4Se3sTJzud6aGwL)
 
-### Contribute to the crowdloan
+### Kitle kredisine katkıda bulunun
 
-Enter‌ the KSM contribution amount. For every KSM contributed, you will receive at least 12 KAR.
+KSM katkı miktarını girin. Katkıda bulunan her KSM için en az 12 KAR alacaksınız.
 
-If you use the referral link, you can get an additional 5% . 
+Yönlendirme bağlantısını kullanırsanız, ek bir %5 alabilirsiniz.
 
-There may be other bonus programs depending on the time you join the crowdloan.
+Kitle kredisine katıldığınız zamana bağlı olarak başka bonus programları da olabilir.
 
-![](https://lh5.googleusercontent.com/WF3Ad700ghOliKxy9p2ryBfIYWWBD4XJXnZsTJXKJ7RvjrkL_dhogmYaw8OJocGRZQa7lNEjVrvqrwllFb4FpsLQUqqQKPRo_c3j5sbZ1eJvQTitK3NhJSj3DfAKmafxCvtcuHqD)
+![](https://lh5.googleusercontent.com/WF3Ad700ghOliKxy9p2ryBfIYWWBD4XJXnZsTJXKJ7RvjrkL_dhogmYaw8OJocGRZQa7lNEjVrvqrwllFb4FpsLQUqqQSQRobZ3j)
 
-### **Submit Contribution**
+### **Katkı Gönder**
 
-Click the `Submit Contribution` button to submit your contribution to the Kusama Relay Chain. This may take a few seconds while Kusama finalizes your transaction.
+Katkılarınızı Kusama Relay Chain'e göndermek için `Katkıyı Gönder` düğmesini tıklayın. Kusama işleminizi sonlandırırken bu birkaç saniye sürebilir.
 
-### **Post Submission**
+### **Gönderim Sonrası**
 
-You can contribute multiple times with the same account. Do share your great contribution on social to help us make history together! 
+Aynı hesapla birden çok kez katkıda bulunabilirsiniz. Birlikte tarih yazmamıza yardımcı olmak için büyük katkınızı sosyal medyada paylaşın!
 
-![](https://lh4.googleusercontent.com/qzhyy3_UCOuY46UVx6yAwfBtTt9RcxPzJpkKI3MO7Bxo9IwlnVYXOQDiQQdm6NKFneam1FpDFLfgbZNfy0NElPmRgEsh0BJ0-_QrjIHwQjTJQDUguXzBmLOuEGbh9NdPD3lp75QW)
+![](https://lh4.googleusercontent.com/qzhyy3_UCOuY46UVx6yAwfBtTt9RcxPzJpkKI3MO7Bxo9IwlnVYXOQDiQQdm6NKFneam1FpDFLfgbZNfy0NElPmRg-EshQ0BJ0)
 
-## Via Polkawallet
+## Polkawallet Üzerinden
 
-### Switch to Kusama Network
+### Kusama Ağı'na geç
 
-You shall see KSM balance once switched. Click the Kusama Parachain Auction banner at the bottom of the screen.
+Bir kez değiştirildiğinde KSM bakiyesini göreceksiniz. Ekranın altındaki Kusama Parachain Müzayede başlığına tıklayın.
 
 ![](../../.gitbook/assets/merged.png)
 
-### Read and Accept Terms & Conditions
+### Şartlar ve Koşulları Okuyun ve Kabul Edin
 
-To participate in the crowdloan, you must read and accept the terms and conditions. You are required to sign with the account used to participate in the crowdloan, but it will not cost you anything.
+Kitle kredisine katılmak için şartlar ve koşulları okumalı ve kabul etmelisiniz. Kitle kredisine katılmak için kullanılan hesapla imzalamanız gerekiyor, ancak bunun size hiçbir maliyeti olmayacak.
 
 ![](../../.gitbook/assets/1011623119982_.pic.jpg)
 
-### Contribute to the crowdloan
+### Kitle kredisine katkıda bulunun
 
-Enter‌ the KSM contribution amount. For every KSM contributed, you will receive at least 12 KAR.
+KSM katkı miktarını girin. Katkıda bulunan her KSM için en az 12 KAR alacaksınız.
 
-If you have a referral code, enter it to receive an additional 5% bonus. Click `Submit`
+Tavsiye kodunuz varsa, ilave %5 bonus almak için girin. 'Gönder'i tıklayın
 
-There may be other bonus programs depending on the time you join the crowdloan.
+Kitle kredisine katıldığınız zamana bağlı olarak başka bonus programları da olabilir.
 
 ![](../../.gitbook/assets/merged-3.png)
 
-### Submit Contribution
+### Katkıyı Gönder
 
-Click `Contribute` button, this will submit your contribution to the Kusama Relay Chain. This may take a few seconds while Kusama finalizes your transaction.
+'Katkıda Bulun' düğmesini tıklayın, bu, katkınızı Kusama Relay Chain'e gönderecektir. Kusama işleminizi sonlandırırken bu birkaç saniye sürebilir.
 
 ![](../../.gitbook/assets/1041623120126_.pic.jpg)
 
-### **Post Submission**
+### **Gönderim Sonrası**
 
-You can contribute multiple times with the same account. Do share your great contribution on social to help us make history together! 
-
+Aynı hesapla birden çok kez katkıda bulunabilirsiniz. Birlikte tarih yazmamıza yardımcı olmak için büyük katkınızı sosyal medyada paylaşın!
