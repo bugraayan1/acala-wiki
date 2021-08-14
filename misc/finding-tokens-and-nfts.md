@@ -1,44 +1,43 @@
 ---
-description: How to find tokens and NFTs on Acala & Karura
+açıklama: Acala & Karura'da jetonlar ve NFT'ler nasıl bulunur
 ---
 
-# Finding Tokens and NFTs
+# Jeton ve NFT Bulma
 
-#### The instructions below are for participants in the Karura Parachain Auction Waitlist Competition. <a id="1-1st-place-Apple-iPad-and-25-KAR-Bonus"></a>
+#### Aşağıdaki talimatlar, Karura Parachain Açık Artırma Bekleme Listesi Yarışması'na katılanlar içindir. <a id="1-1. sıra-Apple-iPad-ve-25-KAR-Bonus"></a>
 
-#### 1. 1st place, Apple iPad and 25% KAR Bonus <a id="1-1st-place-Apple-iPad-and-25-KAR-Bonus"></a>
+#### 1. 1.lik, Apple iPad ve %25 KAR Bonusu <a id="1-1.-Apple-iPad-and-25-KAR-Bonus"></a>
 
-iPad prize has been processed. The bonus associated with your KSM address is now saved in our records. The bonus will be applied to the KSM contributed to the Karura Crowdloan.
+iPad ödülü işlendi. KSM adresinizle ilişkili bonus artık kayıtlarımıza kaydedilmiştir. Bonus, Karura Crowdloan'a katkıda bulunan KSM'ye uygulanacaktır.
 
-#### 2. Top 2-10 winners, \(KAR Crowdloan Bonus\). <a id="2-Top-2-10-winners-KAR-Crowdloan-Bonus"></a>
+#### 2. En iyi 2-10 kazanan, \(KAR Kitle Kredisi Bonusu\). <a id="2-Top-2-10-winners-KAR-Crowdloan-Bonus"></a>
 
-This reward associated with your KSM address is now saved in our records. The bonus will be applied to the KSM contributed to the Karura Crowdloan.
+KSM adresinizle ilişkili bu ödül artık kayıtlarımızda kayıtlı. Bonus, Karura Crowdloan'a katkıda bulunan KSM'ye uygulanacaktır.
 
-When the Karura Crowdloan occurs, users can also recommend others to participate in Crowdloan, and the system will give additional rewards to these users. To be eligible for this referral bonus, please ensure your email is registered on the [Karura Waitlist](https://forms.gle/VgbojfKp46CoGE328).
+Karura Crowdloan gerçekleştiğinde, kullanıcılar başkalarını Crowdloan'a katılmaları için tavsiye edebilir ve sistem bu kullanıcılara ek ödüller verecektir. Bu tavsiye bonusuna hak kazanmak için lütfen e-postanızın [Karura Bekleme Listesinde](https://forms.gle/VgbojfKp46CoGE328) kayıtlı olduğundan emin olun.
 
-#### 3. Top 11-100 Winners, Special NFTs: <a id="3-Top-11-100-Winners-Special-NFTs"></a>
+#### 3. En İyi 11-100 Kazanan, Özel NFT'ler: <a id="3-Top-11-100-Winners-Special-NFTs"></a>
 
-* Desktop: Please use the plugin wallet \([https://polkadot.js.org/extension/](https://polkadot.js.org/extension/)\) to import your Kusama account. Check it through the Dapp \([https://apps.acala.network/wallet](https://apps.acala.network/wallet)\), Under the `Collectibles` column. ![](https://i.imgur.com/fCDF0C6.png)
-* Mobile: Import your account into the mobile wallet \([https://polkawallet.io](https://polkawallet.io/)\), Switch network to Acala Mandala. If it does not appear, it may be the cause of network delay. ![](https://i.imgur.com/JFeB0K1.png)
+* Masaüstü: Kusama hesabınızı içe aktarmak için lütfen eklenti cüzdanını \([https://polkadot.js.org/extension/](https://polkadot.js.org/extension/)\) kullanın. Dapp \([https://apps.acala.network/wallet](https://apps.acala.network/wallet)\), "Koleksiyonlar" sütunu altında kontrol edin. ![](https://i.imgur.com/fCDF0C6.png)
+* Mobil: Hesabınızı mobil cüzdana aktarın \([https://polkawallet.io](https://polkawallet.io/)\), Ağı Acala Mandala'ya geçirin. Görünmezse, ağ gecikmesinin nedeni bu olabilir. ![](https://i.imgur.com/JFeB0K1.png)
 
-#### 4. Everyone with over 130 Gleam entries wins 3 KAR \(For Ledger, scroll below\) <a id="4-Everyonenbspwith-over-130-Gleam-entries-wins-3-KAR"></a>
+#### 4. 130'dan fazla Gleam girişi olan herkes 3 KAR kazanır \(Ledger için aşağıya kaydırın\) <a id="4-Everyonenbspwith-over-130-Gleam-entries-wins-3-KAR"></ bir>
 
-> KAR is now a certificate on the Mandala testnet and cannot be transferred. It can be claimed after the Karura network is online.
+> KAR artık Mandala test ağında bir sertifikadır ve aktarılamaz. Karura ağı çevrimiçi olduktan sonra talep edilebilir.
 
-* Desktop: Please use the plugin wallet \([https://polkadot.js.org/extension/](https://polkadot.js.org/extension/)\) to import your Kusama account. And check it through the Acala Dapp \([https://apps.acala.network/\#/wallet](https://apps.acala.network/#/wallet)\), Under `Wallet` -&gt; `AirDrop`. ![](https://i.imgur.com/IQiTcIi.png)
-* Mobile: Import your account into the mobile wallet \([https://polkawallet.io](https://polkawallet.io/)\), Switch network to Acala Mandala. Under `AirDrop`. ![](https://i.imgur.com/EI8mFb5.png)
+* Masaüstü: Kusama hesabınızı içe aktarmak için lütfen eklenti cüzdanını \([https://polkadot.js.org/extension/](https://polkadot.js.org/extension/)\) kullanın. Ve Acala Dapp \([https://apps.acala.network/\#/wallet](https://apps.acala.network/#/wallet)\), "Cüzdan" -&gt; "AirDrop". ![](https://i.imgur.com/IQiTcIi.png)
+* Mobil: Hesabınızı mobil cüzdana aktarın \([https://polkawallet.io](https://polkawallet.io/)\), Ağı Acala Mandala'ya geçirin. "AirDrop" altında. ![](https://i.imgur.com/EI8mFb5.png)
 
 
 
-* **Ledger**: 
-  * Connect your Ledger and navigate to [https://polkadot.js.org/apps](https://polkadot.js.org/apps)
-  * Switch network to Mandala.
-  * Click `Developer` -&gt; `Chain state`  -&gt; `Airdrop` -&gt; `airdrop`
-  * It will show you the airDrop Balance like the image below:
+* **Defter**:
+  * Defterinizi bağlayın ve [https://polkadot.js.org/apps](https://polkadot.js.org/apps) adresine gidin
+  * Ağı Mandala'ya geçirin.
+  * "Geliştirici" -&gt; "Zincir durumu" -&gt; "Uçak" -&gt; 'havadan iniş'
+  * Size aşağıdaki resimdeki gibi airDrop Balance'ı gösterecektir:
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
 
 
 >
-
