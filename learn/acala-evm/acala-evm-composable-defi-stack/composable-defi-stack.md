@@ -1,22 +1,21 @@
-# Composable DeFi Stack
+# Birleştirilebilir DeFi Yığını
 
-### **Fully Composable DeFi Primitives in EVM and Runtime**
+### **EVM ve Runtime'da Tamamen Oluşturulabilir DeFi Temel Öğeleri**
 
-Smart Contract Dapps deployed in Acala EVM can directly use native and cross-chain assets such as DOT, ACA, aUSD, renBTC, etc. ERC-20 tokens deployed in EVM can also be made available at runtime level, to be listed in the DeX, or \(by governance approval\) to be used as fee tokens. For example, Ampleforth will deploy AMPL contracts on Acala EVM, which will be made available as a native token, so it can be used to pay transaction fees and listed directly on our DeX.
+Acala EVM'de dağıtılan Akıllı Sözleşme Dapp'leri, DOT, ACA, aUSD, renBTC vb. gibi yerel ve zincirler arası varlıkları doğrudan kullanabilir. EVM'de dağıtılan ERC-20 jetonları, DeX'te listelenmek üzere çalışma zamanı düzeyinde de kullanılabilir hale getirilebilir. veya \(yönetim onayı ile\) ücret belirteçleri olarak kullanılacak. Örneğin Ampleforth, yerel bir belirteç olarak sunulacak olan Acala EVM'de AMPL sözleşmelerini dağıtacak, böylece işlem ücretlerini ödemek için kullanılabilir ve doğrudan DeX'imizde listelenebilir.
 
-Smart Contract Dapps can directly use Acala DeFi primitives \(DeX, stablecoin lending, and liquid staking\), bridges, oracle infrastructure, native and cross-chain liquidity to compose various interesting DeFi applications, such as lending, special-purpose DeX, financial products based on staking and more.
+Akıllı Sözleşme Dapp'leri, ödünç verme, özel amaçlı DeX, finansal gibi çeşitli ilginç DeFi uygulamalarını oluşturmak için Acala DeFi ilkellerini \(DeX, stablecoin kredisi ve sıvı staking\), köprüleri, oracle altyapısını, yerel ve zincirler arası likiditeyi doğrudan kullanabilir. esnetmeye dayalı ürünler ve daha fazlası.
 
-The process is seamless for users and developers, but behind the scene native tokens and protocols \(aka runtime modules\) are made available in EVM in the form of precompiled contracts. A transaction initiated by a smart contract in EVM is translated into a Substrate transaction and signed by any Polkadot extensions using polkadot.js. The response will be processed by the SDK \([bodhi.js](https://github.com/AcalaNetwork/bodhi.js)\) and converted into an Ethereum compatible format.
+Süreç, kullanıcılar ve geliştiriciler için sorunsuzdur, ancak sahne arkasında yerel belirteçler ve protokoller \(diğer adıyla çalışma zamanı modülleri\) önceden derlenmiş sözleşmeler biçiminde EVM'de sağlanır. EVM'de bir akıllı sözleşme tarafından başlatılan bir işlem, bir Substrat işlemine dönüştürülür ve polkadot.js kullanılarak herhangi bir Polkadot uzantısı tarafından imzalanır. Yanıt SDK \([bodhi.js](https://github.com/AcalaNetwork/bodhi.js)\) tarafından işlenecek ve Ethereum uyumlu bir biçime dönüştürülecektir.
 
-### Available Composable Contracts
+### Kullanılabilir Birleştirilebilir Sözleşmeler
 
-These pre-compiled contracts are now made available to Acala EVM
+Bu önceden derlenmiş sözleşmeler artık Acala EVM'nin kullanımına sunulmuştur.
 
-* **Native and cross-chain tokens available in ERC20**: DOT, ACA, aUSD, XBTC, LDOT, RENBTC. Try it [here](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-native-tokens).
-* Oracle contract to get price feed: this exposes the [Open Oracle Gateway](https://wiki.acala.network/learn/basics/oracle) functionalities such as guaranteed Quality of Service. Try it [here](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-oracle-feeds).
-* On-chain auto-scheduler that enables use cases like subscriptions and recurring payments etc. Try it [here](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-chain-scheduler).
-* Advanced contract deployment features like state renting to avoid scams and wastage of on-chain resources.
-* More to come: we're gradually exposing more native functionalities to the Acala EVM, next to come is the DeFi primitives \(DeX, stablecoin lending, and liquid staking\).
+* **ERC20'de bulunan yerel ve zincirler arası tokenler**: DOT, ACA, aUSD, XBTC, LDOT, RENBTC. [Buradan](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-native-tokens) deneyin.
+* Fiyat beslemesi almak için Oracle sözleşmesi: Bu, garantili Hizmet Kalitesi gibi [Open Oracle Gateway](https://wiki.acala.network/learn/basics/oracle) işlevlerini ortaya çıkarır. [Buradan](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-oracle-feeds) deneyin.
+* Abonelikler ve yinelenen ödemeler gibi kullanım örneklerine olanak tanıyan zincir üstü otomatik zamanlayıcı. [Buradan](https://wiki.acala.network/build/development-guide/smart-contracts/advanced/use-on-) deneyin zincir zamanlayıcı).
+* Dolandırıcılığı ve zincir üzerindeki kaynakların israfını önlemek için devlet kiralama gibi gelişmiş sözleşme dağıtım özellikleri.
+* Daha fazlası: Acala EVM'ye kademeli olarak daha fazla yerel işlevsellik sunuyoruz, sıradaki DeFi ilkelleri \(DeX, stabilcoin kredisi ve sıvı staking\).
 
-Find out more on these contracts [here](https://github.com/AcalaNetwork/predeploy-contracts#predeployed-system-contract).
-
+Bu sözleşmeler hakkında daha fazla bilgi edinin [buradan](https://github.com/AcalaNetwork/predeploy-contracts#predeployed-system-contract).
