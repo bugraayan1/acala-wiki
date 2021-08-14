@@ -1,115 +1,116 @@
-# FAQ
+# SSS
 
-## Top Questions
+## En Çok Sorulan Sorular
 
-### Have all the tokens been distributed?
+### Tüm jetonlar dağıtıldı mı?
 
-If you participated through our Karura website or through one of our mobile wallet partners, your tokens have been distributed. Users that participated through other means will need to go through the claims process.
+Karura web sitemiz veya mobil cüzdan ortaklarımızdan biri aracılığıyla katıldıysanız, jetonlarınız dağıtılmıştır. Başka yollarla katılan kullanıcıların talep sürecinden geçmeleri gerekecektir.
 
-### Do I need to claim my tokens?
+### Jetonlarımı talep etmem gerekiyor mu?
 
-Only users that participated through the website [https://polkadot.js.org/apps](https://polkadot.js.org/apps) \(screenshot below\) need to go through the claims process. All other users will have their tokens automatically distributed to them. If enter your Kusama address on [https://karura.subscan.io/](https://karura.subscan.io/) and don't see your tokens, you probably need to go through the claims process.
+Yalnızca [https://polkadot.js.org/apps](https://polkadot.js.org/apps) \(aşağıdaki ekran görüntüsü\) web sitesi aracılığıyla katılan kullanıcıların hak talepleri sürecinden geçmesi gerekir. Diğer tüm kullanıcıların jetonları kendilerine otomatik olarak dağıtılacaktır. [https://karura.subscan.io/](https://karura.subscan.io/) adresine Kusama adresinizi girip jetonlarınızı görmüyorsanız, muhtemelen talep sürecinden geçmeniz gerekir.
 
 ![](../../.gitbook/assets/image%20%2813%29.png)
 
-### How do I claim my tokens?
+### Jetonlarımı nasıl talep ederim?
 
-We have created the website [https://distribution.acala.network/claim](https://distribution.acala.network/claim) for users to claim their tokens.
+Kullanıcıların jetonlarını talep etmeleri için [https://distribution.acala.network/claim](https://distribution.acala.network/claim) web sitesini oluşturduk.
 
-### **How do I access my tokens?**
+### **Jetonlarıma nasıl erişirim?**
 
-The KAR rewards will be distributed to the Karura address associated with the Kusama address you used to contribute. Polkawallet users can see their KAR tokens by connecting to the Karura network in the Polkawallet app. Polkadot.js browser extension users should go to [https://polkadot.js.org/apps](https://polkadot.js.org/apps) and connect to the Karura network to see their tokens. When doing this, make sure that your Polkadot.js browser extension is set to "allow use on any chain" \(screenshot below\).
+KAR ödülleri, katkıda bulunduğunuz Kusama adresiyle ilişkili Karura adresine dağıtılacaktır. Polkawallet kullanıcıları, Polkawallet uygulamasında Karura ağına bağlanarak KAR tokenlerini görebilirler. Polkadot.js tarayıcı uzantısı kullanıcıları, jetonlarını görmek için [https://polkadot.js.org/apps](https://polkadot.js.org/apps) adresine gitmeli ve Karura ağına bağlanmalıdır. Bunu yaparken, Polkadot.js tarayıcı uzantınızın "herhangi bir zincirde kullanıma izin ver" \(ekran görüntüsü aşağıda\) olarak ayarlandığından emin olun.
 
 ![](../../.gitbook/assets/image%20%2824%29.png)
 
-### Do I need to create a Karura account to claim/receive my tokens?
+### Jetonlarımı talep etmek/almak için bir Karura hesabı oluşturmam gerekir mi?
 
-No. The KAR rewards will be distributed to the Karura address associated with the Kusama address you used to contribute.
+Hayır. KAR ödülleri, katkıda bulunduğunuz Kusama adresiyle ilişkili Karura adresine dağıtılacaktır.
 
-### Why are some of my tokens locked?
+### Simgelerimden bazıları neden kilitli?
 
-30% of your KAR tokens will be immediately unlocked and the remaining 70% will unlock of the duration of the parachain lease. A small portion of your locked tokens will be unlocked with every block \(block times are targeted for every 12 seconds\).
+KAR jetonlarınızın %30'unun kilidi hemen açılacak ve kalan %70'i parachain kiralama süresinin kilidini açacaktır. Kilitli jetonlarınızın küçük bir kısmının kilidi her blokta açılacaktır \(blok süreleri her 12 saniyede bir hedeflenir\).
 
-### I participated through Fearless Wallet but don't see my tokens? What happened?
+### Fearless Wallet ile katıldım ama jetonlarımı görmüyor musun? Ne oldu?
 
-Your KAR tokens are in your account, but the Fearless UI needs to be updated in order for you to see them. You can check with the Fearless team on the timing of that update. In the meantime, you can also export your mnemonic seed from Fearless to Polkawallet or the Polkadot.js browser extension. If you can't remember your mnemonic seed from Fearless, open the app and go to Settings &gt; Account &gt; \(i\) &gt; Export Account &gt; Mnemonic Passphrase. 
+KAR jetonlarınız hesabınızda, ancak onları görebilmeniz için Fearless UI'nin güncellenmesi gerekiyor. Bu güncellemenin zamanlamasını Fearless ekibine danışabilirsiniz. Bu arada, anımsatıcı tohumunuzu Fearless'tan Polkawallet'e veya Polkadot.js tarayıcı uzantısına da aktarabilirsiniz. Fearless'tan anımsatıcı tohumunuzu hatırlayamıyorsanız, uygulamayı açın ve Ayarlar &gt; Hesap &gt; \(i\) &gt; Hesabı Dışa Aktar &gt; Anımsatıcı Parola.
 
-### Can I send my KAR to another address?
+### KAR'ımı başka bir adrese gönderebilir miyim?
 
-No. Transfers have not yet been enabled but are part of our launch process. You can track the launch progress at [https://aca.la/karura-roadmap](https://aca.la/karura-roadmap).
+Hayır. Aktarımlar henüz etkinleştirilmemiştir ancak lansman sürecimizin bir parçasıdır. Lansman ilerlemesini [https://aca.la/karura-roadmap](https://aca.la/karura-roadmap) adresinden takip edebilirsiniz.
 
-### I participated through an exchange, where are my tokens?
+### Bir değişime katıldım, jetonlarım nerede?
 
-Contact your exchange to find out. We've distributed the KAR rewards to the participating exchanges. It is up to them to distribute to your exchange account.
+Öğrenmek için borsanızla iletişime geçin. KAR ödüllerini katılımcı borsalara dağıttık. Borsa hesabınıza dağıtmak onlara kalmış.
 
-### What is the price of the KAR token?
+### KAR jetonunun fiyatı nedir?
 
-The price will be defined by the open market after the Karura launch.
+Fiyat, Karura lansmanından sonra açık pazar tarafından belirlenecek.
 
-### **What is the KAR token supply?**
+### **KAR belirteci arzı nedir?**
 
-There are 100,000,000 KAR tokens.
+100.000.000 KAR jetonu var.
 
-## **How to Participate**
+## **Nasıl katılacağım**
 
-### **Is Ledger compatible with the crowdloan?**
+### **Ledger kitle kredisi ile uyumlu mu?**
 
-No. Check the ways to participate here: [Crowdloan Ways to Participate](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
+Hayır. Katılmanın yollarını buradan kontrol edin: [Crowdloan Ways to Participate](https://wiki.acala.network/karura/crowdloan#3-2-ways-to-participate)
 
-### Do referrals work if I'm participating through an exchange?
+### Bir değişime katılırsam tavsiyeler işe yarar mı?
 
-Exchanges may have different promotion schemes. The following exchanges will be supporting Karura crowdloan. Please contact them to find out.
+Borsaların farklı promosyon şemaları olabilir. Aşağıdaki borsalar Karura kitle kredisini destekleyecek. Lütfen öğrenmek için onlarla iletişime geçin.
 
 * Kraken
-* OKEx
+* Tamam
 * Kucoin
 * Huobi \(TBD\)
 
-### **How long will my tokens be locked if I participate in the crowdloan?**
+### **Toplu krediye katılırsam jetonlarım ne kadar süreyle kilitlenir?**
 
-Your KSM tokens will be locked for the full duration of Karura’s parachain lease, which is 48 weeks since the launch of the Karura network.
+KSM jetonlarınız, Karura ağının başlatılmasından bu yana 48 hafta olan Karura'nın parachain kiralamasının tam süresi boyunca kilitlenecektir.
 
-### **Will my KSM be returned after the parachain lease ends?**
+### **KSM'm parachain kiralaması sona erdikten sonra iade edilecek mi?**
 
-Yes, your KSM tokens will be automatically returned to you when the parachain lease ends.
+Evet, parachain kiralaması sona erdiğinde KSM jetonlarınız otomatik olarak size iade edilecektir.
 
-Karura never has custody of your KSM tokens. Your KSM tokens are bonded to the crowdloan module, which lives on the Kusama Relay Chain, and remain visible within your wallet.
+Karura, KSM jetonlarınızın velayetine asla sahip değildir. KSM jetonlarınız, Kusama Relay Chain'de yaşayan kitle kredisi modülüne bağlanır ve cüzdanınızda görünür halde kalır.
 
-### **Can I withdraw my KSM from the crowdloan?**
+### **KSM'mi kitle kredisinden çekebilir miyim?**
 
-All submissions to the crowdloan module are final and cannot be withdrawn. You will automatically receive your funds at the end of the parachain lease.
+Kitle kredisi modülüne yapılan tüm gönderimler nihaidir ve geri alınamaz. Parachain kiralamasının sonunda paranızı otomatik olarak alacaksınız.
 
-### **Can I earn KSM staking rewards while my KSM are locked?**
+### **KSM'm kilitliyken KSM staking ödülleri kazanabilir miyim?**
 
-No. KSM contributed to the crowdloan are locked on the Kusama Relay Chain. You will however receive KAR tokens based on your contribution, once Karura wins the auction and launches mainnet.
+Hayır. KSM, Kusama Aktarma Zinciri'nde kitle kredisine katkıda bulundu. Bununla birlikte, Karura müzayedeyi kazandığında ve ana ağı başlattığında, katkınıza bağlı olarak KAR jetonları alacaksınız.
 
-## KAR Tokens
+## KAR Jetonları
 
-### **What is the purpose of the KAR token?**
+### **KAR belirtecinin amacı nedir?**
 
-The KAR token serves three key functions:
+KAR belirteci üç temel işleve hizmet eder:
 
-* The foundation of governance of Karura
-* Proof-of-liveness of the network \(rewards for collators\)
-* KAR as utility token to pay fees for various network activities
+* Karura yönetiminin temeli
+* Ağın canlılık kanıtı \(düzenleyiciler için ödüller\)
+* Çeşitli ağ etkinlikleri için ücret ödemek için hizmet belirteci olarak KAR
 
-### **How many KAR tokens will be distributed in the crowdloan?**
+### **Kaç KAR jetonu dağıtılacak
 
-11 million KAR tokens, which is equivalent to 11% of the token supply, will be distributed to contributors of the crowdloan module.
+kitle kredisinde kullanıldı mı?**
 
-### Is there a vesting period on KAR tokens?
+Token arzının %11'ine eşdeğer olan 11 milyon KAR jetonu, kitle kredisi modülüne katkıda bulunanlara dağıtılacak.
 
-Yes. Upon receipt of your KAR tokens, 30% will be unlocked and transferrable, while the remaining 70% will be vested and gradually unlocked over the lease period. However, the full balance can be used to participate in governance.
+### KAR jetonlarında hak kazanma süresi var mı?
 
-### **Will I receive KAR tokens for participating in the testnet?**
+Evet. KAR jetonlarınızı aldıktan sonra, %30'unun kilidi açılacak ve devredilebilecek, kalan %70'i ise kiralanacak ve kiralama süresi boyunca kademeli olarak açılacaktır. Ancak, tam bakiye yönetime katılmak için kullanılabilir.
 
-No.
+### **Test ağına katıldığım için KAR jetonları alacak mıyım?**
 
-## **Accessing Your KAR Tokens**
+Numara.
 
-### **Is KAR a stablecoin?**
+## **KAR Jetonlarınıza Erişim**
 
-No. The Karura Dollar \(kUSD\) is a stablecoin. KAR is the native token of the Karura network.
+### **KAR bir sabit para mı?**
 
-**Didn't find the answer? Ask our support team: support@acala.network**
+Hayır. Karura Doları \(kUSD\) bir sabit paradır. KAR, Karura ağının yerel simgesidir.
 
+**Cevabı bulamadınız mı? Destek ekibimize sorun: support@acala.network**
