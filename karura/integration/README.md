@@ -1,11 +1,10 @@
-# Integration Guide
+# Entegrasyon Kılavuzu
 
-Karura is a parachain of the Kusama Relay chain, with all of its network security and consensus provided by Kusama's Validator set. As a [Substrate](https://www.substrate.io/)-based chain, most of Karura's integration points are the same as Kusama and Polkadot. As a parachain specifically though, the key differences will be outlined in this document. 
+Karura, Kusama'nın Validator seti tarafından sağlanan tüm ağ güvenliği ve fikir birliği ile Kusama Relay zincirinin bir para zinciridir. [Substrate](https://www.substrate.io/) tabanlı bir zincir olarak, Karura'nın entegrasyon noktalarının çoğu Kusama ve Polkadot ile aynıdır. Özellikle bir parachain olarak, temel farklılıklar bu belgede özetlenecektir.
 
-This guide contains the following sections:
+Bu kılavuz aşağıdaki bölümleri içerir:
 
-1. [Protocol Info](protocol-info.md)
-2. [Networks](networks.md)
-3. [Run a Full Node](full-node.md)
-4. [Run a Collator Node](collator.md)
-
+1. [Protokol Bilgisi](protokol-info.md)
+2. [Ağlar](networks.md)
+3. [Tam Düğüm Çalıştırın](ful-node.md)
+4. [Bir Harmanlayıcı Düğümü Çalıştırın](collator.md)
