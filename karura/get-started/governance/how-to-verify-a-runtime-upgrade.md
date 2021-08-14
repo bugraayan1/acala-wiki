@@ -1,47 +1,46 @@
-# How to Verify a Runtime Upgrade
+# Çalışma Zamanı Yükseltmesi Nasıl Doğrulanır
 
-This guide uses the runtime upgrade release 1.1.3 as an example.
+Bu kılavuz, örnek olarak çalışma zamanı yükseltme sürümü 1.1.3'ü kullanır.
 
-Once the upgrade is proposed, you shall see it on the [Polkadot App - Karura parachain - Democracy section](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-2.aca-api.network%2Fws#/democracy).
+Yükseltme önerildiğinde, [Polkadot App - Karura parachain - Democracy bölümünde](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-2) göreceksiniz. aca-api.network%2Fws#/democracy).
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-14-at-10.22.16-pm.png)
 
-## Upgrade Preimage Info
+## Ön Görüntü Bilgisini Yükselt
 
-Expand the proposal, and find the Preimage info.
+Teklifi genişletin ve Ön Görüntü bilgilerini bulun.
 
-* Preimage: `parachainSystem.authorizeUpgrade(0xd9660e7d73163f7b2e1591c08c60e68f4b47cb85dcba54d55c53b9573876f55e)`  
-* Hash: `0x4f8bf2c02c5a1e8cdcf7a94dabf2805c563c46a87876c684c5d79ffb745db115`
+* Ön görüntü: `parachainSystem.authorizeUpgrade(0xd9660e7d73163f7b2e1591c08c60e68f4b47cb85dcba54d55c53b9573876f55e)`
+* Karma: `0x4f8bf2c02c5a1e8cdcf7a94dabf2805c563c46a87876c684c5d79ffb745db115'
 
-## Verify against code
+## Kodla doğrulama
 
-In the discussion post of the proposal, it shall provide the release tag, runtime WASM file and other necessary information for others to verify it against the preimage proposed.
+Teklifin tartışma gönderisinde, yayın etiketini, çalışma zamanı WASM dosyasını ve diğerlerinin bunu önerilen ön görüntüye göre doğrulaması için gerekli diğer bilgileri sağlayacaktır.
 
-* Release page: [https://github.com/AcalaNetwork/Acala/releases/tag/1.1.3](https://github.com/AcalaNetwork/Acala/releases/tag/1.1.3)
-* Runtime Wasm: [https://gateway.pinata.cloud/ipfs/QmTrUJragkgGrp3eNyun7n7p5zT8MFLE3s87o3ZJSyj4wf](https://gateway.pinata.cloud/ipfs/QmTrUJragkgGrp3eNyun7n7p5zT8MFLE3s87o3ZJSyj4wf)
+* Yayın sayfası: [https://github.com/AcalaNetwork/Acala/releases/tag/1.1.3](https://github.com/AcalaNetwork/Acala/releases/tag/1.1.3)
+* Çalışma Zamanı Wasm: [https://gateway.pinata.cloud/ipfs/QmTrUJragkgGrp3eNyun7n7p5zT8MFLE3s87o3ZJSyj4wf](https://gateway.pinata.cloud/ipfs/QmTrUJragkgGrp3eNyun7n7p5sySwf)
 
-### Take the following step to verify
+### Doğrulamak için aşağıdaki adımı uygulayın
 
-#### 1. Build your own Wasm Runtime for the release
+#### 1. Sürüm için kendi Wasm Runtime'ınızı oluşturun
 
-* srtool is used to build wasm
-  * More about srtool:
+* srtool wasm oluşturmak için kullanılır
+  * srtool hakkında daha fazlası:
     * [https://www.chevdor.com/post/2019/12/06/srtool/](https://www.chevdor.com/post/2019/12/06/srtool/)
     * [https://github.com/paritytech/srtool](https://github.com/paritytech/srtool)
-* follow these steps to build
-  * Install Docker
+* inşa etmek için bu adımları izleyin
+  * Docker'ı yükleyin
     * [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
-  * Clone Acala repo
-    * `git clone https://github.com/AcalaNetwork/Acala.git`
-  * Checkout release branch
-    * `git checkout release-karura-1.1.3`
-  * Build with srtool
-    * `make srtool-build-wasm-karur`
-  * Wait for compiling done and your wasm is built
+  * Klon Acala deposu
+    * `git klonu https://github.com/AcalaNetwork/Acala.git`
+  * Ödeme sürümü şubesi
+    * `git checkout yayın-karura-1.1.3`
+  * srtool ile oluşturun
+    * `srtool-build-wasm-karur yap`
+  * Derlemenin tamamlanmasını bekleyin ve wasm'iniz oluşturuldu
 
-#### 2. Generate hash & compare
+#### 2. Karma oluştur ve karşılaştır
 
-In the `Developer - Extrinsics` tab, use the following and upload the wasm to generate the call hash. Compare this with the preimage hash proposed. 
+'Geliştirici - Dışsal Bilgiler' sekmesinde, aşağıdakini kullanın ve çağrı karmasını oluşturmak için wasm'yi yükleyin. Bunu önerilen preimage hash ile karşılaştırın.
 
 ![](../../../.gitbook/assets/image%20%2826%29.png)
-
