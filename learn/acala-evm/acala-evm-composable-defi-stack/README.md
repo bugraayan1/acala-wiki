@@ -1,16 +1,16 @@
-# Acala EVM
+#Acala EVM
 
-## Acala EVM - Code Name: Project Bodhi
+## Acala EVM - Kod Adı: Proje Bodhi
 
-Acala and all Substrate-based chains are fundamentally different from Ethereum. If we are trying to emulate an Ethereum node, we will suffer from the worst of both worlds. It will be a step backward for us to inherit all the restrictions from a legacy blockchain platform.
+Acala ve tüm Substrate tabanlı zincirler temelde Ethereum'dan farklıdır. Bir Ethereum düğümünü taklit etmeye çalışıyorsak, her iki dünyanın da en kötüsünden muzdarip olacağız. Eski bir blok zinciri platformundan tüm kısıtlamaları devralmak bizim için geriye doğru bir adım olacak.
 
-We see EVM as one part of the Acala/Substrate/Polkadot, together the Acala network will provide a categorically different experience. Acala EVM will try to achieve these design goals
+EVM'yi Acala/Substrate/Polkadot'un bir parçası olarak görüyoruz, Acala ağı birlikte kategorik olarak farklı bir deneyim sağlayacaktır. Acala EVM bu tasarım hedeflerine ulaşmaya çalışacak
 
-1. Enable users to have a complete full-stack Acala \(and Substrate\) experience seamlessly with a single wallet.
-2. Enable protocol composability for EVM and runtime
-3. Enable developers to develop and deploy DApps on Acala with great tooling support
+1. Kullanıcıların tek bir cüzdan ile eksiksiz bir tam yığın Acala \(ve Substrate\) deneyimine sorunsuzca sahip olmalarını sağlayın.
+2. EVM ve çalışma zamanı için protokol birleştirilebilirliğini etkinleştirin
+3. Geliştiricilerin harika araç desteğiyle DApp'leri Acala'da geliştirmelerini ve dağıtmalarını sağlayın
 
-The Acala EVM delivers the following benefits and features from the best of both Ethereum and Substrate platforms:
+Acala EVM, hem Ethereum hem de Substrate platformlarının en iyilerinden aşağıdaki avantajları ve özellikleri sunar:
 
 {% page-ref page="composable-defi-stack.md" %}
 
@@ -24,7 +24,6 @@ The Acala EVM delivers the following benefits and features from the best of both
 
 {% page-ref page="upgradable-contracts.md" %}
 
-{% page-ref page="compatible-toolings.md" %}
+{% page-ref page="uyumlu-toolings.md" %}
 
 {% page-ref page="no-dust-account.md" %}
-
