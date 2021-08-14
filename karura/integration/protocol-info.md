@@ -1,48 +1,47 @@
-# Protocol Info
+# Protokol Bilgisi
 
-## Tokens
+## Jetonlar
 
-* **Token decimals:**
+* **Jeton ondalık sayıları:**
   * Karura \(KAR\): 12
   * LKSM: 12
-  * Karura Dollar \(kUSD\): 12
-* **Base unit:** “Plank"
-* **Balance type:**
-* **Total Fixed Supply of KAR:** 100,000,000
+  * Karura Doları \(kUSD\): 12
+* **Temel birim:** "Tahta"
+* **Bakiye türü:**
+* **KAR'ın Toplam Sabit Arzı:** 100.000.000
 
-## Account
+## Hesap
 
-### Address Format
+### Adres Biçimi
 
-Karura uses the [SS58 \(Substrate\) address format](https://github.com/paritytech/substrate/wiki/External-Address-Format-%28SS58%29). Relevant SS58 prefixes are:
+Karura, [SS58 \(Substrate\) adres biçimini](https://github.com/paritytech/substrate/wiki/External-Address-Format-%28SS58%29) kullanır. İlgili SS58 önekleri şunlardır:
 
-* **Acala**: 10 \([ss58 registry details](https://github.com/paritytech/substrate/blob/df4a58833a650cf37fc97764bf6c9314435e3cb2/ss58-registry.json#L103-L111)\)
-* **Karura**: 8 \([ss58 registry details](https://github.com/paritytech/substrate/blob/df4a58833a650cf37fc97764bf6c9314435e3cb2/ss58-registry.json#L85-L92)\)
+* **Acala**: 10 \([ss58 kayıt ayrıntıları](https://github.com/paritytech/substrate/blob/df4a58833a650cf37fc97764bf6c9314435e3cb2/ss58-registry.json#L103-L111)\)
+* **Karura**: 8 \([ss58 kayıt ayrıntıları](https://github.com/paritytech/substrate/blob/df4a58833a650cf37fc97764bf6c9314435e3cb2/ss58-registry.json#L85-L92)\)
 * **Mandala**: 42
 
-### Existential Deposit
+### Varoluşsal Mevduat
 
-Karura uses an _existential deposit_ \(ED\) to prevent dust accounts from bloating state. If an account drops below the ED, it will be removed from this account and be donated to the Treasury. 
+Karura, toz hesaplarının şişmesini önlemek için bir _varoluşsal birikim_ \(ED\) kullanır. Bir hesap ED'nin altına düşerse, bu hesaptan kaldırılır ve Hazine'ye bağışlanır.
 
-ED of native token KAR is configured in the runtime. Non-native tokens \(KSM, kUSD, BTC etc\) can be queried via SDK. The amount of ED can only be decreased, not increased, therefore it often starts with a higher number.
+Yerel belirteç KAR'nin ED'si çalışma zamanında yapılandırılır. Yerel olmayan tokenler \(KSM, kUSD, BTC vb\) SDK aracılığıyla sorgulanabilir. ED miktarı artırılamaz, yalnızca azaltılabilir, bu nedenle genellikle daha yüksek bir sayı ile başlar.
 
-`transfer` and `deposit` in `pallet_balances` and `orml_tokens` will check the ED of the receiver account. A transaction may fail due to not meeting ED requirements, a typical one would be a user is swapping token A for token B, where token A balance no longer meets ED requirements. A front-end DApp shall perform checks and prompt user for such incidents. 
+"pallet_balances" ve "orml_tokens" içindeki "transfer" ve "deposit", alıcı hesabının ED'sini kontrol edecektir. ED gereksinimlerini karşılamadığı için bir işlem başarısız olabilir, tipik bir kullanıcı, simge A bakiyesinin artık ED gereksinimlerini karşılamadığı durumda, simge B için simge A'yı değiştirir. Bir ön uç DApp, bu tür olaylar için kontroller yapacak ve kullanıcıyı uyaracaktır.
 
-Read more on ED [here](https://github.com/AcalaNetwork/Acala/wiki/A.-Existential-Deposit).
+ED hakkında daha fazla bilgiyi [buradan](https://github.com/AcalaNetwork/Acala/wiki/A.-Existential-Deposit) okuyun.
 
-## Transaction Fees
+## İşlem ücretleri
 
-Karura uses weight-based fees, unlike gas, are predictable and charged pre-dispatch. See the [transaction fee](https://wiki.acala.network/karura/transaction-fees) page for more info.
+Karura, gazın aksine ağırlığa dayalı ücretler kullanır, tahmin edilebilir ve sevkiyat öncesi ücretlendirilir. Daha fazla bilgi için [işlem ücreti](https://wiki.acala.network/karura/transaction-fees) sayfasına bakın.
 
-## Types
+## Türler
 
-Type buddle [here](https://unpkg.com/browse/@acala-network/type-definitions@0.7.4-19/json/typesBundle.json).
+Buddle [buraya](https://unpkg.com/browse/@acala-network/type-definitions@0.7.4-19/json/typesBundle.json) yazın.
 
-## JS SDK
+## JS SDK'sı
 
 Acala.js: [https://github.com/AcalaNetwork/acala.js](https://github.com/AcalaNetwork/acala.js)
 
-Documentation: [https://github.com/AcalaNetwork/acala.js/wiki](https://github.com/AcalaNetwork/acala.js/wiki)
+Belgeler: [https://github.com/AcalaNetwork/acala.js/wiki](https://github.com/AcalaNetwork/acala.js/wiki)
 
-Please also refer to the [documentation of polkadot.js](https://polkadot.js.org/docs/api/).
-
+Lütfen ayrıca [polkadot.js belgelerine](https://polkadot.js.org/docs/api/) bakın.
