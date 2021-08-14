@@ -1,21 +1,21 @@
 ---
-description: Here is a guide to set up a node and ways to participate in the Acala.
+açıklama: Burada bir düğüm kurma rehberi ve Acala'ya katılmanın yolları var.
 ---
 
-# Mandala Test Network Maintainers Guide
+# Mandala Test Ağı Bakımcıları Kılavuzu
 
-### Full Node
+### Tam Düğüm
 
-Mandala Test Network is a risk-free and value-free playground, purely for testing out functionalities and "explosive" experiments. There is no network value nor rewards. However you are welcome to run a node and join the network, to try it out, prepare for Karura Network \(that will join Kusama with network value\) and Acala Mainnet, or just for the love of it.
+Mandala Test Ağı, yalnızca işlevleri ve "patlayıcı" deneyleri test etmek için risksiz ve değersiz bir oyun alanıdır. Ağ değeri veya ödül yoktur. Bununla birlikte, bir düğümü çalıştırıp ağa katılabilirsiniz, bunu denemek, Karura Network \(Kusama'ya ağ değeriyle katılacak\) ve Acala Mainnet'e hazırlanmak için ya da sadece aşk için.
 
-#### Run a Full Node \(Mandala\)
+#### Tam Düğüm Çalıştırın \(Mandala\)
 
-**Using Docker**
+**Docker'ı kullanma**
 
-Install docker with Linux:  
-`wget -qO- https://get.docker.com/ | sh`
+Docker'ı Linux ile kurun:
+`wget -qO- https://get.docker.com/ | ş'
 
-If you have docker installed, you can use it to start your node without needing to build from the code. Here is the command
+Docker yüklediyseniz, koddan derlemeye gerek kalmadan düğümünüzü başlatmak için kullanabilirsiniz. İşte komut
 
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v node-data:/acala/data acala/acala-node:latest --chain mandala --base-path=/acala/data/01-001 --ws-port 9944 --rpc-port 9933 --port 30333 --ws-external --rpc-external --ws-max-connections 1000 --rpc-cors=all --unsafe-ws-external --unsafe-rpc-external --pruning=archive --name "Name of Telemetry" 
