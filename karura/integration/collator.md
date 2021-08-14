@@ -1,62 +1,61 @@
-# Collator
+# Harmanlayıcı
 
-## Overview
+## Genel Bakış
 
-Collators maintain parachains by collecting parachain transactions from users and producing state transition proofs for Relay Chain validators. In other words, collators maintain parachains by aggregating parachain transactions into parachain block candidates and producing state transition proofs for validators based on those blocks.
+Düzenleyiciler, kullanıcılardan parachain işlemlerini toplayarak ve Relay Chain doğrulayıcıları için durum geçiş kanıtları üreterek parachainleri korur. Başka bir deyişle, derleyiciler, parachain işlemlerini parachain blok adaylarında toplayarak ve bu bloklara dayalı olarak doğrulayıcılar için durum geçiş kanıtları üreterek parachainleri korurlar.
 
-While Karura’s network security and consensus \(nPoS\) are provided by Kusama Relay chain's Validator set, the Collator set of Karura will keep the network alive by collecting parachain transactions for validators to verify them. Unlike validators, collators do not secure the network, a parachain only needs one honest collator to be censorship-resistant.
+Karura'nın ağ güvenliği ve fikir birliği \(nPoS\) Kusama Relay zincirinin Doğrulayıcı seti tarafından sağlanırken, Karura'nın Harmanlayıcı seti, doğrulayıcıların doğrulaması için parachain işlemlerini toplayarak ağı canlı tutacaktır. Doğrulayıcılardan farklı olarak, harmanlayıcılar ağı güvence altına almaz, bir parachain sansüre dayanıklı olması için yalnızca bir dürüst harmanlayıcıya ihtiyaç duyar.
 
-Karura's Collator node maintains a full-node service for the Kusama Realy Chain, and a full-node service for the Karura network. Each service has its own http/ws RPC endpoints, P2P ports etc. The base path of the Kusama full-node service is located inside of the base path of the Karura full-node service.
+Karura'nın Harmanlayıcı düğümü, Kusama Realy Zinciri için tam düğüm hizmeti ve Karura ağı için tam düğüm hizmeti sağlar. Her hizmetin kendi http/ws RPC uç noktaları, P2P bağlantı noktaları vb. vardır. Kusama tam düğüm hizmetinin temel yolu, Karura tam düğüm hizmetinin temel yolunun içinde bulunur.
 
-## Collator Roll Out Plan
+## Derleyici Kullanım Planı
 
-Karura takes a phased approach to roll out the Collator operation. Since Collators are non-security critical operation, a parachain only needs one honest Collator to be censorship-resistant, and more collators are not necessarily good e.g. it will slow down the network, the Collator roll-out plan is designed first-and-foremost to ensure network stability and operation.
+Karura, Harmanlayıcı operasyonunu başlatmak için aşamalı bir yaklaşım benimsiyor. Harmanlayıcılar güvenlik açısından kritik olmayan işlemler olduğundan, bir parachain sansüre dayanıklı olması için yalnızca bir dürüst Harmanlayıcıya ihtiyaç duyar ve daha fazla harmanlayıcı mutlaka iyi değildir; ağı yavaşlatacağından, Harmanlayıcı kullanıma sunma planı her şeyden önce ağ kararlılığını ve çalışmasını sağlamak için tasarlanmıştır.
 
-**Current Phase: Private Collator Set**
+**Geçerli Aşama: Özel Harmanlayıcı Seti**
 
-**Phase 0: Private Collator Set**  
-The Genesis of the Karura network was launched on 23rd June, 2021. Upon genesis, Karura's network security and the consensus is provided by Kusama Relay Chain's nominated Proof-of-Stake \(nPoS\) validators. Just like Statemine \(the common-good asset parachain on Kusama\), Karura's Collators initially will be run by the Acala Foundation, until the Collator software is stable and can be released to the wider community.
+**Aşama 0: Özel Harmanlayıcı Seti**
+Karura ağının Genesis'i 23 Haziran 2021'de başlatıldı. Oluşum üzerine, Karura'nın ağ güvenliği ve fikir birliği, Kusama Relay Chain'in aday gösterilen Proof-of-Stake \(nPoS\) doğrulayıcıları tarafından sağlanır. Statemine \(Kusama'daki ortak yarar para zinciri\) gibi, Karura'nın Harmanlayıcıları, Harmanlayıcı yazılımı kararlı hale gelene ve daha geniş topluluğa yayınlanabilene kadar başlangıçta Acala Vakfı tarafından yürütülecek.
 
-**Phase 1: Authorized Collator Set**  
-Through governance approval, Karura will then open the Collator set to an authorized set of collators. While there are no block rewards nor additional incentives for these authorized collators, they are paid a reasonable rate for their node service provisioning by the Acala Foundation.
+**Aşama 1: Yetkili Harmanlayıcı Seti**
+Yönetim onayı aracılığıyla Karura, daha sonra Harmanlayıcı setini yetkili bir toplayıcı grubuna açar. Bu yetkili derleyiciler için blok ödülü veya ek teşvik bulunmamakla birlikte, Acala Vakfı tarafından düğüm hizmeti sağlamaları için makul bir ücret ödenir.
 
-These collators are known reputable node service providers who have a proven track-record of service levels and demonstrated a deep commitment to the network. It is expected that there will be much chaos and software upgrades during this phase still, and these collators are required to work closely with the core dev team to ensure network stability.
+Bu derleyiciler, kanıtlanmış hizmet seviyeleri geçmişine sahip ve ağa derin bir bağlılık gösteren, bilinen saygın düğüm hizmeti sağlayıcılarıdır. Bu aşamada hala çok fazla kaos ve yazılım güncellemesi olması bekleniyor ve bu ortakların ağ istikrarını sağlamak için çekirdek geliştirme ekibiyle yakın bir şekilde çalışması gerekiyor.
 
-It is expected that the Karura network will maintain such an authorized Collator Set until the network is fully stabilized, the collator staking module and the reward scheme are fully implemented and audited.
+Karura ağının, ağ tamamen stabilize olana, harmanlayıcı stake etme modülü ve ödül planı tamamen uygulanıp denetlenene kadar böyle bir yetkilendirilmiş Harmanlayıcı Setini sürdürmesi beklenmektedir.
 
-**Phase 2: Public Collator Set**  
-Through governance approval, Karura will then enable the permissionless election of Collators and enable collator rewards. Due to the fact that Collators are non-security critical, a parachain only needs a small set of Collators to ensure liveness and censorship-resistance, the reward scheme will reflect this accordingly.
+**Aşama 2: Genel Harmanlayıcı Seti**
+Yönetim onayı sayesinde Karura, daha sonra Harmanlayıcıların izinsiz seçilmesine ve ortak ödüllerinin verilmesine olanak sağlayacak. Harmanlayıcıların güvenlik açısından kritik olmaması nedeniyle, bir parachain canlılığı ve sansür direncini sağlamak için yalnızca küçük bir Harmanlayıcı grubuna ihtiyaç duyar, ödül planı buna göre bunu yansıtacaktır.
 
-You can express interest in becoming a collator/liveness provider for the Karura Network \(and later Acala Network\) by [filling in this form](https://forms.gle/WQesfKVZmJeXov1e9). 
+[Bu formu doldurarak](https://forms.gle/WQesfKVZmJeXov1e9) Karura Ağı \(ve daha sonra Acala Ağı\) için bir derleyici/canlılık sağlayıcısı olmakla ilgilendiğinizi belirtebilirsiniz.
 
-You can subscribe to the [`Node Operator - Announcement`](https://discord.gg/uWSZWsUcEn) channel on our Discord for updates and breaking changes.
+Güncellemeler ve son dakika değişiklikleri için Discord'umuzdaki [`Düğüm Operatörü - Duyuru`](https://discord.gg/uWSZWsUcEn) kanalına abone olabilirsiniz.
 
-## Collator Node
+## Harmanlayıcı Düğümü
 
-### Spec Requirement
+### Özel Gereksinim
 
-Same as [the Kusama validator node requirement](https://guide.kusama.network/docs/mirror-maintain-guides-how-to-validate-kusama/#requirements).
+[Kusama doğrulayıcı düğüm gereksinimi](https://guide.kusama.network/docs/mirror-maintain-guides-how-to-validate-kusama/#requirements) ile aynı.
 
-### Run Node
+### Düğümü Çalıştır
 
-Refer to the [Full Node Guide](full-node.md).
+[Tam Düğüm Kılavuzuna](ful-node.md) bakın.
 
-### Collator Configuration
+### Harmanlayıcı Yapılandırması
 
-#### **Key Management**
+#### **Anahtar yönetimi**
 
-Karura Collator needs Aura session key. RPC `author_rotateKeys` or `author_insertKey` can be used to update session key.
+Karura Harmanlayıcının Aura oturum anahtarına ihtiyacı var. Oturum anahtarını güncellemek için RPC "author_rotateKeys" veya "author_insertKey" kullanılabilir.
 
-#### **Registration**
+#### **Kayıt**
 
-* Karura is currently using the `collectorSelection` pallet from Statemint to handle collator registration. During the authorized Collator set phase, the required candidacy bond will be an unattainably high value to prevent public registration.
-* Authorized providers will need to submit the public key of the Aura session key for the collator.
+* Karura, harmanlayıcı kaydını işlemek için şu anda Statemint'in 'collectorSelection' paletini kullanıyor. Yetkilendirilmiş Harmanlayıcı seti aşamasında, gerekli adaylık bonosu, halka açık kaydı önlemek için ulaşılamayacak kadar yüksek bir değer olacaktır.
+* Yetkili sağlayıcıların, harmanlayıcı için Aura oturum anahtarının genel anahtarını göndermesi gerekecektir.
 
 #### CLI
 
-* `--collator` for the parachain part
-
-### **Example CLI**
+* Parachain kısmı için `--collator`
+### **Örnek CLI**
 
 ```text
 --base-path=/acala/data
