@@ -1,12 +1,9 @@
-# Governance
+# Yönetim
 
-This section provides an overview of the governance process, how to participate in it and how to cast a vote for/against a proposal. 
+Bu bölüm, yönetişim sürecine, bu sürece nasıl katılacağınıza ve bir teklife/önerisine nasıl oy verileceğine ilişkin bir genel bakış sağlar.
 
-* [Governance Overview](governance-overview.md)
-* [Participate in Democracy](participate-in-democracy.md)
-* [How to verify a runtime upgrade](how-to-verify-a-runtime-upgrade.md)
+* [Yönetişime Genel Bakış](governance-overview.md)
+* [Demokrasi'ye Katılın](participate-in-democracy.md)
+* [Çalışma zamanı yükseltmesi nasıl doğrulanır](how-to-to-a-runtime-upgrade.md)
 
-### 
-
-
-
+###
