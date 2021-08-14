@@ -1,8 +1,7 @@
-# Compatible Toolings
+# Uyumlu Takımlar
 
-### **Compatible Developer Tooling**
+### **Uyumlu Geliştirici Araçları**
 
-Acala EVM enables developers to develop, test and deploy DApps with existing tooling support, such as [Remix](https://remix.ethereum.org/) and [Waffle](https://getwaffle.io/). More toolchains will be added as we progress.
+Acala EVM, geliştiricilerin [Remix](https://remix.ethereum.org/) ve [Waffle](https://getwaffle.io/) gibi mevcut araç desteğiyle DApp'ler geliştirmesini, test etmesini ve dağıtmasını sağlar. İlerledikçe daha fazla araç zinciri eklenecek.
 
-Existing Solidity DApps and node.js applications can communicate with Acala nodes with minimum changes. Developers can use Acala’s web3 provider [bodhi.js](https://github.com/AcalaNetwork/bodhi.js) to interact with an Acala node seamlessly.
-
+Mevcut Solidity DApp'leri ve node.js uygulamaları, minimum değişiklikle Acala düğümleri ile iletişim kurabilir. Geliştiriciler, Acala düğümüyle sorunsuz bir şekilde etkileşim kurmak için Acala'nın web3 sağlayıcısını [bodhi.js](https://github.com/AcalaNetwork/bodhi.js) kullanabilir.
