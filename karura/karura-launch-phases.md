@@ -1,104 +1,99 @@
-# Karura Launch Phases
+# Karura Lansman Aşamaları
 
-Karura network has a phased launch plan. Keep up-to-date with the roll-out plan by viewing this [live roadmap](https://aca.la/karura-roadmap). _**Expect chaos & unannounced changes**_ 🔥
+Karura ağının aşamalı bir fırlatma planı var. Bu [canlı yol haritasını](https://aca.la/karura-roadmap) görüntüleyerek kullanıma sunma planından haberdar olun. _**Kaos ve habersiz değişiklikler bekleyin**_ 🔥
 
-**Current Phase: Technical Verification & Runtime Upgrade**
+**Mevcut Aşama: Teknik Doğrulama ve Çalışma Zamanı Yükseltmesi**
 
-## 🚀 \(Done\) Karura Genesis - Launch
+## 🚀 \(Bitti\) Karura Genesis - Başlat
 
-The Genesis block of the Karura network was launched on 23rd June, 2021, as a Proof of Authority network. Governance was restricted to a single super-user \(sudo\) key, which is held by the Acala Foundation to issue transactions and upgrades to resolve issues and completes the launch process. 
+Karura ağının Genesis bloğu, 23 Haziran 2021'de bir Yetki Kanıtı ağı olarak başlatıldı. Yönetişim, sorunları çözmek için işlemler ve yükseltmeler yapmak için Acala Vakfı tarafından tutulan ve başlatma sürecini tamamlayan tek bir süper kullanıcı \(sudo\) anahtarıyla sınırlandırıldı.
 
-Since genesis, Karura's network security is provided by Kusama's Nominated Proof of Stake \(NPoS\) Validators upon launch. Karura's Collators will be provided by node service partners at this stage.
+Ortaya çıktığından beri, Karura'nın ağ güvenliği, Kusama'nın Nominated Proof of Stake \(NPoS\) Validators tarafından piyasaya sürüldükten sonra sağlanır. Karura'nın Toplayıcıları, bu aşamada düğüm hizmeti ortakları tarafından sağlanacaktır.
 
-**Karura parachain is available on** [**Subscan**](https://karura.subscan.io/) **&** [**Polkadot App**](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura.api.onfinality.io%2Fpublic-ws#/explorer)\*\*\*\*
+**Karura parachain** [**Subscan**](https://karura.subscan.io/) **&** [**Polkadot App**](https://polkadot.js. org/apps/?rpc=wss%3A%2F%2Fkarura.api.onfinality.io%2Fpublic-ws#/explorer)\*\*\*\*
 
-## 🏒 \(Done\) **Finalize KAR Distribution**
+## 🏒 \(Bitti\) **KAR Dağıtımını Tamamlayın**
 
-**You can view KAR distributions are available** [**here**](https://distribution.acala.network/)**.**
+**KAR dağıtımlarını görebilirsiniz** [**buradan**](https://distribution.acala.network/)**.**
 
-* [x] Testnet campaign rewards & airdrops
-* [x] "Build Acala \#1" rewards
-* [x] Karura crowdloan
-* [x] Other events
+* [x] Testnet kampanya ödülleri ve airdrop'lar
+* [x] "Acala İnşa \#1" ödülleri
+* [x] Karura kitle kredisi
+* [x] Diğer etkinlikler
 
-## 🕵️ \(Done\) Tech Verification & Runtime Upgrade 
+## 🕵️ \(Bitti\) Teknik Doğrulama ve Çalışma Zamanı Yükseltmesi
 
-Karura will perform a set of tests and verifications to ensure the network is operational
+Karura, ağın çalışır durumda olduğundan emin olmak için bir dizi test ve doğrulama yapacak.
 
-* [x] Collators are producing blocks as expected
-* [x] Kusama is verifying blocks from Karura as expected
-* [x] Runtime upgrade to fix any issues
-* [x] Block time is stable
-* [x] p2p connectivity is good
-* [x] RPC node availability is good
+* [x] Sıralayıcılar beklendiği gibi blok üretiyor
+* [x] Kusama, beklendiği gibi Karura'dan gelen blokları doğruluyor
+* [x] Herhangi bir sorunu çözmek için çalışma zamanı yükseltmesi
+* [x] Blok süresi sabittir
+* [x] p2p bağlantısı iyi
+* [x] RPC düğüm kullanılabilirliği iyi
 
-## 🤹 \(WIP\) Enable KSM Transfer from Kusama to Karura
+## 🤹 \(WIP\) Kusama'dan Karura'ya KSM Transferini Etkinleştir
 
-Transfer KSM from Kusama Relaychain to Karura parachain and back via **xtoken** will be enabled. However transfer within the Karura parachain will still be disabled at this stage.
+KSM'yi Kusama Relaychain'den Karura parachain'e aktarın ve **xtoken** aracılığıyla geri alın. Ancak Karura parachain içindeki aktarım bu aşamada hala devre dışı bırakılacaktır.
 
-## 🎯 \(WIP\) Distribute KAR
+## 🎯 \(WIP\) KAR'ı Dağıt
 
-Batch distribution of KAR to 
+KAR'ın toplu dağıtımı
 
-* [x] Testnet campaign rewards & airdrops
-* [x] "Build Acala \#1" rewards
-* [x] Karura crowdloan participants
-* [ ] Other events 
+* [x] Testnet kampanya ödülleri ve airdrop'lar
+* [x] "Acala İnşa \#1" ödülleri
+* [x] Karura kitle kredisi katılımcıları
+* [ ] Diğer olaylar
 
-If you have participated via exchanges or custodial agencies, the rewards will be distributed to you by these exchange and custodial agencies, please contact them directly for distribution schedule. 
+Borsalar veya saklama kuruluşları aracılığıyla katıldıysanız, ödüller bu takas ve saklama kuruluşları tarafından size dağıtılacaktır, lütfen dağıtım programı için doğrudan onlarla iletişime geçin.
 
-## 🎁 \(WIP\) Claim KAR
+## 🎁 \(WIP\) KAR Talebi
 
-**You can check whether your KAR rewards need to be claimed** [**here**](https://distribution.acala.network/)**.**
+**KAR ödüllerinizin talep edilmesi gerekip gerekmediğini kontrol edebilirsiniz** [**buradan**](https://distribution.acala.network/)**.**
 
-If you have participated via exchanges or custodial agencies, the rewards will be distributed to you by these exchange and custodial agencies, please contact them directly for the distribution schedule. 
+Borsalar veya saklama kuruluşları aracılığıyla katıldıysanız, ödüller bu takas ve saklama kuruluşları tarafından size dağıtılacaktır, lütfen dağıtım programı için doğrudan onlarla iletişime geçin.
 
-If you participated in Karura ****crowdloan via the ****Polkadot web app directly, or via non-custodial wallets other than Polkawallet and Fearless wallet, you will need to agree to our T&C by completing a claim process for KAR. The Claim KAR website will be released once it's ready.
+Karura ****crowdloan'a doğrudan ****Polkadot web uygulaması aracılığıyla veya Polkawallet ve Fearless cüzdan dışındaki vesayetsiz cüzdanlar aracılığıyla katıldıysanız, KAR için bir talep sürecini tamamlayarak Şartlar ve Koşullarımızı kabul etmeniz gerekir. Claim KAR web sitesi hazır olduğunda yayınlanacaktır.
 
-## ✋ \(WIP\) Council Governance + Democracy
+## ✋ \(WIP\) Konsey Yönetimi + Demokrasi
 
-After the chain had been running stably with the collator set, the sudo key will perform a runtime upgrade and enable appointed Councilors and democracy. Other councils including Financial Council, Technical Council, and Liquid Staking Council, as well as public referenda will also be enabled.  
+Zincir, harmanlayıcı seti ile kararlı bir şekilde çalıştıktan sonra, sudo anahtarı bir çalışma zamanı yükseltmesi gerçekleştirecek ve atanmış Konsey Üyelerini ve demokrasiyi etkinleştirecektir. Mali Konsey, Teknik Konsey ve Liquid Stake Konseyi gibi diğer konseylerin yanı sıra halk referandumları da etkinleştirilecek.
 
-## 💥 Remove Sudo
+## 💥 Sudo'yu Kaldır
 
-Sudo module will be removed via a runtime upgrade, and the Karura network will be governed by on-chain governance and token holders hereafter. 
+Sudo modülü, bir çalışma zamanı yükseltmesiyle kaldırılacak ve Karura ağı bundan sonra zincir üstü yönetişim ve belirteç sahipleri tarafından yönetilecektir.
 
-## 🚃 Enable Balance Transfers
+## 🚃 Bakiye Transferlerini Etkinleştir
 
-Balance transfers within the Karura network are restricted until this point. 
+Karura ağı içindeki bakiye transferleri bu noktaya kadar kısıtlanmıştır.
 
-## 👩‍🌾 Core DeFi Functionalities
+## 👩‍🌾 Temel DeFi İşlevleri
 
-More details will be provided as we launch each DeFi protocol. 
+Her bir DeFi protokolünü başlattığımızda daha fazla ayrıntı sağlanacaktır.
 
 * [ ] Karura DeX
-  * [ ] Enable DeX
-  * [ ] Enable KSM/KAR pair
-    * [ ] Start liquidity provisioning
-    * [ ] Start liquidity program
-    * [ ] Trading begins
-  * [ ] KSM/kUSD pair
-  * [ ] KAR/kUSD pair
-  * [ ] LKSM/kUSD pair
+  * [ ] DeX'i Etkinleştir
+  * [ ] KSM/KAR çiftini etkinleştir
+    * [ ] Likidite sağlamayı başlat
+    * [ ] Likidite programını başlat
+    * [ ] Ticaret başlar
+  * [ ] KSM/kUSD çifti
+  * [ ] KAR/kUSD çifti
+  * [ ] LKSM/kUSD çifti
   * [ ] ...
-* [ ] kUSD Borrowing
-  * [ ] Enable kUSD stablecoin protocol
-  * [ ] Enable KSM collateral \(capped\)
-    * [ ] Start liquidity program
-  * [ ] Enable LSKM collateral
+* [ ] kUSD Borçlanma
+  * [ ] kUSD stabilcoin protokolünü etkinleştir
+  * [ ] KSM teminatını etkinleştir \(sınırlı\)
+    * [ ] Likidite programını başlat
+  * [ ] LSKM teminatını etkinleştir
   * [ ] ...
-* [ ] Liquid KSM
-  * [ ] Enable "Canary" Liquid KSM
-    * [ ] mint LKSM - withdraw is only available upon the network upgrading to trustless Liquid Staking
-    * [ ] KSM staking reward accrues 
-    * [ ] LKSM as collateral
-  * [ ] Liquid Staking upgrade
+* [ ] Sıvı KSM
+  * [ ] "Canary" Liquid KSM'yi etkinleştir
+    * [ ] mint LKSM - para çekme işlemi yalnızca ağda güvenilmez Liquid Staking'e yükseltildiğinde kullanılabilir
+    * [ ] KSM bahis ödülü tahakkuk eder
+    * [ ] Teminat olarak LKSM
+  * [ ] Liquid Staking yükseltmesi
 * [ ] USDT
-  * [ ] as collateral
-  * [ ] as trading pair
-* [ ] Enable Acala EVM
-
-
-
-
-
+  * [ ] teminat olarak
+  * [ ] işlem çifti olarak
+* [ ] Acala EVM'yi Etkinleştir
