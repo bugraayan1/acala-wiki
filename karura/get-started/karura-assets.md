@@ -1,37 +1,36 @@
-# Karura Assets
+# Karura Varlıkları
 
 ## KAR
 
-KAR is the native token of Karura network in a similar way that BTC is the native token of Bitcoin or DOT is the native token of the Polkadot network.
+KAR, BTC'nin Bitcoin'in yerel simgesi veya DOT'un Polkadot ağının yerel simgesi olması gibi, Karura ağının yerel simgesidir.
 
-### KAR Units
+### KAR Birimleri
 
-| Unit | Decimal Place | Example |
+| Birim | Ondalık Basamak | Örnek |
 | :--- | :--- | :--- |
-| Plank | 0 | 0.000000000001 |
-| MicroKAR \(uKAR\) | 6 | 0.000001000000 |
-| MilliKAR \(mKAR\) | 9 | 0.001000000000 |
+| tahta | 0 | 0.000000000001 |
+| MikroKAR \(uKAR\) | 6 | 0.000001000000 |
+| MilliKAR \(mKAR\) | 9 | 0,001000000000 |
 | KAR | 12 | 1.000000000000 |
 
-### Karura Dollar \(kUSD\) Units
+### Karura Doları \(kUSD\) Birimleri
 
-| Unit | Decimal Place | Example |
+| Birim | Ondalık Basamak | Örnek |
 | :--- | :--- | :--- |
-| Plank | 0 | 0.000000000001 |
-| MicroKAR \(ukUSD\) | 6 | 0.000001000000 |
-| MilliKAR \(mkUSD\) | 9 | 0.001000000000 |
+| tahta | 0 | 0.000000000001 |
+| MicroKAR \(İngiltereUSD\) | 6 | 0.000001000000 |
+| MilliKAR \(mkUSD\) | 9 | 0,001000000000 |
 | kUSD | 12 | 1.000000000000 |
 
-### Liquid KSM \(LKSM\) Units
+### Sıvı KSM \(LKSM\) Birimleri
 
-| Unit | Decimal Place | Example |
+| Birim | Ondalık Basamak | Örnek |
 | :--- | :--- | :--- |
-| Plank | 0 | 0.000000000001 |
+| tahta | 0 | 0.000000000001 |
 | MicroKAR \(uLKSM\) | 6 | 0.000001000000 |
-| MilliKAR \(mLSKM\) | 9 | 0.001000000000 |
+| MilliKAR \(mLSKM\) | 9 | 0,001000000000 |
 | LKSM | 12 | 1.000000000000 |
 
-## KAR Utility
+## KAR Yardımcı Programı
 
-KAR is the utility token that powers the Karura network. Find more details on the [KAR token website.](https://acala.network/karura/token)
-
+KAR, Karura ağına güç sağlayan yardımcı program belirtecidir. [KAR jetonu web sitesinde](https://acala.network/karura/token) daha fazla ayrıntı bulun.
