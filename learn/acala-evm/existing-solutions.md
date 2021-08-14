@@ -1,20 +1,19 @@
-# Existing Solutions
+# Mevcut Çözümler
 
-Current Substrate EVM compatibility solution i.e. [Frontier](https://github.com/paritytech/frontier) emulates the Ethereum node. It aims to implement the full set of Ethereum RPC and to emulate the Ethereum block production process. This allows existing Ethereum tools such as Metamask and Remix to work with a Frontier enabled node seamlessly.
+Mevcut Substrate EVM uyumluluk çözümü, yani [Frontier](https://github.com/paritytech/frontier), Ethereum düğümünü taklit eder. Tüm Ethereum RPC setini uygulamayı ve Ethereum blok üretim sürecini taklit etmeyi amaçlar. Bu, Metamask ve Remix gibi mevcut Ethereum araçlarının Frontier özellikli bir düğümle sorunsuz bir şekilde çalışmasına olanak tanır.
 
-Integrating Frontier has revealed the following challenges in order below by their severity:
+Integrating Frontier, aşağıdaki zorlukları önem derecelerine göre aşağıda sıralamıştır:
 
-## **1. Confined inside the EVM Sandbox**
+## **1. EVM Sandbox'ın içine hapsedilmiş**
 
-Frontier allows users to interact with EVM via Metamask or other existing Ethereum tools, none of which fully support Substrate yet. Any functionalities from native modules of Substrate, such as Acala DeX, token pallets that support multiple currencies and cross-chain capability, and any other pallets built by any parachains such as margin trading pallet by Laminar can not be accessed via Metamask or other existing Ethereum tools.
+Frontier, kullanıcıların Metamask veya hiçbiri henüz Substrate'ı tam olarak desteklemeyen diğer mevcut Ethereum araçları aracılığıyla EVM ile etkileşime girmesine olanak tanır. Acala DeX gibi yerel Substrate modüllerinden, birden fazla para birimini ve çapraz zincir kabiliyetini destekleyen token paletlerinden ve Laminar'ın marj ticaret paleti gibi herhangi bir parachain tarafından oluşturulan diğer paletlerden herhangi bir işlevselliğe Metamask veya diğer mevcut Ethereum aracılığıyla erişilemez. araçlar.
 
-This means users will need to use a Substrate wallet \(e.g. Polkadot-js Extension\) and Metamask at the same time if they ever want to taste the real power of Acala, Substrate or Polkadot for that matter. This is certainly a deal-breaker for us.
+Bu, kullanıcıların bu konuda Acala, Substrate veya Polkadot'un gerçek gücünü tatmak isterlerse, bir Substrate wallet \(örneğin Polkadot-js Extension\) ve Metamask'ı aynı anda kullanmaları gerektiği anlamına gelir. Bu kesinlikle bizim için bir anlaşma kırıcı.
 
-## **2. Making Nodes more Expensive**
+## **2. Düğümleri Daha Pahalı Hale Getirmek**
 
-[Frontier](https://github.com/paritytech/frontier) is heavy by design. Substrate does not store transactions by hash nor historical events, nor does it provide any event filtering ability. Substrate nodes are lightweight by design in order to minimize resource usage \(disk space & CPU\).
+[Frontier](https://github.com/paritytech/frontier) tasarımı gereği ağırdır. Substrat, işlemleri hash veya geçmiş olaylara göre saklamaz ve herhangi bir olay filtreleme yeteneği sağlamaz. Substrat düğümleri, kaynak kullanımını \(disk alanı ve CPU\) en aza indirmek için tasarım gereği hafiftir.
 
-Ethereum nodes, on the other hand, allow users to query transactions by hash and offer powerful event log querying API. Frontier injects special block importing logic, storing the transactions and events into an off-chain auxiliary store in order to power the query API required by Ethereum.
+Ethereum düğümleri ise, kullanıcıların işlemleri hash ile sorgulamasına izin verir ve güçlü olay günlüğü sorgulama API'si sunar. Frontier, Ethereum'un gerektirdiği sorgu API'sini güçlendirmek için işlemleri ve olayları zincir dışı bir yardımcı depoya depolayarak özel blok içe aktarma mantığı enjekte eder.
 
-This adds maintenance costs as it requires more powerful machines and larger disk space to operate a node. This goes against the goal to have a lightweight node to lower barriers for people from anywhere to run nodes which helps the network to be more decentralized.
-
+Bu, bir düğümü çalıştırmak için daha güçlü makineler ve daha büyük disk alanı gerektirdiğinden bakım maliyetlerini artırır. Bu, ağın daha merkezi olmayan hale gelmesine yardımcı olan, herhangi bir yerden insanların düğümleri çalıştırması için engelleri azaltmak için hafif bir düğüme sahip olma hedefine aykırıdır.
