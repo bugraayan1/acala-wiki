@@ -1,18 +1,15 @@
-# How does it work?
+# Nasıl çalışır?
 
-## The Stack
+## Yığın
 
-Project Bodhi is Acala’s answer to composable EVM compatibility. 
+Project Bodhi, Acala'nın şekillendirilebilir EVM uyumluluğuna verdiği yanıttır.
 
 ![](https://i.imgur.com/gYegu9s.png)
 
-Instead of emulating the full Ethereum RPC node \([Frontier](https://github.com/paritytech/frontier) approach\), we emulate the Ethereum JavaScript SDK client experience \(by implementing a web3 provider as Bodhi.js\).
+Tam Ethereum RPC düğümünü \([Frontier](https://github.com/paritytech/frontier) yaklaşımı\) taklit etmek yerine, Ethereum JavaScript SDK istemci deneyimini taklit ediyoruz \(bir web3 sağlayıcısını Bodhi.js\ olarak uygulayarak ).
 
-This initiative has received an Open Grant from Web3 Foundation and is under development. Read more [here](https://github.com/AcalaNetwork/Open-Grants-Program/blob/master/applications/project_bodhi.md).
+Bu girişim, Web3 Vakfı'ndan bir Açık Hibe almıştır ve geliştirme aşamasındadır. Daha fazlasını [buradan](https://github.com/AcalaNetwork/Open-Grants-Program/blob/master/applications/project_bodhi.md) okuyun.
 
-## Get Started
+## Başlamak
 
-Try out Acala EVM [here](https://wiki.acala.network/build/development-guide/deploy-smart-contracts/get-started).
-
-
-
+Acala EVM'yi [buradan](https://wiki.acala.network/build/development-guide/deploy-smart-contracts/get-started) deneyin.
