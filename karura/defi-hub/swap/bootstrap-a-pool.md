@@ -1,82 +1,81 @@
-# Bootstrap a Pool
+# Bir Havuzu Önyükleme
 
-**\(**[**Source**](https://github.com/AcalaNetwork/Acala/blob/master/modules/dex/src/lib.rs#L462)**\)**
+**\(**[**Kaynak**](https://github.com/AcalaNetwork/Acala/blob/master/modules/dex/src/lib.rs#L462)**\)**
 
-## **Bootstrap Parameters & Process**
+## **Önyükleme Parametreleri ve İşlem**
 
-One can bootstrap a liquidity pool with the following parameters
+Aşağıdaki parametrelerle bir likidite havuzu önyüklenebilir
 
-* **Not Before**: pool cannot be started before a particular block number
-* **Target Provision for Token A**: minimum requirement of liquidity for Token A 
-* **Target Provision for Token B**: minimum requirement of liquidity for Token B
-* **Minimum contribution for Token A**: each contribution requires a minimum amount of Token A 
-* **Minimum contribution for Token B**: each contribution requires a minimum amount of Token B
+* **Önceden Değil**: havuz belirli bir blok numarasından önce başlatılamaz
+* **Token A için Hedef Karşılığı**: Token A için minimum likidite gereksinimi
+* **Token B için Hedef Karşılığı**: Token B için minimum likidite gereksinimi
+* **Token A için minimum katkı**: her katkı minimum miktarda Token A gerektirir
+* **Token B için minimum katkı**: her katkı minimum miktarda Token B gerektirir
 
-A liquidity pool can only be started once the following criteria are met:
+Bir likidite havuzu ancak aşağıdaki kriterler karşılandığında başlatılabilir:
 
-* The **`Not Before`** block has passed AND
-* Either **`Target Provision for Token A`** OR **`Target Provision for Token B`** has been met AND
-* Both Token A and Token has &gt;0 liquidity
+* **`Önceki Değil`** bloğu geçti VE
+* Ya **`Token A için Hedef Tedarik`** VEYA **`Token B için Hedef Tedarik`** karşılandı VE
+* Hem Token A hem de Token >0 likiditeye sahiptir
 
-## **During Bootstrap**
+## **Önyükleme Sırasında**
 
-During the Bootstrap period:
+Önyükleme döneminde:
 
-* **NO trading is allowed**, therefore the exchange rate can be consolidated
-* You can contribute liquidity for Token A, or Token B, or Token A and B at the same time. The actual exchange rate of Token A and B can only be known once the Bootstrap is completed.
-* At the time of your contribution, you are allocated a number of LP tokens, and indicative LP shares of the pool, which are subject to change as more liquidity is added.
-* **You should only participate if you want to become a liquidity provider for the pool. Please be aware of** [**various risks**](lp-returns-and-risks.md) **associated with being a liquidity provider**.
+* **ticarete izin verilmez**, bu nedenle döviz kuru konsolide edilebilir
+* Token A veya Token B veya Token A ve B için aynı anda likiditeye katkıda bulunabilirsiniz. Token A ve B'nin gerçek döviz kuru ancak Bootstrap tamamlandıktan sonra bilinebilir.
+* Katkınız sırasında size bir dizi LP jetonu ve daha fazla likidite eklendikçe değişebilecek havuzun gösterge niteliğindeki LP payları tahsis edilir.
+* **Yalnızca havuz için likidite sağlayıcısı olmak istiyorsanız katılmalısınız. Lütfen ** [**çeşitli riskler**](lp-returns-and-risks.md) **bir likidite sağlayıcı olmakla ilgili** farkında olun.
 
-### LP Token & LP Shares
+### LP Simgesi ve LP Paylaşımları
 
-LP tokens are receipts of liquidity contributed to a pool. LP Shares \(= LP Tokens / Total LP Tokens\) are pro-rata representations of the liquidity contribution of a particular pool e.g. Token A-Token B pool. 
+LP jetonları, bir havuza katkıda bulunan likidite makbuzlarıdır. LP Hisseleri \(= LP Jetonları / Toplam LP Jetonları\), belirli bir havuzun likidite katkısının orantılı temsilleridir, ör. Jeton A-Token B havuzu.
 
-The following formula is used to calculate LP Tokens after a contribution for Token A-Token B pool:
+Token A-Token B havuzuna yapılan katkının ardından LP Jetonlarını hesaplamak için aşağıdaki formül kullanılır:
 
 $$
-LP Tokens = Token A Contribution * 1 + Token B Contribution * Exchange Rate
+LP Jetonları = Token A Katkısı * 1 + Token B Katkısı * Döviz Kuru
 $$
 
-Below is a simulation of how a user’s LP Shares of the pool might change as more liquidity is added to the pool during the Bootstrap period:
+Aşağıda, Bootstrap döneminde havuza daha fazla likidite eklendikçe bir kullanıcının havuzdaki LP Paylarının nasıl değişebileceğinin bir simülasyonu bulunmaktadır:
 
-* User 1 only contributes 1000 Token B. LP Tokens can only be calculated once both sides of the pool have some liquidity. 
-* After User 2 added his/her liquidity \(User 2 only contributes 50 Token A\), 
-  * The exchange rate of Token A-Token B is 0.05 \(=50/1000 based on [constant product](https://wiki.acala.network/karura/defi-hub/swap/protocol-overview#trading-and-lps)\)
-  * User 2's LP Token is 50 \(=50\*1 + 0 \* 0.05\)
-  * User 1's LP Token is also 50 \(=1\*0 + 1000 \* 0.05\)
-  * User 2 LP Share is 50% \(=50/\(50+50\)\)
-  * User 1's LP Shares is also 50%
-* After User 4 added his/her liquidity \(User 4 contributes both Token A & B\)
-  * The exchange rate of Token A-Token B is 2 \(=2200/1100\)
-  * User 4's LP Share is 52.27%
-  * User 2's LP Shares drop to 1.14%.
-  * User 1's LP Shares drop to 45.45%.
-* If Bootstrap completes at this point
-  * User 1 can redeem 1000 Token A \(= 2200\*45.45%\) and 500 Token B \(= 1100\*45.45%\).
-  * User 2 can redeem 25 Token A and 12.5 Token B
-  * User 4 can redeem 1,150 Token A and 575 Token B
-  * LPs may or may not redeem right after Bootstrap, as most returns come from trading fees. Read more [here](lp-returns-and-risks.md).
+* Kullanıcı 1 yalnızca 1000 Token B'ye katkıda bulunur. LP Jetonları ancak havuzun her iki tarafı da biraz likiditeye sahip olduğunda hesaplanabilir.
+* Kullanıcı 2 likiditesini ekledikten sonra \(Kullanıcı 2 yalnızca 50 Token A'ya katkıda bulunur\),
+  * Token A-Token B'nin döviz kuru 0,05 \(=50/1000 [sabit ürüne](https://wiki.acala.network/karura/defi-hub/swap/protocol-overview#trading-and göre) -lps)\)
+  * Kullanıcı 2'nin LP Simgesi 50'dir \(=50\*1 + 0 \* 0.05\)
+  * Kullanıcı 1'in LP Simgesi de 50 \(=1\*0 + 1000 \* 0.05\)
+  * Kullanıcı 2 LP Paylaşımı %50 \(=50/\(50+50\)\)
+  * Kullanıcı 1'in LP Payları da %50'dir
+* Kullanıcı 4 likiditesini ekledikten sonra \(Kullanıcı 4 hem Token A hem de B'ye katkıda bulunur\)
+  * Token A-Token B'nin döviz kuru 2 \(=2200/1100\)
+  * Kullanıcı 4'ün LP Payı %52,27'dir
+  * Kullanıcı 2'nin LP Payları %1,14'e düştü.
+  * Kullanıcı 1'in LP Payları %45,45'e düşüyor.
+* Bootstrap bu noktada tamamlanırsa
+  * Kullanıcı 1, 1000 Jeton A \(= 2200\*45,45%\) ve 500 Jeton B \(= 1100\*45,45%\) kullanabilir.
+  * Kullanıcı 2, 25 Jeton A ve 12.5 Jeton B'yi kullanabilir
+  * Kullanıcı 4, 1.150 Token A ve 575 Token B kullanabilir
+  * LP'ler, çoğu getiri ticaret ücretlerinden geldiğinden, Bootstrap'ten hemen sonra kullanılabilir veya kullanılmayabilir. Daha fazlasını [buradan](lp-returns-and-risks.md) okuyun.
 
-**So if you are contributing only one side of the pool \(say Token A\), you are effectively converting 50% Token A into Token B based on the exchange rate when Bootstrap ends \(and the pool opens for trading\).**
+**Yani, havuzun yalnızca bir tarafına katkıda bulunuyorsanız \(Diyelim ki Token A\), Bootstrap sona erdiğinde \(ve havuz ticaret için açıldığında\) döviz kuruna bağlı olarak %50 Token A'yı Token B'ye etkili bir şekilde dönüştürüyorsunuz. .**
 
-![LP Share change during Bootstrap](../../../.gitbook/assets/screen-shot-2021-07-20-at-2.36.47-pm.png)
+![Önyükleme sırasında LP Paylaşımı değişikliği](../../../.gitbook/assets/screen-shot-2021-07-20-at-2.36.47-pm.png)
 
-![LP Token calculations](../../../.gitbook/assets/screen-shot-2021-07-20-at-2.37.00-pm.png)
+![LP Token hesaplamaları](../../../.gitbook/assets/screen-shot-2021-07-20-at-2.37.00-pm.png)
 
-## **After Bootstrap**
+## **Önyüklemeden Sonra**
 
-Let's assume the pool Bootstrap completes after the 4th user's contribution \(as illustrated above\), then the LP tokens are allocated to each liquidity provider. LP Shares \(= LP Tokens / Total LP Tokens\) is a pro-rata representation of LP's contribution to the overall liquidity of a given pool. LP Tokens can then be redeemed for underlying assets \(Token A and B\) at any time. As an example, User 1 can redeem  45.45% of Token A \(1000 Token A = 2200\*45.45%\) and 45.45% of Token B \(500 Token B = 1100\*45.45%\).
+Bootstrap havuzunun, 4. kullanıcının katkısından \(yukarıda gösterildiği gibi\) sonra tamamlandığını varsayalım, ardından LP jetonları her bir likidite sağlayıcısına tahsis edilir. LP Shares \(= LP Tokens / Total LP Tokens\), LP'nin belirli bir havuzun genel likiditesine katkısının orantılı bir temsilidir. LP Jetonları daha sonra herhangi bir zamanda temel alınan varlıklar \(Token A ve B\) için kullanılabilir. Örnek olarak, Kullanıcı 1, Simge A'nın %45,45'ini \(1000 Simge A = 2200\*%45,45\) ve Simge B'nin %45,45'ini \(500 Simge B = 1100\*%45,45\) kullanabilir.
 
-* You need to claim your LP tokens after Bootstrap completes
-* The Token A-Token B pool will be enabled for trading
+* Bootstrap tamamlandıktan sonra LP jetonlarınızı talep etmeniz gerekir.
+* Token A-Token B havuzu ticaret için etkinleştirilecek
 
-Here is an example to illustrate this:
+İşte bunu göstermek için bir örnek:
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-13-at-9.59.36-am%20%281%29.png)
 
-## **Submit a Proposal to Bootstrap a Pool**
+## **Bir Havuzu Önyüklemek İçin Bir Teklif Gönderin**
 
-This is the preimage of proposing to bootstrap a pool. Read more on how to submit a proposal [here](../../get-started/governance/participate-in-democracy.md).
+Bu, bir havuzun ön yüklemesini önermenin ön görüntüsüdür. Bir teklifin nasıl gönderileceği hakkında daha fazla bilgiyi [buradan](../../get-started/governance/participate-in-democracy.md) okuyun.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-13-at-10.10.36-am.png)
-
