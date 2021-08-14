@@ -1,24 +1,23 @@
-# Networks
+# Ağlar
 
-## Karura Network
+## Karura Ağı
 
-### Telemetry
+### Telemetri
 
 [https://telemetry.polkadot.io/\#list/Karura](https://telemetry.polkadot.io/#list/Karura)
 
-### Polkadot apps
+### Polkadot uygulamaları
 
-[https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-westend-rpc.aca-staging.network\#/explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-2.aca-api.network%2Fws#/explorer)
+[https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-westend-rpc.aca-staging.network\#/explorer](https://polkadot.js.org/apps /?rpc=wss%3A%2F%2Fkarura-rpc-2.aca-api.network%2Fws#/explorer)
 
-### Explorer
+### Gezgin
 
 [https://karura.subscan.io/](https://karura.subscan.io/)
 
-### PRC Endpoints
+### ÇHC Uç Noktaları
 
 * `wss://karura.api.onfinality.io/public-ws`
 * `wss://karura-rpc-0.aca-api.network`
 * `wss://karura-rpc-1.aca-api.network`
 * `wss://karura-rpc-2.aca-api.network/ws`
 * `wss://karura-rpc-3.aca-api.network/ws`
-
