@@ -1,45 +1,44 @@
 ---
-description: Liquidity provider is rewarded with exchange fee and an additional reward.
+tanım: Likidite sağlayıcı, değişim ücreti ve ek bir ödül ile ödüllendirilir.
 ---
 
-# Provide Liquidity
+# Likidite Sağlayın
 
-* [Overview](https://wiki.acala.network/learn/basics/deposit-and-earn#overview)
-* [Mandala Test Network](https://wiki.acala.network/learn/basics/deposit-and-earn#mandala-test-network)
-  * [Via Web DApp](https://wiki.acala.network/learn/basics/deposit-and-earn#via-web-dapp)
-    * [Deposit Liquidity](https://wiki.acala.network/learn/basics/deposit-and-earn#deposit-liquidity)
-    * [Withdraw Liquidity](https://wiki.acala.network/learn/basics/deposit-and-earn#withdraw-liquidity)
-    * [Withdraw Reward](https://wiki.acala.network/learn/basics/deposit-and-earn#withdraw-reward)
+* [Genel Bakış](https://wiki.acala.network/learn/basics/deposit-and-earn#overview)
+* [Mandala Test Ağı](https://wiki.acala.network/learn/basics/deposit-and-earn#mandala-test-network)
+  * [Web DApp ile](https://wiki.acala.network/learn/basics/deposit-and-earn#via-web-dapp)
+    * [Mevduat Likiditesi](https://wiki.acala.network/learn/basics/deposit-and-earn#deposit-liquidity)
+    * [Likidite Çekme](https://wiki.acala.network/learn/basics/deposit-and-earn#withdraw-liquidity)
+    * [Ödülü Çekme](https://wiki.acala.network/learn/basics/deposit-and-earn#withdraw-reward)
 
-## Overview
+## Genel Bakış
 
-DeX \(Decentralized Exchange\) on Acala allows users to quickly swap one token to another and serves three-fold purposes for the platform:
+Acala'daki DeX \(Merkezi Olmayan Değişim\), kullanıcıların bir jetonu diğerine hızlı bir şekilde değiştirmesine olanak tanır ve platform için üç katlı amaca hizmet eder:
 
-1. **provide liquidity to bootstrap the ecosystem**: there will be markets for bridged in assets like BTC and ETH, as well as DOT, ACA and aUSD.
-2. **as a complimentary facility for stablecoin liquidation mechanism to improve stability and reduce risk**: when a liquidation being triggered, the Honzon stablecoin protocol will sell the assets off on the DeX instead of on an auction, if slippage is acceptable.
-3. **improve usability**: users can pay fees in the transacting token e.g. aUSD rather than being restricted to the network token ACA
+1. **ekosistemi önyüklemek için likidite sağlayın**: BTC ve ETH gibi varlıkların yanı sıra DOT, ACA ve aUSD gibi köprülü varlıklar için pazarlar olacaktır.
+2. **kararlılığı artırmak ve riski azaltmak için stabilcoin tasfiye mekanizması için ücretsiz bir tesis olarak**: bir tasfiye tetiklendiğinde, kayma kabul edilebilirse, Honzon stabilcoin protokolü varlıkları açık artırma yerine DeX'te satacaktır.
+3. **kullanılabilirliği iyileştirin**: kullanıcılar işlem tokeninde ücret ödeyebilir, ör. ağ belirteci ACA ile sınırlandırılmak yerine aUSD
 
-Acala DeX, inspired by Uniswap, uses constant-product mechanism and is implemented as runtime modules hence better integrated with other protocols. Each trading pair using aUSD as base token e.g. BTC/aUSD is represented as an exchange pool. The exchange rate is set by the first liquidity provider by the amount of each token he/she deposits, and will be adjusted over time through arbitrage.
+Uniswap'tan ilham alan Acala DeX, sabit ürün mekanizmasını kullanır ve çalışma zamanı modülleri olarak uygulanır, dolayısıyla diğer protokollerle daha iyi entegre olur. Temel token olarak USD kullanan her işlem çifti, ör. BTC/aUSD bir değişim havuzu olarak temsil edilir. Döviz kuru, ilk likidite sağlayıcısı tarafından yatırdığı her bir token miktarına göre belirlenir ve zaman içinde arbitraj yoluyla ayarlanır.
 
-Liquidity provider is rewarded with **exchange fee** and **an additional reward** \(from stability fee profit share\), as liquidity here not only serve users for token swap, but also serve the Honzon stablecoin protocol for liquidation.
+Likidite sağlayıcısı **değişim ücreti** ve **ek bir ödül** \(istikrar ücreti kar payından\) ile ödüllendirilir, çünkü buradaki likidite yalnızca kullanıcılara token takası için değil, aynı zamanda tasfiye için Honzon stabilcoin protokolüne de hizmet eder.
 
-## Mandala Test Network
+## Mandala Test Ağı
 
-### Via Web DApp
+### Web DApp ile
 
-#### Deposit Liquidity
+#### Mevduat Likiditesi
 
 ![Dapp](../../../.gitbook/assets/depositearn_deposit.png)
 
-#### Withdraw Liquidity
+#### Likidite Çekin
 
- Note: withdrawn amount is NOT token amount, but a share amount reflecting your contribution to a particular liquidity pool.
+ Not: çekilen miktar, jeton miktarı DEĞİLDİR, ancak belirli bir likidite havuzuna katkınızı yansıtan bir hisse miktarıdır.
 
 ![](../../../.gitbook/assets/depositearn_withdraw.png)
 
-#### Withdraw Reward
+#### Ödülü Çekin
 
- These are the additional profit share from stability fee revenue to recognize the contribution of DeX liquidity towards stability of aUSD.
+ Bunlar, DeX likiditesinin USD'nin istikrarına katkısını tanımak için istikrar ücreti gelirinden ek kar payıdır.
 
 ![](../../../.gitbook/assets/depositearn_reward.png)
-
