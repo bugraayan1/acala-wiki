@@ -1,69 +1,66 @@
-# Participate in Democracy
+# Demokrasiye Katılın
 
-The public Referenda Chamber is one of the three bodies alongside the General Council \(and its sub-councils\) and the Technical Committee governing the Karura network. Public referenda can be proposed and voted by any token holder with a bond. Every voting period, one proposal with the most support \(\# of seconds\) will be moved to the referenda table for public voting. Voters who are willing to lock up tokens for a greater duration of time can have their votes amplified. This is largely modeled from the [Polkadot governance system](https://wiki.polkadot.network/docs/learn-governance) with Karura/Acala customization. 
+Halk Referandum Odası, Genel Konsey \(ve alt konseyleri\) ve Karura ağını yöneten Teknik Komite ile birlikte üç organdan biridir. Halka açık referandumlar, tahvil sahibi herhangi bir token sahibi tarafından önerilebilir ve oylanabilir. Her oylama döneminde, en çok desteği \(\# saniye\) olan bir teklif, halk oylaması için referandum masasına taşınacaktır. Jetonları daha uzun süre kilitlemek isteyen seçmenlerin oyları güçlendirilebilir. Bu, büyük ölçüde Karura/Acala özelleştirmesiyle [Polkadot yönetişim sisteminden](https://wiki.polkadot.network/docs/learn-governance) modellenmiştir.
 
-## Governance Parameters
+## Yönetişim Parametreleri
 
-These are important governance parameters, which may change over time as we progress through the governance phases.
+Bunlar, yönetişim aşamalarında ilerledikçe zaman içinde değişebilen önemli yönetişim parametreleridir.
 
-* Launch Period: Public referenda is every **2 days**
-* Voting Period: Votes are tallied every **2 days**
-* Emergency Voting Period: Voting period for fast-tracked emergency referendum is **3 Hours**
-* Minimum Deposit: Proposing a referendum requires a minimum deposit of **1000 KAR**
-* Enactment Period: Minimum period for locking funds and the period between a proposal being approved and enacted is **1 day**
-* Cool-off Period: Vetoed proposal may not be re-submitted within **7 days**
+* Lansman Dönemi: Halk oylaması her **2 günde bir**
+* Oylama Dönemi: Oylar her **2 günde bir** sayılır
+* Acil Oylama Süresi: Hızlı takip edilen acil durum referandumu için oy verme süresi **3 Saat**
+* Minimum Depozito: Referandum önermek için minimum **1000 KAR** depozito gerekir
+* Yürürlük Süresi: Fonların kilitlenmesi için minimum süre ve bir teklifin onaylanması ile yasalaşması arasındaki süre **1 gündür**
+* Bekleme Süresi: Veto edilen teklif **7 gün** içinde yeniden sunulamaz.
 
-Most of these parameters are visible on the Polkadot App. You can also view upcoming governance events on `the Event Calendar`
+Bu parametrelerin çoğu Polkadot Uygulamasında görülebilir. Yaklaşan yönetim etkinliklerini "Etkinlik Takvimi"nde de görüntüleyebilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-15-at-2.20.23-pm.png)
 
-## Propose a Referendum
+## Referandum Önerin
 
-A referendum consists of some action that you want to propose. If voted in by token holders, then the action will be enacted on-chain automatically. You are required to bond some tokens to propose an action. Once a proposal is submitted, it can not be canceled. 
+Referandum, önermek istediğiniz bazı eylemlerden oluşur. Belirteç sahipleri tarafından oy verilirse, eylem zincir üzerinde otomatik olarak yürürlüğe girecektir. Bir eylem önermek için bazı belirteçleri bağlamanız gerekiyor. Bir teklif sunulduktan sonra iptal edilemez.
 
-On the [Polkadot Apps - Karura parachain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/democracy), you can use the “Democracy” tab to make a new proposal. The action, such as 'force transfer balance from account A to account B', is encoded in a preimage, and the hash of the action is called preimage hash. 
+[Polkadot Apps - Karura parachain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/democracy) üzerinde şunları kullanabilirsiniz Yeni bir teklif yapmak için “Demokrasi” sekmesine gidin. 'A hesabından B hesabına zorla bakiye transferi' gibi eylem, bir ön görüntüde kodlanır ve eylemin karma değerine ön görüntü karma adı verilir.
 
-Since the preimage can be quite large \(hence costly to submit\), you can submit a Proposal first which includes the preimage hash only, and submit the preimage \(or have someone else submit it for you\) later but before voting completes.
+Ön görüntü oldukça büyük olabileceğinden \(dolayısıyla gönderilmesi maliyetli\), önce yalnızca ön görüntü karmasını içeren bir Teklif gönderebilir ve ön görüntüyü \(veya başka birinin sizin için göndermesini sağlayın\) daha sonra ancak oylama tamamlanmadan önce gönderebilirsiniz. .
 
-### Step 1: Submit a Proposal
+### 1. Adım: Bir Teklif Gönderin
 
-#### Get the preimage hash 
+#### Ön imaj karmasını alın
 
-By clicking on the `Submit preimage` button, then fill in the action you want to propose, copy and note down the preimage hash `0x244fcb51680c90172ba55241d3d9229676c4471a4645aed223a2272b33264026`. Once you noted down the hash, you can now cancel the prompt. 
+'Ön görüntü gönder' düğmesini tıklatarak, ardından önermek istediğiniz eylemi doldurun, '0x244fcb51680c90172ba55241d3d9229676c4471a4645aed223a2272b33264026' ön görüntü karmasını kopyalayın ve not edin. Karmayı not ettikten sonra, artık istemi iptal edebilirsiniz.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-09-at-6.34.14-pm.png)
 
-#### Submit a proposal
+#### Bir teklif gönderin
 
-Submit a proposal by clicking on the `Submit a proposal` button, and pasting in the preimage hash to submit it. Then the proposal shall appear in the proposal table. 
+'Teklif gönder' düğmesine tıklayarak ve göndermek için ön resim karma değerini yapıştırarak bir teklif gönderin. Daha sonra teklif, teklif tablosunda görünecektir.
 
-![](https://lh5.googleusercontent.com/pzSjpt4wxQscdDdnjIFNE0iCRxLcPGHdJoEfXXaf8E7FIHfg66C0FSKIaoky0QMa3v0sl_E9LoJ1x0b_30X-2zzAZBZbijf8RhuMu_1J2UFapoaaDl0cIE58l7k3nw30nYaK0rCu)
+![](https://lh5.googleusercontent.com/pzSjpt4wxQscdDdnjIFNE0iCRxLcPGHdJoEfXXaf8E7FIHfg66C0FSKIaoky0QMa3v0sl_E9LoJ1x0b_30X-2zzAZBZbijf8RhuieMua_1x0b_30X-2zzAZBZbijf8RhuieMua_1CrxLcPGHdJoEfXXaf8E7
 
-### Step 2: Submit a Preimage
+### 2. Adım: Bir Ön Görüntü Gönderin
 
-Before voting of your proposal completes, you will need to submit the actual preimage. Otherwise, it cannot be enacted on-chain. You can repeat the ‘Submit a preimage’ process as previously mentioned, and click the ‘Submit preimage’ button to send the transaction.
+Teklifinizin oylanması tamamlanmadan önce, gerçek ön resmi göndermeniz gerekecektir. Aksi takdirde, zincir üzerinde yasalaştırılamaz. Daha önce belirtildiği gibi 'Ön görüntü gönder' işlemini tekrarlayabilir ve işlemi göndermek için 'Ön görüntü gönder' düğmesini tıklayabilirsiniz.
 
-## Vote on a Referenda
+## Referandumda Oy Verin
 
-Once a proposal is in as a referendum, it will show up in the referenda table. You can navigate to the [Polkadot Apps - Karura Parachain Democracy](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/democracy) to cast your vote.
+Bir teklif referanduma sunulduğunda, referandum tablosunda görünecektir. [Polkadot Apps - Karura Parachain Democracy](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/democracy) sayfasına gidebilirsiniz. oy vermek için.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-12-at-10.39.29-am.png)
 
-You can click on the ‘Vote’ button to vote. Select "Vote Aye" to support the proposal, and select "Vote Nay" to disapprove the proposal. 
+Oy vermek için 'Oy Ver' butonuna tıklayabilirsiniz. Teklifi desteklemek için "Evet Oy"u seçin ve teklifi onaylamamak için "Hayır Oyu"nu seçin.
 
-You can also increase your conviction with the same number of tokens by locking them. The longer you are willing to lock your tokens, the stronger your vote will be weighted. Read more on [voting](https://wiki.polkadot.network/docs/maintain-guides-democracy/#voting-on-a-proposal) and [tallying](https://wiki.polkadot.network/docs/learn-governance#tallying).
+Aynı sayıda jetonu kilitleyerek inancınızı da artırabilirsiniz. Jetonlarınızı ne kadar uzun süre kilitlemeye istekli olursanız, oyunuzu o kadar güçlü olacaktır. [oylama](https://wiki.polkadot.network/docs/maintain-guides-democracy/#voting-on-a-proposal) ve [tallying](https://wiki.polkadot.network/docs) hakkında daha fazla bilgi edinin /öğrenme-yönetim#tallying).
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-12-at-10.38.55-am%20%281%29.png)
 
-## Unlock locked tokens
+## Kilitli jetonların kilidini açın
 
-You will need to explicitly unlock these tokens once the locking period ends. You can go to the `Accounts` page, click the menu button for the voted account, and select the menu item`Clear expired democracy locks` to claim it back. Read more [here](https://wiki.polkadot.network/docs/maintain-guides-democracy/#unlocking-locked-tokens). 
+Kilitleme süresi sona erdiğinde bu belirteçlerin kilidini açıkça açmanız gerekecektir. 'Hesaplar' sayfasına gidebilir, oylanan hesap için menü düğmesine tıklayabilir ve geri almak için 'Süresi dolmuş demokrasi kilitlerini temizle' menü öğesini seçebilirsiniz. Daha fazlasını [buradan](https://wiki.polkadot.network/docs/maintain-guides-democracy/#unlocking-locked-tokens) okuyun.
 
 ![](../../../.gitbook/assets/screen-shot-2021-07-20-at-10.11.09-am.png)
 
-## Delegate Vote
+## Delege Oyu
 
-You can delegate your vote to others to vote on your behalf. On [the Polkadot Apps - Karura parachain,](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/extrinsics) go to the `Developer` tab -- `Extrinsics` , then select `democracy.delegate` .
-
-![](../../../.gitbook/assets/screen-shot-2021-07-09-at-7.05.20-pm%20%281%29.png)
-
+Oylarınızı, sizin adınıza oy kullanmaları için başkalarına devredebilirsiniz. [Polkadot Uygulamaları - Karura parachain'de](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkarura-rpc-1.aca-api.network#/extrinsics) gidin
