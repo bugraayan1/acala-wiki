@@ -1,21 +1,20 @@
 ---
-description: This page contains basic information about running a Acala client.
+açıklama: Bu sayfa, bir Acala istemcisini çalıştırmayla ilgili temel bilgileri içerir.
 ---
 
-# Node Management
+# Düğüm Yönetimi
 
-This page contains basic information about running a Acala client. There are a lot of ways to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This guide will always refer to the executable as `acala`.
+Bu sayfa, bir Acala istemcisini çalıştırmayla ilgili temel bilgileri içerir. Bir istemci edinmenin/çalıştırmanın birçok yolu vardır, ör. kaynaktan derleme, Docker'da çalıştırma veya bir ikili dosya indirme. Bu kılavuz her zaman yürütülebilir dosyadan "acala" olarak bahsedecektir.
 
-**Always refer to the client's help `acala --help` for the most up-to-date information.**
+**En güncel bilgiler için her zaman müşterinin yardımına 'acala --help' bakın.**
 
-## **Build**
+## **Yapı**
 
-### **Install Rust**
+### **Rust'u Yükle**
 
-Once you choose your cloud service provider and set-up your new server, the first thing you will do is install Rust.
+Bulut servis sağlayıcınızı seçtikten ve yeni sunucunuzu kurduktan sonra yapacağınız ilk şey Rust'ı kurmaktır.
 
-If you have never installed Rust, you should do this first. This command will fetch the latest version of Rust and install it.
-
+Rust'ı hiç yüklemediyseniz, önce bunu yapmalısınız. Bu komut, Rust'ın en son sürümünü getirecek ve kuracaktır.
 ```text
 # Install
 curl https://sh.rustup.rs -sSf | sh
@@ -23,29 +22,29 @@ curl https://sh.rustup.rs -sSf | sh
 source ~/.cargo/env
 ```
 
-Otherwise, if you have already installed Rust, run the following command to make sure you are using the latest version.
+Aksi takdirde, Rust'u zaten yüklediyseniz, en son sürümü kullandığınızdan emin olmak için aşağıdaki komutu çalıştırın.
 
 ```text
 rustup update
 ```
 
-Configure the Rust toolchain to default to the latest stable version:
+Rust araç zincirini en son kararlı sürüme varsayılan olacak şekilde yapılandırın:
 
 ```text
 rustup update stable
 rustup default stable
 ```
 
-If the compilation fails, you can try to switch to nightly
+Derleme başarısız olursa, her geceye geçmeyi deneyebilirsiniz.
 
 ```text
 rustup update nightly
 rustup default nightly
 ```
 
-### **Clone and Build**
+### **Klonla ve Oluştur**
 
-The [AcalaNetwork/acala](https://github.com/AcalaNetwork/Acala) repo's master branch contains the latest Acala code.
+[AcalaNetwork/acala](https://github.com/AcalaNetwork/Acala) deposunun ana şubesi en son Acala kodunu içerir.
 
 ```text
 git clone https://github.com/AcalaNetwork/Acala.git
@@ -54,7 +53,7 @@ make init
 make build
 ```
 
-Alternatively, if you wish to use a specific release, you can check out a specific tag \(`v0.5.1` in the example below\):
+Alternatif olarak, belirli bir sürümü kullanmak istiyorsanız, belirli bir etikete göz atabilirsiniz \(aşağıdaki örnekte `v0.5.1`\):
 
 ```text
 git clone https://github.com/AcalaNetwork/Acala.git
@@ -64,43 +63,42 @@ make init
 make build
 ```
 
-### **Development**
+### **Geliştirme**
 
-To type check:
+Kontrol yazmak için:
 
 ```text
 make check
 ```
-
-To purge old chain data:
+Eski zincir verilerini temizlemek için:
 
 ```text
 make purge
 ```
 
-To purge old chain data and run
+Eski zincir verilerini temizlemek ve çalıştırmak için
 
 ```text
 make restart
 ```
 
-Update ORML
+ORML'yi güncelle
 
 ```text
 make update
 ```
 
-When running as a simple sync node \(above\), only the state of the past 256 blocks will be kept. When validating, it defaults to archive mode. To keep the full state use the `--pruning` flag:
+Basit bir eşitleme düğümü \(yukarıda\) olarak çalıştırıldığında, yalnızca son 256 bloğun durumu tutulacaktır. Doğrularken, varsayılan olarak arşiv moduna geçer. Tam durumu korumak için "--pruning" bayrağını kullanın:
 
 ```text
 ./target/release/acala --name "My node's name" --pruning archive --chain mandala
 ```
 
-It is possible to almost quadruple synchronization speed by using an additional flag: `--wasm-execution Compiled`. Note that this uses much more CPU and RAM, so it should be turned off after the node is in sync.
+Ek bir bayrak kullanarak senkronizasyon hızını neredeyse dört katına çıkarmak mümkündür: `--wasm-execution Compiled'. Bunun çok daha fazla CPU ve RAM kullandığını unutmayın, bu nedenle düğüm eşitlendikten sonra kapatılmalıdır.
 
-### **Using Docker**
+### **Docker'ı Kullanımı**
 
-Finally, you can use Docker to run your node in a container. Doing this is a bit more advanced so it's best left up to those that either already have familiarity with docker, or have completed the other set-up instructions in this guide. If you would like to connect to your node's WebSockets ensure that you run you node with the `--rpc-external` and `--ws-external` commands.
+Son olarak, düğümünüzü bir kapsayıcıda çalıştırmak için Docker'ı kullanabilirsiniz. Bunu yapmak biraz daha ileri düzeydedir, bu nedenle docker'a zaten aşina olanlara veya bu kılavuzdaki diğer kurulum talimatlarını tamamlamış olanlara bırakılmalıdır. Düğümünüzün WebSockets'ine bağlanmak istiyorsanız, düğümünüzü aşağıdakilerle çalıştırdığınızdan emin olun. `--rpc-external` ve `--ws-external` komutları.
 
 ```text
 docker pull acala/acala-node:latest
@@ -109,61 +107,60 @@ docker run -p 9944:9944 acala/acala-node:latest --name "calling_home_from_a_dock
 
 ## **Parachain**
 
-### Run as collator node
+### Harmanlayıcı düğüm olarak çalıştır
 
-#### For Karura \(Coming Soon\)
+#### Karura için \(Çok Yakında\)
 
-**Using Docker**
+**Docker'ı kullanma**
 
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v /root/acala-node:/acala/data acala/acala-node:latest --chain karura --collator
 ```
 
-#### For Acala \(Coming Soon\)
+#### Acala İçin \(Çok Yakında\)
 
-**Using Docker**
+**Docker'ı kullanma**
 
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v /root/acala-node:/acala/data acala/acala-node:latest --chain acala --collator
 ```
 
-### Run as full node
+### Tam düğüm olarak çalıştır
 
-#### For Karura \(Coming Soon\)
+#### Karura için \(Çok Yakında\)
 
-**Using Docker**
-
+**Docker'ı kullanma**
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v /root/acala-node:/acala/data acala/acala-node:latest --chain karura
 ```
 
-#### For Acala \(Coming Soon\)
+#### Acala İçin \(Çok Yakında\)
 
-**Using Docker**
+**Docker'ı kullanma**
 
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v /root/acala-node:/acala/data acala/acala-node:latest --chain acala
 ```
 
-## TestNet
+## Test Ağı
 
-### For  Mandala
+### Mandala için
 
-#### **Using Docker**
+#### **Docker'ı Kullanma**
 
 ```text
 docker run -d --restart=always -p 30333:30333 -p 9933:9933 -p 9944:9944 -v /root/acala-node:/acala/data acala/acala-node:latest --chain mandala
 ```
 
-### Run as local testnet
+### Yerel test ağı olarak çalıştır
 
-**Alice and Bob Start Blockchain**
+**Alice ve Bob Blockchain'i Başlatıyor**
 
-Before we generate our own keys, and start a truly unique Acala network, let's learn the fundamentals by starting with a pre-defined network specification called `local` with two pre-defined \(and definitely not private!\) keys known as Alice and Bob.
+Kendi anahtarlarımızı oluşturmadan ve gerçekten benzersiz bir Acala ağı başlatmadan önce, Alice olarak bilinen iki önceden tanımlanmış \(ve kesinlikle özel değil!\) anahtarla "yerel" adlı önceden tanımlanmış bir ağ özelliğiyle başlayarak temelleri öğrenelim. ve Bob.
 
-**Alice Starts First**
+**Alice Önce Başlar**
 
-Alice \(or whomever is playing her\) should run these commands from node-template repository root.
+Alice \(veya onu kim oynuyorsa\) bu komutları düğüm şablonu deposu kökünden çalıştırmalıdır.
 
 ```text
 ./acala --base-path /tmp/alice --chain local --alice --port 30333 --ws-port 9944 --rpc-port 9933  --validator --rpc-methods=Unsafe --ws-external --rpc-external --ws-max-connections 1000 --rpc-cors=all --unsafe-ws-external --unsafe-rpc-external
