@@ -1,2 +1,1 @@
-# DeFi Basics
-
+# DeFi Temelleri
