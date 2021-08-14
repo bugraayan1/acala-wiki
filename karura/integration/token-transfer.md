@@ -1,98 +1,97 @@
-# Token Transfer
+# Jeton Transferi
 
-Karura supports different types of tokens than Kusama, and allows various ways to transfer tokens. This guide will walk through tokens available on Karura, tools can be used for transfers, how to send transfer transactions, monitor and track these transactions. 
+Karura, Kusama'dan farklı jeton türlerini destekler ve jetonları aktarmanın çeşitli yollarına izin verir. Bu kılavuz, Karura'da bulunan tokenler, transferler için kullanılabilecek araçlar, transfer işlemlerinin nasıl gönderileceği, bu işlemlerin nasıl izleneceği ve izleneceği hakkında bilgi verecektir.
 
-## Token Types
+## Simge Türleri
 
-* **Native Network Token**
+* **Yerel Ağ Simgesi**
   * KAR
-* **Native Protocol Tokens**
-  * LKSM: tokenized staked KSM from the Liquid Staking protocol
-  * kUSD: multi-collateralized stablecoin
-* **Foreign Tokens**
-  * KSM: crossed to Karura from Kusama Relay Chain
-  * Tokens originated from other parachains
-  * Tokens crossed from other blockchains such as ETH, renBTC or Compound CASH
-* **ERC20 Tokens**
-  * Token issued by ERC20 contracts deployed in Karura EVM
+* **Yerel Protokol Simgeleri**
+  * LKSM: Liquid Staking protokolünden tokenize edilmiş stake edilmiş KSM
+  * kUSD: çoklu teminatlı stabilcoin
+* **Yabancı Jetonlar**
+  * KSM: Kusama Relay Chain'den Karura'ya geçti
+  * Jetonlar diğer parachainlerden alınmıştır
+  * ETH, renBTC veya Compound CASH gibi diğer blok zincirlerinden çapraz tokenler
+* **ERC20 Jetonları**
+  * Karura EVM'de dağıtılan ERC20 sözleşmeleri tarafından verilen jeton
 
-## Tools
+## Araçlar
 
 * JS/TS SDK: [https://github.com/AcalaNetwork/acala.js](https://github.com/AcalaNetwork/acala.js)
-* Blockchain explorer: [http://karura.subscan.io](http://karura.subscan.io)
+* Blockchain gezgini: [http://karura.subscan.io](http://karura.subscan.io)
 * api-sidecar: [https://github.com/paritytech/substrate-api-sidecar](https://github.com/paritytech/substrate-api-sidecar)
 * txwrapper: [https://github.com/AcalaNetwork/txwrapper](https://github.com/AcalaNetwork/txwrapper)
-* SubQuery: [https://github.com/AcalaNetwork/acala-subql](https://github.com/AcalaNetwork/acala-subql)
+* Alt Sorgu: [https://github.com/AcalaNetwork/acala-subql](https://github.com/AcalaNetwork/acala-subql)
 
-## Send Tokens
+## Jeton Gönder
 
-### Transactions
+### İşlemler
 
-#### currencies.transfer
+#### para birimleri.transferi
 
 * [https://karura.subscan.io/extrinsic?module=Currencies&call=transfer](https://karura.subscan.io/extrinsic?module=Currencies&call=transfer)
-* This can be used to send any supported tokens in the network
+* Bu, ağda desteklenen herhangi bir belirteç göndermek için kullanılabilir
 
-#### currencies.transferNativeCurrency
+#### para birimleri.transferNativeCurrency
 
 * [https://karura.subscan.io/extrinsic?module=Currencies&call=transfer\_native\_currency](https://karura.subscan.io/extrinsic?module=Currencies&call=transfer_native_currency)
-* This can be used to send native token \(KAR\). It has slightly cheaper transaction fees compare to currencies.transfer
+* Bu, yerel belirteç \(KAR\) göndermek için kullanılabilir. Para birimlerine kıyasla biraz daha ucuz işlem ücretlerine sahiptir.transfer
 
-#### balances.transfer
+#### bakiyeler.aktarım
 
 * [https://karura.subscan.io/extrinsic?module=Balances&call=transfer](https://karura.subscan.io/extrinsic?module=Balances&call=transfer)
-* Same as `currencies.transferNativeCurrency`
-* Compatible with Polkadot / Kusama and most other Substrate-based chains.
+* 'currencies.transferNativeCurrency' ile aynı
+* Polkadot / Kusama ve diğer çoğu Substrat tabanlı zincirlerle uyumludur.
 
-## Receive Tokens
+## Jeton Al
 
-There are multiple ways to detect incoming balance transfers:
+Gelen bakiye transferlerini tespit etmenin birden fazla yolu vardır:
 
-* Monitor events
-* Subscribe storage changes
-* Monitor transactions
+* Olayları izleyin
+* Depolama değişikliklerine abone olun
+* İşlemleri izleyin
 
-### Monitor Events
+### Olayları İzleme
 
-Monitoring events is a recommended way to track incoming balance transfers. It can handle **ALL** types of transfer transactions including the one that is not initiated by a transaction directly \(e.g. delayed proxy\).
+Olayları izlemek, gelen bakiye transferlerini izlemenin önerilen bir yoludur. Doğrudan bir işlem tarafından başlatılmamış olanlar da dahil olmak üzere **TÜM** türdeki transfer işlemlerini gerçekleştirebilir \(ör. gecikmeli proxy\).
 
-#### balances.transfer
+#### bakiyeler.aktarım
 
 * [https://karura.subscan.io/event?module=Balances&event=Transfer](https://karura.subscan.io/event?module=Balances&event=Transfer)
-* Emitted when a native token transfer happened.
+* Yerel bir belirteç aktarımı gerçekleştiğinde yayılır.
 
-#### currencies.transfer
+#### para birimleri.transferi
 
-* [https://karura.subscan.io/event?module=Currencies&event=Transferred](https://karura.subscan.io/event?module=Currencies&event=Transferred)
-* Emitted when a token transfer happened.
-* NOTE: This is not emitted when balances.transfer is used to make a transfer.
+* [https://karura.subscan.io/event?module=Currencies&event=Transfered](https://karura.subscan.io/event?module=Currencies&event=Transfered)
+* Bir jeton transferi gerçekleştiğinde ortaya çıkar.
+* NOT: Transfer yapmak için Balances.transfer kullanıldığında bu yayılmaz.
 
-#### currencies.deposit
+#### para birimleri.depozito
 
-* [https://karura.subscan.io/event?module=Currencies&event=Deposited](https://karura.subscan.io/event?module=Currencies&event=Deposited)
-* Emitted when a token is minted to an account. This could happen when it is a cross-chain transfer or it is a transaction minting stablecoins.
+* [https://karura.subscan.io/event?module=Currencies&event=Yatırılan](https://karura.subscan.io/event?module=Currencies&event=Yatırılan)
+* Bir hesaba bir jeton basıldığında ortaya çıkar. Bu, zincirler arası bir transfer olduğunda veya sabit para basan bir işlem olduğunda olabilir.
 
-### Storage changes RPC
+### Depolama, RPC'yi değiştirir
 
 * [state\_subscribeStorage](https://polkadot.js.org/docs/substrate/rpc#subscribestoragekeys-vecstoragekey-storagechangeset)
-  * Subscribe to a list of account balances. However, it does not guarantee subscription delivery due to connection errors or blockchain reorg.
+  * Hesap bakiyeleri listesine abone olun. Ancak, bağlantı hataları veya blok zincirinin yeniden düzenlenmesi nedeniyle abonelik teslimini garanti etmez.
 
-### Monitor Tranactions
+### İşlemleri İzleme
 
-It is possible to fetch transactions in every block, check for transfer transactions, and check if the transfer transaction is successful. However, this may likely yield false-negative results i.e. deposit received but failed to recognize, due to the various ways for transfer.
+Her blokta işlemleri getirmek, transfer işlemlerini kontrol etmek ve transfer işleminin başarılı olup olmadığını kontrol etmek mümkündür. Bununla birlikte, bu muhtemelen yanlış negatif sonuçlar verebilir, yani depozito alındı, ancak transfer için çeşitli yollar nedeniyle tanınmadı.
 
-Refer to Send Tokens section for direct transfer transactions. In additional, to sending transfer transactions individually, there are common utility methods to batch send transfer transactions:
+Doğrudan transfer işlemleri için Token Gönder bölümüne bakın. Ek olarak, transfer işlemlerini tek tek göndermeye ek olarak, toplu gönderme transfer işlemleri için yaygın yardımcı yöntemler vardır:
 
-#### utility.batch
+#### yardımcı program.batch
 
 * [https://karura.subscan.io/extrinsic?module=Utility&call=batch](https://karura.subscan.io/extrinsic?module=Utility&call=batch)
-* This can be used to send batch transaction
-* NOTE: batched transactions will always emit success events. 
-  * `utility.BatchCompleted` event indicates that all transactions are successful
-  * `utility.BatchInterrupted` event indicates which transaction failed. Transactions before the failed transaction are executed successfully and will not be reverted.
+* Bu toplu işlem göndermek için kullanılabilir
+* NOT: toplu işlemler her zaman başarı olaylarını yayacaktır.
+  * `utility.BatchCompleted` olayı tüm işlemlerin başarılı olduğunu gösterir
+  * `utility.BatchInterrupted` olayı hangi işlemin başarısız olduğunu gösterir. Başarısız olan işlemden önceki işlemler başarıyla yürütülür ve geri alınmayacaktır.
 
-#### utility.batchAll
+#### yardımcı program.batchTümü
 
 * [https://karura.subscan.io/extrinsic?module=Utility&call=batch\_all](https://karura.subscan.io/extrinsic?module=Utility&call=batch_all)
-* This is similar to utility.batch but will revert all transactions upon failed transaction.
-
+* Bu, yardımcı program.batch'e benzer, ancak başarısız işlemde tüm işlemleri geri alır.
